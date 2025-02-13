@@ -16,7 +16,7 @@ data = pd.read_csv("comments.csv")
 comments = [f"""{content} : {tag} """ for content,tag in zip(data["content"], data["tag"])]
 
 #Getting embedding of each comment
-embeddings = openai_ef(comments[1])
+embeddings = huggingface_ef(comments[1])
 
 #Chromadb creation
 
