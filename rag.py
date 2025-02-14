@@ -17,15 +17,15 @@ if "MISTRAL_API_KEY" not in os.environ:
 llm = init_chat_model("mistral-large-latest", model_provider="mistralai")
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
-vector_store = Chroma(embedding_function=embeddings)
+vector_store = Chroma(persist_directory="./chroma_db" ,embedding_function=embeddings)
 
-#Load the comments
-data = pd.read_csv("comments.csv")
-#Merging comment and tag
-comments = [Document(f"""{content} : {tag} """) for content,tag in zip(data["content"], data["tag"])]
-
-#Store the comments in the chromadb by indexing them
-vector_store.add_documents(documents=comments)
+# #Load the comments
+# data = pd.read_csv("comments.csv")
+# #Merging comment and tag
+# comments = [Document(f"""{content} : {tag} """) for content,tag in zip(data["content"], data["tag"])]
+# 
+# #Store the comments in the chromadb by indexing them
+# vector_store.add_documents(documents=comments)
 
 
 
