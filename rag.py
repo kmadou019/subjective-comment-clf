@@ -8,7 +8,6 @@ from langchain_chroma import Chroma
 from langchain.prompts import PromptTemplate
 from langgraph.graph import START, StateGraph
 from typing_extensions import List, TypedDict
-import pandas as pd
 
 
 if "MISTRAL_API_KEY" not in os.environ:
@@ -18,16 +17,6 @@ llm = init_chat_model("mistral-large-latest", model_provider="mistralai")
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 vector_store = Chroma(persist_directory="./chroma_db" ,embedding_function=embeddings)
-
-# #Load the comments
-# data = pd.read_csv("comments.csv")
-# #Merging comment and tag
-# comments = [Document(f"""{content} : {tag} """) for content,tag in zip(data["content"], data["tag"])]
-# 
-# #Store the comments in the chromadb by indexing them
-# vector_store.add_documents(documents=comments)
-
-
 
 # Define prompt for classification
 template = """
@@ -95,7 +84,8 @@ def main():
     graph_builder.add_edge(START, "retrieve")
     graph = graph_builder.compile()
     # and test application
-    response = graph.invoke({"comment": "Il y a eu beaucoup de réponse incorrecte et pas mal d'ignorance"})
+    comment_test = "Je vais tenter de plus travailler pour le prochain test afin d'avoir un meilleur résultat que ceux obtenus cette fois."
+    response = graph.invoke({"comment": comment_test})
     print(response["answer"]) 
 
 if __name__ == "__main__":

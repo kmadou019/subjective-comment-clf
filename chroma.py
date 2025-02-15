@@ -2,11 +2,14 @@
 
 import chromadb
 import pandas as pd
-from mistralai import Mistral
 from chromadb.utils import embedding_functions
+import os
 
 #The embedding function
-emb_fn = embedding_functions.DefaultEmbeddingFunction()
+emb_fn = embedding_functions.HuggingFaceEmbeddingFunction(
+    api_key=os.getenv("HUGGINGFACE_API_KEY"),
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 #Loading data set
 data = pd.read_csv("comments.csv")
 #Merging comment and tag
@@ -23,9 +26,14 @@ collection = chroma_client.get_or_create_collection(
         "hnsw:search_ef":10
     })
 
+batch_size = 100
+ids = data["id"].astype(str).tolist()
+for i in range(0, len(comments), batch_size):
+    batch_comments = comments[i:i+batch_size]
+    batch_ids      = ids[i:i+batch_size]
 
-collection.upsert(
-    documents=comments,
-    ids=data["id"].astype(str).tolist()
-)
+    collection.upsert(
+        documents=batch_comments,
+        ids=batch_ids
+    )
 
