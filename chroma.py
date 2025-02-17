@@ -12,8 +12,6 @@ emb_fn = embedding_functions.HuggingFaceEmbeddingFunction(
 )
 #Loading data set
 data = pd.read_csv("comments.csv")
-#Merging comment and tag
-comments = [f"""{content} : {tag} """ for content,tag in zip(data["content"], data["tag"])]
 
 #Chromadb creation
 chroma_client = chromadb.PersistentClient("./chroma_db")
@@ -28,12 +26,11 @@ collection = chroma_client.get_or_create_collection(
 
 batch_size = 100
 ids = data["id"].astype(str).tolist()
-for i in range(0, len(comments), batch_size):
-    batch_comments = comments[i:i+batch_size]
+for i in range(0, len(data["content"]), batch_size):
+    batch_comments = data["content"][i:i+batch_size]
     batch_ids      = ids[i:i+batch_size]
 
     collection.upsert(
         documents=batch_comments,
         ids=batch_ids
     )
-
