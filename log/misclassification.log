@@ -1,0 +1,5 @@
+[Cela révèle que je ne suis pas sûr de mes réponses] ; human(MotOrient.SelfEff) ; IA(MotOrient.Interpret)
+[Grâce à ces tests je vois qu'il faut que je m'améliore en mécanique car je n'ai pas du tout compris. J'ai beaucoup d'ignorance car je ne connais pas bien ma leçon. Je me sens plus à l'aise en chimie, mais je confonds encore beaucoup stéréoisomère, énantiomère, de configuration, de conformation . . . J'ai aussi besoin de revoir les titrages car je n'arrive pas à faire les calculs.] ; human(DomKldg) ; IA(DomainKldg)
+[1 réponse dangereuse] ; human(MonCal.Facts.DC) ; IA(<MonCal.Facts.DC>)
+[je préfère ne pas me risquer à dire que c'est juste si ça peut ne pas l'être] ; human(StratKldg) ; IA(MotOrient.Value)
+[Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste] ; human(Interpret) ; IA(<CTRL>)
