@@ -11,7 +11,7 @@ emb_fn = embedding_functions.HuggingFaceEmbeddingFunction(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 #Loading data set
-data = pd.read_csv("comments.csv")
+data = pd.read_csv("data/comments.csv")
 
 #Chromadb creation
 chroma_client = chromadb.PersistentClient("./chroma_db")

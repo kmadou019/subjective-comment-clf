@@ -20,7 +20,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)
 
 #Load the dataset
-comments = pd.read_csv("comments.csv")
+comments = pd.read_csv("data/comments.csv")
 # Define prompt for classification
 template = """
 Tu es un expert en classification de commentaires. 
@@ -52,7 +52,7 @@ En te basant sur  les commentaires suivants classifiés par un expert humain don
 donne la classe de ce commentaire : 
 {comment}
 
-donne ta reponse sous ce format:
+donne ta reponse, sans rien expliquer, et sans "<,>,',..." sous ce format:
 <classe>
 """
 
