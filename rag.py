@@ -1,92 +1,24 @@
 #!/usr/bin/env python3
-import getpass
-import os
-from langchain.chat_models import init_chat_model
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.schema import Document
-from langchain_chroma import Chroma
-from langchain.prompts import PromptTemplate
-from langgraph.graph import START, StateGraph
-from typing_extensions import List, TypedDict
-
-
-if "MISTRAL_API_KEY" not in os.environ:
-    os.environ["MISTRAL_API_KEY"] = getpass.getpass("Enter your Mistral API key: ")
-
-llm = init_chat_model("mistral-large-latest", model_provider="mistralai")
-
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
-vector_store = Chroma(persist_directory="./chroma_db" ,embedding_function=embeddings)
-
-# Define prompt for classification
-template = """
-Tu es un expert en classification de commentaires. 
-
-
-Voici des catégories dont les definitions sont données :
-1.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
-
-2.MonCal.Facts.DC : Observations factuelles sur les résultats du test, incluant des remarques sur la quantité de connaissances fragiles, de connaissances certaines, d'erreurs dangereuses et d'erreurs présumées.
-
-3.MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
-
-4.BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
-
-5.MotOrient.Value : Commentaires sur l'intérêt pour les types de tests (QCM, QCM avec DC) et leur valeur perçue pour l’apprentissage.
-
-6.MotOrient.SelfEff : Accent sur l’auto-efficacité et la confiance des étudiants dans le domaine évalué.
-
-7.DomainKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
-
-8.StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
-
-9.CTRL : Commentaires sur les comportements futurs des apprenants.
-
-
-En te basant sur  les commentaires suivants classifiés par un expert humain donnés sous le format (commentaire : classe):
-{context}
-
-donne la classe de ce commentaire : 
-{comment}
-
-donne ta reponse sous ce format:
-classe : <classe>
-"""
-
-prompt = PromptTemplate(
-    input_variables=["commentaire", "context"],
-    template=template
-)
-
-# Define state for application
-class State(TypedDict):
-    comment: str
-    context: List[Document]
-    answer: str
-
-# Define application steps
-def retrieve(state: State):
-    retrieved_docs = vector_store.similarity_search(state["comment"])
-    return {"context": retrieved_docs}
-
-def generate(state: State):
-    context = "\n".join(ctx.page_content for ctx in state["context"])
-    formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
-    response = llm.invoke(formatted_prompt)
-    return {"answer": response.content}
-
-
-
+from graph_builder import graph
+import pandas as pd
 
 def main():
-    # Compile application
-    graph_builder = StateGraph(State).add_sequence([retrieve, generate])
-    graph_builder.add_edge(START, "retrieve")
-    graph = graph_builder.compile()
-    # and test application
-    comment_test = "Je vais tenter de plus travailler pour le prochain test afin d'avoir un meilleur résultat que ceux obtenus cette fois."
-    response = graph.invoke({"comment": comment_test})
-    print(response["answer"]) 
+    #Load the test set
+    comments_test = pd.read_csv("./test.csv")
+    # Test application
+    true_prediction = 0
+    mistakes_output = ""
+    for comment,tag in zip(comments_test["content"], comments_test["tag"]):
+        response = graph.invoke({"comment": comment})
+        if response["predictedClass"] == tag:
+            true_prediction += 1
+        else : 
+            mistakes_output +=  f""" [{comment}] ; human({tag}) ; IA({response}) \n"""
+    
+    #Accuracy
+    accuracy = true_prediction/len(comments_test)
+    print("Accuracy = ", accuracy)
 
+    print(mistakes_output)
 if __name__ == "__main__":
     main()
