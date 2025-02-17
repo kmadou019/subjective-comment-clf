@@ -4,39 +4,44 @@ import pandas as pd
 import logging
 
 def main():
-    #Load the test set
+    # Load the test dataset
     comments_test = pd.read_csv("data/test.csv")
-    # Créer un logger
-    logger = logging.getLogger()
+
+    # Create a dedicated logger for this script
+    logger = logging.getLogger("test_logger")
     logger.setLevel(logging.DEBUG)
 
-    # Handler pour les erreurs
-    error_handler = logging.FileHandler('log/misclassification.log',mode="w")
+    # Clear any existing handlers to avoid duplicates
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    # Handler for error logs
+    error_handler = logging.FileHandler('log/misclassification.log', mode="w")
     error_handler.setLevel(logging.ERROR)
 
-    # Handler pour les informations
-    info_handler = logging.FileHandler('log/accuracy.log',mode="w")
+    # Handler for info logs
+    info_handler = logging.FileHandler('log/accuracy.log', mode="w")
     info_handler.setLevel(logging.INFO)
 
-    # Ajouter les handlers au logger
+    # Add handlers to the logger
     logger.addHandler(error_handler)
     logger.addHandler(info_handler)
 
-    # Test application
+    # Initialize counters
     true_prediction = 0
-    mistakes_output = ""
-    for comment,tag in zip(comments_test["content"], comments_test["tag"]):
+
+    # Iterate through the test dataset and evaluate predictions
+    for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
         if response["predictedClass"] == tag:
             true_prediction += 1
-        else : 
-            logger.error(f""" [{comment}] ; human({tag}) ; IA({response["predictedClass"]}) \n""")
-    
-    #Accuracy
-    accuracy = true_prediction/len(comments_test)
-    print("Accuracy = ", accuracy)
-    logger.info("Accuracy = %d", accuracy)
+        else:
+            logger.error(f"[{comment}] ; human({tag}) ; IA({response['predictedClass']})")
 
-    print(mistakes_output)
+    # Calculate accuracy
+    accuracy = true_prediction / len(comments_test)
+    print("Accuracy = ", accuracy)
+    logger.info("Accuracy = %f", accuracy)
+
 if __name__ == "__main__":
     main()

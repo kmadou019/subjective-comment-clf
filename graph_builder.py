@@ -9,16 +9,16 @@ from langchain.prompts import PromptTemplate
 from langgraph.graph import START, StateGraph
 from typing_extensions import List, TypedDict
 import pandas as pd
-
+from langchain_ollama.llms import OllamaLLM
 
 if "MISTRAL_API_KEY" not in os.environ:
     os.environ["MISTRAL_API_KEY"] = getpass.getpass("Enter your Mistral API key: ")
 
 llm = init_chat_model("mistral-large-latest", model_provider="mistralai")
+llm = OllamaLLM(model="mistral")
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)
-
 #Load the dataset
 comments = pd.read_csv("data/comments.csv")
 # Define prompt for classification
@@ -26,7 +26,8 @@ template = """
 Tu es un expert en classification de commentaires. 
 
 
-Voici des catégories dont les definitions sont données :
+Tu as les classes suiavntes avec leurs definitions respectives :
+
 1.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
 
 2.MonCal.Facts.DC : Observations factuelles sur les résultats du test, incluant des remarques sur la quantité de connaissances fragiles, de connaissances certaines, d'erreurs dangereuses et d'erreurs présumées.
@@ -52,7 +53,7 @@ En te basant sur  les commentaires suivants classifiés par un expert humain don
 donne la classe de ce commentaire : 
 {comment}
 
-donne ta reponse, sans rien expliquer, et sans "<,>,',..." sous ce format:
+donne ta reponse, sans rien expliquer, et sans "<,>,',...", sans changer les classes que je t'ai fourni plus haut et sous ce format:
 <classe>
 """
 
@@ -79,7 +80,7 @@ def generate(state: State):
     context = "\n".join(f""" '{ctx.page_content}':{comments["tag"][int(ctx.id)]} """ for ctx in state["context"])
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
     response = llm.invoke(formatted_prompt)
-    return {"predictedClass": response.content}
+    return {"predictedClass": response.strip()}
 
 
 # Compile application
