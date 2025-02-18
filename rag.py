@@ -8,20 +8,18 @@ def main():
     comments_test = pd.read_csv("data/test.csv")
 
     # Create a dedicated logger for this script
-    logger = logging.getLogger("test_logger")
+    logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
-
-    # Clear any existing handlers to avoid duplicates
-    if logger.hasHandlers():
-        logger.handlers.clear()
 
     # Handler for error logs
     error_handler = logging.FileHandler('log/misclassification.log', mode="w")
     error_handler.setLevel(logging.ERROR)
+    error_handler.addFilter(lambda record: record.levelno == logging.ERROR)
 
     # Handler for info logs
     info_handler = logging.FileHandler('log/accuracy.log', mode="w")
     info_handler.setLevel(logging.INFO)
+    info_handler.addFilter(lambda record: record.levelno == logging.INFO)
 
     # Add handlers to the logger
     logger.addHandler(error_handler)
