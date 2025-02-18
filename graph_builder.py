@@ -73,7 +73,8 @@ def generate(state: State):
     context = "\n".join(f""" '{ctx.page_content}':{comments["tag"][int(ctx.id)]} """ for ctx in state["context"])
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
     response = llm.invoke(formatted_prompt)
-    return {"predictedClass": response.strip()}
+    response = ''.join(c for c in response.strip() if c not in "<>'")
+    return {"predictedClass": response}
 
 
 # Compile application
