@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-import getpass
-import os
-from langchain.chat_models import init_chat_model
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.schema import Document
 from langchain_chroma import Chroma
@@ -11,10 +8,6 @@ from typing_extensions import List, TypedDict
 import pandas as pd
 from langchain_ollama.llms import OllamaLLM
 
-if "MISTRAL_API_KEY" not in os.environ:
-    os.environ["MISTRAL_API_KEY"] = getpass.getpass("Enter your Mistral API key: ")
-
-llm = init_chat_model("mistral-large-latest", model_provider="mistralai")
 llm = OllamaLLM(model="mistral")
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -28,11 +21,11 @@ Tu es un expert en classification de commentaires.
 
 Tu as les classes suiavntes avec leurs definitions respectives :
 
-1.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
+1.MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
 
-2.MonCal.Facts.DC : Observations factuelles sur les résultats du test, incluant des remarques sur la quantité de connaissances fragiles, de connaissances certaines, d'erreurs dangereuses et d'erreurs présumées.
+2.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
 
-3.MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
+3.MonCal.Facts.DC : Observations factuelles sur les résultats du test, incluant des remarques sur la quantité de connaissances fragiles, de connaissances certaines, d'erreurs dangereuses et d'erreurs présumées.
 
 4.BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
 
@@ -40,7 +33,7 @@ Tu as les classes suiavntes avec leurs definitions respectives :
 
 6.MotOrient.SelfEff : Accent sur l’auto-efficacité et la confiance des étudiants dans le domaine évalué.
 
-7.DomainKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
+7.DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
 
 8.StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
 
