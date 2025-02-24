@@ -12,12 +12,12 @@ def main():
     logger.setLevel(logging.DEBUG)
 
     # Handler for error logs
-    error_handler = logging.FileHandler('log/error.log', mode="w")
+    error_handler = logging.FileHandler('log/error_phi4_keywords.log', mode="w")
     error_handler.setLevel(logging.ERROR)
     error_handler.addFilter(lambda record: record.levelno == logging.ERROR)
 
     # Handler for info logs
-    info_handler = logging.FileHandler('log/success.log', mode="w")
+    info_handler = logging.FileHandler('log/success_phi4_keywords.log', mode="w")
     info_handler.setLevel(logging.INFO)
     info_handler.addFilter(lambda record: record.levelno == logging.INFO)
 
@@ -27,14 +27,11 @@ def main():
 
     # Initialize counters
     true_prediction = 0
-    i = 0
     # Iterate through the test dataset and evaluate predictions
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
         if response["predictedClass"] == tag:
-            logger.info("%d .OK", i)
             true_prediction += 1
-            i += 1
         else:
             logger.error(f"[{comment}] ; human({tag}) ; IA({response['predictedClass']})")
     # Calculate accuracy
