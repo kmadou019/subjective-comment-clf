@@ -10,7 +10,6 @@ def main():
     # Create a dedicated logger for this script
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
-
     # Handler for error logs
     error_handler = logging.FileHandler('log/error.log', mode="w")
     error_handler.setLevel(logging.ERROR)
@@ -27,20 +26,18 @@ def main():
 
     # Initialize counters
     true_prediction = 0
-    i = 0
     # Iterate through the test dataset and evaluate predictions
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
         if response["predictedClass"] == tag:
-            logger.info("%d .OK", i)
             true_prediction += 1
-            i += 1
         else:
             logger.error(f"[{comment}] ; human({tag}) ; IA({response['predictedClass']})")
     # Calculate accuracy
     accuracy = true_prediction / len(comments_test)
     print("Accuracy = ", accuracy)
     logger.info("Accuracy = %f", accuracy)
+
 
 if __name__ == "__main__":
     main()
