@@ -141,18 +141,4 @@
 140 .OK
 141 .OK
 142 .OK
-143 .OK
-144 .OK
-145 .OK
-146 .OK
-147 .OK
-148 .OK
-149 .OK
-150 .OK
-<<<<<<< HEAD:log/success_phi4.log
-Accuracy = 0.642553
-=======
-151 .OK
-152 .OK
-Accuracy = 0.651064
->>>>>>> 9e08062768fa97d880e7334026e39bd45123c892:log/success.log
+Accuracy = 0.608511
