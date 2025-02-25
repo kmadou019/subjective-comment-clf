@@ -3,6 +3,8 @@ from graph_builder import graph
 import pandas as pd
 import numpy as np
 import logging
+import itertools
+
 
 def kappa_cohen(matrix, n):
     matrix.loc["SumCol",:] = matrix.sum(axis=0) # Sum of the column
@@ -20,12 +22,11 @@ def kappa_cohen(matrix, n):
 
 def read_excel_or_create(filename):
     try:
-        return pd.read_excel(filename, index_col=0)
+        return pd.read_excel(filename, index_col=[0,1])
     except FileNotFoundError:
         tuple = list(itertools.product(["mistral", "phi4", "llama3.3"], ["No_rag", "Rag", "Rag_keyword"] ))
         index = pd.MultiIndex.from_tuples(tuples=tuple, names=["Model", "Version"])
         performance = pd.DataFrame(columns=["Accuracy", "Kappa"], index=index)
-        print(performance)
         return performance
 
 
@@ -75,8 +76,15 @@ def main():
     accuracy = true_prediction / len(comments_test)
     kappa = kappa_cohen(matrix, len(comments_test))
     #export the matrix as excel file
+
+    filename = "excel/matrix_cohen.xlsx"
+    sheet_name = f"{model}_{version}"
+
     matrix["kappa"] = kappa
-    matrix.to_excel("excel/matrix_cohen.xlsx")
+    # Ouvrir le fichier en mode append
+    with pd.ExcelWriter(filename, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
+        matrix.to_excel(writer, sheet_name=sheet_name)
+
     # Performance
     performance.loc[(model, version), "Accuracy"] = round(accuracy, 2)
     performance.loc[(model, version), "Kappa"] = round(kappa, 2)
