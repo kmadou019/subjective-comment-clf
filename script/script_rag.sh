@@ -3,6 +3,7 @@
 #OAR --stdout log/output.txt
 #OAR --stderr log/error.txt
 #OAR -l /host=1/gpu=4,walltime=7:0:0
+cd ..
 source mon_env/bin/activate
 /home/daisy/konema/Documents/ollama/bin/ollama serve &
 

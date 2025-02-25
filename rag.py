@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import logging
 import itertools
+import os
 
 
 def kappa_cohen(matrix, n):
@@ -62,7 +63,7 @@ def main():
     matrix = pd.DataFrame(data=0,columns=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"],
                            index=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"])
     # Iterate through the test dataset and evaluate predictions
-    for comment, tag in zip(comments_test["content"][:3], comments_test["tag"][:3]):
+    for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
         predicted_class = response["predictedClass"]
         if predicted_class == tag:
@@ -81,7 +82,11 @@ def main():
     sheet_name = f"{model}_{version}"
 
     matrix["kappa"] = kappa
-    # Ouvrir le fichier en mode append
+    # Create the file if it does not exist
+    if not os.path.exists(filename):
+        with pd.ExcelWriter(filename, engine="openpyxl") as writer:
+            pd.DataFrame().to_excel(writer)  # Create an empty sheet
+
     with pd.ExcelWriter(filename, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
         matrix.to_excel(writer, sheet_name=sheet_name)
 
