@@ -5,3 +5,4 @@ __pycache__
 .Trash-*/
 *.log
 *.std*
+log
