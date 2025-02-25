@@ -11,7 +11,7 @@ id,tag,content
 9,MonCal.Facts.RF,"19/32 réponses correctes, peu d'ignorance (2)."
 10,StratKldg,Score attribué au fait que je n'étais pas assez attentive et concentrée lors du test.
 11,MonCal.Facts.DC,"Le diagramme de réponses correctes est proche de la courbe en J, tandis que la courbe des réponses incorrectes ne l'est pas."
-12,Interpret,Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste
+12,MonCal.Interpret,Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste
 13,CTRL,"Lors d'un prochain test, je devrais être moins certaine de moi sur les réponses ou j'hésite et être + prudente."
 14,StratKldg,Beaucoup des sujets je n'avais pas révisé du tout encore
 15,MonCal.Facts.DC,Beaucoup d'erreurs dangereuses
