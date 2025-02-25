@@ -13,7 +13,7 @@ model = input("Enter the model name: ")
 llm = OllamaLLM(model=model)
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)
+vector_store = Chroma(persist_directory="./chroma_db" ,embedding_function=embeddings)
 #Load the dataset
 comments = pd.read_csv("data/comments.csv")
 # Define prompt for classification
