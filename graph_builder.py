@@ -8,7 +8,9 @@ from typing_extensions import List, TypedDict
 import pandas as pd
 from langchain_ollama.llms import OllamaLLM
 
-llm = OllamaLLM(model="phi4")
+# Define the LLM
+model = input("Enter the model name: ")
+llm = OllamaLLM(model=model)
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)

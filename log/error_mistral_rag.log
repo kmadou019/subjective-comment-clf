@@ -1,0 +1,3 @@
+[Il y a eu beaucoup de réponse incorrecte et pas mal d'ignorance] ; human(MonCal.Facts.RF) ; IA(MonCal.Facts.DC)
+[Cela révèle que je ne suis pas sûr de mes réponses] ; human(MotOrient.SelfEff) ; IA(MonCal.Interpret)
+[je préfère ne pas me risquer à dire que c'est juste si ça peut ne pas l'être] ; human(StratKldg) ; IA(MotOrient.SelfEff)
