@@ -2,12 +2,13 @@
 
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_ollama import OllamaEmbeddings
-import os
-
+import pandas as pd
+import ast
 emb_fn = OllamaEmbeddings(model="mistral")
 
-with open("./comment_glob.txt") as f:
-    text = f.read()
+true_chunks = pd.read_csv("comment_chunk.csv")
+true_chunks["chunks"] = true_chunks["chunks"].apply(ast.literal_eval)
+text = true_chunks['chunks'][0]
 
 text_splitter = SemanticChunker(
     emb_fn,
@@ -19,5 +20,3 @@ split_ = text_splitter.create_documents([text])
 for doc in split_:
     print(doc)
     print("\n")
-
-
