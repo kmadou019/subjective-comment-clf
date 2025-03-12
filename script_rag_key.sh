@@ -3,9 +3,10 @@
 #OAR --stdout log/output.txt
 #OAR --stderr log/error.txt
 #OAR -l /host=1/gpu=4,walltime=7:0:0
+#cd ..
 source mon_env/bin/activate
 /home/daisy/konema/Documents/ollama/bin/ollama serve &
-
-echo -e "mistral\nmistral_rag_keyword\nRag\nRag_keyword\nmistral" |./rag.py
-echo -e "phi4\nphi4_rag_keyword\nRag\nRag_keyword\nphi4" |./rag.py
-echo -e "llama3.3\nllama3_3_rag_keyword\nRag\nRag_keyword\nllama3.3" |./rag.py
+#model/name/version/model
+echo -e "mistral\nmistral_rag_keyword\nRag_keyword\nmistral" |./rag_key.py
+echo -e "phi4\nphi4_rag_keyword\nRag_keyword\nphi4" |./rag_key.py
+echo -e "llama3.3\nllama3_3_rag_keyword\nRag_keyword\nllama3.3" |./rag_key.py
