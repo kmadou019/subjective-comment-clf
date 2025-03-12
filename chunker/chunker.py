@@ -4,15 +4,18 @@ from langchain_experimental.text_splitter import SemanticChunker
 from langchain_ollama import OllamaEmbeddings
 import pandas as pd
 import ast
+from Levenshtein import distance
 
-def compare_chunks(true_chunk, split_chunks):
-   for i in range(min(len(true_chunk), len(split_chunks))):
-    print("True: ", true_chunk[i])
-    print("--------------------")
-    print("from: ", split_chunks[i])
-    print("#############")
-
-    return 0 # metric
+def compare_chunks(true_chunks, split_chunks):
+   """"""
+   for unity_ia in split_chunks:
+    distances = []
+    chunks_similarity = 0
+    for unity_human in true_chunks:
+        distances.append(distance(unity_ia, unity_human))   
+    chunks_similarity += min(distances)
+    
+    return chunks_similarity
 
 emb_fn = OllamaEmbeddings(model="mistral")
 df = pd.read_csv("comment_chunk.csv")
