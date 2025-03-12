@@ -1,0 +1,169 @@
+[Grâce à ces tests je vois qu'il faut que je m'améliore en mécanique car je n'ai pas du tout compris. J'ai beaucoup d'ignorance car je ne connais pas bien ma leçon. Je me sens plus à l'aise en chimie, mais je confonds encore beaucoup stéréoisomère, énantiomère, de configuration, de conformation . . . J'ai aussi besoin de revoir les titrages car je n'arrive pas à faire les calculs.] ; human(DomKldg) ; IA(DomKldg  
+StratKldg  
+MonCal.Facts.RF)
+[je préfère ne pas me risquer à dire que c'est juste si ça peut ne pas l'être] ; human(StratKldg) ; IA(MotOrient.SelfEff)
+[Score attribué au fait que je n'étais pas assez attentive et concentrée lors du test.] ; human(StratKldg) ; IA(STRATKLDG)
+[Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste] ; human(MonCal.Interpret) ; IA(CTRL)
+[Beaucoup des sujets je n'avais pas révisé du tout encore] ; human(StratKldg) ; IA(DomKldg)
+[mes connaissances sont encore trop fragiles, je n'ai toujours pas commencé les révisions pour les chapitres (illisible) particulièrement dans le chapitre sur les lois de Newton et la relation entre les acides et les bases.] ; human(DomKldg) ; IA(DomKldg  
+MotOrient.Value
+
+Les parties pertinentes du commentaire incluent "connaissances sont encore trop fragiles", "nai toujours pas commencé les révisions pour les chapitres" et des références spécifiques aux "chapitre sur les lois de Newton" et la "relation entre les acides et les bases". La phrase fait référence à des domaines disciplinaires spécifiques où lapprentissage est insuffisant, ce qui correspond au concept de lacunes en connaissances identifié dans la classe DomKldg. De plus, le commentaire reflète une évaluation de la valeur perçue du processus dapprentissage (révision) pour combler ces lacunes, pertinent pour MotOrient.Value.)
+[Sur la partie mécanique j'ai été plus confiant, à juste titre, alors que dans la partie chimie j'ai été plus prudent (aussi à juste titre)] ; human(MotOrient.SelfEff) ; IA(MonCal.Interpret)
+[Pour être plus sur de moi il faudrait que je révise plus la chimie pour solidifier mes connaissances.] ; human(DomKldg) ; IA(MotOrient.SelfEff)
+[Par rapport à la dernière fois j'ai fait moins d'erreurs d'inattention car j'ai bien vérifié même les questions que j'ai eu juste.] ; human(StratKldg) ; IA(CTRL)
+[le nombre de erreurs dangereuses a diminué] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.RF  
+
+Ce commentaire fait référence à une observation factuelle concernant les résultats du test, en notant la quantité derreurs dangereuses. Les mots-clés pertinents incluent "nombre" et "diminué", qui sont liés aux observations factuelles des erreurs dans le cadre de MonCal.Facts.RF.)
+[je devrais peut-être être un peu plus prudent] ; human(MonCal.Interpret) ; IA(CTRL)
+[j'ai plus de réponses correctes en chimie qu'en physique.] ; human(DomKldg) ; IA(MonCal.Facts.RF)
+[ce test est très réaliste/ précis.] ; human(MotOrient.Value) ; IA(MonCal.Facts.RF)
+[ce qui concerne les mauvaises réponses, c'est une mauvaise compréhension des questions] ; human(StratKldg) ; IA(MonCal.Facts.DC)
+[Pour le degré de certitude, c'est dangereux pour les mauvaises réponses, car j’étais plutôt vers une certitude de 100% même si je n'étais pas sûre de mes réponses] ; human(MonCal.Interpret) ; IA(MonCal.Facts.DC)
+[J'ai quand même beaucoup d'erreurs dangereuses (6 au total). J'ai 2 ignorance déclarée, ce qui est relativement peu. Dans mes réponses correctes, j'ai plus de savoir fragile que de savoir certain.] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Ce commentaire contient des observations factuelles sur les erreurs dangereuses, ignorances déclarées et savoirs fragiles/certains, ce qui le classe dans MonCal.Facts.DC. Il mentionne également un nombre spécifique de réponses incorrectes et correctes en termes de savoir fragile/certain, correspondant à MonCal.Facts.RF.)
+[la majorité de mes fautes n'étaient pas pressenties et mes réponses correctes étaient certaines] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Ce commentaire inclut à la fois des observations factuelles sur le nombre de réponses correctes et incorrectes ("fautes", "réponses correctes"), ce qui correspond aux mots-clés pour MonCal.Facts.RF. De plus, il aborde des observations factuelles concernant les savoirs certains et les erreurs pressenties ou non, salignant sur MonCal.Facts.DC en raison de lutilisation des termes "pressenties" et "certaines".)
+[Cela me permet de savoir ce que je dois réviser et mes points faibles.] ; human(MotOrient.Value) ; IA(DomKldg)
+[le plus grave ? les erreurs dangereuses que j'ai fait.] ; human(MonCal.Interpret) ; IA(MonCal.Facts.DC)
+[Ce test m'a permis de réaliser que mes connaissances sont moins solides que ce que j'espérais] ; human(MotOrient.Value) ; IA(MotOrient.SelfEff)
+[c'est bien de voir que la plupart du temps je suis certaine quand j'ai raison] ; human(MonCal.Interpret) ; IA(MotOrient.SelfEff)
+[Il faut que je révise la chimie, car mes connaissances sont floues et donc la certitude de mes réponses est affectée.] ; human(DomKldg) ; IA(CTRL
+
+Le commentaire indique un comportement futur à adopter ("Il faut que je révise"), qui correspond aux mots-clés associés à la classe CTRL tels que "il faut", et les verbes au futur. Il suggère une action corrective pour améliorer les connaissances en chimie, ce qui est caractéristique des commentaires sur le comportement futur des apprenants.)
+[Il faut que je regarde les questions de plus près car la formulation peut être trompeuse à certains moments.] ; human(StratKldg) ; IA(MonCal.Interpret)
+[5 : erreurs dangereuses, 6 erreurs présumées, 11 savoirs fragiles, 10 savoir certains :] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+En se basant sur les critères donnés et en analysant le commentaire fourni, "5 : erreurs dangereuses, 6 erreurs présumées, 11 savoirs fragiles, 10 savoir certains", il peut être classé dans deux catégories :
+
+1. **MonCal.Facts.DC** : Ce commentaire mentionne des termes spécifiques comme "erreurs dangereuses", "erreurs présumées" et "savoirs fragiles". Ces éléments sont clairement listés sous les mots-clés pertinents pour cette catégorie.
+
+2. **MonCal.Facts.RF** : Le commentaire fournit également des observations factuelles sur le nombre de réponses correctes (qui incluent les savoirs certains) et incorrectes (erreurs dangereuses, erreurs présumées, savoirs fragiles). Cette structure correspond aux mots-clés pour cette catégorie. 
+
+En conclusion, ce commentaire se situe à la fois dans MonCal.Facts.DC et MonCal.Facts.RF en raison de sa nature détaillée qui inclut à la fois les types spécifiques derreurs/savoirs (MonCal.Facts.DC) et le comptage des réponses correctes/incorrectes (MonCal.Facts.RF).)
+[On peut dire que j'ai eu ce score car je ne révise jamais sauf la veille ou le jour même d'un contrôle, j'aurais sûrement un meilleur score en révisant régulièrement] ; human(StratKldg) ; IA(DomKldg  
+StratKldg  
+
+Ce commentaire mentionne la révision (ou plutôt le manque de révision), ce qui pointe vers les lacunes dans les connaissances (DomKldg). De plus, il implique lanalyse dune stratégie dapprentissage (réviser régulièrement pour améliorer les résultats) et son impact sur le score, suggérant une réflexion sur la manière dont les méthodes de préparation ont influencé les résultats (StratKldg).)
+[Beaucoup de savoir certain avec 5 erreurs dangereuses.] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Les commentaires fournissent à la fois des observations factuelles sur les erreurs dangereuses et le savoir certain. Ils mentionnent explicitement le nombre derreurs dangereuses, ce qui est caractéristique de MonCal.Facts.DC, tout en décrivant également un état des réponses correctes (savoir certain), indiquant une perspective factuelle comme MonCal.Facts.RF.)
+[J'ai mal jugé mes réponses et surestimé mes compétences] ; human(MotOrient.SelfEff) ; IA(MonCal.Interpret)
+[Ce test m'a permis de comprendre que je dois faire plus attention aux énoncés.] ; human(MotOrient.Value) ; IA(CTRL)
+[6 erreurs dangereuses, 3 présumées, 4 ignorances déclarée, 3 savoir fragile, 16 savoir certain] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Les deux classifications sont applicables. Le commentaire inclut des termes tels que "erreurs dangereuses", "présumées", "ignorances déclarée", "savoir fragile" et "savoir certain", qui correspondent aux critères pour MonCal.Facts.DC (observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées) ainsi quà ceux de MonCal.Facts.RF (observations factuelles sur les résultats du test incluant des remarques sur les réponses correctes et incorrectes).)
+[Relativement satisfait car peu d'erreurs et peu savoir fragile comme je le pensais lors du test. J'étais assez souvent très sûr de moi.] ; human(MonCal.Interpret) ; IA(MonCal.Facts.RF)
+[5 réponse dangereuse, 1 erreur présumée, 5 ignorance déclarée, 6 savoir fragile et 15 certain] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.RF  
+MonCal.Facts.DC  
+
+Les deux classes peuvent être appliquées car le commentaire inclut des informations factuelles sur les réponses correctes et incorrectes (MonCal.Facts.RF) ainsi que des détails spécifiques sur les erreurs dangereuses, les erreurs présumées, les ignorances déclarées et les savoirs fragiles/sûrs (MonCal.Facts.DC).)
+[Globalement, il y a plus de réponses savoir certain que d'erreur dangereuse ,] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.RF  
+MonCal.Facts.DC  
+
+Les commentaires soulignent les observations factuelles en mentionnant des types spécifiques de réponses ("savoir certain" et "erreur dangereuse"), ce qui correspond aux deux classes : MonCal.Facts.RF pour le fait quils parlent des résultats (réponses correctes) et MonCal.Facts.DC pour lidentification des erreurs dangereuses.)
+[e trouve que j'ai été trop rapide dans mes choix de réponse ainsi à l'avenir il me faudra être plus réfléchi. Aussi des petites révisions ne me feraient pas de mal.] ; human(StratKldg) ; IA(CTRL  
+MotOrient.SelfEff  
+
+Le commentaire fait référence à un comportement futur ("à lavenir il me faudra être plus réfléchi"), ce qui correspond aux mots-clés de la classe CTRL. Il mentionne également des "petites révisions", suggérant une action future pour améliorer les performances, ce qui est cohérent avec le thème de CTRL.
+
+De plus, le commentaire contient un sous-texte lié à lauto-évaluation ("jai été trop rapide dans mes choix de réponse"), impliquant une reconnaissance de la confiance excessive ou insuffisante. Cela correspond aux mots-clés de MotOrient.SelfEff concernant "confiance" et "mes connaissances". 
+
+Ainsi, le commentaire chevauche les classes CTRL et MotOrient.SelfEff.)
+[Cela Vient en parti du fait que je ne connaissais pas les formules du cours et d'interprétations fausses des documents] ; human(DomKldg) ; IA(DomKldg  
+StratKldg  
+
+Ce commentaire peut être classé dans deux catégories :
+
+1. **DomKldg** : Le segment "je ne connaissais pas les formules du cours" indique un manque de connaissance ou une lacune disciplinaire, qui est le cœur de la classe DomKldg.
+
+2. **StratKldg** : La mention d"interprétations fausses des documents" se rapporte aux stratégies ou comportements utilisés pendant le test (telles que la mauvaise interprétation), ce qui est pertinent pour la classe StratKldg.)
+[j'ai tendance à être trop sûre de moi.] ; human(MotOrient.SelfEff) ; IA(MonCal.Interpret)
+[Mon savoir est là, mais cependant je fais encore trop d'erreurs d'inattention sur des choses bêtes. Il faut que je me concentre tout le long pour répondre à toutes les questions.] ; human(StratKldg) ; IA(CTRL  
+MonCal.Facts.RF  
+
+Cette réponse couvre deux classes potentielles. Lélément "je fais encore trop derreurs dinattention sur des choses bêtes" peut être classé sous MonCal.Facts.RF en raison de lutilisation du mot-clé "erreurs". Cependant, le reste du commentaire exprime un comportement futur et des intentions avec les verbes au futur comme "Il faut que je me concentre", ce qui est plus aligné sur la classe CTRL. Par conséquent, CTRL est une classification prédominante pour lensemble du commentaire.)
+[Je suis assez content du résultat, ça aurait pu être pire. Ce test provoque chez moi de l'anxiété] ; human(BDS.Emotions) ; IA(BDS.Emotions  
+MonCal.Facts.RF  
+BDS.Emotions  
+
+Le commentaire exprime à la fois des émotions ressenties par létudiant et fait référence au résultat du test :
+
+1. "Je suis assez content du résultat" et "ça aurait pu être pire" sont associés aux émotions, indiquant de la satisfaction ou une comparaison positive avec un scénario hypothétique (BDS.Emotions).
+2. Le fait de mentionner le résultat du test ("du résultat") pourrait aussi renvoyer à des observations factuelles sur les réponses, bien que cela soit moins explicite (MonCal.Facts.RF).
+3. "Ce test provoque chez moi de lanxiété" exprime directement une émotion ressentie pendant le test (BDS.Emotions).)
+[Globalement, il y a beaucoup de réponses certaines mais aussi beaucoup d'erreurs dangereuses.] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Note : Ce commentaire mentionne à la fois des "réponses certaines" et des "erreurs dangereuses", ce qui saligne sur les caractéristiques de MonCal.Facts.DC (comme discuté dans les exemples fournis) tout en faisant également référence aux observations factuelles sur le nombre/quantité de réponses correctes et incorrectes, correspondant à MonCal.Facts.RF.)
+[Je dois mieux lire les énoncés et être plus attentif sur les réponses] ; human(StratKldg) ; IA(CTRL)
+[des connaissances certaines dans le domaine de la physique chimie] ; human(DomKldg) ; IA(MotOrient.SelfEff)
+[Je devrais être plus attentif sur les questions.] ; human(StratKldg) ; IA(CTRL)
+[J'ai appris que je devrais me fier plus à mes connaissances qu'à la pertinence de la question] ; human(MotOrient.Value) ; IA(MotOrient.SelfEff)
+[un savoir certain , 4 savoir fragile , pour les erreurs, 5 erreur dangereuse et 7 erreur présumée] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Note : Le commentaire contient des informations factuelles à la fois sur les savoirs fragiles/certains et le nombre derreurs dangereuses/présumées, relevant donc de deux classes.)
+[Je repère beaucoup de prudence car je peux présumer mes erreurs éventuel , ce qui me permet d'avoir peut d'erreur dangereuse.] ; human(MonCal.Interpret) ; IA(MonCal.Interpret
+
+Cet extrait présente une interprétation subjective liée à la prudence et aux erreurs présumées, ce qui reflète linterprétation des performances de létudiant. Cela va au-delà dune simple énumération factuelle ou émotionnelle, en abordant le comportement et les stratégies mentales pendant le test.)
+[Ces erreurs dangereuses sont dues à un manque de connaissances.] ; human(MonCal.Interpret) ; IA(MonCal.Facts.DC)
+[Plutôt des erreurs d'inattention que du manque de réalisme.] ; human(StratKldg) ; IA(MonCal.Interpret)
+[La chimie est vraiment dure, mais la physique c'est bien] ; human(DomKldg) ; IA(MotOrient.Value)
+[donc je suis trop confiante] ; human(MotOrient.SelfEff) ; IA(MonCal.Interpret)
+[Pour la prochaine je dois être plus prudente] ; human(CTRL) ; IA(MonCal.Interpret)
+[il faut revoir certaines choses de mon cours] ; human(CTRL) ; IA(DomKldg)
+[Erreur dangereuse 4, Erreur présumée 3, savoir certain 24, 1 ignorance déclarée] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Les commentaires fournissent à la fois des observations factuelles sur les résultats du test et des informations détaillées sur le type de connaissance (comme savoirs certains, erreurs dangereuses, etc.). Par conséquent, ils appartiennent aux deux classes : MonCal.Facts.DC pour les types spécifiques de connaissances mentionnés et MonCal.Facts.RF pour les résultats factuels.)
+[J'ai eu tout juste en physique, mais j'ai plus de mal en chimie car c'est moins concret. Les formules sont dures à comprendre donc à apprendre. De plus, mes erreurs dangereuses en chimie montrent que je n'ai pas tout compris.] ; human(DomKldg) ; IA(DomKldg  
+StratKldg  
+
+Le commentaire mentionne des difficultés spécifiques dans une matière ("jai plus de mal en chimie car cest moins concret"), ce qui correspond aux mots-clés pour DomKldg tels que "chimie" et "formules". En outre, il y a une référence à lapprentissage des formules et à la compréhension ("Les formules sont dures à comprendre donc à apprendre"), ce qui est pertinent pour StratKldg en raison de la mention des stratégies dapprentissage impliquées dans le processus. De plus, lexpression "mes erreurs dangereuses en chimie montrent que je nai pas tout compris" relie également cette partie au domaine des stratégies dapprentissage (StratKldg).)
+[Je pourrais être plus réaliste en lisant mieux les questions.] ; human(StratKldg) ; IA(CTRL)
+[6 erreurs dangereuses, 18 savoirs certains et 4 savoir fragiles, 1 erreur présumée.] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Le commentaire fourni contient des observations factuelles sur les résultats du test, telles que le nombre derreurs dangereuses, de savoirs certains, de savoirs fragiles et derreurs présumées. Cela correspond à la description de MonCal.Facts.DC car il inclut des termes tels que "erreurs dangereuses", "savoirs certains" et "savoirs fragiles". De plus, étant donné quil fournit un décompte spécifique de différents types dobservations factuelles (correctes, incorrectes), cela saligne également avec MonCal.Facts.RF. Par conséquent, le commentaire se classe dans les deux catégories : MonCal.Facts.DC et MonCal.Facts.RF.)
+[4 erreurs dangereuses et 6 erreurs présumées et 4 savoir fragile ainsi que 18 savoir certain] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF)
+[Il faut que je travaille mieux mes notions] ; human(StratKldg) ; IA(CTRL)
+[L'objectif est donc une attention plus marquée dans la lecture des questions] ; human(StratKldg) ; IA(CTRL)
+[trois erreurs dangereuses (à80%) qui sont dues à une mauvaise lecture de l'énoncé et une confusion entre plusieurs éléments de la consigne] ; human(StratKldg) ; IA(MonCal.Facts.DC, MonCal.Interpret
+
+Ce commentaire contient des observations factuelles sur les "erreurs dangereuses" qui se rapportent aux mots-clés associés à la classe MonCal.Facts.DC. De plus, il fournit une interprétation en expliquant que ces erreurs sont dues à une mauvaise lecture et une confusion entre plusieurs éléments de la consigne, ce qui correspond aux caractéristiques de MonCal.Interpret.)
+[Pour un meilleur résultat la fois prochaine, il faudrait ouvrir le livre de SPC notamment sur la mécanique] ; human(CTRL) ; IA(DomKldg)
+[4 erreurs dangereuses, 3 erreurs présumées et 13 savoirs certains] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Les commentaires mentionnent à la fois les "erreurs dangereuses", les "erreurs présumées" et le nombre de "savoirs certains". Cela correspond aux définitions des classes MonCal.Facts.DC (pour inclure des observations sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées) et MonCal.Facts.RF (pour inclure des remarques sur le nombre/quantité de réponses correctes et incorrectes).)
+[Je suis arrivée à un résultat de 12/20] ; human(MonCal.Facts.RF) ; IA(BDS.Emotions)
+[des confusions et des souvenirs erronés du à des réponses données basées non pas sur un cours appris mais sur des souvenirs de classes et des exercices faits.] ; human(StratKldg) ; IA(DomKldg)
+[j'ai échangé 2 valeurs dans une formule que je n'ai pas trop comprise] ; human(DomKldg) ; IA(StratKldg)
+[je n'ai pas bien relu mes chapitres] ; human(StratKldg) ; IA(DomKldg)
+[je pense que le cours est moins maitrisé] ; human(StratKldg) ; IA(DomKldg)
+[je n'ai pas pris le temps de bien comprendre les énoncés] ; human(StratKldg) ; IA(CTRL)
+[j'ai été plus réaliste] ; human(MotOrient.SelfEff) ; IA(MonCal.Interpret)
+[mes connaissances pas encore assez solides.] ; human(StratKldg) ; IA(MonCal.Facts.DC)
+[mon problème réside dans ma précipitation] ; human(StratKldg) ; IA(CTRL)
+[j'ai pas revu le cours] ; human(StratKldg) ; IA(DomKldg)
+[il faut que je révise les formules de Kepler et revoir les charges électriques] ; human(DomKldg) ; IA(CTRL)
+[Chapitres pas assez bien travaillés] ; human(StratKldg) ; IA(DomKldg)
+[5 dangereuses, 2 présumées, 1 ignorance , 4 fragiles, 8 certains] ; human(MonCal.Facts.DC) ; IA(MonCal.Facts.DC  
+MonCal.Facts.RF  
+
+Pour ce commentaire "5 dangereuses, 2 présumées, 1 ignorance , 4 fragiles, 8 certains", il répond aux critères des deux classes :
+
+- **MonCal.Facts.DC** : Car il mentionne des termes tels que "erreurs dangereuses", "erreurs présumées" et "savoirs fragiles".
+  
+- **MonCal.Facts.RF** : Il inclut également des observations factuelles sur les nombres de chaque catégorie, y compris les "ignorances déclarées" et les "savoirs certains".)
+[mauvais apprentissage du cours] ; human(StratKldg) ; IA(DomKldg)
+[bcp d'erreurs dangereuses] ; human(MonCal.Facts.DC) ; IA(MonCal.Interpret)
