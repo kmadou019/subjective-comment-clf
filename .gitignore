@@ -2,3 +2,6 @@ mon_env
 chroma_db
 __pycache__
 *.pyc
+.log
+*std*
+.Trash*
