@@ -22,6 +22,7 @@ Deprecated==1.2.18
 distro==1.9.0
 docstring_parser==0.16
 durationpy==0.9
+et_xmlfile==2.0.0
 eval_type_backport==0.2.2
 fastapi==0.115.8
 filelock==3.17.0
@@ -65,11 +66,13 @@ langchain==0.3.18
 langchain-aws==0.2.12
 langchain-chroma==0.2.2
 langchain-community==0.3.17
-langchain-core==0.3.35
+langchain-core==0.3.41
+langchain-experimental==0.3.4
 langchain-google-vertexai==2.0.13
 langchain-huggingface==0.1.2
 langchain-mistralai==0.2.6
 langchain-ollama==0.2.3
+langchain-openai==0.3.7
 langchain-text-splitters==0.3.6
 langgraph==0.2.72
 langgraph-checkpoint==2.0.13
@@ -105,6 +108,7 @@ oauthlib==3.2.2
 ollama==0.4.7
 onnxruntime==1.20.1
 openai==1.62.0
+openpyxl==3.1.5
 opentelemetry-api==1.30.0
 opentelemetry-exporter-otlp-proto-common==1.30.0
 opentelemetry-exporter-otlp-proto-grpc==1.30.0
@@ -156,6 +160,7 @@ starlette==0.45.3
 sympy==1.13.1
 tenacity==9.0.0
 threadpoolctl==3.5.0
+tiktoken==0.9.0
 tokenizers==0.21.0
 torch==2.6.0
 tqdm==4.67.1
