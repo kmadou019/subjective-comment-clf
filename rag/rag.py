@@ -8,7 +8,7 @@ import os
 import subprocess
 import time
 import threading
-
+import re
 def get_gpu_power():
     """Récupère la puissance consommée par le GPU en watts"""
     result = subprocess.run(
@@ -23,21 +23,13 @@ def monitor_power(energy_log):
     while energy_log["running"]:
         power = get_gpu_power()  # Récupère la consommation actuelle (W)
         timestamp = time.time()  # Enregistre le temps actuel
-        energy_log["samples"].append((timestamp, power))
+        energy_log["Time"].append(timestamp)
+        energy_log["Power"].append(power)
         time.sleep(0.1)  # Mesure toutes les 100 ms
 
 def compute_energy(energy_log):
     """Calcule l'énergie consommée en kWh"""
-    samples = energy_log["samples"]
-    total_energy = 0  # Énergie totale consommée (en Joules)
-
-    for i in range(1, len(samples)):
-        t1, p1 = samples[i - 1]
-        t2, p2 = samples[i]
-        dt = t2 - t1  # Durée entre deux mesures
-        avg_power = (p1 + p2) / 2  # Moyenne des puissances
-        total_energy += avg_power * dt  # Énergie en Joules
-
+    total_energy = np.trapz(energy_log["Power"], energy_log["Time"]) # En J
     return total_energy / 3600000  # Convertit Joules → kWh
 
 def kappa_cohen(matrix, n):
@@ -60,9 +52,12 @@ def read_excel_or_create(filename):
     except FileNotFoundError:
         tuple = list(itertools.product(["mistral", "phi4", "llama3.3"], ["No_rag", "Rag", "Rag_keyword"] ))
         index = pd.MultiIndex.from_tuples(tuples=tuple, names=["Model", "Version"])
-        performance = pd.DataFrame(columns=["Accuracy", "Kappa","Energy(kWh)"], index=index)
+        performance = pd.DataFrame(columns=["Accuracy", "Kappa","Energy(kWh)","Time"], index=index)
         return performance
 
+def convert_seconds(time):
+    minutes, seconds = divmod(time, 60)
+    return f"{int(minutes)}m{int(seconds)}s"
 
 def main():
     # Load the test dataset
@@ -92,24 +87,32 @@ def main():
 
     # Initialize counters
     true_prediction = 0
+    miss = 0
     
     matrix = pd.DataFrame(data=0,columns=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"],
                            index=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"])
     # --- Lancement de la mesure ---
-    energy_log = {"running": True, "samples": []}
+    energy_log = {"running": True, "Time": [], "Power": []}
     monitor_thread = threading.Thread(target=monitor_power, args=(energy_log,))
     monitor_thread.start()
     print("Début du programme...")
     # Iterate through the test dataset and evaluate predictions
+    start = time.time()
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
-        predicted_class = response["predictedClass"]
+        predicted_class = re.search(r"^\S+", response["predictedClass"]).group(0)
         if predicted_class == tag:
             true_prediction += 1
         else:
             logger.error(f"[{comment}] ; human({tag}) ; IA({response['predictedClass']})")
         if predicted_class in matrix.columns:
             matrix.loc[tag,predicted_class] += 1
+        else:
+            print(f"Error: {predicted_class} is not in the matrix")
+            miss += 1
+    end = time.time()
+    time_execution = end - start
+    print(f"Miss: {miss}")
     print("Programme terminé.")
     # --- Arrêt de la mesure ---
     energy_log["running"] = False
@@ -136,16 +139,18 @@ def main():
     # Performance
     performance.loc[(model, version), "Accuracy"] = round(accuracy, 2)
     performance.loc[(model, version), "Kappa"] = round(kappa, 2)
-    performance.loc[(model, version), "Energy(kWh)"] = round(energy_kwh, 2)
+    performance.loc[(model, version), "Energy(kWh)"] = round(energy_kwh, 5)
+    performance.loc[(model, version), "Time"] = convert_seconds(time_execution)
     performance.to_excel("excel/performance.xlsx")
     # Log the results
     print("Accuracy = ", accuracy)
     print("Kappa = ", kappa)
     print("Energy(kWh) = ", energy_kwh)
+    print("Time(min) = ", time_execution/60)
     logger.info("Accuracy = %f", accuracy)
     logger.info("Kappa = %f", kappa)
     logger.info("Energy(kWh) = %f", energy_kwh)
-
+    logger.info("Time(min) = %f", time_execution/60)
 
 if __name__ == "__main__":
     main()

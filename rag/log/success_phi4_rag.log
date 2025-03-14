@@ -1,3 +1,4 @@
-Accuracy = 0.604255
-Kappa = 0.563816
-Energy(kWh) = 0.021629
+Accuracy = 0.731915
+Kappa = 0.689889
+Energy(kWh) = 0.005390
+Time(min) = 1.029143

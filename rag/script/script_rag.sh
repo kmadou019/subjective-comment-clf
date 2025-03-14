@@ -4,8 +4,8 @@
 #OAR --stderr log/error.txt
 #OAR -l /host=1/gpu=4,walltime=7:0:0
 cd ..
-source mon_env/bin/activate
-/home/daisy/konema/Documents/ollama/bin/ollama serve &
+source ../mon_env/bin/activate
+/home/daisy/konema/Documents/ollama/bin/ollama serve >/dev/null 2>&1
 
 echo -e "mistral\nmistral_rag\nRag\nmistral" |./rag.py
 echo -e "phi4\nphi4_rag\nRag\nphi4" |./rag.py
