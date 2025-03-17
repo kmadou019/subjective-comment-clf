@@ -59,6 +59,11 @@ def convert_seconds(time):
     minutes, seconds = divmod(time, 60)
     return f"{int(minutes)}m{int(seconds)}s"
 
+def parse(predicted_class):
+    if predicted_class[0] in "123456789":
+        return re.search(r"^\S+", predicted_class[2:]).group(0)
+    return re.search(r"^\S+", predicted_class).group(0)
+
 def main():
     # Load the test dataset
     comments_test = pd.read_csv("data/test.csv")
@@ -100,7 +105,7 @@ def main():
     start = time.time()
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
-        predicted_class = re.search(r"^\S+", response["predictedClass"]).group(0)
+        predicted_class = parse(response["predictedClass"])
         if predicted_class == tag:
             true_prediction += 1
         else:
