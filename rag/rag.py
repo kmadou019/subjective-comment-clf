@@ -7,30 +7,16 @@ import itertools
 import os
 import subprocess
 import time
-import threading
 import re
-def get_gpu_power():
-    """Récupère la puissance consommée par le GPU en watts"""
+
+
+def get_cpu_power():
+    """Récupère la puissance consommée par le CPU en watts"""
     result = subprocess.run(
-        ["nvidia-smi", "--query-gpu=power.draw", "--format=csv,noheader,nounits"],
+        ["cat", "/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj"],
         stdout=subprocess.PIPE, text=True
     )
-
-    return sum(list(np.array(result.stdout.strip().split("\n"), dtype=float))) 
-
-def monitor_power(energy_log):
-    """Surveille la consommation énergétique du GPU en arrière-plan"""
-    while energy_log["running"]:
-        power = get_gpu_power()  # Récupère la consommation actuelle (W)
-        timestamp = time.time()  # Enregistre le temps actuel
-        energy_log["Time"].append(timestamp)
-        energy_log["Power"].append(power)
-        time.sleep(0.1)  # Mesure toutes les 100 ms
-
-def compute_energy(energy_log):
-    """Calcule l'énergie consommée en kWh"""
-    total_energy = np.trapz(energy_log["Power"], energy_log["Time"]) # En J
-    return total_energy / 3600000  # Convertit Joules → kWh
+    return int(result.stdout.strip())
 
 def kappa_cohen(matrix, n):
     matrix.loc["SumCol",:] = matrix.sum(axis=0) # Sum of the column
@@ -92,9 +78,7 @@ def main():
     matrix = pd.DataFrame(data=0,columns=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"],
                            index=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"])
     # --- Lancement de la mesure ---
-    energy_log = {"running": True, "Time": [], "Power": []}
-    monitor_thread = threading.Thread(target=monitor_power, args=(energy_log,))
-    monitor_thread.start()
+    energy_start = get_cpu_power()  # Récupère la consommation actuelle (W)
     print("Début du programme...")
     # Iterate through the test dataset and evaluate predictions
     start = time.time()
@@ -111,17 +95,16 @@ def main():
             print(f"Error: {predicted_class} is not in the matrix")
             miss += 1
     end = time.time()
+    energy_end = get_cpu_power()  # Récupère la consommation actuelle (W)
     time_execution = end - start
     print(f"Miss: {miss}")
     print("Programme terminé.")
     # --- Arrêt de la mesure ---
-    energy_log["running"] = False
-    monitor_thread.join()
     # Calculate accuracy
     accuracy = true_prediction / len(comments_test)
     kappa = kappa_cohen(matrix, len(comments_test))
     # --- Calcul de l'énergie consommée ---
-    energy_kwh = compute_energy(energy_log)
+    energy_kwh = (energy_end - energy_start) / 1e6 / 3600  # Convertir en kWh
     #export the matrix as excel file
 
     filename = "excel/matrix_cohen.xlsx"
