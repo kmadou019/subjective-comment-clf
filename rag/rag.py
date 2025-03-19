@@ -8,6 +8,7 @@ import os
 import subprocess
 import time
 import re
+import threading
 
 
 def get_cpu_power():
@@ -17,6 +18,15 @@ def get_cpu_power():
         stdout=subprocess.PIPE, text=True
     )
     return int(result.stdout.strip())
+
+def monitor_cpu_power(energy_log):
+    while energy_log["running"]:
+        power = get_cpu_power()
+        time = time.time()
+        energy_log["Time"].append(time)
+        energy_log["Power"].append(power)
+        time.sleep(0.1)  # Sleep for 0.1 seconds to avoid excessive CPU usage
+
 
 def kappa_cohen(matrix, n):
     matrix.loc["SumCol",:] = matrix.sum(axis=0) # Sum of the column
@@ -78,11 +88,15 @@ def main():
     matrix = pd.DataFrame(data=0,columns=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"],
                            index=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"])
     # --- Lancement de la mesure ---
-    energy_start = get_cpu_power()  # Récupère la consommation actuelle (W)
+    # Initialize the energy log
+    energy_log = {"Time": [], "Power": [], "running": True}
+    # Start the CPU power monitoring in a separate thread
+    monitor_thread = threading.Thread(target=monitor_cpu_power, args=(energy_log,))
+    monitor_thread.start()
     print("Début du programme...")
     # Iterate through the test dataset and evaluate predictions
     start = time.time()
-    for comment, tag in zip(comments_test["content"], comments_test["tag"]):
+    for comment, tag in zip(comments_test["content"][:2], comments_test["tag"][:2]):
         response = graph.invoke({"comment": comment})
         predicted_class = re.search(r"^\S+", response["predictedClass"]).group(0)
         if predicted_class == tag:
@@ -95,7 +109,9 @@ def main():
             print(f"Error: {predicted_class} is not in the matrix")
             miss += 1
     end = time.time()
-    energy_end = get_cpu_power()  # Récupère la consommation actuelle (W)
+
+    energy_log["running"] = False  
+    monitor_thread.join()  # Wait for the monitoring thread to finish
     time_execution = end - start
     print(f"Miss: {miss}")
     print("Programme terminé.")
@@ -104,9 +120,8 @@ def main():
     accuracy = true_prediction / len(comments_test)
     kappa = kappa_cohen(matrix, len(comments_test))
     # --- Calcul de l'énergie consommée ---
-    energy_kwh = (energy_end - energy_start) / 1e6 / 3600  # Convertir en kWh
+    energy_kwh = energy_log["Power"][-1] - energy_log["Power"][0] / 3.6e6  # Convert to kWh
     #export the matrix as excel file
-
     filename = "excel/matrix_cohen.xlsx"
     sheet_name = f"{model}_{version}"
 
@@ -134,6 +149,8 @@ def main():
     logger.info("Kappa = %f", kappa)
     logger.info("Energy(kWh) = %f", energy_kwh)
     logger.info("Time(min) = %f", time_execution/60)
+
+    print(energy_log)
 
 if __name__ == "__main__":
     main()
