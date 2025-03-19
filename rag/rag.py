@@ -22,8 +22,8 @@ def get_cpu_power():
 def monitor_cpu_power(energy_log):
     while energy_log["running"]:
         power = get_cpu_power()
-        time = time.time()
-        energy_log["Time"].append(time)
+        time_ = time.time()
+        energy_log["Time"].append(time_)
         energy_log["Power"].append(power)
         time.sleep(0.1)  # Sleep for 0.1 seconds to avoid excessive CPU usage
 
@@ -150,7 +150,8 @@ def main():
     logger.info("Energy(kWh) = %f", energy_kwh)
     logger.info("Time(min) = %f", time_execution/60)
 
-    print(energy_log)
+    print("Time: ",energy_log["Time"])
+    print("Power: ",energy_log["Power"])
 
 if __name__ == "__main__":
     main()
