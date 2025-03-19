@@ -18,4 +18,4 @@ for i in range(len(text)):
 
 comment_chunk = {'comment':comment,'chunks':chunks}
 df = pd.DataFrame.from_dict(comment_chunk,)
-df.to_csv('comment_chunk.csv',index=False)
+df.to_json('comment_chunk.json',index=False)
