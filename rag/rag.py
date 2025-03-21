@@ -96,7 +96,7 @@ def main():
     print("Début du programme...")
     # Iterate through the test dataset and evaluate predictions
     start = time.time()
-    for comment, tag in zip(comments_test["content"][:2], comments_test["tag"][:2]):
+    for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment})
         predicted_class = re.search(r"^\S+", response["predictedClass"]).group(0)
         if predicted_class == tag:
