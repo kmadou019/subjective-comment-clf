@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-
-from langchain_experimental.text_splitter import SemanticChunker
-from langchain_ollama import OllamaEmbeddings
+from graph_builder import graph 
 import pandas as pd
 import ast
 from Levenshtein import distance
-import numpy as np
 
 def compare_chunks(true_chunks, split_chunks):
     if (len(true_chunks) + len(split_chunks) != 0):
@@ -29,31 +26,22 @@ def print_chunks(true_chunk, comment_split):
     print("#############################")
   
 
-
-emb_fn = OllamaEmbeddings(model="mistral")
-df = pd.read_csv("data/comment_chunk_test.csv")
-df["chunks"] = df["chunks"].apply(ast.literal_eval)
-comments = df["comment"]
-true_chunks = df["chunks"]
-metrics = []
-
-for threshold in range(1, 100):
-    text_splitter = SemanticChunker(
-        emb_fn,
-        breakpoint_threshold_type="percentile",
-        breakpoint_threshold_amount=threshold,)
+def main():
+    df = pd.read_csv("../data/comment_chunk_test.csv")
+    df["chunks"] = df["chunks"].apply(ast.literal_eval)
+    comments = df["comment"]
+    true_chunks = df["chunks"]
 
     sum_F1_s = 0
     for comment,true_chunk in zip(comments, true_chunks):
-        comment_split = text_splitter.create_documents([comment])
-        comment_split = [doc.page_content for doc in comment_split]
+        comment_split = graph.invoke({"comment" : comment})["chunks"]
         print_chunks(true_chunk, comment_split)
         sum_F1_s += compare_chunks(true_chunk, comment_split)
-    metrics.append(sum_F1_s)
 
-print('F1-score for SemanticChunker : ', sum_F1_s)
-print("index of the best threshold: ", np.argmin(metrics))
+    print('F1-score for rag : ', sum_F1_s)
+
+if __name__ == "__main__":
+    main()
 
 
-# F1-score for SemanticChunker :  3333.305555555557
-# index of the best threshold:  8
+# F1-score for rag :  1811.7612554112548
