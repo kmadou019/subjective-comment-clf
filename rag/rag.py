@@ -71,7 +71,11 @@ def main():
     out = input("Enter the log name : ")
     error_handler = logging.FileHandler(f'log/error_{out}.log', mode="w")
     error_handler.setLevel(logging.ERROR)
-    error_handler.addFilter(lambda record: record.levelno == logging.ERROR)
+    error_handler.addFilter(lambda record: record.levelno == logging.ERROR) 
+    # Handler for miss logs
+    miss_handler = logging.FileHandler(f'log/miss_{out}.log', mode="w")
+    miss_handler.setLevel(logging.WARNING)
+    miss_handler.addFilter(lambda record: record.levelno == logging.WARNING)
 
     # Handler for info logs
     info_handler = logging.FileHandler(f'log/success_{out}.log', mode="w")
@@ -80,6 +84,7 @@ def main():
 
     # Add handlers to the logger
     logger.addHandler(error_handler)
+    logger.addHandler(miss_handler)
     logger.addHandler(info_handler)
     # Define the model and version
     version = input("Enter the version: ") 
@@ -104,15 +109,14 @@ def main():
         if predicted_class == tag:
             true_prediction += 1
         else:
-            logger.error(f"[{comment}] ; human({tag}) ; IA({response['predictedClass']})")
+            logger.error(f"[{comment}] ; human({tag}) ; IA({predicted_class})")
         if predicted_class in matrix.columns:
             matrix.loc[tag,predicted_class] += 1
         else:
-            print(f"Error: {predicted_class} is not in the matrix")
+            logger.warning(f"Error: {predicted_class} is not in the matrix")
             miss += 1
     end = time.time()
     time_execution = end - start
-    print(f"Miss: {miss}")
     print("Programme terminé.")
     # --- Arrêt de la mesure ---
     energy_log["running"] = False
@@ -143,6 +147,7 @@ def main():
     performance.loc[(model, version), "Time"] = convert_seconds(time_execution)
     performance.to_excel("excel/performance.xlsx")
     # Log the results
+    print(f"Miss: {miss}")
     print("Accuracy = ", accuracy)
     print("Kappa = ", kappa)
     print("Energy(kWh) = ", energy_kwh)
@@ -151,6 +156,7 @@ def main():
     logger.info("Kappa = %f", kappa)
     logger.info("Energy(kWh) = %f", energy_kwh)
     logger.info("Time(min) = %f", time_execution/60)
+    logger.info(f"Miss: {miss}")
 
 if __name__ == "__main__":
     main()
