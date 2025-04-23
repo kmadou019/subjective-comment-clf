@@ -70,6 +70,12 @@ Format de sortie :
 <classe>
 
 (sans explication : ne donner AUCUNE explication de ta reponse, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus .
+
+Si tu hesites entres plusieurs classes, donne ton degré de confiance (0 - 1) pour chaque classe. Alors on aura le format suivant :
+<classe1>:<degré de confiance 1>, <classe2>:<degré de confiance 2>, <classe3>:<degré de confiance 3>...
+Les degrés de confiance sont des probabilités, donc ils doivent s'additionner à 1. Par exemple :
+"MonCal.Interpret:0.8, MonCal.Facts.RF:0.2"
+Et si tu ne doutes pas entre plusieurs classes, donne une seule classe sans preciser le degré de confiance.
 """
 prompt = PromptTemplate(
     input_variables=["commentaire", "context"],
@@ -86,6 +92,7 @@ class State(TypedDict):
 # Define application steps
 def retrieve(state: State):
     retrieved_docs = vector_store.similarity_search(state["comment"], k=10)
+    print(retrieved_docs)
     return {"context": retrieved_docs}
 
 
