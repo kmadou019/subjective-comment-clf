@@ -7,25 +7,27 @@ import itertools
 import os
 import subprocess
 import time
-import re
 import threading
+import json
 
 
-def get_cpu_power():
-    """Récupère la puissance consommée par le CPU en watts"""
+def get_gpu_power():
+    """Récupère la puissance consommée par le GPU en watts"""
     result = subprocess.run(
-        ["cat", "/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj"],
+        ["nvidia-smi", "--query-gpu=power.draw", "--format=csv,noheader,nounits"],
         stdout=subprocess.PIPE, text=True
     )
-    return int(result.stdout.strip())
 
-def monitor_cpu_power(energy_log):
+    return sum(list(np.array(result.stdout.strip().split("\n"), dtype=float)))
+
+def monitor_power(energy_log):
+    """Surveille la consommation énergétique du GPU en arrière-plan"""
     while energy_log["running"]:
-        power = get_cpu_power()
-        time_ = time.time()
-        energy_log["Time"].append(time_)
+        power = get_gpu_power()  # Récupère la consommation actuelle (W)
+        timestamp = time.time()  # Enregistre le temps actuel
+        energy_log["Time"].append(timestamp)
         energy_log["Power"].append(power)
-        time.sleep(0.1)  # Sleep for 0.1 seconds to avoid excessive CPU usage
+        time.sleep(0.1)  # Mesure toutes les 100 ms
 
 
 def kappa_cohen(matrix, n):
@@ -46,14 +48,31 @@ def read_excel_or_create(filename):
     try:
         return pd.read_excel(filename, index_col=[0,1])
     except FileNotFoundError:
-        tuple = list(itertools.product(["mistral", "phi4", "llama3.3"], ["No_rag", "Rag", "Rag_keyword"] ))
-        index = pd.MultiIndex.from_tuples(tuples=tuple, names=["Model", "Version"])
+        tuple = list(itertools.product(["mistral", "phi4", "llama3.3"], ["Debate"] ))
+        index = pd.MultiIndex.from_tuples(tuples=tuple, names=["Orchestrator", "Version"])
         performance = pd.DataFrame(columns=["Accuracy", "Kappa","Energy(kWh)","Time"], index=index)
         return performance
 
 def convert_seconds(time):
     minutes, seconds = divmod(time, 60)
     return f"{int(minutes)}m{int(seconds)}s"
+
+def save_checkpoint(iteration, true_prediction):
+    data = {
+        "iteration": iteration,
+        "true_prediction": true_prediction
+    }
+    with open('./checkpoint.txt', "w") as checkpoint:
+        json.dump(data, checkpoint)
+
+def load_checkpoint():
+    try:
+        with open('./checkpoint.txt', "r") as checkpoint:
+            checkpoint = json.load(checkpoint)
+        return (int(checkpoint["iteration"]), int(checkpoint["true_prediction"]) )
+    except:
+        return (0,0)
+
 
 def main():
     # Load the test dataset
@@ -64,16 +83,16 @@ def main():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     # Handler for error logs
-    error_handler = logging.FileHandler(f'log/error.log', mode="w")
+    error_handler = logging.FileHandler(f'log/error.log', mode="a")
     error_handler.setLevel(logging.ERROR)
     error_handler.addFilter(lambda record: record.levelno == logging.ERROR) 
     # Handler for miss logs
-    miss_handler = logging.FileHandler(f'log/miss.log', mode="w")
+    miss_handler = logging.FileHandler(f'log/miss.log', mode="a")
     miss_handler.setLevel(logging.WARNING)
     miss_handler.addFilter(lambda record: record.levelno == logging.WARNING)
 
     # Handler for info logs
-    info_handler = logging.FileHandler(f'log/success.log', mode="w")
+    info_handler = logging.FileHandler(f'log/success.log', mode="a")
     info_handler.setLevel(logging.INFO)
     info_handler.addFilter(lambda record: record.levelno == logging.INFO)
 
@@ -81,12 +100,11 @@ def main():
     logger.addHandler(error_handler)
     logger.addHandler(miss_handler)
     logger.addHandler(info_handler)
-    # Define the model and version
-    version = input("Enter the version: ") 
-    model = input("Enter the model name: ")
+    # Define the Orchestrator and version
+    version = "Debate" #input("Enter the version: ") 
+    Orchestrator = input("Enter the Orchestrator name: ")
 
     # Initialize counters
-    true_prediction = 0
     miss = 0
     
     matrix = pd.DataFrame(data=0,columns=["MonCal.Interpret", "MonCal.Facts.RF", "MonCal.Facts.DC", "BDS.Emotions", "MotOrient.Value", "MotOrient.SelfEff", "DomKldg", "StratKldg", "CTRL"],
@@ -95,12 +113,13 @@ def main():
     # Initialize the energy log
     energy_log = {"Time": [], "Power": [], "running": True}
     # Start the CPU power monitoring in a separate thread
-    monitor_thread = threading.Thread(target=monitor_cpu_power, args=(energy_log,))
+    monitor_thread = threading.Thread(target=monitor_power, args=(energy_log,))
     monitor_thread.start()
     print("Début du programme...")
     # Iterate through the test dataset and evaluate predictions
     start = time.time()
-    for comment, tag in zip(comments_test["content"][0:5], comments_test["tag"][0:5]):
+    i, true_prediction = load_checkpoint()
+    for comment, tag in zip(comments_test["content"][i:], comments_test["tag"][i:]):
 
         response = graph.invoke({"turn":0,
                   "comment": comment,
@@ -118,6 +137,8 @@ def main():
         else:
             logger.warning(f"Error: {predicted_class} is not in the matrix")
             miss += 1
+        i += 1    
+        save_checkpoint(i,true_prediction)
     end = time.time()
 
     energy_log["running"] = False  
@@ -132,7 +153,7 @@ def main():
     energy_kwh = energy_log["Power"][-1] - energy_log["Power"][0] / 3.6e6  # Convert to kWh
     #export the matrix as excel file
     filename = "excel/matrix_cohen.xlsx"
-    sheet_name = f"{model}_{version}"
+    sheet_name = f"{Orchestrator}_{version}"
 
     matrix["kappa"] = kappa
     # Create the file if it does not exist
@@ -144,10 +165,10 @@ def main():
         matrix.to_excel(writer, sheet_name=sheet_name)
 
     # Performance
-    performance.loc[(model, version), "Accuracy"] = round(accuracy, 2)
-    performance.loc[(model, version), "Kappa"] = round(kappa, 2)
-    performance.loc[(model, version), "Energy(kWh)"] = round(energy_kwh, 5)
-    performance.loc[(model, version), "Time"] = convert_seconds(time_execution)
+    performance.loc[(Orchestrator, version), "Accuracy"] = round(accuracy, 2)
+    performance.loc[(Orchestrator, version), "Kappa"] = round(kappa, 2)
+    performance.loc[(Orchestrator, version), "Energy(kWh)"] = round(energy_kwh, 5)
+    performance.loc[(Orchestrator, version), "Time"] = convert_seconds(time_execution)
     performance.to_excel("excel/performance.xlsx")
     # Log the results
     print(f"Miss: {miss}")
@@ -161,8 +182,6 @@ def main():
     logger.info("Time(min) = %f", time_execution/60)
     logger.info(f"Miss: {miss}")
 
-    print("Time: ",energy_log["Time"])
-    print("Power: ",energy_log["Power"])
 
 if __name__ == "__main__":
     main()

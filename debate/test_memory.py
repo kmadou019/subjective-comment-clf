@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
 
-from langchain_ollama.llms import OllamaLLM
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationChain
+import json
 
-name_orchestrator = "mistral"
-model_orchestrator =  OllamaLLM(model=name_orchestrator)
-memory_orchestrator = ConversationBufferMemory()
-orchestrator = ConversationChain(llm=model_orchestrator, memory = memory_orchestrator)
+def save_checkpoint(iteration, true_prediction):
+    data = {
+        "iteration": iteration,
+        "true_prediction": true_prediction
+    }
+    with open('./checkpoint.txt', "w") as checkpoint:
+        json.dump(data, checkpoint)
 
-response = orchestrator.invoke({"input" : "What is the capital of France ?"})
+def load_checkpoint():
+    try:
+        with open('./checkpoint.txt', "r") as checkpoint:
+            checkpoint = json.load(checkpoint)
+        return (int(checkpoint["iteration"]), int(checkpoint["true_prediction"]) )
+    except:
+        return (0,0)
 
-print("response 1:", response)
 
-response = orchestrator.invoke({"input" : "What was the previous question ?"})
-
-print("response 2:", response)
-
+def main():
+    #save_checkpoint(8,15)
+    print(load_checkpoint())
+if __name__ == "__main__":
+    main()
