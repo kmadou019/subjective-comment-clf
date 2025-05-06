@@ -12,7 +12,7 @@ MAX_TURN = 4
 #Define agents
 name_orchestrator = "mistral"
 name_debater1 = "phi4"
-name_debater2 = "mistral"
+name_debater2 = "llama3.3"
 # Initialize the LLMs
 model_orchestrator =  OllamaLLM(model=name_orchestrator)
 model_debater1 = OllamaLLM(model=name_debater1)
@@ -29,7 +29,7 @@ debater2     = ConversationChain(llm=model_debater2,     memory = memory_debater
 #Intialize the log file
 log_file = "debate_log.txt"
 logger = logging.getLogger(__name__)
-handler = logging.FileHandler(log_file, mode="w")
+handler = logging.FileHandler(log_file, mode="a")
 logger.setLevel(logging.DEBUG)
 
 handler.setLevel(logging.INFO)
@@ -39,9 +39,8 @@ logger.addHandler(handler)
 def extract_json(text):
     start = text.find("{")
     end = text.find("}")
-    print(text)
     text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
-    print("?",text)
+    print(text)
     return ast.literal_eval(text)
 
 class State(TypedDict):
@@ -60,23 +59,23 @@ def Orchestrator(state: State):
 
         il doit être classifier dans l'une des neufs classes suivantes dont la description est également fournie : 
 
-        1.MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
+        MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
 
-        2.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
+        MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
 
-        3.MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
+        MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
 
-        4.BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
+        BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
 
-        5.MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
+        MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
 
-        6.MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
+        MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
 
-        7.DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
+        DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
 
-        8.StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
+        StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
 
-        9.CTRL : Commentaires sur les comportements futurs des apprenants.
+        CTRL : Commentaires sur les comportements futurs des apprenants.
 
         Ton but sera de vérifier s'il y a un consensus entre les debatteurs.
 
@@ -95,13 +94,13 @@ def Orchestrator(state: State):
                 
         {{
             "turn": {state['turn']},
-            "agreement": "True/False", (whithout quotes)
+            "agreement": "True/False",
             "summary": "..."
         }}
 
         """
         response = extract_json(orchestrator.invoke(prompt)["response"])
-        logger.info(f"Résumé du débat par l'orchestrateur ({name_orchestrator}) : {response['summary']}")
+        #logger.info(f"Résumé du débat par l'orchestrateur ({name_orchestrator}) : {response['summary']}")
         logger.info("\n")
         return {"agreement": response["agreement"], "turn": state["turn"]+1}
 
@@ -112,23 +111,23 @@ def Debater1(state: State):
 
         Tu disposes des classes suivantes, chacune avec sa définition:
 
-        1.MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
+        MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
 
-        2.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
+        MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
 
-        3.MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
+        MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
 
-        4.BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
+        BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
 
-        5.MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
+        MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
 
-        6.MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
+        MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
 
-        7.DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
+        DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
 
-        8.StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
+        StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
 
-        9.CTRL : Commentaires sur les comportements futurs des apprenants.
+        CTRL : Commentaires sur les comportements futurs des apprenants.
 
         Classifie ce commentaire dans l'une des neufs classes ci-dessus en donnant la raison pour laquelle tu as classifié dans telle classe :
 
@@ -143,25 +142,31 @@ def Debater1(state: State):
         """
 
     else:
-        prompt = f"""
-        Dans le tour précédant du debat, tu as donné la classe suivante : 
+       prompt = f"""
+        Dans le tour précédent du débat, tu as donné la classe suivante : 
         {state['debater1_response']["classe"]}
 
-        Cependant, le second classificateur n'est pas d'acccord avec toi, il a plutot donné cette reponse : 
+        Cependant, le second classificateur a exprimé un désaccord. Voici sa réponse : 
         {state['debater2_response']}
 
-        Sur base de sa reponse, pourrais-tu ameliorer ta reponse. 
+        Réexamine ta position à la lumière de sa justification. 
 
-        Veuille à me fournir ta reponse dans le format json suivant :
+        Sois confiant dans ton raisonnement initial, mais reste **ouvert à la discussion** : si l’autre classificateur apporte des **arguments solides** ou met en lumière une **faiblesse réelle** dans ta réponse, n’hésite pas à adapter ta position.
+
+        Ne modifie pas ta réponse sans raison valable, mais sois prêt à reconnaître une meilleure justification si elle est clairement fondée.
+
+        Quelle que soit ta décision — maintien ou changement de classe — explique ton raisonnement de manière claire et rigoureuse.
+
+        Ta réponse doit être fournie dans le format JSON suivant :
         {{
-            "classe" : "...",
+            "classe": "...",
             "justification": "..."
         }}
-        
-        """
+"""
+
 
     response = extract_json(debater1.invoke(prompt)["response"])
-    logger.info(f"Réponse du classificateur 1 ({name_debater1}) : {response}")
+    logger.info(f"Réponse du classificateur 1 ({name_debater1}) : {response}\n")
     return {"debater1_response": response }
 
 def Debater2(state: State):
@@ -171,23 +176,23 @@ def Debater2(state: State):
 
         Tu disposes des classes suivantes, chacune avec sa définition:
 
-        1.MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
+        MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
 
-        2.MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
+        MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
 
-        3.MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
+        MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
 
-        4.BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
+        BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
 
-        5.MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
+        MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
 
-        6.MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
+        MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
 
-        7.DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
+        DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
 
-        8.StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
+        StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
 
-        9.CTRL : Commentaires sur les comportements futurs des apprenants.
+        CTRL : Commentaires sur les comportements futurs des apprenants.
 
         Classifie ce commentaire dans l'une des neufs classes ci-dessus en donnant la raison pour laquelle tu as classifié dans telle classe :
 
@@ -202,25 +207,34 @@ def Debater2(state: State):
         """
 
     else:
-        prompt = f"""
-        Dans le tour précédant du debat, tu as donné la classe suivante : 
+      prompt = f"""
+        Dans le tour précédent du débat, tu as donné la classe suivante : 
         {state['debater2_response']["classe"]}
 
-        Cependant, le second classificateur n'est pas d'acccord avec toi, il a plutot donné cette reponse : 
+        Cependant, le second classificateur a exprimé un désaccord. Voici sa réponse : 
         {state['debater1_response']}
 
-        Sur base de sa reponse, pourrais-tu ameliorer ta reponse. 
+        Réexamine brièvement ta propre réponse à la lumière de cet avis contradictoire.
 
-        Veuille à me fournir ta reponse dans le format json suivant :
+        Attention : 
+        Tu dois rester **ferme et confiant** dans ta décision initiale, sauf si les arguments adverses sont **clairement fondés et plus convaincants que les tiens**.
+
+        Tu ne dois **pas changer d’avis à la légère**. Un changement de réponse ne doit se produire que si :
+        - L’argumentation adverse est **factuellement correcte**,
+        - Elle met en évidence une **erreur explicite** ou une **faiblesse importante** dans ta propre justification.
+
+        Dans tous les cas, justifie soigneusement ta décision, en soulignant **pourquoi tu maintiens ou modifies ta position.**
+
+        Ta réponse doit être au format JSON suivant :
         {{
-            "classe" : "...",
+            "classe": "...",
             "justification": "..."
         }}
-        
         """
 
+
     response = extract_json(debater2.invoke(prompt)["response"])
-    logger.info(f"Réponse du classificateur 2 ({name_debater2}) : {response}")
+    logger.info(f"Réponse du classificateur 2 ({name_debater2}) : {response}\n")
     return {"debater2_response": response }
 
 def end(state: State):
@@ -259,7 +273,7 @@ def last_action(state: State):
   
         """
     final_evaluation = extract_json(orchestrator.invoke(prompt)["response"])
-    logger.info(f"Résumé final du débat par l'orchestrateur ({name_orchestrator}) : {final_evaluation}")
+    logger.info(f"Résumé final du débat par l'orchestrateur ({name_orchestrator}) : {final_evaluation}\n")
     return {"agreement": True, "turn": state['turn'], "final_evaluation": final_evaluation}
 
 
