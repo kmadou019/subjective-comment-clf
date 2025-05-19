@@ -93,7 +93,7 @@ def Orchestrator(state: State):
         }}
 
         """
-        response = extract_json(orchestrator.invoke(prompt)["response"])
+        response = extract_json(orchestrator.invoke(prompt))
         #logger.info(f"Résumé du débat par l'orchestrateur ({name_orchestrator}) : {response['summary']}")
         logger.info("\n")
         return {"agreement": response["agreement"], "turn": state["turn"]+1}
@@ -158,8 +158,7 @@ def Debater1(state: State):
         }}
 """
 
-
-    response = extract_json(debater1.invoke(prompt)["response"])
+    response = extract_json(debater1.invoke(prompt))
     logger.info(f"Réponse du classificateur 1 ({name_debater1}) : {response}\n")
     return {"debater1_response": response }
 
@@ -227,7 +226,7 @@ def Debater2(state: State):
         """
 
 
-    response = extract_json(debater2.invoke(prompt)["response"])
+    response = extract_json(debater2.invoke(prompt))
     logger.info(f"Réponse du classificateur 2 ({name_debater2}) : {response}\n")
     return {"debater2_response": response }
 
@@ -253,7 +252,7 @@ def END_fnc(state: State):
         }}
   
         """
-        final_evaluation = extract_json(orchestrator.invoke(prompt)["response"])
+        final_evaluation = extract_json(orchestrator.invoke(prompt))
         logger.info(f"Résumé final du débat par l'orchestrateur ({name_orchestrator}) : {final_evaluation}\n")
         return {"agreement": True, "turn": state['turn'], "final_evaluation": final_evaluation}
 
