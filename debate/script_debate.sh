@@ -3,4 +3,4 @@
 source ../mon_env/bin/activate
 ollama serve & >/dev/null 2>&1
 
-echo -e "mistral" |./debate.py
+echo -e "mistral\nmistral" |./debate.py
