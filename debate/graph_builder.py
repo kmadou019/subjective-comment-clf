@@ -5,17 +5,17 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 from typing_extensions import TypedDict
 import logging
-import json
 import ast
+from rag.graph_builder import graph as RAG
 MAX_TURN = 4
 
 #Define agents
-name_orchestrator = "mistral"
+name_orchestrator = "phi4"
 name_debater1 = "phi4"
-name_debater2 = "llama3.3"
+name_debater2 = "phi4"
 # Initialize the LLMs
 model_orchestrator =  OllamaLLM(model=name_orchestrator)
-model_debater1 = OllamaLLM(model=name_debater1)
+model_debater1 = OllamaLLM(model=name_debater1, temperature=0.95)
 model_debater2 = OllamaLLM(model=name_debater2)
 #Intitialize memories
 memory_orchestrator = ConversationBufferMemory()
@@ -40,7 +40,6 @@ def extract_json(text):
     start = text.find("{")
     end = text.find("}")
     text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
-    print(text)
     return ast.literal_eval(text)
 
 class State(TypedDict):
@@ -100,49 +99,17 @@ def Orchestrator(state: State):
 
         """
         response = extract_json(orchestrator.invoke(prompt)["response"])
-        #logger.info(f"Résumé du débat par l'orchestrateur ({name_orchestrator}) : {response['summary']}")
+        print("Orchestrator : ", response)
         logger.info("\n")
         return {"agreement": response["agreement"], "turn": state["turn"]+1}
 
 def Debater1(state: State):
+    response = ""
     if state['turn'] == 1:
-        prompt = f"""
-        Tu es un expert en classification de commentaires, tu es engagé dans un debat avec un autre classificateur dans le but de trouver la meilleure classification.
-
-        Tu disposes des classes suivantes, chacune avec sa définition:
-
-        MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
-
-        MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
-
-        MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
-
-        BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
-
-        MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
-
-        MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
-
-        DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
-
-        StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
-
-        CTRL : Commentaires sur les comportements futurs des apprenants.
-
-        Classifie ce commentaire dans l'une des neufs classes ci-dessus en donnant la raison pour laquelle tu as classifié dans telle classe :
-
-        {state['comment']}
-
-        Veuille à me fournir ta reponse dans le format json suivant :
-        {{
-            "classe" : "...",
-            "justification": "..."
-        }}
-        
-        """
-
+        response = extract_json(RAG.invoke({"comment":state["comment"], "llm" : name_debater1})["predictedClass"])
+        logger.info(f"Réponse du classificateur 1 ({name_debater1}) (RAG) : {response}\n")
     else:
-       prompt = f"""
+        prompt = f"""
         Dans le tour précédent du débat, tu as donné la classe suivante : 
         {state['debater1_response']["classe"]}
 
@@ -162,52 +129,21 @@ def Debater1(state: State):
             "classe": "...",
             "justification": "..."
         }}
-"""
-
-
-    response = extract_json(debater1.invoke(prompt)["response"])
-    logger.info(f"Réponse du classificateur 1 ({name_debater1}) : {response}\n")
+        Soit bref dans ta justification.
+        """
+        response = extract_json(debater1.invoke(prompt)["response"])
+        logger.info(f"Réponse du classificateur 1 ({name_debater1}) : {response}\n")
+       
+    print("Debator 1 :", response)
     return {"debater1_response": response }
 
 def Debater2(state: State):
+    response = ""
     if state['turn'] == 1:
-        prompt = f"""
-        Tu es un expert en classification de commentaires, tu es engagé dans un debat avec un autre classificateur dans le but de trouver la meilleure classification.
-
-        Tu disposes des classes suivantes, chacune avec sa définition:
-
-        MonCal.Interpret : Interprétations des résultats du test allant au-delà des observations factuelles, reflétant les interprétations subjectives des étudiants sur leur performance.
-
-        MonCal.Facts.RF : Observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes.
-
-        MonCal.Facts.DC : Observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées.
-
-        BDS.Emotions : Commentaires exprimant les émotions ressenties par l’étudiant pendant et après le test.
-
-        MotOrient.Value : Commentaires sur l'intérêt des étudiants pour les types de tests et leur valeur perçue pour l’apprentissage.
-
-        MotOrient.SelfEff : Commentaires sur la confiance et l’auto-efficacité des étudiants.
-
-        DomKldg : Commentaires identifiant les concepts/disciplines manquants et leur degré d’acquisition.
-
-        StratKldg : Commentaires sur les stratégies d’apprentissage utilisées pendant le test et l’analyse du comportement des étudiants.
-
-        CTRL : Commentaires sur les comportements futurs des apprenants.
-
-        Classifie ce commentaire dans l'une des neufs classes ci-dessus en donnant la raison pour laquelle tu as classifié dans telle classe :
-
-        {state['comment']}
-
-        Veuille à me fournir ta reponse dans le format json suivant :
-        {{
-            "classe" : "...",
-            "justification": "..."
-        }}
-        
-        """
-
+        response = extract_json(RAG.invoke({"comment":state["comment"], "llm": name_debater2})["predictedClass"])
+        logger.info(f"Réponse du classificateur 2 ({name_debater2}) (RAG) : {response}\n")
     else:
-      prompt = f"""
+        prompt = f"""
         Dans le tour précédent du débat, tu as donné la classe suivante : 
         {state['debater2_response']["classe"]}
 
@@ -230,11 +166,12 @@ def Debater2(state: State):
             "classe": "...",
             "justification": "..."
         }}
+        Soit bref dans ta justification.
+
         """
-
-
-    response = extract_json(debater2.invoke(prompt)["response"])
-    logger.info(f"Réponse du classificateur 2 ({name_debater2}) : {response}\n")
+        response = extract_json(debater2.invoke(prompt)["response"])
+        logger.info(f"Réponse du classificateur 2 ({name_debater2}) : {response}\n")
+    print("Debator 2 :", response)
     return {"debater2_response": response }
 
 def end(state: State):
@@ -274,6 +211,9 @@ def last_action(state: State):
         """
     final_evaluation = extract_json(orchestrator.invoke(prompt)["response"])
     logger.info(f"Résumé final du débat par l'orchestrateur ({name_orchestrator}) : {final_evaluation}\n")
+    #clean buffer
+    for memory in [memory_orchestrator, memory_debater1, memory_debater2]:
+        memory.clear()
     return {"agreement": True, "turn": state['turn'], "final_evaluation": final_evaluation}
 
 

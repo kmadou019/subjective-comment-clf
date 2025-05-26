@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from graph_builder import graph
+from debate.graph_builder import graph
 import pandas as pd
 import numpy as np
 import logging
@@ -76,23 +76,29 @@ def load_checkpoint():
 
 def main():
     # Load the test dataset
-    comments_test = pd.read_csv("../rag/data/test.csv")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(current_dir, "..", "rag", "data", "test.csv")
+    comments_test = pd.read_csv(csv_path)
+
     performance = read_excel_or_create("excel/performance.xlsx")
 
     # Create a dedicated logger for this script
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     # Handler for error logs
-    error_handler = logging.FileHandler(f'log/error.log', mode="a")
+    error_path    = os.path.join(current_dir, "log", "error.log")
+    error_handler = logging.FileHandler(error_path, mode="a")
     error_handler.setLevel(logging.ERROR)
     error_handler.addFilter(lambda record: record.levelno == logging.ERROR) 
     # Handler for miss logs
-    miss_handler = logging.FileHandler(f'log/miss.log', mode="a")
+    miss_path    = os.path.join(current_dir, "log", "miss.log")
+    miss_handler = logging.FileHandler(miss_path, mode="a")
     miss_handler.setLevel(logging.WARNING)
     miss_handler.addFilter(lambda record: record.levelno == logging.WARNING)
 
     # Handler for info logs
-    info_handler = logging.FileHandler(f'log/success.log', mode="a")
+    success_path    = os.path.join(current_dir, "log", "success.log")
+    info_handler = logging.FileHandler(success_path, mode="a")
     info_handler.setLevel(logging.INFO)
     info_handler.addFilter(lambda record: record.levelno == logging.INFO)
 
