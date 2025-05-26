@@ -7,15 +7,13 @@ from langgraph.graph import START, StateGraph
 from typing_extensions import List, TypedDict
 import pandas as pd
 from langchain_ollama.llms import OllamaLLM
-
-# Define the LLM
-model = input("Enter the model name: ")
-llm = OllamaLLM(model=model)
+import os
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)
 #Load the dataset
-comments = pd.read_csv("data/comments.csv")
+data_path = os.path.join(os.path.dirname(__file__), 'data', 'comments.csv')
+comments = pd.read_csv(data_path)
 # Define prompt for classification
 template = """
 Tu es un expert en classification de commentaires.
@@ -49,9 +47,13 @@ Classifie ce commentaire :
 {comment}
 
 Format de sortie :
-<classe>
+{{
+    "classe": "...",
+    "justification": "..."
+}}
 
-(sans explication : ne donner AUCUNE explication de ta reponse, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus .
+N'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus .
+De plus, NE PRODUIT RIEN QUI NE SOIT PAS CONFORME AU FORMAT DE SORTIE.
 """
 
 prompt = PromptTemplate(
@@ -65,6 +67,7 @@ class State(TypedDict):
     context       : List[Document]
     initialClass  : str
     predictedClass: str
+    llm           : str
 
 # Define application steps
 def retrieve(state: State):
@@ -73,12 +76,17 @@ def retrieve(state: State):
 
 
 def generate(state: State):
+    # Define the LLM
+    model = state["llm"]
+    llm = OllamaLLM(model=model)
     #To have something like : 'je me sens nul ':BDS.Emotions 
     context = "\n".join(f""" '{ctx.page_content}':{comments["tag"][int(ctx.id)]} """ for ctx in state["context"])
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
     response = llm.invoke(formatted_prompt)
     response = ''.join(c for c in response.strip() if c not in "<>'")
     return {"predictedClass": response}
+
+
 
 
 # Compile application

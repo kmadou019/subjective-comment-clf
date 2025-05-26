@@ -9,7 +9,15 @@ import subprocess
 import time
 import re
 import threading
+import ast
 
+
+def extract_json(text):
+    start = text.find("{")
+    end = text.find("}")
+    text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
+    print(text)
+    return ast.literal_eval(text)
 
 def get_cpu_power():
     """Récupère la puissance consommée par le CPU en watts"""
@@ -85,6 +93,7 @@ def main():
     # Define the model and version
     version = input("Enter the version: ") 
     model = input("Enter the model name: ")
+    llm = input("Enter the llm name: ")
 
     # Initialize counters
     true_prediction = 0
@@ -102,8 +111,8 @@ def main():
     # Iterate through the test dataset and evaluate predictions
     start = time.time()
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
-        response = graph.invoke({"comment": comment})
-        predicted_class = re.search(r"^\S+", response["predictedClass"]).group(0)
+        response = graph.invoke({"comment": comment, "llm" : llm})
+        predicted_class = extract_json(response["predictedClass"])["classe"]
         if predicted_class == tag:
             true_prediction += 1
         else:
