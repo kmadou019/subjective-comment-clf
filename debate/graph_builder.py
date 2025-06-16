@@ -18,13 +18,7 @@ model_orchestrator =  OllamaLLM(model=name_orchestrator)
 model_debater1 = OllamaLLM(model=name_debater1, temperature=0.95)
 model_debater2 = OllamaLLM(model=name_debater2)
 #Intitialize memories
-memory_orchestrator = ConversationBufferMemory()
-memory_debater1     = ConversationBufferMemory()
-memory_debater2     = ConversationBufferMemory()
 
-orchestrator = ConversationChain(llm=model_orchestrator, memory = memory_orchestrator)
-debater1     = ConversationChain(llm=model_debater1,     memory = memory_debater1)
-debater2     = ConversationChain(llm=model_debater2,     memory = memory_debater2)
 
 #Intialize the log file
 log_file = "debate_log.txt"
@@ -79,7 +73,7 @@ def Orchestrator(state: State):
         Ton but sera de vérifier s'il y a un consensus entre les debatteurs.
 
         """
-        orchestrator.invoke(prompt)["response"]
+        orchestrator.invoke(prompt)
         return {"agreement": False, "turn": state['turn'] + 1}
     else:
         prompt = f"""
@@ -175,27 +169,14 @@ def Debater2(state: State):
     return {"debater2_response": response }
 
 def end(state: State):
-    if state['agreement'] == True or (state['turn'] == MAX_TURN and state['agreement'] == False):
-        return "last_action"
+    if state['agreement'] == True :
+        return "END"
+    if state['turn'] == MAX_TURN and state['agreement'] == False:
+        return "RagAgent"
     else:
         return ["debater1", "debater2"]
 
-def last_action(state: State):
-    if state['turn'] == MAX_TURN and state['agreement'] == False:
-        prompt = f"""
-        Voici les avis finaux des classificateurs :
-        classificateur 1 : {state['debater1_response']}.
-        classificateur 2 : {state['debater2_response']}.
-        Vous êtes l'orchestrateur.
-        Le débat a atteint le nombre maximal de tours ({MAX_TURN}).
-        Résumez le débat et donnez une conclusion.
-        Si consensus n'a pas été atteint entre les classificateurs alors tranche entre eux et donne la bonne classe et une seule en produisant la justification adéquate.
-        Veuille à me fournir ta reponse dans le format json suivant :
-        {{
-            "classe" : "...",
-            "justification": "..."
-        }}
-        """
+def END_fnc(state: State):
     if state['agreement'] == True:
         prompt = f"""
         Voici les avis finaux des classificateurs :
@@ -216,18 +197,23 @@ def last_action(state: State):
         memory.clear()
     return {"agreement": True, "turn": state['turn'], "final_evaluation": final_evaluation}
 
+def RagAgent(state : State):
+    response = RAG.invoke(state["comment"])
+    final_evaluation = extract_json(response)
+    logger.info("RAG : ", response)
+    return {"final_evaluation": final_evaluation}
 
 graph_builder = StateGraph(State)
 graph_builder.add_node("Orchestrator", Orchestrator)
 graph_builder.add_node("debater1", Debater1)
 graph_builder.add_node("debater2", Debater2)
-graph_builder.add_node("last_action", last_action)
+graph_builder.add_node("RagAgent", RagAgent)
+graph_builder.add_node("END", END_fnc)
 
 graph_builder.add_edge(START, "Orchestrator")
 graph_builder.add_edge("debater1", "Orchestrator")
 graph_builder.add_edge("debater2", "Orchestrator")
-graph_builder.add_edge("last_action", END)
-graph_builder.add_conditional_edges("Orchestrator", end,["debater1","debater2","last_action"])
+graph_builder.add_conditional_edges("Orchestrator", end,["debater1","debater2", "END", "RagAgent"])
 graph = graph_builder.compile()
 
 if __name__=="__main__":
