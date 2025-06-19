@@ -10,13 +10,13 @@ from rag.graph_builder import graph as RAG
 MAX_TURN = 4
 
 #Define agents
-name_orchestrator = "phi4"
+name_orchestrator = "mistral"
 name_debater1 = "phi4"
-name_debater2 = "phi4"
+name_debater2 = "llama3.3"
 # Initialize the LLMs
-model_orchestrator =  OllamaLLM(model=name_orchestrator)
-model_debater1 = OllamaLLM(model=name_debater1, temperature=0.95)
-model_debater2 = OllamaLLM(model=name_debater2)
+orchestrator =  OllamaLLM(model=name_orchestrator)
+debater1 = OllamaLLM(model=name_debater1)
+debater2 = OllamaLLM(model=name_debater2)
 #Intitialize memories
 
 
@@ -31,6 +31,7 @@ handler.addFilter(lambda record: record.levelno == logging.INFO)
 logger.addHandler(handler)
 
 def extract_json(text):
+    print(text)
     start = text.find("{")
     end = text.find("}")
     text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
@@ -92,7 +93,7 @@ def Orchestrator(state: State):
         }}
 
         """
-        response = extract_json(orchestrator.invoke(prompt)["response"])
+        response = extract_json(orchestrator.invoke(prompt))
         print("Orchestrator : ", response)
         logger.info("\n")
         return {"agreement": response["agreement"], "turn": state["turn"]+1}
@@ -125,7 +126,7 @@ def Debater1(state: State):
         }}
         Soit bref dans ta justification.
         """
-        response = extract_json(debater1.invoke(prompt)["response"])
+        response = extract_json(debater1.invoke(prompt))
         logger.info(f"Réponse du classificateur 1 ({name_debater1}) : {response}\n")
        
     print("Debator 1 :", response)
@@ -163,20 +164,34 @@ def Debater2(state: State):
         Soit bref dans ta justification.
 
         """
-        response = extract_json(debater2.invoke(prompt)["response"])
+        response = extract_json(debater2.invoke(prompt))
         logger.info(f"Réponse du classificateur 2 ({name_debater2}) : {response}\n")
     print("Debator 2 :", response)
     return {"debater2_response": response }
 
 def end(state: State):
-    if state['agreement'] == True :
+    if state['agreement'] == True or (state['turn'] == MAX_TURN and state['agreement'] == False):
         return "END"
-    if state['turn'] == MAX_TURN and state['agreement'] == False:
-        return "RagAgent"
     else:
         return ["debater1", "debater2"]
 
+
 def END_fnc(state: State):
+    if state['turn'] == MAX_TURN and state['agreement'] == False:
+        prompt = f"""
+        Voici les avis finaux des classificateurs :
+        classificateur 1 : {state['debater1_response']}.
+        classificateur 2 : {state['debater2_response']}.
+        Vous êtes l'orchestrateur.
+        Le débat a atteint le nombre maximal de tours ({MAX_TURN}).
+        Résumez le débat et donnez une conclusion.
+        Si consensus n'a pas été atteint entre les classificateurs alors tranche entre eux et donne la bonne classe et une seule en produisant la justification adéquate.
+        Veuille à me fournir ta reponse dans le format json suivant :
+        {{
+            "classe" : "...",
+            "justification": "..."
+        }}
+        """
     if state['agreement'] == True:
         prompt = f"""
         Voici les avis finaux des classificateurs :
@@ -190,30 +205,21 @@ def END_fnc(state: State):
         }}
   
         """
-    final_evaluation = extract_json(orchestrator.invoke(prompt)["response"])
+    final_evaluation = extract_json(orchestrator.invoke(prompt))
     logger.info(f"Résumé final du débat par l'orchestrateur ({name_orchestrator}) : {final_evaluation}\n")
     #clean buffer
-    for memory in [memory_orchestrator, memory_debater1, memory_debater2]:
-        memory.clear()
     return {"agreement": True, "turn": state['turn'], "final_evaluation": final_evaluation}
-
-def RagAgent(state : State):
-    response = RAG.invoke(state["comment"])
-    final_evaluation = extract_json(response)
-    logger.info("RAG : ", response)
-    return {"final_evaluation": final_evaluation}
 
 graph_builder = StateGraph(State)
 graph_builder.add_node("Orchestrator", Orchestrator)
 graph_builder.add_node("debater1", Debater1)
 graph_builder.add_node("debater2", Debater2)
-graph_builder.add_node("RagAgent", RagAgent)
 graph_builder.add_node("END", END_fnc)
 
 graph_builder.add_edge(START, "Orchestrator")
 graph_builder.add_edge("debater1", "Orchestrator")
 graph_builder.add_edge("debater2", "Orchestrator")
-graph_builder.add_conditional_edges("Orchestrator", end,["debater1","debater2", "END", "RagAgent"])
+graph_builder.add_conditional_edges("Orchestrator", end,["debater1","debater2", "END"])
 graph = graph_builder.compile()
 
 if __name__=="__main__":

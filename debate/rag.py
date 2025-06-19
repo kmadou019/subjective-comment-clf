@@ -8,9 +8,7 @@ from typing_extensions import List, TypedDict
 import pandas as pd
 from langchain_ollama.llms import OllamaLLM
 
-# Define the LLM
-model = input("Enter the model name: ")
-llm = OllamaLLM(model=model)
+
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)
@@ -68,6 +66,7 @@ class State(TypedDict):
     context       : List[Document]
     initialClass  : str
     predictedClass: str
+    llm           : str
 
 # Define application steps
 def retrieve(state: State):
@@ -77,6 +76,7 @@ def retrieve(state: State):
 
 def generate(state: State):
     #To have something like : 'je me sens nul ':BDS.Emotions 
+    llm = OllamaLLM(model=state["llm"])
     context = "\n".join(f""" '{ctx.page_content}':{comments["tag"][int(ctx.id)]} """ for ctx in state["context"])
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
     response = llm.invoke(formatted_prompt)
