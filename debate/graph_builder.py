@@ -11,9 +11,9 @@ from rag.graph_builder import graph as RAG
 MAX_TURN = 4
 
 # Define agents
-name_orchestrator = "phi4"
-name_debater1 = "phi4"
-name_debater2 = "phi4"
+name_orchestrator = "llama3.3"
+name_debater1 =     "llama3.3"
+name_debater2 =     "llama3.3"
 
 # Initialize the LLMs
 orchestrator_llm = OllamaLLM(model=name_orchestrator)
