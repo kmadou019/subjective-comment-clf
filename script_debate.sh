@@ -3,7 +3,7 @@
 source mon_env/bin/activate
 ollama serve &>/dev/null &
 
-rm -f debate_log.txt checkpoint.txt debate/log/*
+#rm -f debate_log.txt checkpoint.txt debate/log/*
 
 # Nombre max de tentatives (optionnel, sinon boucle infinie)
 MAX_RETRIES=200
