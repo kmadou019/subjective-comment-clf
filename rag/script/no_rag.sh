@@ -3,8 +3,8 @@
 #OAR --stdout log/output.txt
 #OAR --stderr log/error.txt
 #OAR -l /host=1/gpu=4,walltime=7:0:0
-cd ..
-source mon_env/bin/activate
+cd ../..
+source ../mon_env/bin/activate
 ollama serve & >/dev/null2>&1
 echo -e "mistral\nmistral_no_rag\nNo_rag\nmistral" |./rag_no.py
 echo -e "phi4\nphi4_no_rag\nNo_rag\nphi4" |./rag_no.py
