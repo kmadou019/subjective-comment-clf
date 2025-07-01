@@ -65,7 +65,10 @@ Classifie ce commentaire :
 {comment}
 
 Format de sortie :
-<classe>
+{{
+    "classe": "...",
+    "justification": "..."
+}}
 
 (sans explication : ne donner AUCUNE explication de ta reponse, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus .
 """

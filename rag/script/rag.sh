@@ -3,7 +3,7 @@
 #OAR --stdout log/output.txt
 #OAR --stderr log/error.txt
 #OAR -l /host=1/gpu=4,walltime=7:0:0
-cd ../..
+cd ../
 source ../mon_env/bin/activate
 ollama serve & >/dev/null 2>&1
 
