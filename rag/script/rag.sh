@@ -7,6 +7,6 @@ cd ../
 source ../mon_env/bin/activate
 ollama serve & >/dev/null 2>&1
 
-echo -e "mistral\nmistral_rag\nRag\nmistral\nmistral" |./rag.py
+#echo -e "mistral\nmistral_rag\nRag\nmistral\nmistral" |./rag.py
 echo -e "phi4\nphi4_rag\nRag\nphi4" |./rag.py
-echo -e "llama3.3\nllama3_3_rag\nRag\nllama3.3" |./rag.py
+#echo -e "llama3.3\nllama3_3_rag\nRag\nllama3.3" |./rag.py
