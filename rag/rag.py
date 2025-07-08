@@ -10,7 +10,7 @@ import time
 import re
 import threading
 import ast
-
+from collections import defaultdict
 
 def extract_json(text):
     start = text.find("{")
@@ -106,6 +106,8 @@ def main():
     energy_log = {"Time": [], "Power": [], "running": True}
     #Initialize the dic for the baseline analysis
     tab_baseline = {"comment_to_clf": [], "comment_in_db" : [], "classe_in_db" : [], "rag_clf":[], "true_clf": []}
+    #Init output
+    output = defaultdict(list)
     # Start the CPU power monitoring in a separate thread
     monitor_thread = threading.Thread(target=monitor_cpu_power, args=(energy_log,))
     monitor_thread.start()
@@ -116,11 +118,15 @@ def main():
         response = graph.invoke({"comment": comment, "llm" : llm})
         predicted_class = extract_json(response["predictedClass"])["classe"]
         #Data for including the baseline in the excel tab
-        tab_baseline["comment_to_clf"].append(comment)
-        tab_baseline["comment_in_db"].append(response["comment_db"])
-        tab_baseline["classe_in_db"].append(response["tag_db"])
-        tab_baseline["rag_clf"].append(predicted_class)
-        tab_baseline["true_clf"].append(tag)
+        if response["tag_db"] != predicted_class:
+            tab_baseline["comment_to_clf"].append(comment)
+            tab_baseline["comment_in_db"].append(response["comment_db"])
+            tab_baseline["classe_in_db"].append(response["tag_db"])
+            tab_baseline["rag_clf"].append(predicted_class)
+            tab_baseline["true_clf"].append(tag)
+        
+        #Output file
+        output[predicted_class].append(comment)
         if predicted_class == tag:
             true_prediction += 1
         else:
@@ -163,7 +169,10 @@ def main():
     performance.to_excel("excel/performance.xlsx")
     #Baseline vs RAG (difference in classif)
     df_baseline = pd.DataFrame(data=tab_baseline)
-    df_baseline.to_excel("excel/baseline_vs_rag.xlsx")
+    df_baseline.to_excel("excel/baseline_vs_rag_diff.xlsx")
+    #Output
+    df_output = pd.DataFrame( dict( [ (k, pd.Series(v)) for k,v in output.items()] ) )
+    df_output.to_excel("excel/output.xlsx")
     # Log the results
     print(f"Miss: {miss}")
     print("Accuracy = ", accuracy)
