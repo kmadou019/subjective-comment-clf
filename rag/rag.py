@@ -66,7 +66,7 @@ def convert_seconds(time):
 def main():
     # Load the test dataset
     comments_test = pd.read_csv("data/test.csv")
-    performance = read_excel_or_create("excel/performance.xlsx")
+    performance = read_excel_or_create("../excel/performance.xlsx")
 
     # Create a dedicated logger for this script
     logger = logging.getLogger(__name__)
@@ -149,7 +149,7 @@ def main():
     # --- Calcul de l'énergie consommée ---
     energy_kwh = energy_log["Power"][-1] - energy_log["Power"][0] / 3.6e6  # Convert to kWh
     #export the matrix as excel file
-    filename = "excel/matrix_cohen.xlsx"
+    filename = "../excel/matrix_cohen.xlsx"
     sheet_name = f"{model}_{version}"
 
     matrix["kappa"] = kappa
@@ -166,13 +166,13 @@ def main():
     performance.loc[(model, version), "Kappa"] = round(kappa, 2)
     performance.loc[(model, version), "Energy(kWh)"] = round(energy_kwh, 5)
     performance.loc[(model, version), "Time"] = convert_seconds(time_execution)
-    performance.to_excel("excel/performance.xlsx")
+    performance.to_excel("../excel/performance.xlsx")
     #Baseline vs RAG (difference in classif)
     df_baseline = pd.DataFrame(data=tab_baseline)
-    df_baseline.to_excel("excel/baseline_vs_rag_diff.xlsx")
+    df_baseline.to_excel("../excel/baseline_vs_rag_diff.xlsx")
     #Output
     df_output = pd.DataFrame( dict( [ (k, pd.Series(v)) for k,v in output.items()] ) )
-    df_output.to_excel("excel/output.xlsx")
+    df_output.to_excel("../excel/output.xlsx")
     # Log the results
     print(f"Miss: {miss}")
     print("Accuracy = ", accuracy)
