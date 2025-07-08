@@ -21,12 +21,12 @@ def extract_json(text):
 
 def get_cpu_power():
     """Récupère la puissance consommée par le CPU en watts"""
-    result = subprocess.run(
-        ["cat", "/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj"],
-        stdout=subprocess.PIPE, text=True
-    )
-    return int(result.stdout.strip())
-
+    #result = subprocess.run(
+    #    ["cat", "/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj"],
+    #    stdout=subprocess.PIPE, text=True
+    #)
+    #return int(result.stdout.strip())
+    return 0
 def monitor_cpu_power(energy_log):
     while energy_log["running"]:
         power = get_cpu_power()
@@ -104,6 +104,8 @@ def main():
     # --- Lancement de la mesure ---
     # Initialize the energy log
     energy_log = {"Time": [], "Power": [], "running": True}
+    #Initialize the dic for the baseline analysis
+    tab_baseline = {"comment_to_clf": [], "comment_in_db" : [], "classe_in_db" : [], "rag_clf":[], "true_clf": []}
     # Start the CPU power monitoring in a separate thread
     monitor_thread = threading.Thread(target=monitor_cpu_power, args=(energy_log,))
     monitor_thread.start()
@@ -113,6 +115,12 @@ def main():
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment, "llm" : llm})
         predicted_class = extract_json(response["predictedClass"])["classe"]
+        #Data for including the baseline in the excel tab
+        tab_baseline["comment_to_clf"].append(comment)
+        tab_baseline["comment_in_db"].append(response["comment_db"])
+        tab_baseline["classe_in_db"].append(response["tag_db"])
+        tab_baseline["rag_clf"].append(predicted_class)
+        tab_baseline["true_clf"].append(tag)
         if predicted_class == tag:
             true_prediction += 1
         else:
@@ -153,6 +161,9 @@ def main():
     performance.loc[(model, version), "Energy(kWh)"] = round(energy_kwh, 5)
     performance.loc[(model, version), "Time"] = convert_seconds(time_execution)
     performance.to_excel("excel/performance.xlsx")
+    #Baseline vs RAG (difference in classif)
+    df_baseline = pd.DataFrame(data=tab_baseline)
+    df_baseline.to_excel("excel/baseline_vs_rag.xlsx")
     # Log the results
     print(f"Miss: {miss}")
     print("Accuracy = ", accuracy)
@@ -164,9 +175,6 @@ def main():
     logger.info("Energy(kWh) = %f", energy_kwh)
     logger.info("Time(min) = %f", time_execution/60)
     logger.info(f"Miss: {miss}")
-
-    print("Time: ",energy_log["Time"])
-    print("Power: ",energy_log["Power"])
 
 if __name__ == "__main__":
     main()

@@ -85,10 +85,12 @@ class State(TypedDict):
     initialClass  : str
     predictedClass: str
     llm           : str
+    comment_db    : str
+    tag_db        : str
 
 # Define application steps
 def retrieve(state: State):
-    retrieved_docs = vector_store.similarity_search(state["comment"], k=10)
+    retrieved_docs = vector_store.similarity_search(state["comment"], k=1)
     return {"context": retrieved_docs}
 
 
@@ -101,7 +103,14 @@ def generate(state: State):
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
     response = llm.invoke(formatted_prompt)
     response = ''.join(c for c in response.strip() if c not in "<>'")
-    return {"predictedClass": response}
+    #Data for including the baseline in the excel tab
+    ctx = state["context"][0]
+    comment_db = ctx.page_content
+    tag_db     = comments["tag"][int(ctx.id)]
+    return {"predictedClass": response,
+            "comment_db"    : comment_db,
+            "tag_db"        : tag_db}
+
 
 
 
