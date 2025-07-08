@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 from graph_builder import graph 
+#from chunker.rag.graph_builder import graph as graphRAG
 import pandas as pd
 import ast
 from Levenshtein import distance
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+import os
+
 
 def compare_chunks(true_chunks, split_chunks):
     if (len(true_chunks) + len(split_chunks) != 0):
@@ -25,18 +30,42 @@ def print_chunks(true_chunk, comment_split):
         print("--------------------------------")
     print("#############################")
   
+def extract_json(text):
+    start = text.find("{")
+    end = text.find("}")
+    text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
+    print(text)
+    return ast.literal_eval(text)
+
 
 def main():
     df = pd.read_csv("../data/comment_chunk_test.csv")
     df["chunks"] = df["chunks"].apply(ast.literal_eval)
-    comments = df["comment"]
+    global_comments = df["comment"]
     true_chunks = df["chunks"]
 
+    data_path = os.path.join(os.path.dirname(__file__), '../../rag/data', 'comments.csv')
+    comments = pd.read_csv(data_path)
+
     sum_F1_s = 0
-    for comment,true_chunk in zip(comments, true_chunks):
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    vector_store = Chroma(collection_name="Comment",persist_directory="../../rag/chroma_db" ,embedding_function=embeddings)
+    for comment,true_chunk in zip(global_comments, true_chunks):
         comment_split = graph.invoke({"comment" : comment})["chunks"]
-        print_chunks(true_chunk, comment_split)
-        sum_F1_s += compare_chunks(true_chunk, comment_split)
+        for chunk in comment_split:
+            #find chunk's categories
+            chunk_in_db = vector_store.similarity_search(chunk, k=1)
+            categorie = comments["tag"][int(chunk_in_db[0].id)]
+            print("chunk",chunk)
+            print("chunk in db",chunk_in_db)
+            print("cat",categorie)
+            #classify all the chunks
+            #categorie_of_chunk = graphRAG.invoke({"comment": comment, "llm" : "phi4"})["classe"]
+
+
+
+        #print_chunks(true_chunk, comment_split)
+        #sum_F1_s += compare_chunks(true_chunk, comment_split)
 
     print('F1-score for rag : ', sum_F1_s)
 

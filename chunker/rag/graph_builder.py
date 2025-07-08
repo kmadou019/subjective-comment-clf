@@ -8,8 +8,8 @@ from typing_extensions import List, TypedDict
 import pandas as pd
 from langchain_ollama.llms import OllamaLLM
 import json
-
-model = "llama3.3"
+import re
+model = "phi4"
 llm = OllamaLLM(model=model)
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -35,7 +35,7 @@ Chaque unité doit exprimer une idée ou information complète et autonome."['La
 
 Les unités doivent être suffisamment courtes pour être utilisées individuellement dans un système de RAG.
 
-Respecte rigoureusement le format de sortie suivant (JSON array) :
+Respecte rigoureusement le format de sortie suivant (array) :
 
 ["unité de sens 1", "unité de sens 2", "unité de sens 3", ...]
 
@@ -55,7 +55,29 @@ class State(TypedDict):
     context     : List[Document]
     chunks      : str
     true_chunks : List[str]
+
+def extract_list(texte):
+    """
+    Extrait la première liste encodée entre crochets depuis un texte (type JSON).
     
+    Args:
+        texte (str): Texte contenant une liste au format JSON.
+        
+    Returns:
+        list: La liste extraite (ou None si échec).
+    """
+    # Cherche le contenu JSON entre crochets (avec chaînes entre guillemets)
+    match = re.search(r'\[.*?\]', texte, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group())
+        except json.JSONDecodeError:
+            print("Erreur : liste mal formatée.")
+            return None
+    else:
+        print("Aucune liste trouvée.")
+        return None
+ 
 def retrieve(state : State):
     #Retrieve
     retrieved_docs = vector_store.similarity_search(state["comment"], k=2)
@@ -69,8 +91,7 @@ def generate(state : State):
     
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
     response = llm.invoke(formatted_prompt)
-    print(response)
-    return {"chunks" : json.loads(response), "true_chunks" : "Have to interact with test_set" }
+    return {"chunks" : extract_list(response), "true_chunks" : "Have to interact with test_set" }
 
 
 # Compile application
