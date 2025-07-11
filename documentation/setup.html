@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <div id="logo">
+            <a href="./setup.html">
+                <img src="./img/logo-lig_0.svg" alt="LIG">
+            </a>
+        </div>
+        <div class="doc">
+            <p>Documentation</p>
+        </div>
+        <nav>
+            <a href="./setup.html">Setu                     p</a>
+            <a href="./structure.html">Structure</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+
+        <h1>Mount the Remote Directory Locally</h1>
+        <p>
+            Since running the code requires a GPU, the code must already be on the GPU server.
+            If you are comfortable with tools like <code>vim</code>, that’s fine. But if you prefer using Visual Studio Code (VSCode), 
+            there is a way to mount your remote directory locally in VSCode. This allows you to modify the code on your local editor,
+            and the changes will be reflected remotely. You can then run the code directly on the GPU server.
+        </p>
+        <p>
+            First, you need to install the extension: <strong>Remote - SSH</strong>.
+        </p>
+        <img src="./img/remotessh.png" alt="Remote SSH Extension in VSCode" />
+        <p>
+            Once the extension is installed, you need to add the remote machine.
+            Click the <strong>+</strong> button, as shown in the image below:
+        </p>
+        <img src="./img/add.png" alt="Add a computer" />
+        <p>
+            Type <code>lig-potato.imag.fr</code> and then specify the directory on the remote machine that you want to mount
+            (e.g., <code>subjective-comment-clf</code> in our case). (You have to be connected on the VPN)
+        </p>
+        <p>
+            Now open the VSCode terminal. In the next section, we will see how to connect to the GPU and run the code.
+        </p>
+
+        <h1>Run Code on the GPU</h1>
+            <p>
+            First, check for an available GPU on the website: 
+            <a href="http://aker.imag.fr/drawgantt/" target="_blank">http://aker.imag.fr/drawgantt/</a>.
+            </p>
+
+            <p>
+            Once a GPU is available, run the following command in your terminal:
+            </p>
+
+            <pre><code>oarsub -I -p "host='lig-gpu10.imag.fr'" -l /gpu=1,walltime=7:0:0</code></pre>
+
+            <p>
+            Here's a breakdown of the command:
+            <ul>
+                <li><code>oarsub</code>: Submits a job to the OAR job scheduler.</li>
+                <li><code>-I</code>: Starts an interactive session (so you get direct access to the GPU machine).</li>
+                <li><code>-p "host='lig-gpu10.imag.fr'"</code>: Requests a specific host (in this case, <code>lig-gpu10.imag.fr</code>).</li>
+                <li><code>-l /gpu=1</code>: Requests one GPU.</li>
+                <li><code>walltime=7:0:0</code>: Sets a maximum job duration of 7 hours.</li>
+            </ul>
+            </p>
+
+            <p>
+            After submitting the command, wait until the job starts. Once connected, you’ll be on the GPU server and ready to run your code.
+            </p>
+            <h2>Install a Python Environment</h2>
+            <p>
+            Create a virtual environment by running the following command:
+            </p>
+            <pre><code>python3 -m venv mon_env/</code></pre>
+
+            <h2>Install Requirements</h2>
+            <p>
+            Running the code requires specific libraries and tools.
+            First, navigate to the <code>subjective-comment-clf</code> folder. There you’ll find a file named <code>require.txt</code>,
+            which lists all the necessary libraries.
+            </p>
+            <p>
+            To install them, run:
+            </p>
+            <pre><code>pip install -r require.txt</code></pre>
+
+            <h2>Install Ollama (Linux - Without Root Access)</h2>
+                <p>
+                We need to install <strong>Ollama</strong>. The official installer can be found here:
+                <a href="https://ollama.com/download/linux" target="_blank">https://ollama.com/download/linux</a>.
+                </p>
+
+                <p>
+                However, the installation command on the Ollama website requires root access, which is not available for custom users on the GPU server.
+                Therefore, we need to install it <a href="https://github.com/ollama/ollama/blob/main/docs/linux.md" target="_blank">manually</a>.
+                </p>
+
+                <p>Follow these steps:</p>
+
+                <ol>
+                <li>Go to your home directory:</li>
+                <pre><code>cd ~</code></pre>
+
+                <li>Create a new folder where Ollama will be installed:</li>
+                <pre><code>mkdir ollama</code></pre>
+
+                <li>Download the compressed Ollama file:</li>
+                <pre><code>curl -L https://ollama.com/download/ollama-linux-amd64.tgz -o ollama-linux-amd64.tgz</code></pre>
+
+                <li>Extract it into the folder you just created:</li>
+                <pre><code>tar -C ./ollama -xzvf ollama-linux-amd64.tgz</code></pre>
+
+                <li>Add Ollama to your <code>PATH</code> by appending the following line to your <code>~/.bashrc</code> file:</li>
+                <pre><code>echo "export PATH=$PATH:$HOME/ollama/bin" >> ~/.bashrc</code></pre>
+
+                <li>Reload your <code>~/.bashrc</code> so the changes take effect:</li>
+                <pre><code>source ~/.bashrc</code></pre>
+
+                <li>Check if Ollama is properly installed by running:</li>
+                <pre><code>ollama ls</code></pre>
+                </ol>
+
+                <h3>Download the Required Models</h3>
+                <p>
+                Our implementation uses three models. Download them using the following commands:
+                </p>
+
+                <pre><code>ollama pull mistral</code></pre>
+                <pre><code>ollama pull phi4</code></pre>
+                <pre><code>ollama pull llama3.3</code></pre>
+
+            </p>
+         
+            <p><a href="./structure.html" class="next-article"> Architecture ⟶</a></p>
+        </article>
+    </main>
+    
+
+</body>
+</html>
