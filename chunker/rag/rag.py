@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from graph_builder import graph 
+from .graph_builder import graph as graphSplit 
 from chunker.rag.graph_builder import graph as graphRAG
 import pandas as pd
 import ast
@@ -39,7 +39,8 @@ def extract_json(text):
 
 
 def main():
-    df = pd.read_csv("../data/comment_chunk_test.csv")
+    data_path = os.path.join(os.path.dirname(__file__), '../data/', 'comment_chunk_train.csv')
+    df = pd.read_csv(data_path)
     df["chunks"] = df["chunks"].apply(ast.literal_eval)
     global_comments = df["comment"]
     true_chunks = df["chunks"]
@@ -51,7 +52,7 @@ def main():
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     vector_store = Chroma(collection_name="Comment",persist_directory="../../rag/chroma_db" ,embedding_function=embeddings)
     for comment,true_chunk in zip(global_comments, true_chunks):
-        comment_split = graph.invoke({"comment" : comment})["chunks"]
+        comment_split = graphSplit.invoke({"comment" : comment})["chunks"]
         for chunk in comment_split:
             #find chunk's categories
             #chunk_in_db = vector_store.similarity_search(chunk, k=1)

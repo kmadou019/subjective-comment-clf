@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import pandas as pd
+import sys
 
 glob = """
     Il y a beaucoup de bonnes réponses (31) et peu d’erreurs (9) et aucune ignorance . La courbe de bonnes réponses correspond à la courbe en J mais pas celle des erreurs qui est légèrement inversée.  Je semble donc plutôt sur de moi-même dans l’erreur.  Pour le prochain test, il faudrait que je vérifie si je suis vraiment et que j’accepte plus mon ignorance à certains moments sur certains sujets. 
@@ -54,8 +55,6 @@ J’ai globalement beaucoup d’incertitudes.  J’ai plus de réponses correcte
 4 réponses incorrectes avec 3 erreurs dangereuses et 1 erreur présumée. 2 réponses d’ignorances qui sont déclarées. et 22 réponses correctes avec 4 savoir fragile et 18 savoir certains.  Test complet et divertissant
 ****
 Globalement, beaucoup de réponses correctes (18/28), 3 ignorances et 7 erreurs . La formulation des questions peut être piégeuse . J’ai fait tout de même 5 erreurs dangereuses , ce qui est relativement élevé , sûrement dues à des erreurs de connaissances . Pour m’améliorer, je pense mettre je suis presque sûre au lieu de je suis sûr pour des réponses où je suis à moitié confiante. 
-****
-Très bien mais certaine questions sont compliquées à comprendre !  mais le questions sont intéressante et tout en rapport à la leçon donc le problème majeur était la compréhension des questions.
 ****
 Il faudrait que j’aie plus de réponses en erreur présumée et savoir fragile pour éviter les erreurs dangereuses.  -> Mais les risques pris en savoir certain ont permis une augmentation des points.  Je n’ai pas trop d’écart avec les courbes j pour (les erreurs dangereuses - barré) et réponses de savoir certain mais bcp de différence avec le reste, j’ai moins de savoirs fragiles et d’erreurs présumées. 
 ****
@@ -146,8 +145,6 @@ J’ai globalement un savoir fragile, une confiance assez limitée en mes connai
 J’ai des connaissances mais je ne lis pas toujours correctement les énoncés et fais des erreurs inattention en voulant aller trop vite (exemple : ne pas vérifier que 95 est multiple de 19 pensant que ce n’était pas le cas) 
 ****
 32 savoirs certains, 2 savoirs fragiles, 7 erreurs présumées, 4 erreurs dangereuses, 3 ignorance déclarée- > une erreur dangereuse due à faux énoncé . + d’erreurs présumées que d’erreurs dangereuses. et + de savoirs certains que de savoirs incertains => courbe en Jamais un peu trop d’erreurs dangereuses.
-****
-Aucun commentaire
 ****
 ​-> une erreur dangereuse mal lue , sinon 2 erreurs sur les violons. A revoir notamment relation rad et degré (en symbole)  -> trop de doute fait changer l’intuition => faux -> pas d’ignorance déclarée et peu de certitude totale => reste autour de moyenne de certitude  -> pour le prochain test, moins me laisser déconcentrer par les bruits autour pour passer moins de temps à ressasser les questions  plus s’autoriser des 100%. 
 ****
@@ -375,5 +372,12 @@ chunks.append(chunk)
 
 G = glob.split("****")
 
+print(len(G), len(chunks))
+
+
+nb = int(sys.argv[1])
+print(G[nb])
+print("#########################""")
+print(chunks[nb])
 
 pd.DataFrame({"comment" : G, "chunks" : chunks}).to_csv("../data/comment_chunk_train.csv") 

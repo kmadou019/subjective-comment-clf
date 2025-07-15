@@ -32,5 +32,5 @@ for i in range(0, len(comments), batch_size):
 
     collection.upsert(
         documents=batch_comments,
-        ids=batch_ids
+        ids=batch_ids,
     )
