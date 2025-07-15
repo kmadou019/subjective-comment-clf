@@ -3,208 +3,364 @@
 import pandas as pd
 
 glob = """
-    Il y a eu beaucoup de réponse incorrecte et pas mal d'ignorance . Cela révèle que je ne suis pas sûr de mes réponses . Pour espérer davantage au prochain test il va falloir que je révise plus ce qui me permettra d'avoir de l'assurance et de la justesse dans mes réponses .
+    Il y a beaucoup de bonnes réponses (31) et peu d’erreurs (9) et aucune ignorance . La courbe de bonnes réponses correspond à la courbe en J mais pas celle des erreurs qui est légèrement inversée.  Je semble donc plutôt sur de moi-même dans l’erreur.  Pour le prochain test, il faudrait que je vérifie si je suis vraiment et que j’accepte plus mon ignorance à certains moments sur certains sujets. 
 ****
-Grâce à ces tests je vois qu'il faut que je m'améliore en mécanique car je n'ai pas du tout compris. J'ai beaucoup d'ignorance car je ne connais pas bien ma leçon. Je me sens plus à l'aise en chimie, mais je confonds encore beaucoup stéréoisomère, énantiomère, de configuration, de conformation . . . J'ai aussi besoin de revoir les titrages car je n'arrive pas à faire les calculs. 
+Globalement, il y a plus de savoirs certains que d’erreurs dangereuses (21 vs 7). Il y a aussi plus de savoirs fragiles que d’erreurs présumées (6 vs 4) pour 2 ignorances . Je trouve ces graphiques assez bien malgré le fait qu’il faudrait qu’il y ait beaucoup moins d’erreurs dangereuses . Lors du prochain test, il faudrait que je fasse moins d’erreurs dangereuses, notamment en mettant que je suis moins sure quand j’ai des doutes. 
 ****
-Il y a 6 réponses incorrectes  et sur celles-ci 1 réponse dangereuse . Sur mes 24 réponses correctes, j'en ai que 6 de savoir certain. Généralement pas sur de moi  et je préfère ne pas me risquer à dire que c'est juste si ça peut ne pas l'être . De plus ce sont des chapitres que je n'ai pas encore bien révisé surtout la chimie. 
+A des moments quand la réponse était fausse, j’étais sûre que c’était vrai.  Je pourrais expliquer ces réponses à cause d’un manque de rigueur de ma part.  Et lorsque les réponses étaient justes, il y en avait que je n’étais pas sur à 100% car les notions n’étaient pas acquises réellement. 
 ****
-19/32 réponses correctes, peu d'ignorance (2).  Score attribué au fait que je n'étais pas assez attentive et concentrée lors du test.  Le diagramme de réponses correctes est proche de la courbe en J, tandis que la courbe des réponses incorrectes ne l'est pas.  Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste . Lors d'un prochain test, je devrais être moins certaine de moi sur les réponses ou j'hésite et être + prudente. 
+Globalement j’ai plus de réponses correctes que de réponses incorrectes et j’ai zéro ignorance.  Mais je peux faire mieux la prochaine fois  et je saurai à quoi m’attendre.  Sur les courbes J, j’ai plus d’erreurs dangereuses et de savoirs fragiles.  Lors du prochain test, j’espère faire mieux que celui-là et je saurai à quoi m’attendre.
 ****
-Beaucoup des sujets je n'avais pas révisé du tout encore . Donc je ne connaissais pas les réponses. Beaucoup d'erreurs dangereuses  : je n'étais pas très concentrée  mais plus particulièrement, je n'avais pas encore révisé les thèmes. Je n’étais souvent pas très sûre de mes réponses à cause de souvenirs seulement très petits du cours. Erreurs bêtes sur la nomenclature -> concentration
+23/40 , erreur dangereuses 14 , erreurs présumées 3 , ignorance 1 , savoir fragile 5 , savoir certains 17 . Pour faire mieux, il faudrait que je sois moins sûr de moi et que je fasse preuve de plus de prudence car j’hésite pas assez. 
 ****
-Pour le second test, mes connaissances sont encore trop fragiles, je n'ai toujours pas commencé les révisions pour les chapitres (illisible) particulièrement dans le chapitre sur les lois de Newton et la relation entre les acides et les bases.  Je vais tenter de plus travailler pour le prochain test afin d'avoir un meilleur résultat que ceux obtenus cette fois.  (Illisible) erreur n'était dû à des erreurs d'inattention.
+J’ai eu 30/40 , je pensais être sur des résultats pour lesquels j’ai eu erreur dangereuse . Je pense qu’il faut que je sois plus prudent.  Je devrais relire mes cours de l’année précédente et du début d’année. 
 ****
-Je n'avais pas du tout revu les lois de Kepler et des satellites.  Le test a été réalisé après un TP, les conditions n'étaient pas forcement favorables. Toutefois, cela permet très certainement de cibler les points faibles. Le test est toujours utile. 
+Mon résultat 30/40 , 8 réponses incorrectes , 5 ignorances , 27 réponses correctes . Mes erreurs sont principalement dues a des oublis ou a des erreurs de lecture graphiques.  J’étais régulier dans mes connaissances, soit j’étais sûr à plus de 80% soit très peu (5 ignorances et 3 savoirs fragiles).  Je pourrais être davantage réaliste en vérifiant les énoncés, les graphiques et mes réponses. 
 ****
-Dans les graphiques, je vois que malgré un certain nombre de réponses correctes,  j'ai 9 erreurs dangereuses , ce qui révèle que j'ai eu tendance à être imprudente. Après avoir relu mes erreurs, j'ai remarqué que ces erreurs provenaient d'une erreur de lecture de la question et rarement d'une réelle erreur / lacune dans mes connaissances.  Ainsi, à l'avenir, il faudrait que je prenne plus mon temps pour lire les questions et évaluer réellement mes connaissances et lacunes . Comparé à mes résultats de la dernière fois, je suis relativement déçue  puisque j'ai eu tendance à faire preuve d'imprudence et à évaluer, à tort, mes réponses comme justes .
+Majorité de réponses juste (30/40)  dont 28 savoirs certains, 1 savoir fragile, 1 ignorance. 8 erreurs dangereuses et 2 erreurs présumées Peu d’écart lorsqu’il s’agit de la courbe des correctes, et courbe inversée pour les incorrectes. 
 ****
-Sur la partie mécanique j'ai été plus confiant, à juste titre, alors que dans la partie chimie j'ai été plus prudent (aussi à juste titre) . Je suis aussi surpris de mon score pour la partie chimie , les chose que je pensais faux était juste et les chose juste, fausse. Pour être plus sur de moi il faudrait que je révise plus la chimie pour solidifier mes connaissances.  Par rapport à la dernière fois j'ai fait moins d'erreurs d'inattention car j'ai bien vérifié même les questions que j'ai eu juste. 
+Mes erreurs dangereuses sont bêtes  je me sens nul  même si y a 26 savoirs certains  et triste de ne pas avoir su répondre à 3 questions . J’aurai pu faire mieux en prenant plus mon temps .
 ****
-Comme la dernière fois, il y a une majorité de réponses vraies  et le nombre de erreurs dangereuses a diminué . Toutefois, n'ayant absolument pas relu ni réviser la mécanique et même la chimie , je n'ai quand même pas un score fantastique. . . Il y a aussi comme la dernière fois des erreurs d'inattention. 
+Globalement il y a 26 réponses justes 12 réponses incorrectes et 2 ignorances . Ce score provient d’oublis de connaissance de manques de connaissance.  La courbe des réponses correctes est plus élevée que celle des réponses incorrectes, dû à la supériorité des réponses correctes, mais la courbe des réponses incorrectes reste vachement élevé face aux réponses justes
 ****
-​-> uniquement savoir certain ou erreur dangereuse- > je n'avais pas révisé presque la totalité de ce qu'il y avait -> mauvaise (illisible)
+Pour la prochaine je pourrais prendre plus mon temps 
 ****
-Globalement il y a plus ou moins autant de réponses correctes et incorrectes . La plupart de ces erreurs sont dangereuses et les savoirs certains :  je devrais peut-être être un peu plus prudent . En général, j'ai plus de réponses correctes en chimie qu'en physique. 
+Globalement j’ai eu plus de réponse correctes (20) malgré 17 réponses incorrects et 3 ignorances.  Je pense que je suis prudente et que je ne suis pas non plus sur à chaque fois de moi.  Je pourrais devenir davantage réaliste en prenant plus confiance en moi. 
 ****
-J'ai plus confiance en mes résultats par rapport à la dernière fois  mais ils sont faux 1 fois sur 2, donc j'ai beaucoup d'erreurs dangereuses . Je manque aussi de vocabulaire  (ex. je ne savais pas ce que signifiait cste, donc ma réponse était fausse). Je pense avoir autant d'ignorances déclarées que la dernière fois. Mon résultat 17/32 est assez proche de mes notes, donc ce test est très réaliste/ précis. 
+J’ai beaucoup de bonnes réponses  et je suis presque toujours sûre à 100% de mes réponses, ce qui m’amène à faire des erreurs dangereuses. Mon nombre d’erreurs dangereuses est bien au-dessus de la courbe en J . Sois-je suis très peu sûre, soit je suis totalement sûre, ce qui donne un graphique assez différent des courbes en J . La moitié de mes erreurs sont des erreurs d’inattention qui pourront être corrigées au prochain test si je suis plus attentive. 
 ****
-La plupart de mes mauvaises réponses sont dans la mécanique, car je n’ai pas appris, ni révisé cette partie avec la loi Kepler . Pour la chimie, c'est mieux, mais ce qui concerne les mauvaises réponses, c'est une mauvaise compréhension des questions . Pour le degré de certitude, c'est dangereux pour les mauvaises réponses, car j’étais plutôt vers une certitude de 100% même si je n'étais pas sûre de mes réponses , j'ai essayé d'avoir confiance en moi. 
+Beaucoup d’incertitudes et d’erreurs  mais je ne suis pas déçu du résultat , et quelques questions m’ont surpris . Mes courbes relèvent beaucoup de bonnes réponses mais pas à 100%, et des erreurs assez nombreuses . Pour le prochain test, il faut que je revois un coup mon cours de 1ère car ça date maintenant 
 ****
-Je remarque que dans mes réponses incorrectes, j'ai plus d'erreur présumée que d'erreur dangereuse. J'ai quand même beaucoup d'erreurs dangereuses (6 au total). J'ai 2 ignorance déclarée, ce qui est relativement peu. Dans mes réponses correctes, j'ai plus de savoir fragile que de savoir certain.  Je résumerais donc que je suis assez prudent  malgré mon grand nombre d'erreur dangereuse.
+globalement j’ai eu 29 réponses correctes, 11 incorrectes et 0 ignorance . Pour espérer devenir davantage réaliste lors du prochain, je compte prendre plus de temps pour répondre afin d’éviter les erreurs d’inattention 
 ****
-Cette fois-ci, j'ai fait plus de fautes que la dernière fois,  avec plusieurs erreurs dangereuses mais aussi quelques ignorances. Je n'avais pas révisé mes leçons  avant ce qui s'est traduit par pas mal de fautes et de savoir faibles, car je n'étais pas sûre de mes réponses. D'après ma courbe, j'ai tendance à être à la fois trop prudente (avec 12 savoirs fragiles) et à la fois pas assez (7 erreurs dangereuses) , probablement dû à mon manque de connaissance des chapitres. Je pense qu'en essayant de relire mes leçons avant le test, je pourrais être plus sûre de mes réponses  - donc avoir moins de savoirs fragiles, et me permettrait aussi de faire moins d'erreur où j'étais sûr de la réponse.
+Mon résultat est assez satisfaisant . Je vais devoir combler mes lacunes avec la fin du test . Sur l’ensemble j’étais assez prudent  et pour avoir un meilleur score je vais devoir prendre plus mon temps pour éviter les erreurs d’inattention et de lecture. 
 ****
-J'étais globalement moins sûre de moi que lors de la première fois,  car je ne connaissais pas mon cours sur beaucoup de points. J'étais aussi peu attentive , si bien qu'une des erreurs dangereuses est due à une faute de frappe. J'ignorais la réponse à 3 questions, mais le bon sens utilisé a finalement permis d'avoir juste. Les lois de Kepler sont à apprendre ! 
+Globalement, mon score est correct (équivaut à 16/20)  mais je reste souvent sur de mes erreurs . J’ai trop d’erreurs dangereuses . Mon score révèle donc de l’imprudence . Pour améliorer mes résultats lors du prochain test, je devrais être davantage attentif sur les questions subtiles et faire attention aux pièges ou à ne pas lire trop vite la question .
 ****
-A l'inverse de la dernière fois, la majorité de mes fautes n'étaient pas pressenties et mes réponses correctes étaient certaines . J'ai essayé de passer à travers le test rapidement et en ai payé le prix.  Cela me permet de savoir ce que je dois réviser et mes points faibles. 
+Globalement, il y a beaucoup de réponses correctes (31), peu de réponses incorrectes (9) et aucune ignorance . Ce score global peut s’attribuer à des connaissances suffisamment solides que je peux avoir en physique-chimie pour me débrouiller assez bien.  Par rapport aux écarts, ma courbe des réponses correctes forme bien un J mais pas celle des réponses incorrectes.  Cela signifie donc que je serai plutôt trop imprudent (la plupart de mes fautes étant dans les alentours de 100% à 80%).  Bien sur, pour être davantage réaliste lors du prochain test, il faudrait que je connaisse mieux mes leçons et que je prenne plus de temps pour bien répondre aux questions pour ne rien bâcler ou oublier .
 ****
-J'ai plusieurs erreurs présumées mais le plus grave ? les erreurs dangereuses que j'ai fait.  J'avais trop confiance en moi. La mécanique est un thème difficile et je suis dans l'ensemble trop sûre de moi en mécanique.  Il faut donc que je travaille là-dessus. Ce test m'a permis de réaliser que mes connaissances sont moins solides que ce que j'espérais . En général, je suis soit trop sûre de moi, ne soit pas assez. Il faut que je trouve un juste milieu.
+Beaucoup de réponses correctes  avec pas mal de prudence de ma part (beaucoup de 80-90% de certitude) . Pour être plus réaliste, il faudrait que je sois plus sûr de moi en mettant davantage des certitudes à 100%.  Les quelques erreurs étaient dues manques de connaissances et des erreurs de calcul.  Une ignorance déclarée (connaissances suffisantes).
 ****
-J'ai autant de réponses incorrectes que d'ignorances.  J'ai 20 réponses correctes avec 5 savoir fragile et 15 savoir certain , c'est bien de voir que la plupart du temps je suis certaine quand j'ai raison . Mais j'ai fait 6 erreurs dangereuses parmi les 6 réponses incorrectes, c'est déstabilisant car en pensant avoir raison j'avais faux.
+Globalement beaucoup de réponses correctes  Erreurs seulement sur des oublis de cours  Revoir les bases de certaines matières 
 ****
-9 réponses fausses (4 ! 5. . )3 ignorances20 réponses correctes (8 . . . 12 :)23/32  (c'est un palindrome :)Le graph des réponses incorrectes me parait toujours logique car je ne connaissais pas assez mes formules de mécanique (les 4 réponses dangereuses) et je ne suis pas du tout sûr de ce que je réponds en chimie  (les 5 présumées). Il faut donc que je révise les formules / équations de Kepler, Newton, et de l'accélération et pour la chimie : la nomenclature, la géométries des molécules et les acides/bases. 
+J’ai beaucoup de réponses correctes (32) peu d’incorrectes (3 ED et 3 EP) et 2 ignorances.  J’ai eu beaucoup de savoirs fragiles (8)  et je suis trop prudent  Être sur et plus rapide (38min) pour la prochaine fois 
 ****
-Il y a la moitié de réponses correctes et l'autre moitié incorrecte.  Peu d'ignorances mais beaucoup d'erreurs dangereuses (10) . La courbe en J des réponses correctes montre qu'en général, je sais quand j'ai la bonne réponse. Cependant je ne sais pas forcément quand j'ai la mauvaise réponse, la courbe en J des réponses incorrectes m'indiquant beaucoup d'erreurs dangereuses et ne suivant pas la forme du J. Cela relève d'une certaine imprudence.  Pour espérer devenir davantage réaliste lors du prochain test, je pourrais me fier davantage à mes réelles connaissances plutôt qu'à mes estimations sur quelle réponse pourrait être la bonne, si une question semble une question piège,  etc.
+Beaucoup de réponses correctes, quelques réponses incorrectes  et quelques réponses faibles.  être plus prudent par rapport au test  et être plus concentré 
 ****
-Il faut que je révise la chimie, car mes connaissances sont floues et donc la certitude de mes réponses est affectée.  Il faut que je regarde les questions de plus près car la formulation peut être trompeuse à certains moments.  Modéliser (?) peut être utile aussi pour clarifier ses doutes.
+Mon résultats 14/40 , 23 réponses correctes et une réponse correcte dans ignorance , en tout j’ai fait 4 ignorances.  Ce résultat global est du à certaines hésitations. D’après mes résultats et la courbe en J, mes résultats relève de l’imprudence . Pour devenir davantage réaliste lors du prochain test, je passerai plus de temps sur chaque question  tout en essayant d’avoir le maximum de savoir certain ou de savoir fragile si je n’ai aucune connaissance précise de la question posée par exemple 
 ****
-Le test m'a permis de me donner de la confiance dans mes connaissances et mon savoir.  Il m'a aussi permis de voir que je fais beaucoup d'erreurs dangereuses en chimie. 
+J’ai globalement beaucoup d’incertitudes.  J’ai plus de réponses correctes mais mon savoir est assez fragile.  J’ai fait preuve de prudence. 
 ****
-Connaissance correcte mais incertain, trop prudent , presque autant d'erreurs dangereuses que de présumé, mais aussi autant de savoir fragile que de certain. 
+4 réponses incorrectes avec 3 erreurs dangereuses et 1 erreur présumée. 2 réponses d’ignorances qui sont déclarées. et 22 réponses correctes avec 4 savoir fragile et 18 savoir certains.  Test complet et divertissant
 ****
-Il y a globalement beaucoup de réponses correctes , mais je suis sûr dans toutes mes réponses où je crois avoir raison, ce qui me donne uniquement des savoirs certains et des erreurs dangereuses. Ma courbe de bonnes réponses est en J mais l'autre est en J inversé (en L en fait). 
+Globalement, beaucoup de réponses correctes (18/28), 3 ignorances et 7 erreurs . La formulation des questions peut être piégeuse . J’ai fait tout de même 5 erreurs dangereuses , ce qui est relativement élevé , sûrement dues à des erreurs de connaissances . Pour m’améliorer, je pense mettre je suis presque sûre au lieu de je suis sûr pour des réponses où je suis à moitié confiante. 
 ****
-Globalement, j'ai réussi à être plus certaine de mes réponses (22 savoirs certains et 1 savoir fragile) mais ça a créé de ce fait quelques erreurs dangereuses (7). Par rapport au premier test, je peux remarquer que la courbe en J est plus conséquente pour les réponses correctes . Pour le prochain test, il faudrait que je me laisse un peu plus de temps avant de répondre et bien analyser les docs. 
+Très bien mais certaine questions sont compliquées à comprendre !  mais le questions sont intéressante et tout en rapport à la leçon donc le problème majeur était la compréhension des questions.
 ****
-Il y a un manque de rigueur car j'ai mal lu les énoncés et cela m'a induit en erreur et c'est pour cela que j'ai eu des réponses qui étaient erronées . Si j'avais mieux regardé l'énoncé, j'aurais pu ne pas me tromper.
+Il faudrait que j’aie plus de réponses en erreur présumée et savoir fragile pour éviter les erreurs dangereuses.  -> Mais les risques pris en savoir certain ont permis une augmentation des points.  Je n’ai pas trop d’écart avec les courbes j pour (les erreurs dangereuses - barré) et réponses de savoir certain mais bcp de différence avec le reste, j’ai moins de savoirs fragiles et d’erreurs présumées. 
 ****
-5 : erreurs dangereuses, 6 erreurs présumées, 11 savoirs fragiles, 10 savoir certains :  21/32 C'est un peu meilleur que le premier test mais c'est parce que les questions étaient sur des chapitres vus en Terminale tandis que le premier test était sur des chapitres vus en Première. 
+J’ai eu 23/28 avec 23 savoir certain.  Les erreurs que j’ai faites étaient sur ce que je ne savais vraiment pas  mais qu’au bout de plusieurs réflexion j’arrive aux mêmes résultats. Je suis assez satisfait des résultats par rapport à ma mémoire à long terme qui n’est pas géniale. 
 ****
-ED : 8 , SC : 20 , EP : 2 , SF : 2 Il y a pas mal de savoir certain et environ 1/3 d'erreurs dangereuses  (?) . . les savoirs certains. On peut dire que j'ai eu ce score car je ne révise jamais sauf la veille ou le jour même d'un contrôle, j'aurais sûrement un meilleur score en révisant régulièrement , n'empêche la courbe en J des savoirs certains est plutôt belle.
+Globalement j’ai presque le double de réponse correct par rapport au réponses incorrectes et seulement 2 ignorances.  La courbe de réponses correctes suit presque la courbe en J avec quand même beaucoup de savoir fragile malgré qu’il y en a beaucoup moins que de savoir certain. Cependant la courbe de réponse incorrectes ne suit pas du tout la courbe en pointillés puisqu’il y a beaucoup d’erreurs dangereuses 6 pour 9 réponses incorrect.  Lors du prochain test il faudrait diminuer le nombre d’erreurs dangereuses et me rapprocher de la courbe en J et aussi diminuer le savoir fragile afin d’être plus certaine. 
 ****
-Beaucoup de savoir certain avec 5 erreurs dangereuses.  Pour le prochain test, je devrais approfondir les bases du cours (non-acquis) avec des exercices. 
+Certaines questions était néanmoins tordu  mais je suis heureux de posséder un esprit très intuitif. 
 ****
-J'ai fait pleins d'erreurs d'inattention, j'ai mal compris les questions et j'ai fait beaucoup d'erreur dangereuses (6). J'ai mal jugé mes réponses et surestimé mes compétences . J'ai fait le test trop rapidement. Ce test m'a permis de comprendre que je dois faire plus attention aux énoncés. 
+18 réponses correctes 9 réponses fausses dangereuses 1 réponse ignorante-Imprudence - En apprenant d’avantage. 
 ****
-Note 21/32 avec 6 erreurs dangereuses, 3 présumées, 4 ignorances déclarée, 3 savoir fragile, 16 savoir certain 
+J’ai quasiment le même nombre de réponse juste (13) et de fausses (9)  dû au fait que je confonds des notions de cours  ou mal lu le document . Pour le savoir certain je suis trop prudente car je ne veux pas être déçu face à une réponse fausse.  Les erreurs présumées j’ai beaucoup de 70% parce que j’ai réfléchi mais pas au max donc j’ai pu faire des erreurs*.  Et les ignorances déclarées c’est parce que je suis fatigué et pas motivé pour beaucoup réfléchir donc je n’avais pas envie de me lancer dans de grandes réflexion.  Je pense que je m’appliquerais plus et les réponses où je pense avoir faux je mettrais 60% au lieu de 70% de même que pour le savoir j’essayerais d’être plus confiante sur mes connaissances.  * et je faisais par intuition. 
 ****
-Relativement satisfait car peu d'erreurs et peu savoir fragile comme je le pensais lors du test. J'étais assez souvent très sûr de moi. 
+(16) 100% de savoir certain mais aussi 100% d’erreur dangereuse  (7) révèle de l’imprudence  Il faudrait que je sois moins sûr de vrai et que soit moins tranchée sur mes connaissances. 
 ****
-J'ai eu 23/32 avec 5 réponse dangereuse, 1 erreur présumée, 5 ignorance déclarée, 6 savoir fragile et 15 certain . Dans le test j'étais un peu perdue (taux d'ignorance)
+Sur 28 questions, il y a 24 réponses correctes, 0 ignorance déclarée et 4 réponses incorrectes.  Les 4 mauvaises réponses sont sur les formules (3) et une sur le ph.  La courbe montre un peu trop de prudence. 
 ****
-Globalement, il y a plus de réponses savoir certain que d'erreur dangereuse ,  malgré cela, je trouve que j'ai été trop rapide dans mes choix de réponse ainsi à l'avenir il me faudra être plus réfléchi. Aussi des petites révisions ne me feraient pas de mal. 
+Réponses incorrectes : 4ignorances : 7réponses correctes  : 17les courbes révèlent de la prudence. 
 ****
-Dans ce test il y a eu beaucoup de réponse assez négative mais personnellement je trouve aussi que les questions n’étaient pas très précises et du coup c'était difficile de savoir si c’était vrai ou non. Je pense que je peux m'améliorer en étant plus prudente et en faisant plus attention aux énoncés. 
+Les erreurs dangereuses en était globalement peut nombreuse mêmes si ce n’est pas encore ça, mais je trouve que j’ai un savoir un peu fragile même si globalement c’est bien.  Je vais préciser mes connaissances. 
 ****
-J'ai eu 22 bonnes réponses, 7 erreurs et 3 ignorances déclarées. Parmi mes erreurs, 6 sont dangereuses ce qui est beaucoup. Cela Vient en parti du fait que je ne connaissais pas les formules du cours et d'interprétations fausses des documents . Les courbes ne sont pas en J (légèrement pour les bonnes réponses, mais pas du tout sur les mauvaises) . Ces tests me permettent de voir si je connais mon cours et si je me souviens des anciens chapitres. Ils me montrent aussi que j'ai tendance à être trop sûre de moi. 
+​- Globalement il y a beaucoup de réponses correctes, score globale = 22/28 -pour les réponses correctes les résultats correspondent à la courbe en J mais pour celles incorrectes il y a trop d’erreurs dangereuses (4) . Cela révèle un peu trop d’imprudence -Etre plus attentive aux termes de la question et répondre moins vite 
 ****
-J'ai plutôt assez bien réussi le test, mieux que le premier il me semble , même si j'ai encore quelques erreurs dangereuses.
+Globalement, sur 28 questions, j’ai obtenu 23 réponses correctes, 3 incorrectes et 2 où je ne savais pas.  Ce score global est sûrement du au temps passé sur le test (40 min).  J’observe un écart quant à la certitude de mes réponses juste . En effet, je ne suis pas assez sûre de moi.  Je pourrais être plus réaliste en ayant plus sur de moi lorsque je réponds. 
 ****
-Globalement, le test permet de voir que je suis capable de répondre avec de la concentration à toutes les réponses. Mon savoir est là, mais cependant je fais encore trop d'erreurs d'inattention sur des choses bêtes. Il faut que je me concentre tout le long pour répondre à toutes les questions. 
+Erreur dangereuse : 6 Savoir fragile 5 erreur présumée : 2 Savoir certain 15 Il faudrait que je sois meilleur pour distinguer mes erreurs à l’avance.  J’ai souvent du mal avec les QCM, je suis influencé par les questions. 
 ****
-Je suis assez content du résultat, ça aurait pu être pire. Ce test provoque chez moi de l'anxiété . Cela révèle mon énorme manque de confiance en moi . Mon but n'est pas de réussir, mais de prendre sur moi et de ne pas échouer. Yes. J'ai aussi appris que je suis incapable de me concentrer devant un écran d'ordinateur, je vais trop vite du coup je comprends mal les énoncés et les questions .
+​-> Le score total est de 23/28,  avec beaucoup de erreurs présumées-> Mes courbes ne correspondent pas trop au courbe en J , j’ai été trop prudente globalement . -> Pour devenir davantage réaliste, il faudrait que je passe plus de temps pour répondre à la question. 
 ****
-Globalement, il y a beaucoup de réponses certaines mais aussi beaucoup d'erreurs dangereuses.  Je suis toujours trop sûr de mes réponses . Je dois mieux lire les énoncés et être plus attentif sur les réponses . Je dois aussi répondre simplement aux questions sans vouloir tenter de contourner des éventuels pièges. Pour m'améliorer, je pourrais donc prendre plus de temps pour répondre et assimiler les énoncés. 
+Test correct dans l’ensemble  avec 1 erreur dangereuse, 3 erreurs présumées, 3 ignorances déclarées, 3 savoir fragile et 18 savoir certains . Test complet et intéressant 
 ****
-Avant toutes choses, il faut savoir rester humble mais il faut aussi reconnaitre que le test est plutôt bon pour ma part (23 réponses correctes, soit 71% de réponses justes et 9 incorrectes) . Bien évidemment, ce score peut s'attribuer à des connaissances certaines dans le domaine de la physique chimie  et à un certain french flair dans des situations de doutes. Mes courbes forment en général toutes un J, mon jugement serait donc plutôt réaliste. Cependant, mes 7 erreurs dangereuses peuvent relever une certaine imprudence , mais il faut savoir vivre dangereusement j'imagine. Afin de devenir davantage réaliste lors du prochain test, il me faudra être plus technique dans mes connaissances en physique chimie.  Éventuellement, il me faudra affuter mon instinct de chasseur dans les possibles situations de doute à venir.
+Mes notes sont assez bonnes  malgré des connaissances plutôt approximatives. 
 ****
-Beaucoup de réponses correctes . Les courbes en J assez respecté, malgré un léger surplus de savoir fragile (70%) , ainsi je pense être plutôt réaliste et ne pas avoir besoin de devenir beaucoup plus réaliste . J'ai tout de même fait une grande progression par rapport au dernier test en termes de réalisme. Personnellement, ce test ne m'apporte pas grand-chose, que quelques connaissances sur quelques détails précis .
+Très bon test . Il faudrait peut-être écrire des conclusions en fonction des résultats obtenus  et réalisé des classes de niveau.
 ****
-5 erreurs dangereuses sur des erreurs d'inattention et non pas un manque d'inattention. Toutes mes ignorances déclarées étaient justes, pas assez sûr de moi. Je devrais être plus attentif sur les questions. 
+Mon test est plutôt réussi  malgré des connaissances approximatives . Il faudrait plus de connaissances pour mieux le réussir. 
 ****
-Plusieurs réponse correctes (29) et une erreur dangereuse, j'ai eu beaucoup de savoir fragile (6)  qui aurait pu être certain. J'ai été plus rapide que la dernière fois (22min).
+​-> beaucoup de réponses correctes (21), pas d’ignorance, 7 réponses fausses (erreurs dangereuses)  -> j’ai parfois mal lu les questions, lu trop vite et du coup, j’ai loupé des données ou mal vu certaines données.  -> j’ai pas mal d’erreurs dangereuses -> imprudence , sinon le reste correspond pas mal. -> plus réfléchir avant de répondre, aller moins vite, bien vérifier mes réponses. 
 ****
-J'ai appris que je devrais me fier plus à mes connaissances qu'à la pertinence de la question .
+​-> Beaucoup de réponses correctes (23/28)  dont 19 en savoir certain, 1 en savoir fragile, 3 en ignorance déclarée. -> 5 erreurs dont 4 en erreur dangereuse et 1 en erreur présumée . -> certaines erreurs dû à de l’inattention ou à la vitesse de lecture (trop vite)  -> Pour mes réponses correctes mes résultats correspondent à la courbe en J. Tant dit que pour mes réponses incorrectes mes résultats sont à l’inverse de la courbe en J. -> Révèle que j’ai manqué de prudence sur certains points -> Prendre mon temps  et pas mettre 100% sûr alors qu’un doute est là 
 ****
-Résultat : 20/32 , j'ai fait 16 réponses correctes  avec un savoir certain , 4 savoir fragile , pour les erreurs, 5 erreur dangereuse et 7 erreur présumée  Je repère beaucoup de prudence car je peux présumer mes erreurs éventuel , ce qui me permet d'avoir peut d'erreur dangereuse.  Pour m'améliorer davantage, il faut que je réponde plus spontanément car il y a des questions où j'ai trop hésité .
+Globalement, il y a eu beaucoup de réponses correctes et peu de réponses incorrectes, il n’y a pas eu d’ignorance . Ce score global montre des connaissances mais quelques partialités en général.  Pour les réponses incorrectes, il y a plus d’erreur à 90% / 80% de certitude et cela ne suit pas la courbe en J. En revanche, pour les réponses correctes, plus la courbe augmente, plus le savoir certain augmente aussi malgré 60% de certitude au début. Mais relativement de faibles écarts entre la courbe en J et résultats . Cela révèle donc de certaines imprudences au niveau du jugement.  Afin de devenir d’avantage réaliste, je devrais mettre une plus faible certitude sur les hésitations  et je devrais me concentrer plus sur les questions techniques et complexes. 
 ****
-21 réponses correctes, 5 ignorances et 6 réponses incorrectes , dont 4 erreurs dangereuses. Ces erreurs dangereuses sont dues à un manque de connaissances.  La prochaine fois, je mettrai peu sûre. La courbe en J est bien remarquable avec les réponses correctes qui sont croissantes. Par contre, elle n'est pas respectée avec les réponses incorrectes, dû aux erreurs dangereuses . La prochaine fois, je ferais attention aux tournures des phrases qui peuvent être dangereuses. 
+Je n’étais pas très sûr de moi  et j’ai fait beaucoup d’erreurs 
 ****
-5 incorrectes, 5 ignorances, 22 correctes -> 24/32 . Courbe en J similaire pour les réponses correctes mais pas pour les incorrectes (moins exponentielle) . Plutôt des erreurs d'inattention que du manque de réalisme.  (Pour 2 erreurs dangereuses)
+Mes connaissances semblent suffisantes  : j’ai beaucoup plus de réponses correctes qu’incorrectes (23/28).  Cependant, mon jugement est moyennement réaliste car mes réponses incorrectes ne suivent pas la courbe en J . Je pense que je suis trop imprudent : il n’y a aucune ignorance mais beaucoup de réponses certaines entraînant des erreurs dangereuses et peu de savoirs fragiles.  Je devrais mieux apprendre mes définitions et formules, mieux maîtriser l’analyse dimensionnelle  et être plus prudent. 
 ****
-J'ai eu 23/32, ça passe en sachant que je n'étais pas là pour la leçon de géométrie moléculaire et que je n'ai pas très bien compris .
+Je vois qu’il y a qu’une ignorance ce qui est pas mal, après il y a 7 erreurs dangereuses  … Mais il y avait quelques questions subtiles qui induisaient en erreur si on ne possède pas un bon instinct . Je suis quand même plutôt content de mon résultat , je pourrais mieux réussir la prochaine fois avec un brouillon et un peu plus de motivation .
 ****
-Il y a plus de réponses correctes qu'incorrectes mais il y a aussi pas mal d'ignorances . Pour les réponses incorrectes, il y a bien une courbe en J, par contre pour les réponses incorrectes la courbe n'a pas cette forme.  Il y a pas mal de savoir fragile ce qui montre de la prudence.  Pour le prochain test il faudrait que je fasse preuve de plus de certitude. 
+J’ai une proportion de réponses corrects supérieur à celles incorrects et aucune ignorance.  Mais des erreurs dangereuses. Les courbes de mes résultats ne suivent pas les courbes en J , j’ai donc tendance a être trop confiant sur des réponses fausses et pas assez sur des réponses exacts.  Pour les test à venir il faudrait que je doute plus des réponses au quelles je suis susceptible d’avoir faux et que je sois plus sure des questions auxquelles j’ai justes. 
 ****
-Très bon test malgré quelques difficultés en chimie. 
+Résultat de 23/28 questions . Je suis plutôt sûre de mes réponses car je suis soit en savoir certain soit en erreur dangereuse . Mes erreurs sont en général dues à de l’inattention (ex: son dans l’eau, je me dis que 1,5. 10^3 < 340 alors que mon résultat est juste, pareil pour l’énergie dans ma tête 10^-9 > 10^-4)  => il faut que je renforce ma maîtrise des puissances de 10)  ou à une mauvaise compréhension des questions (sens du mouvement relatif). Une mauvaise maîtrise de la fonction log. Une seule erreur de connaissance, je m’embrouille dans les longueurs d’onde émises dans le visible 450 nm correspond à du bleu (couleur absorbée) donc jaune-orange émis.
 ****
-La courbe des réponses correctes ne correspond pas à la courbe en J car il y a beaucoup de savoirs fragiles . La même chose avec la courbe des réponses incorrectes, puisqu’il y a beaucoup erreurs dangereuses : 7 sur 11 erreurs. Il faudrait qu'au prochain test je sois plus sûr de moi pour avoir moins de savoir fragile et aussi avoir moins d'erreurs dangereuses. 
+Globalement il y a beaucoup de réponses correctes (20) qui ont été pour la plupart attribué à un savoir certain (certitude 100%), par contre 5 réponses dangereuses (et 2 ignorances).  Les réponses dangereuses sont tout de même nombreuses, peut être due à des questions difficiles et trompeuses . Pour être davantage réaliste lors du prochain test, il faudrait lorsqu’une de mes réponses n’est pas certaine à 100%, baisser le pourcentage à 80% ou à 60 % pour être plus prudente. 
 ****
-La chimie est vraiment dure, mais la physique c'est bien  22/32
+Il y a beaucoup de réponses correctes mais je suis peu sûre de mes connaissances . Je suis prudente parfois trop . il faut que je prenne confiance en moi.  Cependant je suis réaliste si je ne sais pas la réponse.
 ****
-Note 22/32-> 10 réponses incorrectes et 22 réponses correctes . - imprudence - apprendre davantage
+Sur 48 questions, j’ai eu 41 bonnes réponses dont 32 où j’étais presque sûre  mais je pourrais améliorer ma courbe en étant plus sûre de moi.  J’ai également fait 2 erreurs dangereuses et 3 erreurs présumées sur des questions auxquelles je ne connaissais majoritairement pas le cours (=> revoir les filtres d’absorption !) . Afin d’améliorer mon score, il y a certaines questions où je pourrais davantage me faire confiance mais pour cela je pense qu’il est nécessaire de bien revoir mon cours et de le connaitre mieux afin que je réponde automatiquement à certaines questions et à ne pas douter. 
 ****
-Je fais beaucoup d'erreurs dangereuses donc je suis trop confiante . Mais j'ai quand même pas mal de savoir certain donc je sais quand même mes acquis. J'ai 9 savoir fragile sur 22 réponses juste, ça je l'explique par le fait que je connais mais pas à fond donc j'ai des chances d'avoir faux. Mes courbes sont loin de celle en J  donc je suis mi prudente/ mi imprudente.  Lors du prochain test, il faudrait que je prenne plus de temps sur les questions pour réellement réfléchir parce que là j'avais un peu la flemme de réfléchir à 100%. Et passer plus de temps sur les questions où je pense être certaine. 
+Globalement, j’ai beaucoup de réponses correctes mais seulement 15% d’erreurs dangereuses  : une grosse partie est due au fait que je ne connaissais pas mes formules . De manière générale, je suis plutôt réaliste  (sauf pour la formule fausse). Il faut que je m’entraine plus pour le prochain test  pour être encore plus sûre de les réponses et de ne plus me tromper. Mais de manière générale, mes connaissances sont suffisantes. 
 ****
-Sur 32 questions 26 sont correctes dont 24 savoir certain ce qui montre de bonnes connaissances. Dans les réponses correctes la courbe J est bien suivie. Par contre du côté des réponses incorrectes il y a plus de réponses dangereuses que présumée  ce qui traduit encore une légère imprudence . Pour la prochaine je dois être plus prudente .
+Fautes d’intention-> faire plus attention aux détails.  Faire attention aux relations de type quand lambda (symbole) alors f 
 ****
-Il y a 8 erreurs dangereuses donc il faut revoir certaines choses de mon cours , 23 savoir certain et pas d'erreur présumée et pas de savoir fragile . On peut penser à une imprudence car mes résultats se trouvent dans les extrêmes. 
+Globalement, j’ai beaucoup de réponses correctes dont beaucoup de savoirs certains. Cependant, j’ai aussi pas mal d’erreurs dangereuses par rapport aux erreurs présumées. Il y a un assez grand écart avec la courbe en J concernant les réponses incorrectes.  Je ne suis peut-être pas assez prudente. 
 ****
-Afin d'être plus réaliste lors du prochain test, une meilleure connaissance de son cours serait préférable .
+J’ai 36 réponses justes sur 48, la plupart des savoirs.  J’ai 12 erreurs, 2 dans l’ignorance déclarée, 4 dans les erreurs présumées  ce sont les chapitres que je maitrisais moins.  J’ai 6 erreurs dangereuses ce sont les erreurs de calculs, d’inattention et de mauvaise lecture. 
 ****
-Globalement 24/32 ce n’est pas trop mal pour moi . Il y a eu quand même 15 savoir certain, 8 savoir fragile  donc mon savoir est un peu fragile mais lors de la prise de décision je n’ai pas fait trop d'erreur dangereuses (2). 5 erreur présumée ne m'étonne pas et l'ignorance déclarée. Donc globalement, je suis plutôt satisfait de mon travail. J'espère forcément faire mieux la prochaine fois même si cela me va pour l'investissement.
+Globalement, il y a quelques erreurs dangereuses (3) et présumées (3) et une majorité de réponses correctes. La courbe ne J atteint son maximum dans les réponses correctes pour 80%.  On peut constater un manque de confiance concernant les connaissances acquises et comprises.  Pour le prochain test, il serait préférable de prendre confiance vis à vis des réponses certaines  et éviter les erreurs dangereuses en prêtant attention à l’énoncé (bien lire l’énoncé). 
 ****
-Globalement, il y a beaucoup de réponses correctes, très peu d'ignorances et quelques erreurs dangereuses. Pour les réponses correctes mes résultats correspondent à la courbe en J en général avec un pourcentage un peu trop élevé de savoir fragile.  Pour les réponses incorrectes les résultats ne sont pas en accord avec la courbe en J, trop d'erreur dangereuses. Pour devenir davantage réaliste je devrais réfléchir plus longtemps sur certaines questions et faire attention aux pièges. 
+Le nombre d’ignorance déclarée est de 5 et portait sur des sujets que je n’avais pas revus.  J’ai plutôt pas mal de savoir certain  et il est vrai que je doute souvent peu de ce que je connais bien . Lors des erreurs dangereuses je pense être allée trop vite et ne pas avoir pris le temps de réfléchir.  Pour la prochaine fois, il faut que je prenne plus de temps pour lire l’énoncé et pour réfléchir.  Il faut aussi que je sois un peu plus sûre de moi sur certains points .
 ****
-Erreur dangereuse 4, Erreur présumée 3, savoir certain 24, 1 ignorance déclarée . J'ai eu tout juste en physique, mais j'ai plus de mal en chimie car c'est moins concret. Les formules sont dures à comprendre donc à apprendre. De plus, mes erreurs dangereuses en chimie montrent que je n'ai pas tout compris. 
+Il y a globalement des réponses correctes même si beaucoup sont incertaines, et une seule erreur dangereuse  due à une mauvaise lecture du document.  Il faut dont être davantage sûr de mon savoir en révisant mes bases  et mieux lire les documents . Globalement ça va ? Mes connaissances sont donc suffisantes  et mon jugement globalement réaliste même si trop prudent. 
 ****
-Mon score global est de 23/32, avec 9 réponses incorrectes dont 7 dangereuses et 2 présumées, et 23 correctes avec 3 réponses fragiles et 20 savoirs certains. Ce score global (par rapport aux erreurs dangereuses) est peut-être dût à de la précipitation . La courbe en J au niveau des réponses incorrectes n'est pas bonne , il y a trop d’assurance pour des réponses qui sont fausses . Mais ma courbe en J pour les réponses correctes est bonne. Je pourrais être plus réaliste en lisant mieux les questions. 
+Il y a beaucoup de réponses correctes (41) quelques réponses incorrectes (7) et pas d’ignorance.  Les réponses incorrectes sont dues à une mauvaise lecture de l’énoncé, à une question étrange (pentagone) et à quelques erreurs d’inattention.  Dans l’ensemble, les réponses justes sont certaines.  Pour le prochain test, il faudra que je lise mieux l’énoncé et que j’utilise les bons graphiques. 
 ****
-J'ai eu 23/32. Des bonnes connaissances dans certains chapitres et des manques de connaissances notamment pour les ondes et le titrage, ainsi que les représentations des molécules dans l'espace. 
+J’ai un manque (léger) de confiance . Je prédis plutôt bien mes erreurs . Il faut maintenant que j’ose être à 100% sur de mes réponses. 
 ****
-Bon test permettant ainsi de connaitre la qualité des connaissances. 
+J’ai fait des erreurs d’inattention tel que l’analyse dimensionnelle où je n’ai pas fait attention à m. s-1  ainsi que des tournures de phrases que je n’ai pas comprises . Néanmoins, je remarque que je suis trop sûr de moi même un peu trop. 
 ****
-J'ai eu 22/32. De bonnes connaissances dans certains domaines, comme de sérieuses lacunes dans d'autres. 
+Globalement, il y a beaucoup de réponses exactes et assez d’ignorances . Je suis sûre de ce que je ne sais mais je ne suis pas assez attentive car les 5 erreurs dangereuses que j’ai faites sont en fait des erreurs inattention . J’ai tout de même assez d’ignorances donc mon travail n’est pas assez approfondi. 
 ****
-​-> 22/32 avec 6 erreurs dangereuses, 18 savoirs certains et 4 savoir fragiles, 1 erreur présumée.  -> Les erreurs dangereuses viennent du fait que je lis parfois trop vite et de ce fait j'oublie des informations . Ou alors je me rappelle plus des vraies formules-> par rapport à la courbe en J des réponses correctes, je diffère beaucoup -> prudence
+Mon savoir est certain  et mes erreurs dangereuses sont dues à une inversion de ma logique. Bonne logique mais mal raisonnée. => apprentissage préalable non fait, ce qui résulte d’un manque de savoir  :)+ réviser avant, analyser les réponses dangereuses. Ne pas avoir la flemme de faire les calculs. 
 ****
-4 erreurs dangereuses et 6 erreurs présumées et 4 savoir fragile ainsi que 18 savoir certain  (ce qui est plus ? (Illisible) / cohérent que la dernière fois). 22/32Pour les réponses correctes, ma courbe suit la courbe en J. Pour les erreurs, il n'y a pas vraiment de courbe. Je suis allée beaucoup trop vite sur certaines questions  et je ne me suis pas fait assez confiance. 
+J’ai globalement un savoir fragile, une confiance assez limitée en mes connaissances  mais surement due aussi au manque de révision au retour des vacances. J’ai un bon nombre de réponses fausses (21) dont la moitié en moitié dangereuse  parfois liée à une incertitude d’autre fois lié à un pourcentage évalué trop ce qui n’était pas toujours réaliste.  Il faut en effet un travail plus rigoureux mais surtout plus régulier .
 ****
-Globalement, il y a 23 réponses correctes et 9 réponses incorrectes ce qui est moins bon que la dernière fois.  Ce score global est du à beaucoup de certitudes fausses (5 erreurs dangereuses) mais notamment à un savoir certain de 20 réponses mais aucune ignorance. Pour les réponses incorrectes, mes résultats vont en descendant en fonction du degré de certitude mais les réponses correctes suivent la courbe en J . Cela révèle probablement d'imprudence considérable mais de sureté bénéfique.  Lors du prochain test, il s'agira de se montrer moins sur à 100% sur des réponses, même pour les réponses où je suis sûr de moi . Si je ne suis pas complétement certain, c'est mieux de mettre un degré de certitude moindre. Cela permettrait ainsi de diminuer la quantité d’erreurs dangereuses.
+40/48 37 savoirs certains, 1 savoirs fragiles, 6 ignorances déclarées, 2 erreurs dangereuses, 2 erreurs présumées. Les erreurs dangereuses  : erreur d’inattention -> faire attention à bien lire les énoncés . Une où je pensais savoir alors que je n’ai jamais lu le chapitre sur la nomenclature . Question pentagone mal posée . Erreurs présumées et ignorances : mieux connaitre mon cours et réviser. Je n’ai pas révisé ni la diffraction ni la nomenclature ( A faire !) . Savoir fragile un seul donc ça va. Savoir certain : Top.  Conclusion plus m’entrainer sur les derniers chapitres (diffraction et nomenclature)
 ****
-Mes connaissances sont suffisantes (24/32) mais mon jugement n'est pas réaliste . Concernant les réponses justes, mes résultats suivent plutôt la courbe. Mais mes erreurs ne suivent pas la courbe car j'ai fait trop d'erreurs dangereuses (4). Je suis donc trop imprudent.  Certaines de ces erreurs sont dues à un manque de réflexion par rapport aux questions (ex: confondre semi-équation et équation de réaction)  et une trop grande confiance aux réponses données par le QCM. Je devrais aussi plus me méfier de mes réponses.
+J’ai des connaissances mais je ne lis pas toujours correctement les énoncés et fais des erreurs inattention en voulant aller trop vite (exemple : ne pas vérifier que 95 est multiple de 19 pensant que ce n’était pas le cas) 
 ****
-23/32Je possède de nombreuses erreurs dangereuses, c'est bizarre parce que j'étais persuadé d'avoir fait de bons résultats. Mes fautes sont surtout en chimie, c'est tout à fait normal car je ne comprends pas trop certaines méthodes à faire . . . Je ne peux pas forcement m'améliorer à ce stade-là.
+32 savoirs certains, 2 savoirs fragiles, 7 erreurs présumées, 4 erreurs dangereuses, 3 ignorance déclarée- > une erreur dangereuse due à faux énoncé . + d’erreurs présumées que d’erreurs dangereuses. et + de savoirs certains que de savoirs incertains => courbe en Jamais un peu trop d’erreurs dangereuses.
 ****
-24/32 beaucoup trop d'erreur dangereuses mais une courbe de savoir certain plutôt bonne . Il faut que je travaille mieux mes notions  afin d'être certain de toute mes réponses et éviter ces erreurs sur lesquelles je suis trop confiant commes ces erreurs dangereuses : 6/32
+Aucun commentaire
 ****
-Résultat de 28/32 . Des erreurs dues soit à la mauvaise compréhension des questions (n° 5: une force orthogonale à v0 non une force v0), soit à une maîtrise incomplète du vocabulaire (isomérie). L'objectif est donc une attention plus marquée dans la lecture des questions  et une meilleure maîtrise du cours. Pour le spectre RMN il m'a semblé que le spectre était incohérent par rapport aux marches représentant la quantité de H (un triplet pour 4 H ?). Le cours doit être relu et mieux compris. Bonne compréhension pour la réaction d'oxydation, la diffraction et les lois de Newton. 
+​-> une erreur dangereuse mal lue , sinon 2 erreurs sur les violons. A revoir notamment relation rad et degré (en symbole)  -> trop de doute fait changer l’intuition => faux -> pas d’ignorance déclarée et peu de certitude totale => reste autour de moyenne de certitude  -> pour le prochain test, moins me laisser déconcentrer par les bruits autour pour passer moins de temps à ressasser les questions  plus s’autoriser des 100%. 
 ****
-Sur ce test, j'ai 19 réponses correctes, toutes de savoir certain, et 13 réponses incorrectes dont 11 sont des erreurs dangereuses et 2 erreurs présumées. Les erreurs que j'ai faites sont dangereuses puisque j'étais quasiment sur ou sur de ces réponses. Les courbes en J ne sont pas cohérentes, au niveau des réponses incorrectes : bcp de réponses dangereuses à 100% ou 95% de certitude.  Pour mieux réussir ce test, il faut mettre une certitude de savoir pas très importante pour limiter les erreurs dangereuses.
+J’ai obtenu globalement d’avantages de réponses correctes que de réponses incorrectes (42/48)  car je me rappelle des phrases importantes du cours.  Cependant, je remarque un écart entre mes résultats et la courbe en J, particulièrement du côté des réponses correctes car j’ai obtenu 10 réponses savoir fragile cela révèle que je n’ai pas assez confiance en mes connaissances.  Je suis donc trop prudente , je pourrais ainsi devenir réaliste lors du prochain test en essayant d’avoir d’avantage confiance en mes connaissances  .
 ****
-10 réponses correctes sur 20, score correct , cependant trois erreurs dangereuses (à80%) qui sont dues à une mauvaise lecture de l'énoncé et une confusion entre plusieurs éléments de la consigne . Cependant, j'ai 7 savoir certain et 3 savoir fragile,  ce qui témoigne d'une bonne connaissance d'une partie du programme et une connaissance partielle d'une autre partie du programme  (10 questions erreur présumée, ignorance déclarée et savoir fragile). Pour un meilleur résultat la fois prochaine, il faudrait ouvrir le livre de SPC notamment sur la mécanique  (2eme loi de Newton)
+Beaucoup de réponses correctes/8 réponses incorrectes dont 2 dangereuses  à cause d’un manque de quelques connaissances.  Résultats montrent de la prudence  mais trop de doutes sur les réponses correctes -> manque de confiance en soi . Pour le prochain test, il faut moins de doutes sur les choses connues. 
 ****
-j'ai souvent répondu trop vite  et je pense autant ne pas avoir appris mon cours donc je me suis mélangé plein de fois
+Globalement, il y a beaucoup de réponses correctes et quelques réponses incorrectes et ignorances . J’attribue ce score au fait que je n’ai pas encore révisé /repassé le dernier chapitre (diffraction) . Sinon la courbe en J est très semblable à mes résultats corrects mais différente à celle de mes résultats incorrects , je fais donc preuve d’un peu imprudence. 
 ****
-je mérite cette note car je n'avais pas de connaissance spécifique sur ce cours (mots spécifiques scientifiques)  et je n'étais pas concentré à 100% en raison de problèmes informatiques ce qui a causé un taux d'erreur trop important
+Résultats : 45 savoirs certains et 3 erreurs dangereuses. 2 erreurs dangereuses  sur les objets colorés en lumière colorée/aux filtres -> erreurs récurrentes les années précédentes ->revoir synthèses soustractive et additive1  erreur dangereuse sur le groupement amide -> erreur habituelle : je confonds les amides et les amines En général, je suis assez sûre de moi concernant mes connaissances en physique-chimie mais en DS j’ai tendance à revenir sur ces certitudes . Ce test n’étant pas noté, le stress ne m’a pas fait douter du tout. 
 ****
-Avec 4 erreurs dangereuses, 3 erreurs présumées et 13 savoirs certains . Pour la prochaine fois, essayer de prendre plus de temps dans la lecture de certaines questions . les erreurs dangereuses étant au dessus de la courbe.
+J’ai obtenu deux réponses incorrectes et dix-huit réponses correctes . Le savoir certain est dominant, peu de savoirs fragiles. Quelques erreurs dangereuses (2).  Je pense qu’il faut que je sois plus confiante pour la prochaine fois. 
 ****
-Je suis arrivée à un résultat de 12/20  avec beaucoup d'erreurs dangereuses, je pense que je n'ai pas entièrement compris le cours et j'ai été beaucoup moins prudente que sur le dernier test, j'ai pris des risques  et cela n'a pas aboutit. J’ai beaucoup moins d'ignorance déclarée. Il faut encore que je me concentre davantage sur les énoncés, prendre le temps de bien lire surtout sur la mécanique . Les conditions ne sont pas vraiment idéal non plus
+Ca va, 13/20 c’est pas exceptionnel mais c’est pas super,  mais bon, des petites erreurs de temps en temps, c’est pas dramatique.  Mes réponses justes font un J mais pas les fausses , je suis trop prudent . Je ne sais pas…
 ****
-9 savoir certain 4 fragile 4 erreurs présumées et 3 dangereuses.  des confusions et des souvenirs erronés du à des réponses données basées non pas sur un cours appris mais sur des souvenirs de classes et des exercices faits.  Un apprentissage du cours permettrait de palier à cela
+12 réponses correctes dont 9 savoirs certains et 3 réponses incorrectes sont 2 erreurs dangereuses. Y’a pas de courbe en J 
 ****
-J'ai eu 6 réponses incorrectes et 6 dangereuses et 13 réponses correctes dont 11 savoir certain. mes erreurs viennent majoritairement du fait que je ne comprends absolument pas le chapitre de chimie sur lequel nous avons eu des questions (solution titrante/titrée, ph, pka) 
+J’ai un résultat de 16/20 dont 3 réponses au hasard.  Mes erreurs : j’en ai 3 (2 dangereuses 1 résumée). Mes réponses justes : 14 dont 10 savoirs certains et 4 fragiles . Je pense qu’au lieu de mettre 90% je devrais mettre 100% car la plupart du temps j’ai juste. 
 ****
-Je n'avais pas appris tous les cours C'est pourquoi j'ai fait beaucoup d'erreurs présumées , certaines fois je me suis embrouillée et/ou j'ai interprété la question. Certaines fois j'ai hésité, j'ai fait une erreur dangereuse car j'ai échangé 2 valeurs dans une formule que je n'ai pas trop comprise . J'ai eu une ignorance déclarée car je ne savais pas du tout la réponse. Je n'ai pas pros beaucoup de risques car je ne suis pas très à l'aise sur cette partie du cours.
+Je suis content  car la plupart des réponses sont correctes mais quelques erreurs bêtes 
 ****
-je n'ai pas bien relu mes chapitres  et j’ai des fois mal lu les consignes  ou mal compris . 0 réponses correctes, 0 ignorance et 11 réponses incorrectes
+Erreurs nombreuses (10/20), avec peu de savoirs fragiles (2/9) et un équilibre erreurs dangereuses / présumées.  Même si lors du test, j’ai malheureusement échangé les réponses de certaines questions (donc deux erreurs dangereuses pour rien) et d’autres étaient ambigües.  J’attends le prochain test avec hâte .
 ****
-pour ce second test, j'ai eu 9 réponses correctes, 4 ignorances et 7 réponses incorrectes.  Plus de difficultés qu'au premier test, des connaissances plus faibles, une mauvaise maitrise des cours. Ensemble fragile. Je dois revoir les chapitres de chimie (acido-basique) et également en mécanique, les lois de Kepler et la mécanique des électrons. 
+Sur 20 questions, j’ai eu une seule erreur que j’ai jugée être sûre à 70%. Par rapport aux autres questions, j’ai obtenu un savoir fragile pour 9 questions (j’étais sûre de moi entre 60 et 70%) et j’ai obtenu un savoir certain pour 10 questions (dans lesquels j’étais sure de moi à 80%).  Pour certaines questions, j’ai voulu être prudente en mettant sur à 60% alors que j’avais un peu plus confiance dans ma réponse . Je retiens qu’il faut que je prenne un peu plus confiance en moi puisqu’en soi, j’ai compris les leçons (j’ai obtenu 19/20) 
 ****
-J'ai 3 erreurs dangereuses, je pense qu'elles sont liées au temps accordé au questions. on a du se dépêcher. J’aurais mieux réussis si j’avais pu poser les questions à l'écrit sur une feuille et si j'avais pour prendre mon temps en recontextualisant les questions qui ont déjà été vues en classes ou évaluation.  Il faudra que je prenne le temps de comprendre mes 5 erreurs présumées.
+Globalement je suis sûr de moi et je n’ai que peu d’erreurs. Pour les réponses correctes, j’ai une courbe en J mais pour les fausses, j’ai un J aplati.  Je devrais être plus prudent pour les prochains. 
 ****
-moins bons résultats que pour le premier test FEED BAC. je pense que le cours est moins maitrisé  et je n'ai pas pris le temps de bien comprendre les énoncés  ce qui explique certaines erreurs dangereuses que j'ai pu faire. J'ai quand même pu corriger le problème du premier test sur le fait que je n'avais pas confiance en moi 
+12/2070% pour réponse juste, certitude faible, Majoritairement : erreurs dangereuses. 
 ****
-j'ai eu 11/20. Je mérite cette note car je n'ai pas révisé. de plus, dans certaines questions je n’étais pas concentré sur le sujet 
+J’ai eu 12 réponses justes dont 11 où j’étais sûr à 100% et une incertaine. 2 questions ou j’ignorais la réponse, et 6 réponses fausses. Sur ces 6 réponses, j’étais dans l’erreur dangereuse 5 fois.  Je pense que je dois être plus prudent lorsque je réponds à une question , car je suis trop sûr de moi . Ma courbe de réponses correctes ressemble à un J tandis que sur ma courbe de réponses incorrectes ressemble à un J écrasé.
 ****
-Incompréhension acide/base + titrage . Manque de rigueur (déjà révélée à l’interrogation). les autres items majoritairement,t acquis. (panneau danger). revoir charge électrique à associer à la 2ème loi de Newton. sur la fin, manque de temps et donc 3 erreurs dangereuses . j'ai maintenant compris mes erreurs.
+Globalement, il y a beaucoup de bonnes réponses et peu d’ignorances. Cependant il y a 1 erreur dangereuse.  Je suis plutôt sûr de moi.  Il me faut mieux connaitre mon cours plus tard. 
 ****
-J'ai obtenu 10 réponses correctes et 9 réponses incorrectes avec une ignorance déclarée . J'ai fait une seule erreur dangereuse dont j'étais sur à 100% et deux à 80% ce qui est mieux que la dernière fois. j'ai été plus réaliste . cependant il reste encore beaucoup d'erreurs présumées. Il y a 8 savoir certain et deux savoir fragile , ce que je trouve encourageant
+Sur 19 bonnes réponses, 15 sont en savoirs certains, 4 en savoir fragiles,  Il faut donc que je me fasse confiance . Sur 1 mauvaise réponse, une erreur présumée. Cela signifie que je suis prudente lorsque j’ai un doute . Il faut donc que je me fasse plus confiance pour avoir une meilleure courbe J dans les réponses justes. 
 ****
-voici mes notes et commentaires : bon pour le plan mental mes connaissances pas encore assez solides.  J'étais tout à fait sur de mes réponses contrairement à la session précédente. Ceci démontre de mon évolution sur le plan mental notamment. Dans mon assurance à répondre aux questions.  Néanmoins il me semble que certes mes compétences/connaissances n'ont pas évoluées depuis la dernière fois mais mon problème réside dans ma précipitation . C 'est mon dernier mot
+Il n’y a pas d’erreurs dangereuses et très peu d’erreurs présumées. Aucune ignorance, et peu de savoirs fragiles. Le savoir certain est dominant.  Pour avoir un bon résultat et de belles courbes, je pense qu’il faut prendre le temps de réfléchir  et que pour les calculs par exemple si on trouve le résultat il ne faut pas hésiter à être sûre de soi, et en général aussi, pas que pour les calculs. Il est probablement déconseillé que même si on n’est pas sûr de nos résultats ne pas mettre de pourcentage trop faible (50-60% )
 ****
-J'ai eu 9 réponses incorrectes  dont 4 dangereuses et 5 présumées  et 11 correctes. je pense que j'aurais pu éviter les mauvaises réponses en agnat plus de temps mais aussi en connaissant plus les formules pour éviter de faire des erreurs.
+Il y a globalement plus de bonnes réponses avec 14 savoirs certains, 1 savoir fragile, 2 erreurs présumées et 3 erreurs dangereuses. La courbe en J des réponses correctes est bien avec presque que du savoir certain. Mais la courbe J des réponses incorrectes n’est pas bonne car j’ai plus d’erreurs dangereuses que d’erreurs présumées.  Je peux donc espérer plus de réalisme en apprenant davantage. 
 ****
-J'ai répondu trop vite aux questions. je n'ai pas assez réfléchi à certaines questions.  Parfois, je n’étais pas sure de moi. Or j'avais un savoir certain pour chaque bonne réponse. pour 4 erreurs je n'étais pas sure de moi.
+J’ai eu 18 réponses correctes, 16 savoirs certains, 2 savoirs fragiles, et 2 erreurs dangereuses. Je n’ai aucune ignorance. Mes résultats sont proches de la courbe en J apparaissant , on peut penser que je suis assez prudent . Pour le prochain test, j’éviterais la certitude 100% 
 ****
-y a trop de réponse dangereuse : car soit j'ai pas revu le cours  soit je suis allé trop vite et du coup mauvaise lecture/compréhension 
+Mes résultats sont de 16 savoirs certains et 4 erreurs dangereuses . Ces scores sont dus à mes connaissances.  La courbe en J et mes résultats sont de même cela révèle que je suis plus imprudent . Je pourrais devenir davantage réaliste lors de prochain test en acquérant (!) plus de connaissance. 
 ****
-résultat globalement satisfaisant (15/20) malgré les 4 erreurs dangereuses dues à un manque d'attention sur certains détails  voire à une confusion dans mes connaissances . Certains acquis demandent d'^ter vérifier. J'essaye de me baser le moins possible sur de la déduction mais plus sur la réflexion
+Il y a beaucoup de réponses correctes (14/20) 5 réponses d’ignorance et 1 réponse incorrecte . Il y a un écart entre ma courbe et la courbe en J  et cela révèle une imprudence. 
 ****
-des parties qui laissent percevoir un manque de révisions dans les chapitres vu il y a un certain temps en cours. Des erreurs que je pouvait éviter souvent dû au manque de concentration . il faut que je révise les formules de Kepler et revoir les charges électriques 
+Mon résultat est 17/20avec 3 erreurs dangereuses et 17 savoirs certains. Je n’ai pas eu d’ignorance.  Mes résultats d’après les courbes en J révèle de l’imprudence tout de même . Je pourrais être plus prudent sur ma certitude des réponses pour les prochains tests. 
 ****
-Chapitres pas assez bien travaillés , notamment ceux avec lesquels j'ai du mal. Beaucoup de raisonnement pas logique qui ne me réussit pas souvent
+Il y a beaucoup de réponses correctes.  Les courbes en J sont plutôt écrasées  Trop prudent  Pour devenir davantage réaliste lors du prochain test, je vais mieux revoir mes cours. 
 ****
-Note 12/20 (5 dangereuses, 2 présumées, 1 ignorance , 4 fragiles, 8 certains ). faiblesse des connaissances et mauvaise déduction/mauvaise logique. utilisation de cela car mauvais apprentissage du cours . Pas automatisme à répondre aux questions et non connaissance de la technique à utiliser.
+Il y a beaucoup de réponses correctes. Je ne suis jamais sûr à 100% mais beaucoup à 90%Souvent la réponse est correcte mais je suis sûr qu’à 70%Je n’ignore jamais. Les 3 réponses incorrectes sont réparties sur 90 80 et 70% . Il faut que j’aie un peu plus confiance en moi. 
 ****
-bcp d'erreurs dangereuses , Savoir -> 7 réponses bonnes, bien relire les consignes  et surtout plus réviser la leçon. Difficultés dans le chapitre sur la loi de Newton  à retravailler. ignorance déclarée. pas satisfaite de mon test.
-
-
+Il y a 13 réponses correctes avec un savoir certain , 0 savoir fragile, il y a donc un bon savoir. Sur les 3 réponses incorrectes, il y en a 2 dangereuses et une présumée.  Cela montre un peu trop d’imprudence . Sur l’ignorance déclarée, 3 sur 4 sont fausses. J’espère devenir réaliste en prenant plus mon temps  et en étant un peu plus prudent.  La courbe en J des erreurs était très aplatis alors que celle des bonnes réponses faisait un beau J.
+****
+J’ai eu 15/20 avec 4 réponses incorrectes dont 1 erreur dangereuse et 3 erreurs présumées, 2 ignorance, et 14 réponses correctes sont 1 savoir facile et 13 savoirs certains.  Ma courbe de réponses correctes augment bien, et pour ce qui est de ma courbe de réponses incorrectes, elle doit avoir plus de d’erreurs présumées à 60% 
+****
+Globalement il y a eu beaucoup de réponses correctes, quelques réponses incorrectes et 0 ignorance.  J’étais à 100% sur pour quelques questions alors que j’ai eu faux.  Ca montre que je suis peut-être imprudent et sur , et que je devrai plus réfléchir sur les questions et mes connaissances 
+****
+Les questions m’ont semblé assez simples , je ne pensais pas avoir le résultat que j’ai eu (3 erreurs) . Cela me montre qu’il faut que je me fasse plus confiance.  Question après question, j’étais plutôt sûre de moi. 
+****
+Il y a 9 réponses incorrectes et sur celles-ci 2 dangereuses et 7 présumées  : je ne suis vraiment pas sûr de moi : je pensais avoir encore plus de réponses fausses.  Le fait de doutais fais changer mon premier choix et mène aux erreurs. Même quand mes réponses sont justes, je doute quand même : j’ai souvent mis 80% car je suis assez sur et pour moi pas complètement. 
+****
+Globalement, il y a plus de réponses correctes que de réponses incorrectes, et aucune ignorance.  Dans les courbes obtenues à la suite de mon test, j’ai plutôt un degré de certitude élevé sur les réponses justes et sur les réponses fausses.  En comparaison avec les graphiques en J, j’ai tendance à être trop imprudente, ayant tort avec un degré de certitude élevé, commettant des erreurs dangereuses . Pour espérer être davantage réaliste, je devrais faire preuve de plus de prudence quant aux réponses où je ne suis pas très sûre de moi. 
+****
+Globalement, je pense que m’en suis pas trop mal sortie… Je n’avais pas du tout relu mes cours auparavant donc quelques réponses étaient incertaines . Quelques fois j’ai trouvé les questions un peu ambiguës (par exemple le spectre RMN). -> déblindage . Je pense que je suis sûre de moi pour la plupart des questions . J’ai eu des doutes quelques fois et j’ai été un peu perturbée par le travail mental. Vers la fin j’étais un peu fatiguée  :).
+****
+Des erreurs d’inattention , lorsqu’on a fini le test, il était 18h00.
+****
+Je viens de faire un DS de physique-chimie alors mes connaissances étaient à jour, cela a clairement participé à ce score.  J’étais confiant sur chacune de mes réponses . Toutefois, j’ai eu une faute sur une application numérique  qui révèle peut-être un excès de confiance qui peut se retourner contre moi.  Le test était instructif et a permis de revoir l’ensemble du programme, il m’a été très profitable. 
+****
+Dans l’ensemble, je n’ai aucune réponse incorrecte et aucune ignorance . De manière générale, j’ai un savoir relativement certain, en ayant qu’un seul à 100%.  Je pense que je suis globalement réaliste sur mes connaissances mais je ne suis jamais à 100% (surtout après plusieurs heures de TPs avant… ), mais suivant les résultats que j’ai obtenu, il est logique de penser que j’aurais dû/ je devrais être sûre à 100%.  A l’avenir, avoir plus de confiance en mes capacités et en moi même pourrait me permettre de m’améliorer , même si je suis dans l’ensemble très satisfaite.  (Merci !)
+****
+J’ai eu beaucoup (~) de erreurs dangereuses mais en tout pas mal de réponse juste . Je pense que certaines questions que je maitrise j’y suis aller trop vite et ai donc commis des erreurs . J’ai était plutôt prudent mais c’est justifier car j’ai eu autant de fausses pas sûr que juste pas sûr.  Je pense que je suis bien réaliste de ce que je sais mais quand je sais que je sais je vais trop vite et commet des erreurs. Il faut donc prendre son temps et vérifier même si on est sûr de la réponse. 
+****
+Il y a une majorité de réponses correctes , en revanche, des erreurs d’inattention dans la lecture des questions donnent lieues à certaines erreurs dangereuses qui n’avaient pas lieu d’être.  De plus, je pense aussi avoir été trop confiante dans mes résultats.  Il faut donc que je prenne plus de temps pour répondre & lire les questions la prochaine fois.  BONUS : il faudrait faire le test à un autre moment de la journée -> 17h30 étant trop tard :)
+****
+19/24 : savoir certain : 13savoir fragile : 6erreur présumée : 3erreur dangereuse : 2 -> il y a un nombre moyen de réponses correctes J’attribue ce score global à la chance . -> écarts pas énormes mais pas faibles non plus|-> à améliorer : un peu d’imprudence-> se faire plus confiance, se fier à l’intuition 
+****
+Globalement, il y a beaucoup de réponses correctes, (17 sur 24) , la plupart étant jugée de manière réaliste . Je n’ai aucune ignorance et relativement peu d’erreurs. Cependant, la plupart de mes erreurs sont dangereuses : je pensais avoir juste. Donc, je suis un peu trop sûr de moi . Mais je suis quand même relativement prudent  (5 questions sur 24). Il n’y a aucune d’ignorance : je ne veux donc pas monter que je ne sais pas , peut-être. je suis donc un peu imprudent.
+****
+Grosso modo la quantité de réponse juste et de réponses fausses sont presque les mêmes.  Je suis pourtant étonnée d’avoir 12 réponses savoir certain. Je pense que l’heure à laquelle j’ai fait le test (17h30-18h) et le fait de n’avoir fait aucunes révisions augmentent les réponses erreurs dangereuses et erreur présumée . Vers la fin, j’avais aussi envie de terminer plus rapidement, donc j’ai répondu un peu rapidement, avec un degré de confiance plus faible . Je constate cependant que je n’ai qu’une réponse ignorance déclarée donc je suis satisfaite . Mon résultats 15/24 = 12,5/20 est presque égale à ma moyenne.
+****
+Mes réponses correctes sont celles sur les chapitres que je maîtrisait le plus et sur les chapitres les plus récentes.  Le chapitre sur les ondes mécaniques au début de l’année, j’ai eu des réponses incorrectes dessous, puisque j’avais oublié la leçon.  J’ai été imprudente sur plusieurs questions , parfois je ne comprenais pas et donc je répondais au hasard. 
+****
+J’ai eu beaucoup de réponses correctes, seulement 2 incorrectes.  Ces deux réponses incorrectes étaient des erreurs présumées.  J’ai eu quelques réponses où j’ignorais la réponse et où j’ai répondu au hasard, mais j’ai eu de la chance et j’ai eu juste. J’espère devenir davantage réaliste car j’ai été très peu sûr lors de mes réponses malgré un grand nombre de réponses justes. 
+****
+​- J’ai eu quatre réponses fausses, dont une dangereuse. Je n’ai eu aucune ignorance, mais je n’étais pas absolument sûre de la plupart de mes réponses.  Je ne sais pas à quoi attribuer ce score, car j’ai cru que ma note allait être beaucoup plus basse !- D’après la courbe en J, je devrais me situer dans 1. ) Mes connaissances sont satisfaisantes  - car j’avais plus de réponses correctes (20) que de réponses incorrectes (4) avec 0 ignorances déclarées Néanmoins même si mes connaissances semblent satisfaisantes et que j’ai supposément un jugement réaliste, il faut que j’avoue avoir répondu à toutes les questions en mettant que je n’étais vraiment pas sûre, puis j’avais relu une deuxième fois en essayant d’être plus confiante dans les réponses que j’avais mise  - mais je n’aurais jamais pensé avoir une aussi bonne note !- Je pense donc que pour être plus réaliste, je devrais me faire plus confiance,  mais c’est un gros problème que j’ai depuis très longtemps ! Je voudrais donc finir par dire merci pour ce test, c’était un bon boost de confiance ! :) 
+****
+J’étais globalement assez cohérente dans mon degré de certitude et la justesse de mes réponses . Pour l’une des réponses cependant (spectre RMN), j’ai voulu être trop précise, si bien que ma réponse a été notée comme fausse. Je cherche peut-être trop les pièges (après vérification avec le professeur, mon raisonnement était juste même si noté faux) .
+****
+J’ai une majorité de réponses correctes mais je n’ose jamais être sûr à 100%. Toutes mes fautes ont été pressenties mais certaines réponses correctes n’étaient pas certaines.  Je pense que cela montre que je n’ai pas entièrement confiance à mon savoir mais que je sais mes limites de mes connaissances.  Peut-être le faire à un autre horaire serait plus judicieux.
+****
+Je pense ne pas être assez sûr de moi pour certaines questions  mais, dans l’ensemble, j’ai trouvé ce test intéressant. Nous avons pu réaliser que nous n’avons pas oublié la totalité de ce que nous avons fait en début d’année  (donc il y a quelques semaines :) )
+****
+J’ai 2 réponses incorrectes qui sont toutes les 2 des réponses dangereuses. J’ai plus de savoir certain que fragile (18>4). 
+****
+(17/24)5 réponses fausses3 ignorance16 réponses correctes  Le graphe des réponses incorrectes ne me parait logique (sa forme) car j’ai trop tendance à assumer des choses que je ne connais pas … Le score global est surtout dû au fait que je ne connaisse pas ma leçon de chimie et que je comprends assez bien la physique.  Pour le prochain test (s’il y en a un) il faudra que j’apprenne mieux ma leçon de chimie. 
+****
+Pour la plupart des questions, j’ai plutôt bien réussi à dire si j’allais avoir juste ou non . * C’est quand même intéressant de voir sur quelles questions on a fait une erreur dangereuse car je me suis rendu compte que je faisais quelques erreurs bêtes. *  même si j’ai été plutôt prudente  Pour espérer devenir davantage réaliste, je pourrais plus me faire confiance lorsque je sens que c’est la bonne réponse . C’était un test très intéressant à faire.
+****
+J’observe une bonne certitude sur une majorité des questions , à part peut-être pour certains concepts de la chimie. 
+****
+Globalement, le test m’a donné de la confiance dans mes connaissances . La majorité des questions sont correctes, mais certaines incorrectes n’ont pas été détecté. 
+****
+Beaucoup d’incertitude (trop prudent) , prendre plus de temps pour réfléchir et avoir plus de connaissances. 
+****
+Globalement presque la majorité de mes réponses si situent dans un savoir certain (19/40)  ce qui est agréable Cependant trop d’erreurs dangereuses (7/40) 
+****
+Il y a globalement beaucoup de réponses correctes et principalement certaines mais trop de réponses fausses dangereuses (7)  qui est surement dû à une mauvaise compréhension de cette partie du cours  ou une mauvaise ?
+****
+Il y a eu plus de réponses correctes que d’erreurs, mais aussi un certain nombre d’ignorances . Les erreurs présumées sont nombreuses ce qui révèle un degré élevé de prudence . Quand je suis incertaine, je suis plutôt prudente. Il faudrait que je révise davantage pour le prochain test  pour que j’ai moins d’ignorances déclarées et être un peu plus sûr de moi.  Et après avoir vu les réponses, il faut que je lise mieux l’énoncé et prendre le temps de répondre sans me précipiter. 
+****
+Le résultat donne 34 réponses correctes avec 5 savoirs fragiles. Aucune ignorance déclarée.  Ce qui permet de voir qu’il y a des bases solides  avec quelques erreurs dangereuses donc quelques confusions .
+****
+Mes connaissances insuffisantes  ne m’ont pas permis d’être sûr de moi a chaque réponse. Parfois, certaines des réponses me paraissent justes mais elles ne le sont pas. Cela reflète les erreurs dangereuses  et il faudrait que je sois bien plus rigoureux sur les connaissances de cours  qui me permettront d’avoir des informations globales qui me faciliteront la tâche pour comprendre du mieux possible les exercices des devoirs surveillés par exemple.
+****
+Je pense que j’ai mal lu certains énoncés ce qui m’a porté l’oeil. 
+****
+Les réponses sont essentiellement certaines (que ce soit juste ou faux).  Un assez bon nombre de réponses correctes, même si plusieurs mauvaises réponses dues à un oubli de cours . Lors du prochain test, approfondir les connaissances manquantes et éviter les confusions. 
+****
+Globalement j’ai beaucoup de réponses correctes, peu de réponses incorrectes et peu d’ignorances.  Dans les réponses correctes, j’ai beaucoup plus de savoirs certains que de savoir fragile , ce qui montre que j’ai confiance en mes connaissances.  J’ai 5 ignorances déclarées et 8 erreurs dangereuses. Cependant, je n’ai aucune erreur présumée.
+****
+J’aurais dû mieux apprendre mes cours et certaines fois être plus attentive aux documents car j’ai fait deux erreurs de lecture que j’aurais surement pu éviter . J’ai répondu au hasard sur peu de questions mais je n’étais pas sure pour certaines c’est pourquoi j’ai eu plusieurs savoirs fragiles et quelques erreurs présumées. 
+****
+J’ai eu 26/40 dont 10 erreurs dangereuses, 3 erreurs présumées et 2 ignorances déclarées, 3 savoirs fragiles et 22 savoirs certains.  Il faudra donc que je révise mon cours avant  et pas très sure de mes réponses. Le test est utile pour savoir quoi revoir. 
+****
+Résultat 22/40 dont 16 incorrectes, 3 ignorance 21 correctes Il y a beaucoup de réponses incorrectes  J’espère faire mieux la prochaine fois sachant que je m’attendais à pire 
+****
+J’ai obtenu le score de 35/40 . J’ai 20 savoir certains et 15 savoir fragile , cela montre que je ne suis pas sure de moi.  J’ai 3 erreur dangereuses 0 ignorance. Ce test est très bien car il permet de nous positionner sur nos réponses. Je suis contente d’avoir réalisé ce test. 
+****
+Manque de connaissance sur certains chapitres , sinon ça allait
+****
+Globalement j’ai eu 28 savoirs certains (sur 40) ce qui est relativement correcte. Cependant, mon taux d’erreurs dangereuses étant de 20% (8 sur 40)  démontre bien que je suis assez imprudent  et que je pense de temps en temps avoir des connaissances certaines or ce n’est visiblement pas toujours le cas.  Mon résultat final : 30/40 reste néanmoins satisfaisant.
+****
+Avec les résultats obtenus, je peux remarquer que mon savoir et soit certain soit dangereux . Je n’ai pas assez revu certain chapitre. 
+****
+La majorité de mes réponses sont correctes et dans un savoir certain ce qui est un point satisfaisant . Cependant je dirai que je suis imprudent puisque j’ai fait 8 erreurs dangereuses. 
+****
+Note 25/40 Dont 9 erreurs dangereuses. 6 erreur présumées, 0 ignorance, 5 savoirs fragiles, 20 savoirs certains. Il y a donc une différence significative entre les erreurs dangereuses et les savoirs certains.  Pour devenir davantage réaliste, il faudrait relire les cours afin d’être plus sure. 
+****
+J’ai fait 29 bonnes réponses sur 40 dont 25 savoirs certains, 3 fragile. 1 ignorance, 10 erreurs dangereuses et 6 présumées.  Pour les prochains tests, il faut que je retravaille mon cours car je n’ai pas vraiment travaillé  J’ai trouvé le test utile pour les révisions  dans l’ensemble je suis satisfaite mais je dois revoir certain chapitre
+****
+Trop de confiance en moi . Beaucoup de réponses correctes mais beaucoup d’erreurs dangereuses. Aucune ignorance.  Je suis satisfaite de mes résultats. Je suis peut-être imprudente . Lors du prochain test, j’aurais surement réussi.  31/44
+****
+Sur 44 questions, j’ai 3 erreurs dangereuses, 6 erreurs présumées, 2 ignorances déclarées, 7 savoirs fragiles et 26 savoirs certains.  Globalement, j’ai des bons résultats mais il reste beaucoup d’erreurs et des incertitudes .
+****
+J’ai eu 27/44 dont 17 savoirs certains, 10 savoirs fragiles et 8 erreurs dangereuses . Cela vient du fait que je me suis mélangée dans les réponses et que je manque de connaissances  et de confiance en moi. 
+****
+En accords avec mes notes actuel et manque énorme de confiance en moi. 
+****
+J’ai eu 28/44, j’ai eu 24 réponses correctes  mais plus de savoirs fragiles que de savoirs certains  car je n’étais pas sûr de mes connaissances sur certaines réponses. 
+****
+Globalement, quand je sais quelque chose, j’en suis sûre, cependant il m’arrive de me surestimer. 
+****
+J’ai eu des réponses certaines à la moitié du test (22 sur 44) avec peu d’ignorances déclarées (5).  Mais je suis trop sûr de moi  car j’ai 11 erreurs dangereuses.
+****
+J’ai assez de réponse juste, avec un nombre assez correct de savoir certain . J’ai eu pas mal d’erreur dangereuse, je devrai donc faire plus attention . C’est un bilan assez bon globalement, mais je devrai faire plus attention
+****
+28/44 Je pensais avoir moins  et je pense que j’aurai pu être plus sûr de mes réponses correctes et éviter les erreurs dangereuses. 
+****
+2 erreurs dangereuses6 erreurs présumées3 ignorances déclarées12 savoirs fragiles21 savoirs certains 
+****
+Je trouve que j’ai trop eu d’erreurs dangereuses alors que je pensais avoir juste.  Mais cependant, j’étais sûr d’avoir des bonnes réponses et cela m’a plutôt réussi. 
+****
+Beaucoup d’erreurs dangereuses (10) mais également beaucoup de savoir certain (27) . Je suis trop dans les extrêmes, je me surestime parfois. 
+****
+Bon test pour s’auto-évaluer , un peu de manque de confiance en soi . Et un peu trop d’erreurs dangereuses 
+****
+26 réponses correctes : 9 savoirs certains, et 17 savoirs fragiles, 8 ignorances10 réponses incorrectes : 8 erreurs présumées, et 2 erreurs dangereuses.  Je ne suis pas sûr de moi 
+****
+13 réponses incorrectes : 5 erreurs dangereuses et 8 erreurs présumées1 ignorance30 réponses correctes : 17 savoir fragile, 13 savoir certain  Manque de confiance en soi 
+****
+Je suis fier de moi,  mais trop d’erreur dangereuse . Pas trop d’écarts avec les courbes en J . Beaucoup d’imprudence. 
+****
+Je me sous estimes parfois , j’ai un manque de connaissances. 
+****
+Globalement j’ai plutôt des réponses correctes , je suis plutôt prudente, je sais quand mon savoir est certain ou fragile . Par contre j’ai des erreurs dangereuses à faire attention où je suis un peu trop sûr. (remarque ajoutée après l’analyse des items individuels)=> connaissance du cours trop fragile  -> travail davantage 
+****
+31/44 Je pensais avoir un peu moins (score) . J’ai fait des erreurs d’inattention, sans vraiment réfléchir à toutes les questions. 
+****
+Dans l’ensemble je suis très voire trop sûr de moi car j’ai beaucoup d’erreurs dangereuses mais aussi de savoir certain . La courbe d’erreur ne forme pas un J contrairement à la courbe de bonnes réponses . Cela révèle de trop de confiance sur certaine de mes réponses  et donc d’un manque de connaissances sur certains points . Je pourrais être plus réaliste en révisant plus et en me précipitant moins .
+****
+Sur 44 questions, j’ai répondu juste à 34 questions en étant sûr et je suis trop sûr de moi donc j’ai eu faux à 10 questions en pensant être sûr de la réponse. 
+****
+Globalement, j’ai beaucoup de réponses correctes et un peu de réponses incorrectes dangereuses 
+****
+J’ai des résultats qui me satisfait mais je fais beaucoup d’erreur grave selon moi .
+****
+Globalement je suis satisfais de mes résultats, mais je semble encore trop confiant  et j’admets mes erreurs
+****
+Sur 44 questions, j’ai 33 réponses correctes composée de 30 savoir certain et 11 réponses fausses composées de 9 erreurs dangereuses 
+****
+Peu d’erreurs dangereuses et de bonnes réponses mais peu de certitudes .
+****
+​- trop d’erreur dangereuse  -> un peu à côté de la plaque
+****
+Trop de confiance , beaucoup d’erreurs où je pensais avoir juste 
+****
+Globalement il y a une majorité de réponses correctes avec 22 savoir certain, 6 savoir fragile, 4 ignorances, 4 erreur présumée et 4 erreur dangereuse  Mes erreurs dangereuses sont surtout dues a des petites erreurs d’étourderie.  Mes résultats sont satisfaisants sachant que j’avais seulement relu mon cours très rapidement. Pour la prochaine fois, il faudrait que je prenne un peu plus de recul pour éviter les erreurs d’étourderie .
+****
+J’ai obtenu 31 réponses correctes avec une grande majorité de savoir certain  donc je suis satisfaite J’ai fait des erreurs dangereuses mais pas de présumées. En revanche j’ai mis bcp de temps à faire le test. 
+****
+Globalement il y a plus de réponse correcte que de réponses incorrectes et que d’ignorance . J’espère devenir davantage réaliste lors du prochain test : - en apprenant mieux en cours,  ce qui me permettra donc d’être plus sûr de moi, de plus avoir confiance en moi.  Car j’ai pu constater que j’avais bcp de savoir fragile donc peut-être qu’une meilleure compréhension du cours et d’un meilleur recul sur le cours va me permettre d’y remédier dans le prochain test.
+****
+Je n’ai pas appris mon cours car dans certains cas, les formules étaient omniprésentes, donc des erreurs surviennent.  De plus, s’ajoute à cela des questions peu sur le thème qu’on n’a JAMAIS évoqué en classe ! => amplification des erreurs. Enfin, à certains moments, c’était des lectures trop rapides et donc des confusions qui conduisent à des erreurs. Globalement, ce test était simple même pour réviser. 
+****
+J’ai eu 31/40.  Quelques erreurs d’étourderie de frappe… mais surtout de lecture.  Je suis assez contente du résultat  mais je n’avais pas compris qql questions et même avec la correction (1. 1) pas vu en cours.
+****
+Globalement, il y a plus de réponses correctes que incorrects mais le résultat reste juste . Cependant j’ai aussi fait beaucoup d’erreurs dangereuse . Rester plus réaliste lors du prochain test. 
+****
+Je me rends compte du fait qu’il y ait un nombre d’erreurs dangereuses trop élevé pour réaliser un devoir décent. Je n’ai certainement pas assez travaillé . De plus, je me suis fait piéger lors de certaines q. car je suis allé trop vite. 
 """
 
-data = pd.read_csv("../data/test_re.csv")
+data = pd.read_csv("../data/train.csv")
 
 chunks = []
 chunk = []
@@ -220,4 +376,4 @@ chunks.append(chunk)
 G = glob.split("****")
 
 
-pd.DataFrame({"comment" : G, "chunks" : chunks}).to_csv("../data/comment_chunk_test.csv") 
+pd.DataFrame({"comment" : G, "chunks" : chunks}).to_csv("../data/comment_chunk_train.csv") 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from graph_builder import graph 
-#from chunker.rag.graph_builder import graph as graphRAG
+from chunker.rag.graph_builder import graph as graphRAG
 import pandas as pd
 import ast
 from Levenshtein import distance
@@ -54,14 +54,14 @@ def main():
         comment_split = graph.invoke({"comment" : comment})["chunks"]
         for chunk in comment_split:
             #find chunk's categories
-            chunk_in_db = vector_store.similarity_search(chunk, k=1)
-            categorie = comments["tag"][int(chunk_in_db[0].id)]
-            print("chunk",chunk)
-            print("chunk in db",chunk_in_db)
-            print("cat",categorie)
+            #chunk_in_db = vector_store.similarity_search(chunk, k=1)
+            #categorie = comments["tag"][int(chunk_in_db[0].id)]
+            #print("chunk",chunk)
+            #print("chunk in db",chunk_in_db)
+            #print("cat",categorie)
             #classify all the chunks
-            #categorie_of_chunk = graphRAG.invoke({"comment": comment, "llm" : "phi4"})["classe"]
-
+            categorie_of_chunk = graphRAG.invoke({"comment": chunk, "llm" : "phi4"})["classe"]
+            print(categorie_of_chunk)
 
 
         #print_chunks(true_chunk, comment_split)
