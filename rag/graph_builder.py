@@ -10,7 +10,8 @@ from langchain_ollama.llms import OllamaLLM
 import os
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-vector_store = Chroma(collection_name="Comment",persist_directory="./chroma_db" ,embedding_function=embeddings)
+chroma_path = os.path.join(os.path.dirname(__file__), '', 'chroma_db')
+vector_store = Chroma(collection_name="Comment",persist_directory=chroma_path ,embedding_function=embeddings)
 #Load the dataset
 data_path = os.path.join(os.path.dirname(__file__), 'data', 'comments.csv')
 comments = pd.read_csv(data_path)
