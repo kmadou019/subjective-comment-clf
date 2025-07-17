@@ -1,0 +1,696 @@
+
+Il y a eu beaucoup de réponse incorrecte et pas mal d'ignorance [MonCal.Facts.RF]. Cela révèle que je ne suis pas sûr de mes réponses [MotOrient.SelfEff]. Pour espérer davantage au prochain test il va falloir que je révise plus ce qui me permettra d'avoir de l'assurance et de la justesse dans mes réponses [CTRL].
+
+["Il y a eu beaucoup de réponses incorrectes et pas mal d'ignorance.", 'Cela révèle que je ne suis pas sûr de mes réponses.', 'Pour espérer davantage au prochain test, il va falloir que je révise plus.', "Ce qui me permettra d'avoir de l'assurance et de la justesse dans mes réponses."]
+['MonCal.Facts.RF', 'MotOrient.SelfEff', 'CTRL']
+['MonCal.Facts.RF', 'MotOrient.SelfEff', 'CTRL', 'MotOrient.SelfEff']
+3/3 ; 0/4
+
+Grâce à ces tests je vois qu'il faut que je m'améliore en mécanique car je n'ai pas du tout compris. J'ai beaucoup d'ignorance car je ne connais pas bien ma leçon. Je me sens plus à l'aise en chimie, mais je confonds encore beaucoup stéréoisomère, énantiomère, de configuration, de conformation . . . J'ai aussi besoin de revoir les titrages car je n'arrive pas à faire les calculs. [DomKldg]
+
+["Grâce à ces tests je vois qu'il faut que je m'améliore en mécanique car je n'ai pas du tout compris.", "J'ai beaucoup d'ignorance car je ne connais pas bien ma leçon.", "Je me sens plus à l'aise en chimie, mais je confonds encore beaucoup stéréoisomère, énantiomère, de configuration, de conformation .", "J'ai aussi besoin de revoir les titrages car je n'arrive pas à faire les calculs."]
+['DomKldg']
+['DomKldg', 'MonCal.Facts.RF', 'DomKldg', 'DomKldg']
+1/1 ; 1/4
+
+Il y a 6 réponses incorrectes  [MonCal.Facts.RF]et sur celles-ci 1 réponse dangereuse [MonCal.Facts.DC]. Sur mes 24 réponses correctes, j'en ai que 6 de savoir certain. Généralement pas sur de moi [MotOrient.SelfEff] et je préfère ne pas me risquer à dire que c'est juste si ça peut ne pas l'être [StratKldg]. De plus ce sont des chapitres que je n'ai pas encore bien révisé surtout la chimie. [DomKldg]
+
+['Il y a 6 réponses incorrectes.', 'Sur celles-ci, 1 réponse est dangereuse.', "Sur mes 24 réponses correctes, j'en ai que 6 avec un savoir certain.", "Généralement, je ne suis pas sûr de moi et je préfère ne pas me risquer à dire que c'est juste si ça peut ne pas l'être.", "De plus, ce sont des chapitres que je n'ai pas encore bien révisé, surtout la chimie."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'StratKldg', 'DomKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'DomKldg']
+4/5 ; 0/5
+
+19/32 réponses correctes, peu d'ignorance (2). [MonCal.Facts.RF] Score attribué au fait que je n'étais pas assez attentive et concentrée lors du test. [StratKldg] Le diagramme de réponses correctes est proche de la courbe en J, tandis que la courbe des réponses incorrectes ne l'est pas. [MonCal.Facts.DC] Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste [MonCal.Interpret]. Lors d'un prochain test, je devrais être moins certaine de moi sur les réponses ou j'hésite et être + prudente. [CTRL]
+
+["19/32 réponses correctes, peu d'ignorance (2).", "Score attribué au fait que je n'étais pas assez attentive et concentrée lors du test.", "Le diagramme de réponses correctes est proche de la courbe en J, tandis que la courbe des réponses incorrectes ne l'est pas.", 'Cela révèle que je dois être plus prudente concernant les questions ou je pense avoir faux pour espérer être davantage réaliste.', "Lors d'un prochain test, je devrais être moins certaine de moi sur les réponses ou j'hésite et être + prudente."]
+['MonCal.Facts.RF', 'StratKldg', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'StratKldg', 'MonCal.Facts.DC', 'CTRL', 'CTRL']
+4/5 ; 0/5
+
+Beaucoup des sujets je n'avais pas révisé du tout encore [DomKldg]. Donc je ne connaissais pas les réponses. Beaucoup d'erreurs dangereuses [MonCal.Facts.DC] : je n'étais pas très concentrée  [StratKldg]mais plus particulièrement, je n'avais pas encore révisé les thèmes. Je n’étais souvent pas très sûre de mes réponses à cause de souvenirs seulement très petits du cours. Erreurs bêtes sur la nomenclature -> concentration
+
+["Beaucoup des sujets, je n'avais pas révisé du tout encore.", 'Donc, je ne connaissais pas les réponses.', "Beaucoup d'erreurs dangereuses : je n'étais pas très concentrée mais plus particulièrement, je n'avais pas encore révisé les thèmes.", 'Je n’étais souvent pas très sûre de mes réponses à cause de souvenirs seulement très petits du cours.', 'Erreurs bêtes sur la nomenclature -> concentration.']
+['DomKldg', 'MonCal.Facts.DC', 'StratKldg']
+['DomKldg', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'MonCal.Facts.DC']
+2/3 ; 2/5
+
+Pour le second test, mes connaissances sont encore trop fragiles, je n'ai toujours pas commencé les révisions pour les chapitres (illisible) particulièrement dans le chapitre sur les lois de Newton et la relation entre les acides et les bases. [DomKldg] Je vais tenter de plus travailler pour le prochain test afin d'avoir un meilleur résultat que ceux obtenus cette fois. [CTRL] (Illisible) erreur n'était dû à des erreurs d'inattention.
+
+['Pour le second test, mes connaissances sont encore trop fragiles.', "Je n'ai toujours pas commencé les révisions pour les chapitres.", 'Cela est particulièrement vrai dans le chapitre sur les lois de Newton et la relation entre les acides et les bases.', "Je vais tenter de plus travailler pour le prochain test afin d'avoir un meilleur résultat que ceux obtenus cette fois.", "L'erreur n'était pas due à des erreurs d'inattention."]
+['DomKldg', 'CTRL']
+['DomKldg', 'DomKldg', 'DomKldg', 'CTRL', 'StratKldg']
+2/2 ; 1/5
+
+Je n'avais pas du tout revu les lois de Kepler et des satellites. [DomKldg] Le test a été réalisé après un TP, les conditions n'étaient pas forcement favorables. Toutefois, cela permet très certainement de cibler les points faibles. Le test est toujours utile. [MotOrient.Value]
+
+["Je n'avais pas du tout revu les lois de Kepler et des satellites.", "Le test a été réalisé après un TP, les conditions n'étaient pas forcément favorables.", 'Toutefois, cela permet très certainement de cibler les points faibles.', 'Le test est toujours utile.']
+['DomKldg', 'MotOrient.Value']
+['DomKldg', 'StratKldg', 'MotOrient.Value', 'MotOrient.Value']
+2/2 ; 1/4
+
+Dans les graphiques, je vois que malgré un certain nombre de réponses correctes, [MonCal.Facts.RF] j'ai 9 erreurs dangereuses [MonCal.Facts.DC], ce qui révèle que j'ai eu tendance à être imprudente. Après avoir relu mes erreurs, j'ai remarqué que ces erreurs provenaient d'une erreur de lecture de la question et rarement d'une réelle erreur / lacune dans mes connaissances. [StratKldg] Ainsi, à l'avenir, il faudrait que je prenne plus mon temps pour lire les questions et évaluer réellement mes connaissances et lacunes [CTRL]. Comparé à mes résultats de la dernière fois, je suis relativement déçue  [BDS.Emotions]puisque j'ai eu tendance à faire preuve d'imprudence et à évaluer, à tort, mes réponses comme justes [MonCal.Interpret].
+
+["Dans les graphiques, je vois que malgré un certain nombre de réponses correctes, j'ai 9 erreurs dangereuses.", "Ce qui révèle que j'ai eu tendance à être imprudente.", "Après avoir relu mes erreurs, j'ai remarqué que ces erreurs provenaient d'une erreur de lecture de la question et rarement d'une réelle erreur ou lacune dans mes connaissances.", "Ainsi, à l'avenir, il faudrait que je prenne plus mon temps pour lire les questions et évaluer réellement mes connaissances et lacunes.", 'Comparé à mes résultats de la dernière fois, je suis relativement déçue.', "Puisque j'ai eu tendance à faire preuve d'imprudence et à évaluer, à tort, mes réponses comme justes."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'StratKldg', 'CTRL', 'BDS.Emotions', 'MonCal.Interpret']
+['MonCal.Facts.DC', 'MonCal.Interpret', 'StratKldg', 'CTRL', 'BDS.Emotions', 'MonCal.Interpret']
+5/6 ; 0/6
+
+Sur la partie mécanique j'ai été plus confiant, à juste titre, alors que dans la partie chimie j'ai été plus prudent (aussi à juste titre) [MotOrient.SelfEff]. Je suis aussi surpris de mon score pour la partie chimie [BDS.Emotions], les chose que je pensais faux était juste et les chose juste, fausse. Pour être plus sur de moi il faudrait que je révise plus la chimie pour solidifier mes connaissances. [CTRL] Par rapport à la dernière fois j'ai fait moins d'erreurs d'inattention car j'ai bien vérifié même les questions que j'ai eu juste. [StratKldg]
+
+["Sur la partie mécanique, j'ai été plus confiant, à juste titre.", "Dans la partie chimie, j'ai été plus prudent (aussi à juste titre).", 'Je suis surpris de mon score pour la partie chimie.', 'Les choses que je pensais fausses étaient justes et les choses justes, fausses.', 'Pour être sûr de moi, il faudrait que je révise plus la chimie pour solidifier mes connaissances.', "Par rapport à la dernière fois, j'ai fait moins d'erreurs d'inattention car j'ai bien vérifié même les questions que j'ai eu juste."]
+['MotOrient.SelfEff', 'BDS.Emotions', 'CTRL', 'StratKldg']
+['MotOrient.SelfEff', 'MonCal.Interpret', 'MonCal.Interpret', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'StratKldg']
+2/4 ; 2/6
+
+Comme la dernière fois, il y a une majorité de réponses vraies [MonCal.Facts.RF] et le nombre de erreurs dangereuses a diminué [MonCal.Facts.DC]. Toutefois, n'ayant absolument pas relu ni réviser la mécanique et même la chimie [DomKldg], je n'ai quand même pas un score fantastique. . . Il y a aussi comme la dernière fois des erreurs d'inattention. [StratKldg]
+
+['Comme la dernière fois, il y a une majorité de réponses vraies.', "Le nombre d'erreurs dangereuses a diminué.", "Toutefois, n'ayant absolument pas relu ni révisé la mécanique et même la chimie, je n'ai quand même pas un score fantastique.", "Il y a aussi, comme la dernière fois, des erreurs d'inattention."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'DomKldg', 'StratKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'StratKldg', 'StratKldg']
+3/4 ; 0/4
+
+​-> uniquement savoir certain ou erreur dangereuse- [MonCal.Facts.DC]> je n'avais pas révisé presque la totalité de ce qu'il y avait [DomKldg]-> mauvaise (illisible)
+
+["Je suis dans un savoir certain, c'est satisfaisant.", "Cependant, je considère que j'ai été imprudent avec mes 8 erreurs dangereuses.", "J'avoue n'avoir pas révisé presque la totalité du contenu.", 'Les notes obtenues étaient mauvaises et illisibles.']
+['MonCal.Facts.DC', 'DomKldg']
+['MonCal.Facts.DC', 'MonCal.Interpret', 'DomKldg', 'MonCal.Facts.RF']
+2/2 ; 2/4
+
+Globalement il y a plus ou moins autant de réponses correctes et incorrectes [MonCal.Facts.RF]. La plupart de ces erreurs sont dangereuses et les savoirs certains : [MonCal.Facts.DC] je devrais peut-être être un peu plus prudent [MonCal.Interpret]. En général, j'ai plus de réponses correctes en chimie qu'en physique. [DomKldg]
+
+['Globalement, il y a plus ou moins autant de réponses correctes et incorrectes.', 'La plupart de ces erreurs sont dangereuses.', 'Les savoirs certains : je devrais peut-être être un peu plus prudent.', "En général, j'ai plus de réponses correctes en chimie qu'en physique."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'DomKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'MonCal.Facts.RF']
+3/4 ; 0/4
+
+J'ai plus confiance en mes résultats par rapport à la dernière fois [MotOrient.SelfEff] mais ils sont faux 1 fois sur 2, donc j'ai beaucoup d'erreurs dangereuses [MonCal.Facts.DC]. Je manque aussi de vocabulaire [DomKldg] (ex. je ne savais pas ce que signifiait cste, donc ma réponse était fausse). Je pense avoir autant d'ignorances déclarées que la dernière fois. Mon résultat 17/32 est assez proche de mes notes, donc ce test est très réaliste/ précis. [MotOrient.Value]
+
+["J'ai plus confiance en mes résultats par rapport à la dernière fois, mais ils sont faux une fois sur deux.", "Je rencontre donc beaucoup d'erreurs dangereuses.", 'Je manque aussi de vocabulaire (ex. je ne savais pas ce que signifiait cste, donc ma réponse était fausse).', "Je pense avoir autant d'ignorances déclarées que la dernière fois.", 'Mon résultat 17/32 est assez proche de mes notes.', 'Donc, je considère ce test comme très réaliste et précis.']
+['MotOrient.SelfEff', 'MonCal.Facts.DC', 'DomKldg', 'MotOrient.Value']
+['MotOrient.SelfEff', 'MonCal.Facts.DC', 'DomKldg', 'MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Interpret']
+3/4 ; 2/6
+
+La plupart de mes mauvaises réponses sont dans la mécanique, car je n’ai pas appris, ni révisé cette partie avec la loi Kepler [DomKldg]. Pour la chimie, c'est mieux, mais ce qui concerne les mauvaises réponses, c'est une mauvaise compréhension des questions [StratKldg]. Pour le degré de certitude, c'est dangereux pour les mauvaises réponses, car j’étais plutôt vers une certitude de 100% même si je n'étais pas sûre de mes réponses [MonCal.Interpret], j'ai essayé d'avoir confiance en moi. [MotOrient.SelfEff]
+
+['La plupart de mes mauvaises réponses sont dans la mécanique, car je n’ai pas appris ni révisé cette partie avec la loi Kepler.', "Pour la chimie, c'est mieux.", "Les mauvaises réponses en chimie résultent d'une mauvaise compréhension des questions.", 'Pour le degré de certitude, il est dangereux pour les mauvaises réponses.', "J’étais plutôt vers une certitude de 100% même si je n'étais pas sûre de mes réponses.", "Je me suis efforcé d'avoir confiance en moi."]
+['DomKldg', 'StratKldg', 'MonCal.Interpret', 'MotOrient.SelfEff']
+['DomKldg', 'DomKldg', 'DomKldg', 'MonCal.Facts.DC', 'MonCal.Interpret', 'MotOrient.SelfEff']
+3/4 ; 1/6
+
+Je remarque que dans mes réponses incorrectes, j'ai plus d'erreur présumée que d'erreur dangereuse. J'ai quand même beaucoup d'erreurs dangereuses (6 au total). J'ai 2 ignorance déclarée, ce qui est relativement peu. Dans mes réponses correctes, j'ai plus de savoir fragile que de savoir certain. [MonCal.Facts.DC] Je résumerais donc que je suis assez prudent [MonCal.Interpret] malgré mon grand nombre d'erreur dangereuse.
+
+["Je remarque que dans mes réponses incorrectes, j'ai plus d'erreur présumée que d'erreur dangereuse.", "J'ai quand même beaucoup d'erreurs dangereuses (6 au total).", "J'ai 2 ignorance déclarée, ce qui est relativement peu.", "Dans mes réponses correctes, j'ai plus de savoir fragile que de savoir certain.", "Je résumerais donc que je suis assez prudent malgré mon grand nombre d'erreur dangereuse."]
+['MonCal.Facts.DC', 'MonCal.Interpret']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret']
+2/2 ; 1/5
+
+Cette fois-ci, j'ai fait plus de fautes que la dernière fois, [MonCal.Facts.RF] avec plusieurs erreurs dangereuses mais aussi quelques ignorances. Je n'avais pas révisé mes leçons [DomKldg] avant ce qui s'est traduit par pas mal de fautes et de savoir faibles, car je n'étais pas sûre de mes réponses. D'après ma courbe, j'ai tendance à être à la fois trop prudente (avec 12 savoirs fragiles) et à la fois pas assez (7 erreurs dangereuses) [MonCal.Interpret], probablement dû à mon manque de connaissance des chapitres. Je pense qu'en essayant de relire mes leçons avant le test, je pourrais être plus sûre de mes réponses  [CTRL]- donc avoir moins de savoirs fragiles, et me permettrait aussi de faire moins d'erreur où j'étais sûr de la réponse.
+
+["Cette fois-ci, j'ai fait plus de fautes que la dernière fois.", "J'ai commis plusieurs erreurs dangereuses mais aussi quelques ignorances.", "Je n'avais pas révisé mes leçons avant ce qui s'est traduit par pas mal de fautes et un savoir faible, car je n'étais pas sûre de mes réponses.", "D'après ma courbe, j'ai tendance à être à la fois trop prudente avec 12 savoirs fragiles et pas assez prudente avec 7 erreurs dangereuses.", 'Cela est probablement dû à mon manque de connaissance des chapitres.', "Je pense qu'en essayant de relire mes leçons avant le test, je pourrais être plus sûre de mes réponses.", "Cela pourrait me permettre d'avoir moins de savoirs fragiles et de faire moins d'erreurs où j'étais sûre de la réponse."]
+['MonCal.Facts.RF', 'DomKldg', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'DomKldg', 'MonCal.Facts.DC', 'DomKldg', 'StratKldg', '4.BDS.Emotions']
+2/4 ; 3/7
+
+J'étais globalement moins sûre de moi que lors de la première fois, [MotOrient.SelfEff] car je ne connaissais pas mon cours sur beaucoup de points. J'étais aussi peu attentive [StratKldg], si bien qu'une des erreurs dangereuses est due à une faute de frappe. J'ignorais la réponse à 3 questions, mais le bon sens utilisé a finalement permis d'avoir juste. Les lois de Kepler sont à apprendre ! [DomKldg]
+
+["J'étais globalement moins sûre de moi que lors de la première fois, car je ne connaissais pas mon cours sur beaucoup de points.", "J'étais aussi peu attentive, si bien qu'une des erreurs dangereuses est due à une faute de frappe.", "J'ignorais la réponse à 3 questions, mais le bon sens utilisé a finalement permis d'avoir juste.", 'Les lois de Kepler sont à apprendre !']
+['MotOrient.SelfEff', 'StratKldg', 'DomKldg']
+['DomKldg', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'DomKldg']
+1/3 ; 2/4
+
+A l'inverse de la dernière fois, la majorité de mes fautes n'étaient pas pressenties et mes réponses correctes étaient certaines [MonCal.Facts.DC]. J'ai essayé de passer à travers le test rapidement et en ai payé le prix. [StratKldg] Cela me permet de savoir ce que je dois réviser et mes points faibles. [DomKldg]
+
+["A l'inverse de la dernière fois, la majorité de mes fautes n'étaient pas pressenties.", 'Mes réponses correctes étaient certaines.', "J'ai essayé de passer à travers le test rapidement et en ai payé le prix.", 'Cela me permet de savoir ce que je dois réviser et mes points faibles.']
+['MonCal.Facts.DC', 'StratKldg', 'DomKldg']
+['MonCal.Interpret', 'MonCal.Facts.DC', 'StratKldg', 'DomKldg']
+3/3 ; 1/4
+
+J'ai plusieurs erreurs présumées mais le plus grave ? les erreurs dangereuses que j'ai fait. [MonCal.Interpret] J'avais trop confiance en moi. La mécanique est un thème difficile et je suis dans l'ensemble trop sûre de moi en mécanique. [MotOrient.SelfEff] Il faut donc que je travaille là-dessus. Ce test m'a permis de réaliser que mes connaissances sont moins solides que ce que j'espérais [MotOrient.Value]. En général, je suis soit trop sûre de moi, ne soit pas assez. Il faut que je trouve un juste milieu.
+
+["J'ai plusieurs erreurs présumées mais le plus grave ? les erreurs dangereuses que j'ai fait.", "J'avais trop confiance en moi.", "La mécanique est un thème difficile et je suis dans l'ensemble trop sûre de moi en mécanique.", 'Il faut donc que je travaille là-dessus.', "Ce test m'a permis de réaliser que mes connaissances sont moins solides que ce que j'espérais.", 'En général, je suis soit trop sûre de moi, soit pas assez.', 'Il faut que je trouve un juste milieu.']
+['MonCal.Interpret', 'MotOrient.SelfEff', 'MotOrient.Value']
+['MonCal.Facts.DC', 'MotOrient.SelfEff', 'MotOrient.SelfEff', 'CTRL', 'MotOrient.SelfEff', 'MotOrient.SelfEff', 'CTRL']
+1/3 ; 2/7
+
+J'ai autant de réponses incorrectes que d'ignorances. [MonCal.Facts.RF] J'ai 20 réponses correctes avec 5 savoir fragile et 15 savoir certain [MonCal.Facts.DC], c'est bien de voir que la plupart du temps je suis certaine quand j'ai raison [MonCal.Interpret]. Mais j'ai fait 6 erreurs dangereuses parmi les 6 réponses incorrectes, c'est déstabilisant car en pensant avoir raison j'avais faux.
+
+["J'ai autant de réponses incorrectes que d'ignorances.", "J'ai 20 réponses correctes avec 5 savoir fragile et 15 savoir certain.", "C'est bien de voir que la plupart du temps je suis certaine quand j'ai raison.", "Mais j'ai fait 6 erreurs dangereuses parmi les 6 réponses incorrectes.", "C'est déstabilisant car en pensant avoir raison j'avais faux."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'MonCal.Facts.RF', 'MonCal.Facts.RF']
+2/3 ; 1/5
+
+9 réponses fausses (4 ! 5. . )3 ignorances20 réponses correctes (8 . . . 12 :)23/32 [MonCal.Facts.RF] (c'est un palindrome :)Le graph des réponses incorrectes me parait toujours logique car je ne connaissais pas assez mes formules de mécanique (les 4 réponses dangereuses) et je ne suis pas du tout sûr de ce que je réponds en chimie [MotOrient.SelfEff] (les 5 présumées). Il faut donc que je révise les formules / équations de Kepler, Newton, et de l'accélération et pour la chimie : la nomenclature, la géométries des molécules et les acides/bases. [DomKldg]
+
+['9 réponses fausses (4 ! 5. . )', '3 ignorances', '20 réponses correctes (8 . . . 12 :)', "23/32  (c'est un palindrome :)", 'Le graph des réponses incorrectes me parait toujours logique car je ne connaissais pas assez mes formules de mécanique.', 'Les 4 réponses dangereuses', 'Je ne suis pas du tout sûr de ce que je réponds en chimie (les 5 présumées).', "Il faut donc que je révise les formules / équations de Kepler, Newton, et de l'accélération.", 'Pour la chimie : la nomenclature, la géométries des molécules et les acides/bases.']
+['MonCal.Facts.RF', 'MotOrient.SelfEff', 'DomKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Facts.RF', 'StratKldg', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL', 'DomKldg']
+2/3 ; 3/9
+
+Il y a la moitié de réponses correctes et l'autre moitié incorrecte.  [MonCal.Facts.RF]Peu d'ignorances mais beaucoup d'erreurs dangereuses (10) [MonCal.Facts.DC]. La courbe en J des réponses correctes montre qu'en général, je sais quand j'ai la bonne réponse. Cependant je ne sais pas forcément quand j'ai la mauvaise réponse, la courbe en J des réponses incorrectes m'indiquant beaucoup d'erreurs dangereuses et ne suivant pas la forme du J. Cela relève d'une certaine imprudence. [MonCal.Interpret] Pour espérer devenir davantage réaliste lors du prochain test, je pourrais me fier davantage à mes réelles connaissances plutôt qu'à mes estimations sur quelle réponse pourrait être la bonne, si une question semble une question piège,  [CTRL]etc.
+
+["Il y a la moitié des réponses correctes et l'autre moitié incorrecte.", "Peu d'ignorances mais beaucoup d'erreurs dangereuses (10).", "La courbe en J des réponses correctes montre qu'en général, je sais quand j'ai la bonne réponse.", "Cependant, je ne sais pas forcément quand j'ai la mauvaise réponse.", "La courbe en J des réponses incorrectes m'indique beaucoup d'erreurs dangereuses et ne suit pas la forme du J.", "Cela relève d'une certaine imprudence.", "Pour espérer devenir davantage réaliste lors du prochain test, je pourrais me fier davantage à mes réelles connaissances plutôt qu'à mes estimations sur quelle réponse pourrait être bonne.", "Je devrais également éviter de supposer que si une question semble piège, elle doit nécessairement l'être."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL', 'CTRL']
+4/4 ; 0/8
+
+Il faut que je révise la chimie, car mes connaissances sont floues et donc la certitude de mes réponses est affectée. [DomKldg] Il faut que je regarde les questions de plus près car la formulation peut être trompeuse à certains moments. [StratKldg] Modéliser (?) peut être utile aussi pour clarifier ses doutes.
+
+['Il faut que je révise la chimie, car mes connaissances sont floues et donc la certitude de mes réponses est affectée.', 'Il faut que je regarde les questions de plus près car la formulation peut être trompeuse à certains moments.', 'Modéliser (?) peut être utile aussi pour clarifier ses doutes.']
+['DomKldg', 'StratKldg']
+['MotOrient.SelfEff', 'CTRL', 'MonCal.Interpret']
+0/2 ; 3/3
+
+Le test m'a permis de me donner de la confiance dans mes connaissances et mon savoir.  [MotOrient.SelfEff]Il m'a aussi permis de voir que je fais beaucoup d'erreurs dangereuses en chimie. [MonCal.Facts.DC]
+
+["Le test m'a permis de me donner de la confiance dans mes connaissances et mon savoir.", "Il m'a aussi permis de voir que je fais beaucoup d'erreurs dangereuses en chimie."]
+['MotOrient.SelfEff', 'MonCal.Facts.DC']
+['MotOrient.SelfEff', 'MonCal.Facts.DC']
+2/2 ; 0/2
+
+Connaissance correcte mais incertain, trop prudent [MonCal.Interpret], presque autant d'erreurs dangereuses que de présumé, mais aussi autant de savoir fragile que de certain. [MonCal.Facts.DC]
+
+['La connaissance est correcte mais incertaine.', 'Trop prudent.', "Près d'autant d'erreurs dangereuses que présumées.", 'Autant de savoir fragile que certain.']
+['MonCal.Interpret', 'MonCal.Facts.DC']
+['MonCal.Facts.DC', 'MonCal.Interpret', 'MonCal.Facts.DC', 'MonCal.Facts.DC']
+2/2 ; 0/4
+
+Il y a globalement beaucoup de réponses correctes [MonCal.Facts.RF], mais je suis sûr dans toutes mes réponses où je crois avoir raison, ce qui me donne uniquement des savoirs certains et des erreurs dangereuses. Ma courbe de bonnes réponses est en J mais l'autre est en J inversé (en L en fait). [MonCal.Facts.DC]
+
+['Il y a globalement beaucoup de réponses correctes.', 'Je suis sûr dans toutes mes réponses où je crois avoir raison.', 'Cela me donne uniquement des savoirs certains et des erreurs dangereuses.', 'Ma courbe de bonnes réponses est en J.', "L'autre courbe est en J inversé, ou en fait en L."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MotOrient.SelfEff', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC']
+2/2 ; 1/5
+
+Globalement, j'ai réussi à être plus certaine de mes réponses (22 savoirs certains et 1 savoir fragile) mais ça a créé de ce fait quelques erreurs dangereuses (7). Par rapport au premier test, je peux remarquer que la courbe en J est plus conséquente pour les réponses correctes [MonCal.Facts.DC]. Pour le prochain test, il faudrait que je me laisse un peu plus de temps avant de répondre et bien analyser les docs. [CTRL]
+
+["Globalement, j'ai réussi à être plus certaine de mes réponses (22 savoirs certains et 1 savoir fragile).", 'Cependant, ça a créé quelques erreurs dangereuses (7).', 'Par rapport au premier test, la courbe en J est plus conséquente pour les réponses correctes.', 'Pour le prochain test, il faudrait que je me laisse un peu plus de temps avant de répondre et bien analyser les documents.']
+['MonCal.Facts.DC', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL']
+2/2 ; 1/4
+
+Il y a un manque de rigueur car j'ai mal lu les énoncés et cela m'a induit en erreur et c'est pour cela que j'ai eu des réponses qui étaient erronées [StratKldg]. Si j'avais mieux regardé l'énoncé, j'aurais pu ne pas me tromper.
+
+["Il y a un manque de rigueur car j'ai mal lu les énoncés.", "Cela m'a induit en erreur et c'est pour cela que j'ai eu des réponses qui étaient erronées.", "Si j'avais mieux regardé l'énoncé, j'aurais pu ne pas me tromper."]
+['StratKldg']
+['StratKldg', 'StratKldg', 'StratKldg']
+1/1 ; 0/3
+
+5 : erreurs dangereuses, 6 erreurs présumées, 11 savoirs fragiles, 10 savoir certains : [MonCal.Facts.DC] 21/32 C'est un peu meilleur que le premier test mais c'est parce que les questions étaient sur des chapitres vus en Terminale tandis que le premier test était sur des chapitres vus en Première. [DomKldg]
+
+["C'est un peu meilleur que le premier test", 'ce qui est dû au fait que les questions étaient sur des chapitres vus en Terminale', 'tandis que le premier test était sur des chapitres vus en Première']
+['MonCal.Facts.DC', 'DomKldg']
+['MonCal.Facts.RF', 'StratKldg', 'DomKldg']
+1/2 ; 2/3
+
+ED : 8 , SC : 20 , EP : 2 , SF : 2 Il y a pas mal de savoir certain et environ 1/3 d'erreurs dangereuses [MonCal.Facts.DC] (?) . . les savoirs certains. On peut dire que j'ai eu ce score car je ne révise jamais sauf la veille ou le jour même d'un contrôle, j'aurais sûrement un meilleur score en révisant régulièrement [StratKldg], n'empêche la courbe en J des savoirs certains est plutôt belle.
+
+['ED : 8, SC : 20, EP : 2, SF : 2', "Il y a pas mal de savoir certain et environ 1/3 d'erreurs dangereuses.", 'Les savoirs certains.', "On peut dire que j'ai eu ce score car je ne révise jamais sauf la veille ou le jour même d'un contrôle.", "J'aurais sûrement un meilleur score en révisant régulièrement.", 'Néanmoins, la courbe en J des savoirs certains est plutôt belle.']
+['MonCal.Facts.DC', 'StratKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'StratKldg', 'CTRL', 'MonCal.Facts.DC']
+2/2 ; 2/6
+
+Beaucoup de savoir certain avec 5 erreurs dangereuses. [MonCal.Facts.DC] Pour le prochain test, je devrais approfondir les bases du cours (non-acquis) avec des exercices. [CTRL]
+
+['Beaucoup des réponses sont correctes et dans un savoir certain, ce qui est satisfaisant.', "Cependant, je dirai que j'ai été imprudent puisque j’ai commis 5 erreurs dangereuses.", "Pour le prochain test, il serait bénéfique d’approfondir les bases du cours que je n'ai pas encore maîtrisées.", 'Je devrais utiliser des exercices pour renforcer mes connaissances non-acquises.']
+['MonCal.Facts.DC', 'CTRL']
+['MonCal.Facts.DC', 'MonCal.Interpret', 'DomKldg', 'CTRL']
+2/2 ; 2/4
+
+J'ai fait pleins d'erreurs d'inattention, j'ai mal compris les questions et j'ai fait beaucoup d'erreur dangereuses (6). J'ai mal jugé mes réponses et surestimé mes compétences [MotOrient.SelfEff]. J'ai fait le test trop rapidement. Ce test m'a permis de comprendre que je dois faire plus attention aux énoncés. [StratKldg]
+
+["J'ai fait plein d'erreurs d'inattention.", "J'ai mal compris les questions.", "J'ai fait beaucoup d'erreurs dangereuses (6).", "J'ai mal jugé mes réponses et surestimé mes compétences.", "J'ai fait le test trop rapidement.", "Ce test m'a permis de comprendre que je dois faire plus attention aux énoncés."]
+['MotOrient.SelfEff', 'StratKldg']
+['StratKldg', 'StratKldg', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'StratKldg', 'StratKldg']
+1/2 ; 2/6
+
+Note 21/32 avec 6 erreurs dangereuses, 3 présumées, 4 ignorances déclarée, 3 savoir fragile, 16 savoir certain [MonCal.Facts.DC]
+
+['Note 21/32 avec 6 erreurs dangereuses.', '3 présumées,', '4 ignorances déclarée,', '3 savoir fragile,', '16 savoir certain.']
+['MonCal.Facts.DC']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC']
+1/1 ; 0/5
+
+Relativement satisfait car peu d'erreurs et peu savoir fragile comme je le pensais lors du test. J'étais assez souvent très sûr de moi. [MonCal.Interpret]
+
+["Je suis relativement satisfait car il y a peu d'erreurs.", 'Le savoir est moins fragile que je ne le pensais lors du test.', "J'étais assez souvent très sûr de moi."]
+['MonCal.Interpret']
+['BDS.Emotions', 'MonCal.Facts.DC', 'MotOrient.SelfEff']
+0/1 ; 3/3
+
+J'ai eu 23/32 avec 5 réponse dangereuse, 1 erreur présumée, 5 ignorance déclarée, 6 savoir fragile et 15 certain [MonCal.Facts.DC]. Dans le test j'étais un peu perdue (taux d'ignorance)
+
+["J'ai eu un score de 23 sur 32.", 'Je possède 5 réponses dangereuses.', 'Il y a 1 erreur présumée dans mes réponses.', "Je présente 5 cas d'ignorance déclarée.", 'Mon savoir est fragile à 6 reprises.', "J'ai réussi à être certain dans 15 réponses.", "Dans le test, j'étais un peu perdue.", "Le taux d'ignorance a été relevé lors de ce test."]
+['MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'BDS.Emotions', 'MonCal.Facts.RF']
+1/1 ; 2/8
+
+Globalement, il y a plus de réponses savoir certain que d'erreur dangereuse , [MonCal.Facts.DC] malgré cela, je trouve que j'ai été trop rapide dans mes choix de réponse ainsi à l'avenir il me faudra être plus réfléchi. Aussi des petites révisions ne me feraient pas de mal. [StratKldg]
+
+["Globalement, il y a plus de réponses avec un savoir certain que d'erreurs dangereuses.", "Malgré cela, je trouve que j'ai été trop rapide dans mes choix de réponse.", "À l'avenir, il me faudra être plus réfléchi.", 'De petites révisions ne me feraient pas de mal.']
+['MonCal.Facts.DC', 'StratKldg']
+['MonCal.Facts.DC', 'StratKldg', 'CTRL', 'MotOrient.Value']
+2/2 ; 2/4
+
+Dans ce test il y a eu beaucoup de réponse assez négative mais personnellement je trouve aussi que les questions n’étaient pas très précises et du coup c'était difficile de savoir si c’était vrai ou non. Je pense que je peux m'améliorer en étant plus prudente et en faisant plus attention aux énoncés. [CTRL]
+
+['Dans ce test, il y a eu beaucoup de réponses assez négatives.', 'Personnellement, je trouve aussi que les questions n’étaient pas très précises.', "Du coup, c'était difficile de savoir si c’était vrai ou non.", "Je pense que je peux m'améliorer en étant plus prudente.", 'Et en faisant plus attention aux énoncés.']
+['CTRL']
+['MonCal.Facts.RF', 'StratKldg', 'MonCal.Interpret', 'CTRL', 'CTRL']
+1/1 ; 3/5
+
+J'ai eu 22 bonnes réponses, 7 erreurs et 3 ignorances déclarées. Parmi mes erreurs, 6 sont dangereuses ce qui est beaucoup. Cela Vient en parti du fait que je ne connaissais pas les formules du cours et d'interprétations fausses des documents [DomKldg]. Les courbes ne sont pas en J (légèrement pour les bonnes réponses, mais pas du tout sur les mauvaises) [MonCal.Facts.DC]. Ces tests me permettent de voir si je connais mon cours et si je me souviens des anciens chapitres. Ils me montrent aussi que j'ai tendance à être trop sûre de moi. [MotOrient.SelfEff]
+
+["J'ai eu 22 bonnes réponses, 7 erreurs et 3 ignorances déclarées.", 'Parmi mes erreurs, 6 sont dangereuses ce qui est beaucoup.', "Cela vient en partie du fait que je ne connaissais pas les formules du cours et d'interprétations fausses des documents.", 'Les courbes ne sont pas en J (légèrement pour les bonnes réponses, mais pas du tout sur les mauvaises).', 'Ces tests me permettent de voir si je connais mon cours et si je me souviens des anciens chapitres.', "Ils me montrent aussi que j'ai tendance à être trop sûre de moi."]
+['DomKldg', 'MonCal.Facts.DC', 'MotOrient.SelfEff']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'DomKldg', 'MonCal.Facts.DC', 'MotOrient.Value', 'MotOrient.SelfEff']
+3/3 ; 2/6
+
+J'ai plutôt assez bien réussi le test, mieux que le premier il me semble [MonCal.Interpret], même si j'ai encore quelques erreurs dangereuses.
+
+["J'ai plutôt assez bien réussi le test.", "Mieux que le premier il me semble, même si j'ai encore quelques erreurs dangereuses."]
+['MonCal.Interpret']
+['MonCal.Interpret', 'MonCal.Facts.DC']
+1/1 ; 1/2
+
+Globalement, le test permet de voir que je suis capable de répondre avec de la concentration à toutes les réponses. Mon savoir est là, mais cependant je fais encore trop d'erreurs d'inattention sur des choses bêtes. Il faut que je me concentre tout le long pour répondre à toutes les questions. [StratKldg]
+
+['Globalement, le test permet de voir que je suis capable de répondre avec de la concentration à toutes les réponses.', "Mon savoir est là, mais cependant je fais encore trop d'erreurs d'inattention sur des choses bêtes.", 'Il faut que je me concentre tout le long pour répondre à toutes les questions.']
+['StratKldg']
+['MotOrient.Value', 'StratKldg', 'CTRL']
+1/1 ; 2/3
+
+Je suis assez content du résultat, ça aurait pu être pire. Ce test provoque chez moi de l'anxiété [BDS.Emotions]. Cela révèle mon énorme manque de confiance en moi [MotOrient.SelfEff]. Mon but n'est pas de réussir, mais de prendre sur moi et de ne pas échouer. Yes. J'ai aussi appris que je suis incapable de me concentrer devant un écran d'ordinateur, je vais trop vite du coup je comprends mal les énoncés et les questions [StratKldg].
+
+['Je suis assez content du résultat, ça aurait pu être pire.', "Ce test provoque chez moi de l'anxiété.", 'Cela révèle mon énorme manque de confiance en moi.', "Mon but n'est pas de réussir, mais de prendre sur moi et de ne pas échouer.", 'Yes.', "J'ai aussi appris que je suis incapable de me concentrer devant un écran d'ordinateur.", 'Je vais trop vite du coup je comprends mal les énoncés et les questions.']
+['BDS.Emotions', 'MotOrient.SelfEff', 'StratKldg']
+['BDS.Emotions', 'BDS.Emotions', 'MotOrient.SelfEff', 'MonCal.Interpret', 'MonCal.Facts.RF', 'StratKldg', 'StratKldg']
+3/3 ; 2/7
+
+Globalement, il y a beaucoup de réponses certaines mais aussi beaucoup d'erreurs dangereuses. [MonCal.Facts.DC] Je suis toujours trop sûr de mes réponses [MotOrient.SelfEff]. Je dois mieux lire les énoncés et être plus attentif sur les réponses [StratKldg]. Je dois aussi répondre simplement aux questions sans vouloir tenter de contourner des éventuels pièges. Pour m'améliorer, je pourrais donc prendre plus de temps pour répondre et assimiler les énoncés. [CTRL]
+
+["Globalement, il y a beaucoup de réponses certaines mais aussi beaucoup d'erreurs dangereuses.", 'Je suis toujours trop sûr de mes réponses.', 'Je dois mieux lire les énoncés et être plus attentif sur les réponses.', 'Je dois aussi répondre simplement aux questions sans vouloir tenter de contourner des éventuels pièges.', "Pour m'améliorer, je pourrais donc prendre plus de temps pour répondre et assimiler les énoncés."]
+['MonCal.Facts.DC', 'MotOrient.SelfEff', 'StratKldg', 'CTRL']
+['MonCal.Facts.DC', 'MotOrient.SelfEff', 'CTRL', 'StratKldg', 'CTRL']
+4/4 ; 0/5
+
+Avant toutes choses, il faut savoir rester humble mais il faut aussi reconnaitre que le test est plutôt bon pour ma part (23 réponses correctes, soit 71% de réponses justes et 9 incorrectes) [MonCal.Facts.RF]. Bien évidemment, ce score peut s'attribuer à des connaissances certaines dans le domaine de la physique chimie [DomKldg] et à un certain french flair dans des situations de doutes. Mes courbes forment en général toutes un J, mon jugement serait donc plutôt réaliste. Cependant, mes 7 erreurs dangereuses peuvent relever une certaine imprudence [MonCal.Interpret], mais il faut savoir vivre dangereusement j'imagine. Afin de devenir davantage réaliste lors du prochain test, il me faudra être plus technique dans mes connaissances en physique chimie. [CTRL] Éventuellement, il me faudra affuter mon instinct de chasseur dans les possibles situations de doute à venir.
+
+['Avant toutes choses, il faut savoir rester humble mais il faut aussi reconnaître que le test est plutôt bon pour ma part (23 réponses correctes, soit 71% de réponses justes et 9 incorrectes).', "Bien évidemment, ce score peut s'attribuer à des connaissances certaines dans le domaine de la physique-chimie et à un certain french flair dans des situations de doutes.", 'Mes courbes forment en général toutes un J, mon jugement serait donc plutôt réaliste.', "Cependant, mes 7 erreurs dangereuses peuvent relever une certaine imprudence, mais il faut savoir vivre dangereusement j'imagine.", 'Afin de devenir davantage réaliste lors du prochain test, il me faudra être plus technique dans mes connaissances en physique-chimie.', 'Éventuellement, il me faudra affermir mon instinct de chasseur dans les possibles situations de doute à venir.']
+['MonCal.Facts.RF', 'DomKldg', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL', 'CTRL']
+3/4 ; 1/6
+
+Beaucoup de réponses correctes [MonCal.Facts.RF]. Les courbes en J assez respecté, malgré un léger surplus de savoir fragile (70%) [MonCal.Facts.DC], ainsi je pense être plutôt réaliste et ne pas avoir besoin de devenir beaucoup plus réaliste [MotOrient.SelfEff]. J'ai tout de même fait une grande progression par rapport au dernier test en termes de réalisme. Personnellement, ce test ne m'apporte pas grand-chose, que quelques connaissances sur quelques détails précis [MotOrient.Value].
+
+['Beaucoup de réponses correctes.', 'Les courbes en J sont assez respectées malgré un léger surplus de savoir fragile (70%).', 'Je pense être plutôt réaliste et ne pas avoir besoin de devenir beaucoup plus réaliste.', "J'ai tout de même fait une grande progression par rapport au dernier test en termes de réalisme.", "Personnellement, ce test ne m'apporte pas grand-chose, que quelques connaissances sur quelques détails précis."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'MotOrient.Value']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'MonCal.Interpret', 'MotOrient.Value']
+4/4 ; 1/5
+
+5 erreurs dangereuses sur des erreurs d'inattention et non pas un manque d'inattention. Toutes mes ignorances déclarées étaient justes, pas assez sûr de moi. Je devrais être plus attentif sur les questions. [StratKldg]
+
+["5 erreurs dangereuses sur des erreurs d'inattention et non pas un manque d'inattention.", 'Toutes mes ignorances déclarées étaient justes, pas assez sûr de moi.', 'Je devrais être plus attentif sur les questions.']
+['StratKldg']
+['StratKldg', 'MotOrient.SelfEff', 'CTRL']
+1/1 ; 2/3
+
+Plusieurs réponse correctes (29) et une erreur dangereuse, j'ai eu beaucoup de savoir fragile (6) [MonCal.Facts.DC] qui aurait pu être certain. J'ai été plus rapide que la dernière fois (22min).
+
+['Plusieurs réponses sont correctes (29)', 'Il y a une erreur dangereuse', "J'ai eu beaucoup de savoir fragile (6)", 'Cela aurait pu être certain', "J'ai été plus rapide que la dernière fois", 'En 22 minutes']
+['MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL', 'MonCal.Facts.RF']
+1/1 ; 2/6
+
+J'ai appris que je devrais me fier plus à mes connaissances qu'à la pertinence de la question [MotOrient.SelfEff].
+
+["J'ai appris que je devrais me fier plus à mes connaissances qu'à la pertinence de la question."]
+['MotOrient.SelfEff']
+['CTRL']
+0/1 ; 1/1
+
+Résultat : 20/32 , j'ai fait 16 réponses correctes [MonCal.Facts.RF] avec un savoir certain , 4 savoir fragile , pour les erreurs, 5 erreur dangereuse et 7 erreur présumée [MonCal.Facts.DC] Je repère beaucoup de prudence car je peux présumer mes erreurs éventuel , ce qui me permet d'avoir peut d'erreur dangereuse. [MonCal.Interpret] Pour m'améliorer davantage, il faut que je réponde plus spontanément car il y a des questions où j'ai trop hésité [CTRL].
+
+["Résultat : 20/32, j'ai fait 16 réponses correctes avec un savoir certain.", "J'ai également réalisé 4 réponses dans le cadre d'un savoir fragile.", "Pour les erreurs, j'en ai commis 5 de type erreur dangereuse et 7 de type erreur présumée.", 'Je repère beaucoup de prudence car je peux présumer mes erreurs éventuelles.', "Cela me permet d'avoir peu d'erreurs dangereuses.", "Pour m'améliorer davantage, il faut que je réponde plus spontanément.", "Il y a des questions où j'ai trop hésité."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'MonCal.Facts.DC', 'CTRL', 'StratKldg']
+4/4 ; 1/7
+
+21 réponses correctes, 5 ignorances et 6 réponses incorrectes [MonCal.Facts.RF], dont 4 erreurs dangereuses. Ces erreurs dangereuses sont dues à un manque de connaissances. [DomKldg] La prochaine fois, je mettrai peu sûre. La courbe en J est bien remarquable avec les réponses correctes qui sont croissantes. Par contre, elle n'est pas respectée avec les réponses incorrectes, dû aux erreurs dangereuses [MonCal.Facts.DC]. La prochaine fois, je ferais attention aux tournures des phrases qui peuvent être dangereuses. [CTRL]
+
+['21 réponses correctes, 5 ignorances et 6 réponses incorrectes, dont 4 erreurs dangereuses.', 'Ces erreurs dangereuses sont dues à un manque de connaissances.', 'La prochaine fois, je mettrai peu sûre.', 'La courbe en J est bien remarquable avec les réponses correctes qui sont croissantes.', "Par contre, elle n'est pas respectée avec les réponses incorrectes, dû aux erreurs dangereuses.", 'La prochaine fois, je ferais attention aux tournures des phrases qui peuvent être dangereuses.']
+['MonCal.Facts.RF', 'DomKldg', 'MonCal.Facts.DC', 'CTRL']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL']
+2/4 ; 0/6
+
+5 incorrectes, 5 ignorances, 22 correctes -> 24/32 [MonCal.Facts.RF]. Courbe en J similaire pour les réponses correctes mais pas pour les incorrectes (moins exponentielle) [MonCal.Facts.DC]. Plutôt des erreurs d'inattention que du manque de réalisme. [StratKldg] (Pour 2 erreurs dangereuses)
+
+['5 réponses incorrectes, 5 ignorances, 22 correctes -> 24/32.', 'Courbe en J similaire pour les réponses correctes mais pas pour les incorrectes (moins exponentielle).', "Plutôt des erreurs d'inattention que du manque de réalisme.", '(Pour 2 erreurs dangereuses)']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'StratKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'StratKldg', 'MonCal.Facts.DC']
+3/3 ; 0/4
+
+J'ai eu 23/32, ça passe en sachant que je n'étais pas là pour la leçon de géométrie moléculaire et que je n'ai pas très bien compris [DomKldg].
+
+["J'ai eu 23/32, ça passe.", "Ça passe sachant que je n'étais pas là pour la leçon de géométrie moléculaire.", "Je n'ai pas très bien compris."]
+['DomKldg']
+['MonCal.Facts.RF', 'DomKldg', 'DomKldg']
+1/1 ; 1/3
+
+Il y a plus de réponses correctes qu'incorrectes mais il y a aussi pas mal d'ignorances [MonCal.Facts.RF]. Pour les réponses incorrectes, il y a bien une courbe en J, par contre pour les réponses incorrectes la courbe n'a pas cette forme. [MonCal.Facts.DC] Il y a pas mal de savoir fragile ce qui montre de la prudence.  [MonCal.Interpret]Pour le prochain test il faudrait que je fasse preuve de plus de certitude. [CTRL]
+
+["Il y a plus de réponses correctes qu'incorrectes mais il y a aussi pas mal d'ignorances.", 'Pour les réponses incorrectes, il y a bien une courbe en J.', "Par contre pour les réponses incorrectes la courbe n'a pas cette forme.", 'Il y a pas mal de savoir fragile ce qui montre de la prudence.', 'Pour le prochain test il faudrait que je fasse preuve de plus de certitude.']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+4/4 ; 0/5
+
+Très bon test malgré quelques difficultés en chimie. [DomKldg]
+
+['Très bon test malgré quelques difficultés en chimie.', 'La majorité de mes réponses sont correctes et dans un savoir certain, ce qui est un point satisfaisant.', 'Cependant, je dirai que je suis imprudent puisque j’ai fait 8 erreurs dangereuses.']
+['DomKldg']
+['MonCal.Interpret', 'MonCal.Facts.RF', 'MonCal.Interpret']
+0/1 ; 2/3
+
+La courbe des réponses correctes ne correspond pas à la courbe en J car il y a beaucoup de savoirs fragiles [MonCal.Facts.DC]. La même chose avec la courbe des réponses incorrectes, puisqu’il y a beaucoup erreurs dangereuses : 7 sur 11 erreurs. Il faudrait qu'au prochain test je sois plus sûr de moi pour avoir moins de savoir fragile et aussi avoir moins d'erreurs dangereuses. [CTRL]
+
+['La courbe des réponses correctes ne correspond pas à la courbe en J car il y a beaucoup de savoirs fragiles.', 'La même chose avec la courbe des réponses incorrectes, puisqu’il y a beaucoup d’erreurs dangereuses : 7 sur 11 erreurs.', "Il faudrait qu'au prochain test je sois plus sûr de moi pour avoir moins de savoir fragile et aussi avoir moins d’erreurs dangereuses."]
+['MonCal.Facts.DC', 'CTRL']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL']
+2/2 ; 0/3
+
+La chimie est vraiment dure, mais la physique c'est bien [DomKldg] 22/32
+
+['La chimie est vraiment dure,', "mais la physique c'est bien.", '22/32']
+['DomKldg']
+['DomKldg', 'MotOrient.Value', 'MonCal.Facts.RF']
+1/1 ; 2/3
+
+Note 22/32-> 10 réponses incorrectes et 22 réponses correctes [MonCal.Facts.RF]. - imprudence [MonCal.Interpret]- apprendre davantage
+
+['Note 22/32: 10 réponses incorrectes et 22 réponses correctes.', "Présence d'imprudence dans l'approche.", "Nécessité d'apprendre davantage pour améliorer les résultats."]
+['MonCal.Facts.RF', 'MonCal.Interpret']
+['MonCal.Facts.RF', 'MonCal.Interpret', 'CTRL']
+2/2 ; 1/3
+
+Je fais beaucoup d'erreurs dangereuses donc je suis trop confiante [MotOrient.SelfEff]. Mais j'ai quand même pas mal de savoir certain donc je sais quand même mes acquis. J'ai 9 savoir fragile sur 22 réponses juste, ça je l'explique par le fait que je connais mais pas à fond donc j'ai des chances d'avoir faux. Mes courbes sont loin de celle en J [MonCal.Facts.DC] donc je suis mi prudente/ mi imprudente.  [MonCal.Interpret]Lors du prochain test, il faudrait que je prenne plus de temps sur les questions pour réellement réfléchir parce que là j'avais un peu la flemme de réfléchir à 100%. Et passer plus de temps sur les questions où je pense être certaine. [CTRL]
+
+["Je fais beaucoup d'erreurs dangereuses, donc je suis trop confiante.", "Mais j'ai quand même pas mal de savoir certain, donc je sais mes acquis.", "J'ai 9 savoir fragile sur 22 réponses juste, ce que j'explique par le fait que je connais mais pas à fond, donc j'ai des chances d'avoir faux.", 'Mes courbes sont loin de celle en J, donc je suis mi-prudente/mi-imprudente.', "Lors du prochain test, il faudrait que je prenne plus de temps sur les questions pour réellement réfléchir parce que là j'avais un peu la flemme de réfléchir à 100%.", 'Et passer plus de temps sur les questions où je pense être certaine.']
+['MotOrient.SelfEff', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL', 'MotOrient.SelfEff']
+4/4 ; 0/6
+
+Sur 32 questions 26 sont correctes dont 24 savoir certain ce qui montre de bonnes connaissances. Dans les réponses correctes la courbe J est bien suivie. Par contre du côté des réponses incorrectes il y a plus de réponses dangereuses que présumée [MonCal.Facts.DC] ce qui traduit encore une légère imprudence [MonCal.Interpret]. Pour la prochaine je dois être plus prudente [CTRL].
+
+['Sur 32 questions, 26 sont correctes dont 24 avec savoir certain. Cela montre de bonnes connaissances.', 'Dans les réponses correctes, la courbe J est bien suivie.', 'Du côté des réponses incorrectes, il y a plus de réponses dangereuses que présumées.', 'Cela traduit une légère imprudence.', 'Pour la prochaine fois, je dois être plus prudente.']
+['MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+3/3 ; 1/5
+
+Il y a 8 erreurs dangereuses donc il faut revoir certaines choses de mon cours [DomKldg], 23 savoir certain et pas d'erreur présumée et pas de savoir fragile [MonCal.Facts.DC]. On peut penser à une imprudence car mes résultats se trouvent dans les extrêmes. [MonCal.Interpret]
+
+['Il y a 8 erreurs dangereuses, donc il faut revoir certaines choses de mon cours.', '23 mes réponses se situent dans le savoir certain et sans erreur présumée ni savoir fragile.', 'On peut penser à une imprudence car mes résultats se trouvent dans les extrêmes.']
+['DomKldg', 'MonCal.Facts.DC', 'MonCal.Interpret']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Interpret']
+2/3 ; 0/3
+
+Afin d'être plus réaliste lors du prochain test, une meilleure connaissance de son cours serait préférable [CTRL].
+
+["Afin d'être plus réaliste lors du prochain test,", 'une meilleure connaissance de son cours serait préférable.']
+['CTRL']
+['CTRL', 'DomKldg']
+1/1 ; 1/2
+
+Globalement 24/32 ce n’est pas trop mal pour moi [MonCal.Facts.RF]. Il y a eu quand même 15 savoir certain, 8 savoir fragile [MonCal.Facts.DC] donc mon savoir est un peu fragile mais lors de la prise de décision je n’ai pas fait trop d'erreur dangereuses (2). 5 erreur présumée ne m'étonne pas et l'ignorance déclarée. Donc globalement, je suis plutôt satisfait de mon travail. J'espère forcément faire mieux la prochaine fois même si cela me va pour l'investissement.
+
+["Globalement, 24/32 n'est pas trop mal pour moi.", 'Il y a eu quand même 15 savoir certain, 8 savoir fragile.', "Donc mon savoir est un peu fragile mais lors de la prise de décision je n’ai pas fait trop d'erreur dangereuses (2).", "5 erreurs présumées ne m'étonnent pas et l’ignorance déclarée.", 'Donc globalement, je suis plutôt satisfait de mon travail.', "J'espère forcément faire mieux la prochaine fois même si cela me va pour l'investissement."]
+['MonCal.Facts.RF', 'MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'BDS.Emotions', 'CTRL']
+2/2 ; 2/6
+
+Globalement, il y a beaucoup de réponses correctes, très peu d'ignorances et quelques erreurs dangereuses. Pour les réponses correctes mes résultats correspondent à la courbe en J en général avec un pourcentage un peu trop élevé de savoir fragile. [MonCal.Facts.DC] Pour les réponses incorrectes les résultats ne sont pas en accord avec la courbe en J, trop d'erreur dangereuses. Pour devenir davantage réaliste je devrais réfléchir plus longtemps sur certaines questions et faire attention aux pièges. [CTRL]
+
+["Globalement, il y a beaucoup de réponses correctes, très peu d'ignorances et quelques erreurs dangereuses.", 'Pour les réponses correctes, mes résultats correspondent à la courbe en J en général avec un pourcentage un peu trop élevé de savoir fragile.', "Pour les réponses incorrectes, les résultats ne sont pas en accord avec la courbe en J, il y a trop d'erreurs dangereuses.", 'Pour devenir davantage réaliste, je devrais réfléchir plus longtemps sur certaines questions et faire attention aux pièges.']
+['MonCal.Facts.DC', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL']
+2/2 ; 1/4
+
+Erreur dangereuse 4, Erreur présumée 3, savoir certain 24, 1 ignorance déclarée [MonCal.Facts.DC]. J'ai eu tout juste en physique, mais j'ai plus de mal en chimie car c'est moins concret. Les formules sont dures à comprendre donc à apprendre. De plus, mes erreurs dangereuses en chimie montrent que je n'ai pas tout compris. [DomKldg]
+
+['Erreur dangereuse 4, Erreur présumée 3, savoir certain 24, 1 ignorance déclarée.', "J'ai eu tout juste en physique.", "Je me sens moins à l'aise en chimie car c'est moins concret.", 'Les formules de chimie sont difficiles à comprendre et à apprendre.', "Mes erreurs dangereuses en chimie indiquent que je n'ai pas tout compris."]
+['MonCal.Facts.DC', 'DomKldg']
+['MonCal.Facts.DC', 'MonCal.Facts.RF', 'DomKldg', 'DomKldg', 'MonCal.Facts.DC']
+2/2 ; 1/5
+
+Mon score global est de 23/32, avec 9 réponses incorrectes dont 7 dangereuses et 2 présumées, et 23 correctes avec 3 réponses fragiles et 20 savoirs certains. Ce score global (par rapport aux erreurs dangereuses) est peut-être dût à de la précipitation [StratKldg]. La courbe en J au niveau des réponses incorrectes n'est pas bonne [MonCal.Facts.DC], il y a trop d’assurance pour des réponses qui sont fausses [MotOrient.SelfEff]. Mais ma courbe en J pour les réponses correctes est bonne. Je pourrais être plus réaliste en lisant mieux les questions. [CTRL]
+
+['Mon score global est de 23/32.', "J'ai eu 9 réponses incorrectes dont 7 dangereuses et 2 présumées.", "J'ai eu 23 réponses correctes, avec 3 réponses fragiles et 20 savoirs certains.", 'Ce score global (par rapport aux erreurs dangereuses) est peut-être dû à de la précipitation.', "La courbe en J au niveau des réponses incorrectes n'est pas bonne ; il y a trop d’assurance pour des réponses qui sont fausses.", 'Ma courbe en J pour les réponses correctes est bonne.', 'Je pourrais être plus réaliste en lisant mieux les questions.']
+['StratKldg', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'StratKldg', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL']
+3/4 ; 1/7
+
+J'ai eu 23/32. Des bonnes connaissances dans certains chapitres et des manques de connaissances notamment pour les ondes et le titrage, ainsi que les représentations des molécules dans l'espace. [DomKldg]
+
+["J'ai eu 23/32.", 'Des bonnes connaissances dans certains chapitres.', "Des manques de connaissances notamment pour les ondes et le titrage, ainsi que les représentations des molécules dans l'espace."]
+['DomKldg']
+['MonCal.Facts.RF', 'DomKldg', 'DomKldg']
+1/1 ; 1/3
+
+Bon test permettant ainsi de connaitre la qualité des connaissances. [MotOrient.Value]
+
+['Bon test permettant ainsi de connaître la qualité des connaissances.', 'La majorité de mes réponses sont correctes et dans un savoir certain, ce qui est un point satisfaisant.', 'Cependant, je dirai que je suis imprudent puisque j’ai fait 8 erreurs dangereuses.']
+['MotOrient.Value']
+['MotOrient.Value', 'MonCal.Facts.RF', 'MonCal.Interpret']
+1/1 ; 2/3
+
+J'ai eu 22/32. De bonnes connaissances dans certains domaines, comme de sérieuses lacunes dans d'autres. [DomKldg]
+
+["J'ai eu 22 sur 32.", 'Je possède de bonnes connaissances dans certains domaines.', "Cependant, je présente des lacunes sérieuses dans d'autres domaines."]
+['DomKldg']
+['MonCal.Facts.RF', 'MotOrient.SelfEff', 'DomKldg']
+1/1 ; 2/3
+
+​-> 22/32 avec 6 erreurs dangereuses, 18 savoirs certains et 4 savoir fragiles, 1 erreur présumée. [MonCal.Facts.DC] -> Les erreurs dangereuses viennent du fait que je lis parfois trop vite et de ce fait j'oublie des informations [StratKldg]. Ou alors je me rappelle plus des vraies formules-> par rapport à la courbe en J des réponses correctes, je diffère beaucoup -> prudence
+
+['22/32 avec 6 erreurs dangereuses, 18 savoirs certains et 4 savoir fragiles, 1 erreur présumée.', "Les erreurs dangereuses viennent du fait que je lis parfois trop vite et de ce fait j'oublie des informations.", 'Ou alors je me rappelle plus des vraies formules.', 'Par rapport à la courbe en J des réponses correctes, je diffère beaucoup.', 'Prudence.']
+['MonCal.Facts.DC', 'StratKldg']
+['MonCal.Facts.DC', 'StratKldg', 'DomKldg', 'MonCal.Facts.DC', 'MonCal.Interpret']
+2/2 ; 2/5
+
+4 erreurs dangereuses et 6 erreurs présumées et 4 savoir fragile ainsi que 18 savoir certain [MonCal.Facts.DC] (ce qui est plus ? (Illisible) / cohérent que la dernière fois). 22/32Pour les réponses correctes, ma courbe suit la courbe en J. Pour les erreurs, il n'y a pas vraiment de courbe. Je suis allée beaucoup trop vite sur certaines questions  [StratKldg]et je ne me suis pas fait assez confiance. [MotOrient.SelfEff]
+
+['4 erreurs dangereuses et 6 erreurs présumées ainsi que 4 savoir fragile', 'et 18 savoir certain, ce qui est plus cohérent que la dernière fois.', '(ce qui est plus ? (Illisible) / cohérent que la dernière fois).', 'Pour les réponses correctes, ma courbe suit la courbe en J.', "Pour les erreurs, il n'y a pas vraiment de courbe.", 'Je suis allée beaucoup trop vite sur certaines questions.', 'et je ne me suis pas fait assez confiance.']
+['MonCal.Facts.DC', 'StratKldg', 'MotOrient.SelfEff']
+['MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'StratKldg', 'MotOrient.SelfEff']
+3/3 ; 1/7
+
+Globalement, il y a 23 réponses correctes et 9 réponses incorrectes ce qui est moins bon que la dernière fois.  [MonCal.Facts.RF]Ce score global est du à beaucoup de certitudes fausses (5 erreurs dangereuses) mais notamment à un savoir certain de 20 réponses mais aucune ignorance. Pour les réponses incorrectes, mes résultats vont en descendant en fonction du degré de certitude mais les réponses correctes suivent la courbe en J [MonCal.Facts.DC]. Cela révèle probablement d'imprudence considérable mais de sureté bénéfique. [MonCal.Interpret] Lors du prochain test, il s'agira de se montrer moins sur à 100% sur des réponses, même pour les réponses où je suis sûr de moi [CTRL]. Si je ne suis pas complétement certain, c'est mieux de mettre un degré de certitude moindre. Cela permettrait ainsi de diminuer la quantité d’erreurs dangereuses.
+
+['Globalement, il y a 23 réponses correctes et 9 réponses incorrectes.', 'Ce résultat est moins bon que la dernière fois.', 'Le score global est dû à beaucoup de certitudes fausses (5 erreurs dangereuses) mais aussi à un savoir certain sur 20 réponses sans aucune ignorance.', 'Pour les réponses incorrectes, mes résultats vont en descendant selon le degré de certitude.', 'Les réponses correctes suivent la courbe en J.', 'Cela révèle probablement une imprudence considérable mais aussi une sureté bénéfique.', "Lors du prochain test, il s'agira de se montrer moins sûr à 100% sur des réponses, même celles où je suis sûr de moi.", "Si je ne suis pas complètement certain, c'est mieux de mettre un degré de certitude moindre.", 'Cela permettrait ainsi de diminuer la quantité d’erreurs dangereuses.']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Interpret', 'CTRL', 'MonCal.Interpret', 'CTRL']
+4/4 ; 0/9
+
+Mes connaissances sont suffisantes (24/32) mais mon jugement n'est pas réaliste [MotOrient.SelfEff]. Concernant les réponses justes, mes résultats suivent plutôt la courbe. Mais mes erreurs ne suivent pas la courbe car j'ai fait trop d'erreurs dangereuses (4). Je suis donc trop imprudent.  [MonCal.Interpret]Certaines de ces erreurs sont dues à un manque de réflexion par rapport aux questions (ex: confondre semi-équation et équation de réaction) [StratKldg] et une trop grande confiance aux réponses données par le QCM. Je devrais aussi plus me méfier de mes réponses.
+
+["Mes connaissances sont suffisantes (24/32) mais mon jugement n'est pas réaliste.", 'Concernant les réponses justes, mes résultats suivent plutôt la courbe.', "Mais mes erreurs ne suivent pas la courbe car j'ai fait trop d'erreurs dangereuses (4).", 'Je suis donc trop imprudent.', 'Certaines de ces erreurs sont dues à un manque de réflexion par rapport aux questions (ex: confondre semi-équation et équation de réaction).', 'Et une trop grande confiance aux réponses données par le QCM.', 'Je devrais aussi plus me méfier de mes réponses.']
+['MotOrient.SelfEff', 'MonCal.Interpret', 'StratKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Interpret', 'StratKldg', 'MotOrient.SelfEff', 'MonCal.Interpret']
+3/3 ; 2/7
+
+23/32Je possède de nombreuses erreurs dangereuses, c'est bizarre parce que j'étais persuadé d'avoir fait de bons résultats. Mes fautes sont surtout en chimie, c'est tout à fait normal car je ne comprends pas trop certaines méthodes à faire [DomKldg]. . . Je ne peux pas forcement m'améliorer à ce stade-là.
+
+["Je possède de nombreuses erreurs dangereuses, c'est bizarre parce que j'étais persuadé d'avoir fait de bons résultats.", "Mes fautes sont surtout en chimie, c'est tout à fait normal car je ne comprends pas trop certaines méthodes à faire.", "Je ne peux pas forcément m'améliorer à ce stade-là."]
+['DomKldg']
+['MonCal.Interpret', 'DomKldg', 'CTRL']
+1/1 ; 2/3
+
+24/32 beaucoup trop d'erreur dangereuses mais une courbe de savoir certain plutôt bonne [MonCal.Facts.DC]. Il faut que je travaille mieux mes notions [StratKldg] afin d'être certain de toute mes réponses et éviter ces erreurs sur lesquelles je suis trop confiant commes ces erreurs dangereuses : 6/32
+
+["24/32 beaucoup trop d'erreurs dangereuses mais une courbe de savoir certain plutôt bonne.", "Il faut que je travaille mieux mes notions afin d'être certain de toutes mes réponses et éviter ces erreurs sur lesquelles je suis trop confiant comme ces erreurs dangereuses : 6/32."]
+['MonCal.Facts.DC', 'StratKldg']
+['MonCal.Facts.DC', 'CTRL']
+1/2 ; 1/2
+
+Résultat de 28/32 [MonCal.Facts.RF]. Des erreurs dues soit à la mauvaise compréhension des questions (n° 5: une force orthogonale à v0 non une force v0), soit à une maîtrise incomplète du vocabulaire (isomérie). L'objectif est donc une attention plus marquée dans la lecture des questions [StratKldg] et une meilleure maîtrise du cours. Pour le spectre RMN il m'a semblé que le spectre était incohérent par rapport aux marches représentant la quantité de H (un triplet pour 4 H ?). Le cours doit être relu et mieux compris. Bonne compréhension pour la réaction d'oxydation, la diffraction et les lois de Newton. [DomKldg]
+
+['Résultat de 28/32.', 'Des erreurs dues soit à la mauvaise compréhension des questions (n° 5: une force orthogonale à v0 non une force v0),', 'soit à une maîtrise incomplète du vocabulaire (isomérie).', "L'objectif est donc une attention plus marquée dans la lecture des questions.", 'et une meilleure maîtrise du cours.', "Pour le spectre RMN, il m'a semblé que le spectre était incohérent par rapport aux marches représentant la quantité de H (un triplet pour 4 H ?).", 'Le cours doit être relu et mieux compris.', "Bonne compréhension pour la réaction d'oxydation, la diffraction et les lois de Newton."]
+['MonCal.Facts.RF', 'StratKldg', 'DomKldg']
+['MonCal.Facts.RF', 'MonCal.Interpret', 'DomKldg', 'StratKldg', 'CTRL', 'MonCal.Facts.RF', 'DomKldg', 'DomKldg']
+3/3 ; 2/8
+
+Sur ce test, j'ai 19 réponses correctes, toutes de savoir certain, et 13 réponses incorrectes dont 11 sont des erreurs dangereuses et 2 erreurs présumées. Les erreurs que j'ai faites sont dangereuses puisque j'étais quasiment sur ou sur de ces réponses. Les courbes en J ne sont pas cohérentes, au niveau des réponses incorrectes : bcp de réponses dangereuses à 100% ou 90% de certitude. [MonCal.Facts.DC] Pour mieux réussir ce test, il faut mettre une certitude de savoir pas très importante pour limiter les erreurs dangereuses.
+
+["Sur ce test, j'ai 19 réponses correctes, toutes avec une certitude certaine.", "J'ai également 13 réponses incorrectes : 11 sont des erreurs dangereuses et 2 sont des erreurs présumées.", "Les erreurs que j'ai commises sont considérées comme dangereuses car je me sentais quasi sûr ou sûr de ces réponses.", "Les courbes en J ne montrent pas de cohérence au niveau des réponses incorrectes, avec beaucoup d'erreurs dangereuses à 100% ou 95% de certitude.", 'Pour mieux réussir ce test, il est nécessaire de réduire la certitude de savoir pour limiter les erreurs dangereuses.']
+['MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC']
+1/1 ; 1/5
+
+10 réponses correctes sur 20, score correct [MonCal.Facts.RF], cependant trois erreurs dangereuses (à80%) qui sont dues à une mauvaise lecture de l'énoncé et une confusion entre plusieurs éléments de la consigne [StratKldg]. Cependant, j'ai 7 savoir certain et 3 savoir fragile, [MonCal.Facts.DC] ce qui témoigne d'une bonne connaissance d'une partie du programme et une connaissance partielle d'une autre partie du programme  [DomKldg](10 questions erreur présumée, ignorance déclarée et savoir fragile). Pour un meilleur résultat la fois prochaine, il faudrait ouvrir le livre de SPC notamment sur la mécanique [CTRL] (2eme loi de Newton)
+
+['10 réponses correctes sur 20, score correct.', "Cependant trois erreurs dangereuses (à 80%) qui sont dues à une mauvaise lecture de l'énoncé et une confusion entre plusieurs éléments de la consigne.", "J'ai 7 savoir certain et 3 savoir fragile.", "Ce qui témoigne d'une bonne connaissance d'une partie du programme et une connaissance partielle d'une autre partie du programme (10 questions erreur présumée, ignorance déclarée et savoir fragile).", 'Pour un meilleur résultat la prochaine fois, il faudrait ouvrir le livre de SPC notamment sur la mécanique (2e loi de Newton).']
+['MonCal.Facts.RF', 'StratKldg', 'MonCal.Facts.DC', 'DomKldg', 'CTRL']
+['MonCal.Facts.RF', 'StratKldg', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'CTRL']
+4/5 ; 0/5
+
+j'ai souvent répondu trop vite  [StratKldg]et je pense autant ne pas avoir appris mon cours donc je me suis mélangé plein de fois
+
+["j'ai souvent répondu trop vite", 'je pense autant ne pas avoir appris mon cours', 'donc je me suis mélangé plein de fois']
+['StratKldg']
+['StratKldg', 'MotOrient.SelfEff', 'StratKldg']
+1/1 ; 1/3
+
+je mérite cette note car je n'avais pas de connaissance spécifique sur ce cours (mots spécifiques scientifiques) [DomKldg] et je n'étais pas concentré à 100% en raison de problèmes informatiques ce qui a causé un taux d'erreur trop important
+
+["Je mérite cette note car je n'avais pas de connaissance spécifique sur ce cours.", "Il s'agissait principalement de mots scientifiques spécifiques que je ne connaissais pas.", "En outre, je n'étais pas concentré à 100% en raison de problèmes informatiques.", "Ces problèmes ont causé un taux d'erreur trop important."]
+['DomKldg']
+['MonCal.Interpret', 'DomKldg', 'StratKldg', 'DomKldg']
+1/1 ; 2/4
+
+Avec 4 erreurs dangereuses, 3 erreurs présumées et 13 savoirs certains [MonCal.Facts.DC]. Pour la prochaine fois, essayer de prendre plus de temps dans la lecture de certaines questions [CTRL]. les erreurs dangereuses étant au dessus de la courbe.
+
+['Avec 4 erreurs dangereuses, 3 erreurs présumées et 13 savoirs certains.', 'Pour la prochaine fois, essayer de prendre plus de temps dans la lecture de certaines questions.', 'Les erreurs dangereuses étant au-dessus de la courbe.']
+['MonCal.Facts.DC', 'CTRL']
+['MonCal.Facts.DC', 'CTRL', 'MonCal.Facts.DC']
+2/2 ; 0/3
+
+Je suis arrivée à un résultat de 12/20 [MonCal.Facts.RF] avec beaucoup d'erreurs dangereuses, je pense que je n'ai pas entièrement compris le cours et j'ai été beaucoup moins prudente que sur le dernier test, j'ai pris des risques [MonCal.Interpret] et cela n'a pas aboutit. J’ai beaucoup moins d'ignorance déclarée. Il faut encore que je me concentre davantage sur les énoncés, prendre le temps de bien lire surtout sur la mécanique [CTRL]. Les conditions ne sont pas vraiment idéal non plus
+
+
+["Je suis arrivée à un résultat de 12/20 avec beaucoup d'erreurs dangereuses.", "Je pense que je n'ai pas entièrement compris le cours et j'ai été beaucoup moins prudente que sur le dernier test.", "J'ai pris des risques et cela n'a pas abouti.", 'J’ai beaucoup moins d’ignorance déclarée.', 'Il faut encore que je me concentre davantage sur les énoncés.', 'Prendre le temps de bien lire, surtout sur la mécanique.', 'Les conditions ne sont pas vraiment idéales non plus.']
+['MonCal.Facts.RF', 'MonCal.Interpret', 'CTRL']
+['MonCal.Facts.DC', 'MonCal.Interpret', 'MonCal.Interpret', 'MonCal.Facts.RF', 'CTRL', 'StratKldg', 'BDS.Emotions']
+3/3 ; 3/7
+
+9 savoir certain 4 fragile 4 erreurs présumées et 3 dangereuses. [MonCal.Facts.DC] des confusions et des souvenirs erronés du à des réponses données basées non pas sur un cours appris mais sur des souvenirs de classes et des exercices faits. [DomKldg] Un apprentissage du cours permettrait de palier à cela
+
+['La majorité de mes réponses sont correctes et dans un savoir certain, ce qui est un point satisfaisant.', 'Cependant, je dirai que je suis imprudent puisque j’ai fait 8 erreurs dangereuses.', '9 savoir certain', '4 fragile', '4 erreurs présumées et 3 dangereuses.', 'Des confusions et des souvenirs erronés dus à des réponses données basées non pas sur un cours appris mais sur des souvenirs de classes et des exercices faits.', 'Un apprentissage du cours permettrait de palier à cela.']
+['MonCal.Facts.DC', 'DomKldg']
+['MonCal.Facts.RF', 'MonCal.Interpret', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'MonCal.Facts.DC', 'StratKldg', 'Ctrl']
+1/2 ; 4/7
+
+J'ai eu 6 réponses incorrectes et 6 dangereuses et 13 réponses correctes dont 11 savoir certain. mes erreurs viennent majoritairement du fait que je ne comprends absolument pas le chapitre de chimie sur lequel nous avons eu des questions (solution titrante/titrée, ph, pka) [DomKldg]
+
+["J'ai eu 6 réponses incorrectes, 6 dangereuses et 13 correctes.", 'Parmi les réponses correctes, 11 étaient dans un savoir certain.', 'Mes erreurs viennent principalement du fait que je ne comprends pas le chapitre de chimie sur la solution titrante/titrée, pH, pKa.']
+['DomKldg']
+['MonCal.Facts.DC', 'MonCal.Facts.RF', 'DomKldg']
+1/1 ; 2/3
+
+Je n'avais pas appris tous les cours C'est pourquoi j'ai fait beaucoup d'erreurs présumées [MonCal.Facts.DC], certaines fois je me suis embrouillée et/ou j'ai interprété la question. Certaines fois j'ai hésité, j'ai fait une erreur dangereuse car j'ai échangé 2 valeurs dans une formule que je n'ai pas trop comprise [DomKldg]. J'ai eu une ignorance déclarée car je ne savais pas du tout la réponse. Je n'ai pas pros beaucoup de risques car je ne suis pas très à l'aise sur cette partie du cours.
+
+["Je n'avais pas appris tous les cours.", "C'est pourquoi j'ai fait beaucoup d'erreurs présumées.", "Certaines fois, je me suis embrouillée et/ou j'ai interprété la question.", "Certaines fois, j'ai hésité.", "J'ai fait une erreur dangereuse car j'ai échangé 2 valeurs dans une formule que je n'ai pas trop comprise.", "J'ai eu une ignorance déclarée car je ne savais pas du tout la réponse.", "Je n'ai pris pas beaucoup de risques car je ne suis pas très à l'aise sur cette partie du cours."]
+['MonCal.Facts.DC', 'DomKldg']
+['DomKldg', 'MonCal.Facts.DC', 'MonCal.Interpret', 'MonCal.Interpret', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'MonCal.Interpret']
+2/2 ; 2/7
+
+je n'ai pas bien relu mes chapitres [DomKldg] et j’ai des fois mal lu les consignes [StratKldg] ou mal compris . 0 réponses correctes, 0 ignorance et 11 réponses incorrectes
+
+["Je n'ai pas bien relu mes chapitres.", 'J’ai des fois mal lu les consignes.', 'J’ai parfois mal compris.', '0 réponses correctes.', '0 ignorance.', '11 réponses incorrectes.']
+['DomKldg', 'StratKldg']
+['DomKldg', 'StratKldg', 'StratKldg', 'MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Facts.RF']
+2/2 ; 1/6
+
+pour ce second test, j'ai eu 9 réponses correctes, 4 ignorances et 7 réponses incorrectes.  [MonCal.Facts.RF]Plus de difficultés qu'au premier test, des connaissances plus faibles, une mauvaise maitrise des cours. Ensemble fragile. Je dois revoir les chapitres de chimie (acido-basique) et également en mécanique, les lois de Kepler et la mécanique des électrons. [DomKldg]
+
+["pour ce second test, j'ai eu 9 réponses correctes.", "j'ai eu 4 ignorances et 7 réponses incorrectes.", "Plus de difficultés qu'au premier test.", 'des connaissances plus faibles.', 'une mauvaise maitrise des cours.', 'Ensemble fragile.', 'Je dois revoir les chapitres de chimie (acido-basique).', 'et également en mécanique, les lois de Kepler et la mécanique des électrons.']
+['MonCal.Facts.RF', 'DomKldg']
+['MonCal.Facts.RF', 'MonCal.Facts.RF', 'MonCal.Facts.RF', 'DomKldg', 'DomKldg', 'DomKldg', 'DomKldg', 'DomKldg']
+2/2 ; 0/8
+
+J'ai 3 erreurs dangereuses, je pense qu'elles sont liées au temps accordé au questions. on a du se dépêcher. J’aurais mieux réussis si j’avais pu poser les questions à l'écrit sur une feuille et si j'avais pour prendre mon temps en recontextualisant les questions qui ont déjà été vues en classes ou évaluation. [StratKldg] Il faudra que je prenne le temps de comprendre mes 5 erreurs présumées.
+
+["J'ai identifié 3 erreurs dangereuses que je pense sont liées au temps accordé pour répondre aux questions.", "On a dû se dépêcher pendant l'évaluation.", "J’aurais mieux réussi si j’avais pu poser les questions à l'écrit sur une feuille.", "Je devrais avoir eu la possibilité de prendre mon temps en recontextualisant les questions qui ont déjà été abordées en classe ou lors d'une évaluation précédente.", 'Il faudra que je prenne le temps de comprendre mes 5 erreurs présumées.']
+['StratKldg']
+['MonCal.Facts.DC', 'StratKldg', 'StratKldg', 'CTRL', 'CTRL']
+1/1 ; 2/5
+
+moins bons résultats que pour le premier test FEED BAC. je pense que le cours est moins maitrisé [DomKldg] et je n'ai pas pris le temps de bien comprendre les énoncés [StratKldg] ce qui explique certaines erreurs dangereuses que j'ai pu faire. J'ai quand même pu corriger le problème du premier test sur le fait que je n'avais pas confiance en moi [MotOrient.SelfEff]
+
+['Moins bons résultats que pour le premier test FEED BAC.', 'Je pense que le cours est moins maîtrisé.', "Je n'ai pas pris le temps de bien comprendre les énoncés, ce qui explique certaines erreurs dangereuses que j'ai pu faire.", "J'ai quand même pu corriger le problème du premier test sur le fait que je n'avais pas confiance en moi."]
+['DomKldg', 'StratKldg', 'MotOrient.SelfEff']
+['MonCal.Interpret', 'DomKldg', 'StratKldg', 'MotOrient.SelfEff']
+3/3 ; 1/4
+
+j'ai eu 11/20. Je mérite cette note car je n'ai pas révisé. de plus, dans certaines questions je n’étais pas concentré sur le sujet [StratKldg]
+
+["j'ai eu 11/20.", "Je mérite cette note car je n'ai pas révisé.", 'De plus, dans certaines questions, je n’étais pas concentré sur le sujet.']
+['StratKldg']
+['MonCal.Facts.RF', 'CTRL', 'StratKldg']
+1/1 ; 2/3
+
+Incompréhension acide/base + titrage [DomKldg]. Manque de rigueur (déjà révélée à l’interrogation). les autres items majoritairement,t acquis. (panneau danger). revoir charge électrique à associer à la 2ème loi de Newton. sur la fin, manque de temps et donc 3 erreurs dangereuses . j'ai maintenant compris mes erreurs.
+
+['Incompréhension dans le sujet acide/base et titrage.', 'Manque de rigueur, déjà révélé lors de l’interrogation.', 'Les autres items sont majoritairement acquis.', '(Panneau danger).', 'Revoir la charge électrique à associer à la 2ème loi de Newton.', 'Sur la fin, manque de temps et donc trois erreurs dangereuses.', "J'ai maintenant compris mes erreurs."]
+['DomKldg']
+['DomKldg', 'MonCal.Interpret', 'DomKldg', 'MonCal.Facts.DC', 'DomKldg', 'StratKldg', 'DomKldg']
+1/1 ; 3/7
+
+J'ai obtenu 10 réponses correctes et 9 réponses incorrectes avec une ignorance déclarée [MonCal.Facts.RF]. J'ai fait une seule erreur dangereuse dont j'étais sur à 100% et deux à 80% ce qui est mieux que la dernière fois. j'ai été plus réaliste [MotOrient.SelfEff]. cependant il reste encore beaucoup d'erreurs présumées. Il y a 8 savoir certain et deux savoir fragile [MonCal.Facts.DC], ce que je trouve encourageant
+
+["J'ai obtenu 10 réponses correctes et 9 réponses incorrectes avec une ignorance déclarée.", "J'ai fait une seule erreur dangereuse dont j'étais sûr à 100%, et deux erreurs auxquelles je suis confiant à 80% ce qui est mieux que la dernière fois.", 'Je me suis montré plus réaliste.', "Cependant, il reste encore beaucoup d'erreurs présumées.", 'Il y a 8 savoirs certains et deux savoirs fragiles, ce que je trouve encourageant.']
+['MonCal.Facts.RF', 'MotOrient.SelfEff', 'MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MotOrient.SelfEff', 'MonCal.Facts.DC', 'MonCal.Facts.DC']
+3/3 ; 0/5
+
+voici mes notes et commentaires : bon pour le plan mental mes connaissances pas encore assez solides. [DomKldg] J'étais tout à fait sur de mes réponses contrairement à la session précédente. Ceci démontre de mon évolution sur le plan mental notamment. Dans mon assurance à répondre aux questions. [MotOrient.SelfEff] Néanmoins il me semble que certes mes compétences/connaissances n'ont pas évoluées depuis la dernière fois mais mon problème réside dans ma précipitation [StratKldg]. C 'est mon dernier mot
+
+['Voici mes notes et commentaires : bon pour le plan mental, mes connaissances ne sont pas encore assez solides.', "J'étais tout à fait sûr de mes réponses contrairement à la session précédente.", 'Ceci démontre mon évolution sur le plan mental notamment.', 'Dans mon assurance à répondre aux questions.', "Néanmoins, il me semble que certes mes compétences/connaissances n'ont pas évoluées depuis la dernière fois mais mon problème réside dans ma précipitation.", "C'est mon dernier mot."]
+['DomKldg', 'MotOrient.SelfEff', 'StratKldg']
+['DomKldg', 'MonCal.Facts.RF', 'MonCal.Interpret', 'MotOrient.SelfEff', 'StratKldg', 'CTRL']
+3/3 ; 3/6
+
+J'ai eu 9 réponses incorrectes  [MonCal.Facts.RF]dont 4 dangereuses et 5 présumées [MonCal.Facts.DC] et 11 correctes. je pense que j'aurais pu éviter les mauvaises réponses en agnat plus de temps mais aussi en connaissant plus les formules pour éviter de faire des erreurs.
+
+["J'ai eu 9 réponses incorrectes.", 'Parmi ces erreurs, 4 étaient dangereuses et 5 présumées.', "J'ai également obtenu 11 réponses correctes.", "Je pense que j'aurais pu éviter les mauvaises réponses en y consacrant plus de temps.", 'Connaître davantage les formules aurait aussi aidé à éviter des erreurs.']
+['MonCal.Facts.RF', 'MonCal.Facts.DC']
+['MonCal.Facts.RF', 'MonCal.Facts.DC', 'MonCal.Facts.RF', 'StratKldg', 'StratKldg']
+2/2 ; 1/5
+
+J'ai répondu trop vite aux questions. je n'ai pas assez réfléchi à certaines questions. [StratKldg] Parfois, je n’étais pas sure de moi. Or j'avais un savoir certain pour chaque bonne réponse. pour 4 erreurs je n'étais pas sure de moi.
+
+["J'ai répondu trop vite aux questions.", "Je n'ai pas assez réfléchi à certaines questions.", 'Parfois, je n’étais pas sûre de moi.', "Or j'avais un savoir certain pour chaque bonne réponse.", "Pour 4 erreurs, je n'étais pas sûre de moi."]
+['StratKldg']
+['StratKldg', 'StratKldg', 'MotOrient.SelfEff', 'MonCal.Facts.DC', 'MotOrient.SelfEff']
+1/1 ; 2/5
+
+y a trop de réponse dangereuse : car soit j'ai pas revu le cours [DomKldg] soit je suis allé trop vite et du coup mauvaise lecture/compréhension [StratKldg]
+
+['Il y a trop de réponses dangereuses.', "Cela est dû au fait que je n'ai pas revu le cours ou parce que j'ai avancé trop rapidement.", 'En conséquence, cela entraîne une mauvaise lecture et compréhension.']
+['DomKldg', 'StratKldg']
+['MonCal.Facts.DC', 'StratKldg', 'StratKldg']
+1/2 ; 1/3
+
+résultat globalement satisfaisant (15/20) malgré les 4 erreurs dangereuses dues à un manque d'attention sur certains détails [StratKldg] voire à une confusion dans mes connaissances [DomKldg]. Certains acquis demandent d'^ter vérifier. J'essaye de me baser le moins possible sur de la déduction mais plus sur la réflexion
+
+['Résultat globalement satisfaisant (15/20).', "Malgré les 4 erreurs dangereuses dues à un manque d'attention sur certains détails.", 'Voire à une confusion dans mes connaissances.', "Certains acquis demandent d'être vérifiés.", "J'essaye de me baser le moins possible sur de la déduction.", 'Mais plus sur la réflexion.']
+['StratKldg', 'DomKldg']
+['BDS.Emotions', 'CTRL', 'DomKldg', 'StratKldg', 'StratKldg', 'MonCal.Interpret']
+2/2 ; 3/6
+
+des parties qui laissent percevoir un manque de révisions dans les chapitres vu il y a un certain temps en cours. Des erreurs que je pouvait éviter souvent dû au manque de concentration [StratKldg]. il faut que je révise les formules de Kepler et revoir les charges électriques [DomKldg]
+
+['Des parties qui laissent percevoir un manque de révisions dans les chapitres vus il y a un certain temps en cours.', 'Des erreurs que je pouvais éviter souvent dues au manque de concentration.', 'Il faut que je révise les formules de Kepler.', 'Revoir les charges électriques.']
+['StratKldg', 'DomKldg']
+['StratKldg', 'StratKldg', 'CTRL', 'DomKldg']
+2/2 ; 1/4
+
+Chapitres pas assez bien travaillés [DomKldg], notamment ceux avec lesquels j'ai du mal. Beaucoup de raisonnement pas logique qui ne me réussit pas souvent
+
+["Chapitres pas assez bien travaillés, notamment ceux avec lesquels j'ai du mal.", 'Beaucoup de raisonnement pas logique qui ne me réussit pas souvent.']
+['DomKldg']
+['DomKldg', 'StratKldg']
+1/1 ; 1/2
+
+Note 12/20 (5 dangereuses, 2 présumées, 1 ignorance , 4 fragiles, 8 certains [MonCal.Facts.DC]). faiblesse des connaissances et mauvaise déduction/mauvaise logique. utilisation de cela car mauvais apprentissage du cours [DomKldg]. Pas automatisme à répondre aux questions et non connaissance de la technique à utiliser.
+
+['Note 12/20 avec la répartition suivante : 5 erreurs dangereuses, 2 présumées, 1 ignorance, 4 fragiles, et 8 certaines.', 'Faiblesse des connaissances et mauvaise déduction ou logique.', "L'usage de ces problèmes est lié à un apprentissage inefficace du cours.", "Il n'y a pas d'automatisme pour répondre aux questions.", 'Absence de connaissance de la technique appropriée à utiliser.']
+['MonCal.Facts.DC', 'DomKldg']
+['MonCal.Facts.DC', 'DomKldg', 'DomKldg', 'DomKldg', 'DomKldg']
+2/2 ; 0/5
+
+bcp d'erreurs dangereuses [MonCal.Facts.DC], Savoir -> 7 réponses bonnes, bien relire les consignes [StratKldg] et surtout plus réviser la leçon. Difficultés dans le chapitre sur la loi de Newton [DomKldg] à retravailler. ignorance déclarée. pas satisfaite de mon test.
+
+
+["Beaucoup d'erreurs dangereuses.", 'Savoir : 7 réponses correctes.', 'Bien relire les consignes.', 'Et surtout, plus réviser la leçon.', 'Difficultés dans le chapitre sur la loi de Newton à retravailler.', 'Ignorance déclarée.', 'Pas satisfaite de mon test.']
+['MonCal.Facts.DC', 'StratKldg', 'DomKldg']
+['MonCal.Facts.DC', 'MonCal.Facts.RF', 'StratKldg', 'CTRL', 'DomKldg', 'MonCal.Facts.RF', 'BDS.Emotions']
+3/3 ; 3/7
+====>  202 ; 131

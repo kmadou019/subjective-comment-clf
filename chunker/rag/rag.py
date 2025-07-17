@@ -6,6 +6,9 @@ import ast
 from Levenshtein import distance
 import os
 import re
+from langchain_ollama import OllamaEmbeddings
+from langchain_experimental.text_splitter import SemanticChunker
+
 
 def compare_chunks(true_chunks, split_chunks):
     if (len(true_chunks) + len(split_chunks) != 0):
@@ -37,6 +40,8 @@ def extract_json(text):
 def compute_score(original, founded):
     len_original, len_founded = len(original), len(founded) 
     correct, miss = 0,0
+    print(original)
+    print(founded)
     while founded:
         f = founded[0]
         if f in original:
@@ -57,9 +62,21 @@ def main():
     ####Repair here
     original_comment_path = df_path = os.path.join(os.path.dirname(__file__), '../data', 'real.csv')
     original_comment = pd.read_csv(original_comment_path)["real"]
+    
+    emb_fn = OllamaEmbeddings(model="mistral")
+    text_splitter = SemanticChunker(
+        emb_fn,
+        breakpoint_threshold_type="percentile",
+        breakpoint_threshold_amount=8,)
+    correct,miss = 1,1
     for comment,original in zip(global_comments, original_comment):
+        print(original)
         comment_split = graphSplit.invoke({"comment" : comment})["chunks"]
+        #comment_split = text_splitter.create_documents([comment])
+        #comment_split = [doc.page_content for doc in comment_split]
+
         classes = []
+        print(comment_split)
         for chunk in comment_split:
             #classify all the chunks
             response = graphRagClf.invoke({"comment": chunk, "llm" : "phi4"})
@@ -67,8 +84,11 @@ def main():
             classes.append(classe)
 
         original_classes = re.findall(r'\[([^\[\]]+)\]', original)
-        compute_score(original_classes, classes)
-    
+        c, m = compute_score(original_classes, classes)
+        correct += c
+        miss    += m
+    print("====> ",correct,";", miss)
+
 
 if __name__ == "__main__":
     main()
