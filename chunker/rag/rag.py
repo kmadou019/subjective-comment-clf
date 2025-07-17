@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 from .graph_builder import graph as graphSplit 
-from chunker.rag.graph_builder import graph as graphRAG
+from rag.graph_builder import graph as graphRagClf
 import pandas as pd
 import ast
 from Levenshtein import distance
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_chroma import Chroma
 import os
-
+import re
 
 def compare_chunks(true_chunks, split_chunks):
     if (len(true_chunks) + len(split_chunks) != 0):
@@ -34,41 +32,43 @@ def extract_json(text):
     start = text.find("{")
     end = text.find("}")
     text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
-    print(text)
     return ast.literal_eval(text)
 
+def compute_score(original, founded):
+    len_original, len_founded = len(original), len(founded) 
+    correct, miss = 0,0
+    while founded:
+        f = founded[0]
+        if f in original:
+            correct += 1
+        else:
+            miss += 1
+        founded = [item for item in founded if item != f]
+    print(f"{correct}/{len_original} ; {miss}/{len_founded}")
+    return (correct, miss)
 
 def main():
-    data_path = os.path.join(os.path.dirname(__file__), '../data/', 'comment_chunk_train.csv')
-    df = pd.read_csv(data_path)
+    df_path = os.path.join(os.path.dirname(__file__), '../data/', 'comment_chunk_test.csv')
+    df = pd.read_csv(df_path)
     df["chunks"] = df["chunks"].apply(ast.literal_eval)
     global_comments = df["comment"]
-    true_chunks = df["chunks"]
 
-    data_path = os.path.join(os.path.dirname(__file__), '../../rag/data', 'comments.csv')
-    comments = pd.read_csv(data_path)
-
-    sum_F1_s = 0
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    vector_store = Chroma(collection_name="Comment",persist_directory="../../rag/chroma_db" ,embedding_function=embeddings)
-    for comment,true_chunk in zip(global_comments, true_chunks):
+    df_path = os.path.join(os.path.dirname(__file__), '../../rag/data', 'comments.csv')
+    ####Repair here
+    original_comment_path = df_path = os.path.join(os.path.dirname(__file__), '../data', 'real.csv')
+    original_comment = pd.read_csv(original_comment_path)["real"]
+    for comment,original in zip(global_comments, original_comment):
         comment_split = graphSplit.invoke({"comment" : comment})["chunks"]
+        classes = []
         for chunk in comment_split:
-            #find chunk's categories
-            #chunk_in_db = vector_store.similarity_search(chunk, k=1)
-            #categorie = comments["tag"][int(chunk_in_db[0].id)]
-            #print("chunk",chunk)
-            #print("chunk in db",chunk_in_db)
-            #print("cat",categorie)
             #classify all the chunks
-            categorie_of_chunk = graphRAG.invoke({"comment": chunk, "llm" : "phi4"})["classe"]
-            print(categorie_of_chunk)
+            response = graphRagClf.invoke({"comment": chunk, "llm" : "phi4"})
+            classe = extract_json(response["predictedClass"])["classe"]
+            classes.append(classe)
 
-
-        #print_chunks(true_chunk, comment_split)
-        #sum_F1_s += compare_chunks(true_chunk, comment_split)
-
-    print('F1-score for rag : ', sum_F1_s)
+        original_classes = re.findall(r'\[([^\[\]]+)\]', original)
+        compute_score(original_classes, classes)
+    
 
 if __name__ == "__main__":
     main()
