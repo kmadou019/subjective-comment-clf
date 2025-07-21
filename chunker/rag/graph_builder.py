@@ -9,6 +9,7 @@ import pandas as pd
 from langchain_ollama.llms import OllamaLLM
 import json
 import re
+import os
 model = "phi4"
 llm = OllamaLLM(model=model)
 
@@ -16,7 +17,10 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 
 vector_store = Chroma(collection_name="Chunks", persist_directory="./chroma_db", embedding_function=embeddings)
 
-true_chunks = pd.read_csv("../data/comment_chunk_train.csv", index_col="comment")
+
+data_path = os.path.join(os.path.dirname(__file__), '../data/', 'comment_chunk_train.csv')
+
+true_chunks = pd.read_csv(data_path, index_col="comment")
 
 template = """
 Tu es un expert dans l’analyse sémantique et le découpage de texte en unités de sens cohérentes et exploitables. Ton objectif est de segmenter un texte donné en morceaux courts, chacun représentant une unité de sens distincte.
