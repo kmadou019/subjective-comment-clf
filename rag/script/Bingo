@@ -1,0 +1,3311 @@
+Enter the log name : Enter the version: Enter the model name: Enter the llm name: Début du programme...
+{
+      "classe": ["MonCal.Facts.RF", "DomKldg"],
+      "justification": "Le commentaire rapporte les observations factuelles sur le nombre de réponses correctes et incorrectes, et il y a mention des lacunes (cest-à-dire dignorance)."
+   }
+{
+       "classe": ["MotOrient.SelfEff", "MonCal.Interpret"],
+       "justification": "Les commentaires expriment labsence de confiance de létudiant en ses connaissances, ce qui correspond à MotOrient.SelfEff et peut être interprété comme une estimation sujette de sa performance (MonCal.Interpret)."
+   }
+{
+      "classe": ["CTRL", "DomKldg"],
+      "justification": "Le commentaire indique un besoin de révision pour le prochain test (CTRL), et cela montre aussi quil manque des connaissances qui peuvent être améliorées (DomKldg)."
+   }
+{
+      "classe": ["DomKldg", "StratKldg"],
+      "justification": "Le commentaire indique que létudiant identifie des lacunes dans son domaine dapprentissage, le mécanique (DomKldg), et il évoque la nécessité de revoir certaines leçons (DomKldg). De plus, il précise quil a du mal à comprendre certains concepts et à faire des calculs (StratKldg)."
+   }
+{
+    "classe": "MonCal.Facts.RF",
+    "justification": "Le commentaire contient les mots-clés correctes, incorrecte et ignorance, qui sont pertinents pour cette classe."
+   }
+{
+       "classe": ["MonCal.Facts.DC"],
+       "justification": "Il sagit dune observation factuelle sur les erreurs dangereuses."
+   }
+{
+       "classe": ["MotOrient.SelfEff"],
+       "justification": "Le commentaire fait référence à la confiance et l’auto-efficacité des étudiants."
+   }
+{
+       "classe": ["DomKldg"],
+       "justification": "le commentaire est clair sur le manque de connaissance dun chapitre spécifique."
+   }
+{
+       "classe": [DomKldg, Physique-Chimie],
+       "justification": "Lutilisateur discute dun chapitre quil a du mal à réviser, ce qui correspond à DomKldg. Il mentionne explicitement la chimie, ce qui correspond à Physique-Chimie."
+   }
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Nombre et type de réponses (correctes, incorrectes et dignorance) sont mentionnés."
+   }
+{
+      "classe": ["MonCal.Interpret", "DomKldg"],
+      "justification": "Le commentaire être plus prudent par rapport au test peut être associé à la classe MonCal.Interpret car il sagit dune interprétation subjective de lexaminateur sur sa performance pendant le test. Il peut aussi être associé à la classe DomKldg en tant que commentaire sur lacquisition des concepts ou de la discipline manquante."
+   }
+{
+       "classe": "MonCal.Facts.DC",
+       "justification": "Le commentaire décrit lobservation dun schéma dans les réponses, qui est relatif à des savoirs fragiles."
+   }
+{
+      "classe": ["CTRL", "MonCal.Interpret"],
+      "justification": "The comment indicates that the individual is reflecting on their performance, expressing doubts about their answers and suggesting a need for more caution in future responses."
+   }
+{
+       "classe": [StratKldg, CTRL],
+       "justification": "Le commentaire indique un doute sur la certitude des réponses pour les prochains tests, ce qui évoque un changement de stratégie dapprentissage. De plus, il y a une mention du futur (prochain test), ce qui correspond à la classe CTRL."
+   }
+{
+       "classe": ["MonCal.Facts.RF", "DomKldg"],
+       "justification": "Le commentaire indique quil y avait beaucoup de bonnes réponses (MonCal.Facts.RF), mais il insiste sur le fait que certaines sujets nont pas encore été revus, ce qui peut être une lacune dans ses connaissances (DomKldg)."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Les erreurs dangereuses sont mentionnées dans cette classe"
+   }
+{
+      "classe": ["MotOrient.SelfEff", "StratKldg"],
+      "justification": "je nétais pas très concentrée peut être lié à MotOrient.SelfEff car il traite de lauto-efficacité, et également à StratKldg car il évoque un manquement dattention lors du test."
+   }
+{
+    "classe": ["MonCal.Facts.DC", "DomKldg"],
+    "justification": "Le commentaire indique les savoirs certains et fragiles ainsi que la mention de concepts à réviser dans le chapitre sur Newton et acides-bases, ce qui correspond aux classes MonCal.Facts.DC (observations factuelles sur les savoirs fragiles et certains) et DomKldg (commentaires identifiant les concepts/disciplines manquants et leur degré dacquisition)."
+   }
+{
+      "classe": ["CTRL", "MotOrient.SelfEff"],
+      "justification": "Le commentaire exprime lintention de travailler pour le prochain test, qui correspond à la classe CTRL. Il y a également un aspect sur la façon dont les étudiants se sentent concernant leur performance, ce qui correspond à la classe MotOrient.SelfEff."
+   }
+{
+      "classe": [DomKldg, MonCal.Interpret],
+      "justification": "Les mots clés navais pas du tout revu et lois de Kepler et des satellites correspondent à la classe DomKldg, qui identifie les concepts/disciplines manquants et leur degré d’acquisition. Le commentaire exprime également une interprétation subjective sur sa performance en matière de connaissances concernant les lois de Kepler et des satellites, ce qui correspond à la classe MonCal.Interpret."
+   }
+{
+    "classe": [MotOrient.Value, StratKldg],
+    "justification": "Le commentaire parle de lutilité du test et les points gagnés, ce qui correspond à la classe MotOrient.Value. Le fait que le test a permis de cibler les points faibles et peut être utile pour améliorer les connaissances correspond à la classe StratKldg."
+   }
+{
+      "classe": ["MonCal.Interpret", "MonCal.Facts.RF"],
+      "justification": "Le commentaire mentionne un nombre assez correct de réponses (MonCal.Facts.RF), mais il y a également une interprétation subjective sur la performance des étudiants (MonCal.Interpret)."
+   }
+{
+       "classe": "MonCal.Facts.DC",
+       "justification": ""
+   }
+{
+       "classe": ["MonCal.Facts.DC", "DomKldg"],
+       "justification": "Les mots clés erreur de lecture, rarement dune réelle lacune dans mes connaissances renvoient à des observations factuelles sur les erreurs commises pendant le test (MonCal.Facts.DC) et à un commentaire identifiant la cause de ces erreurs, cest-à-dire une erreur de lecture, ce qui correspond à DomKldg."
+   }
+{
+       "classe": ["CTRL", "DomKldg"],
+       "justification": "Le commentaire indique un souhait de prendre plus de temps pour lire les questions et évaluer réellement ses connaissances, ce qui correspond à la classe CTRL (car il parle des comportements futurs des apprenants) mais aussi à la classe DomKldg (commentaires identifiant les lacunes dans le domaine des connaissances)".
+   }
+{
+      "classe": ["MonCal.Interpret"],
+      "justification": "relativement prudent ressemble à un terme de la classe MonCal.Interpret, qui est définie comme des interprétations subjectives des étudiants sur leur performance."
+   }
+{
+      "classe": [MonCal.Interpret, DomKldg],
+      "justification": "Le commentaire fait mention de limprudence et de lévaluation à tort des réponses, ce qui est caractéristique de MonCal.Interpret. Il y a également une allusion aux concepts manquants, ce qui correspond à DomKldg."
+   }
+{
+      "classe": [DomKldg, MotOrient.SelfEff],
+      "justification": "Le commentaire indique une lacune dans la compréhension dun concept (physique) et une volonté daméliorer ses connaissances, ce qui correspond à la classe DomKldg et à MotOrient.SelfEff."
+   }
+{
+       "classe": ["MonCal.Facts.RF", "DomKldg"],
+       "justification" : "Le commentaire est une observation factuelle sur les résultats du test et il y a également une mention de la discipline manquante (chimie)"
+   }
+{
+      "classe": ["DomKldg", "DomKldg"],
+      "justification": "Le commentaire identifie un manque de connaissances spécifiques en chimie, ce qui correspond à la classe DomKldg."
+   }
+{
+    "classe": ["StratKldg", "DomKldg"],
+    "justification": "Le commentaire montre une amélioration dans la concentration et lattention de létudiant en utilisant des stratégies dapprentissage, ce qui peut être considéré comme DomKldg. De plus, il y a mention dun domaine ou discipline manquant (erreur) qui pourrait être amélioré dans le futur, ce qui correspond à la classe DomKldg."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Le commentaire est factuel et porte sur les résultats du test."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification" : "Le commentaire mentionne erreurs dangereuses et courbe en J, qui sont des mots-clés de la classe MonCal.Facts.DC."
+   }
+{
+       "classe": ["DomKldg", "MotOrient.SelfEff"],
+       "justification": "Le commentaire indique la lacune du domaine de la mécanique et de la chimie (DomKldg), et révèle une faible auto-efficacité des étudiants en matière de compétences et connaissances (MotOrient.SelfEff)."
+   }
+{
+      "classe": ["StratKldg", "DomKldg"],
+      "justification": "Le commentaire mentionne lerreur dinattention, ce qui correspond à la classe StratKldg. Ensuite il y a des lacunes dans les connaissances de létudiant, ce qui correspond à la classe DomKldg."
+   }
+{
+       "classe": ["MonCal.Facts.DC", "StratKldg"],
+       "justification": "Le commentaire renvoie à une erreur dangereuse et indique que cest en raison de la mauvaise lecture de ce dernier, ce qui correspond à StratKldg."
+   }
+{
+      "classe": ["DomKldg", "MotOrient.SelfEff"],
+      "justification": "The comment je navais pas révisé presque la totalité de ce quil y avait identifie une lacune dans lapprentissage (DomKldg) et montre également un manque de confiance en ses connaissances (MotOrient.SelfEff)."
+   }
+{
+    "classe": ["MonCal.Facts.RF", "DomKldg"],
+    "justification": "Le commentaire indique un fait quantitatif sur le nombre de réponses correctes et incorrectes, ce qui correspond à la classe MonCal.Facts.RF. Il ne mentionne pas de lacunes spécifiques dans les connaissances des étudiants, mais il y a une allusion au manque derreurs, ce qui pourrait être relatif à la classe DomKldg."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "DomKldg"],
+      "justification": ""
+   }
+{
+      "classe": [CTRL],
+      "justification": "Le commentaire est un conseil pour le futur, donc il correspond à la classe CTRL."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "DomKldg"],
+      "justification": "Le commentaire contient je suis sûre de moi (confiance et auto-efficacité) qui se rapporte à la matière des sciences (physique-chimie). Il y a également mention de connaissances manquantes en DS, ce qui correspond à lidentification de lacunes et du degré dacquisition."
+   }
+{
+      "classe": ["MotOrient.SelfEff"],
+      "justification": "le commentaire parle de la confiance en ses résultats, ce qui est spécifique à la classe MotOrient.SelfEff."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Les mots-clés erreurs dangereuses appartiennent à la classe MonCal.Facts.DC."
+   }
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": "Le commentaire met en évidence un manque de connaissances spécifiques (vocabulaire), et il semble que lutilisateur ait eu du mal à se faire appuyer sur les concepts qui lui ont été présentés pendant le test, ce qui peut être lié à une stratégie dapprentissage."
+   }
+{
+      "classe": [MotOrient.Value],
+      "justification": "ce test est très réaliste/ précis peut indiquer que le commentateur perçoit la valeur de lévaluation pour son apprentissage"
+   }
+{
+      "classe": ["MonCal.Facts.RF", "DomKldg"],
+      "justification": "Le commentaire contient des mots clés tels que correctes, savoirs certains et lacunes, ce qui suggère une analyse de ses résultats dans le cadre dun test (MonCal.Facts.RF) et un état de connaissance en mécanique qui pourrait être manquant (DomKldg)."
+   }
+{
+      "classe": ["DomKldg", "StratKldg"],
+      "justification": "Le commentaire indique quil y a eu mauvaise compréhension du contenu. Il sagit donc des lacunes dans les connaissances de létudiant et il est nécessaire danalyser le comportement de létudiant pour identifier la cause de sa mauvaise compréhension."
+   }
+{
+       "classe": ["CTRL", "MonCal.Interpret"],
+       "justification": "Le commentaire exprime une intention de confiance dans ses réponses, qui est un aspect du comportement futur (CTRL). Mais en indiquant que pour être plus réaliste il faudrait être plus sûr de soi en mettant davantage des certitudes à 100%, ce commentaire montre également une introspection subjective sur sa performance, qui est un aspect des interprétations des résultats du test (MonCal.Interpret)."
+   }
+{
+      "classe": ["MotOrient.SelfEff"],
+      "justification": "Le commentaire indique la confiance en soi et les efforts faits pour laméliorer, ce qui correspond à la classe MotOrient.SelfEff."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "MonCal.Facts.RF"],
+      "justification": "Le commentaire contient les mots-clés erreurs dangereuses, savoirs fragiles et ignorance déclarée, ce qui correspond à la classe MonCal.Facts.DC et à la classe MonCal.Facts.RF."
+   }
+{
+       "classe": [MonCal.Interpret],
+       "justification": "le mot prudent est défini comme un mot clé de la classe MonCal.Interpret"
+   }
+{
+       "classe": ["MotOrient.SelfEff", "StratKldg"],
+       "justification": "Le commentaire montre une réflexion sur la performance et une volonté damélioration pour le futur (MotOrient.SelfEff). Le terme fautes indique un problème avec les résultats du test, ce qui est un indicateur de stratégie dapprentissage (StratKldg)."
+   }
+{
+       "classe": ["DomKldg"],
+       "justification": ""
+   }
+{
+      "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+      "justification": "Daprès ma courbe, jai tendance à être à la fois trop prudente (avec 12 savoirs fragiles) et à la fois pas assez (7 erreurs dangereuses) montre que lutilisateur discute de sa propre interprétation des résultats du test, qui sont basés sur les observations factuelles. Il compare donc ses connaissances et leur degré dacquisition avec les évaluations subjectives de son rendement."
+   }
+{
+      "classe": ["DomKldg", "StratKldg"],
+      "justification": "Les mots « relire mes leçons » correspondent à lamélioration de lacquisition des connaissances (DomKldg), et le mot « être plus sûre » indique une stratégie dapprentissage utilisée pendant le test (StratKldg)."
+   }
+{
+    "classe": ["MonCal.Facts.DC", "MotOrient.SelfEff"],
+    "justification": "Comme le commentaire exprime que lutilisateur était plutôt sûre de lui-même à un moment donné et quelle était moins sûre de lui-même lors dune autre situation (plus récente), il semble donc quil sagisse dun commentaire concernant sa confiance/auto-efficacité (MonCal.Facts.DC) et son auto-évaluation (MotOrient.SelfEff)."
+   }
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Le commentaire Jétais aussi peu attentive peut être classé comme StratKldg car il y a une référence à un comportement dapprentissage, le manque dattention. Il peut également être classé dans CTRL car le verbe au futur étaient indique un commentaire sur des comportements futurs."
+   }
+{
+       "classe": [DomKldg],
+       "justification": "Le commentaire fait référence à un domaine disciplinaire (physique, mathématiques) manquant de lapprenant."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "DomKldg"],
+      "justification": "Le commentaire contient les mots-clés majorité, réponses correctes et savoir certain. Bien que le mot faute napparaisse pas explicitement, il est indirectement mentionné dans lexpression majorité de mes fautes nétaient pas pressenties. Par ailleurs, le commentaire indique une amélioration de lacquisition des connaissances (les réponses correctes sont certaines), ce qui correspond au type de commentaire identifiant les concepts/disciplines manquants et leur degré dacquisition."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "StratKldg"],
+      "justification": "Le commentaire exprime une boost de confiance et le verbe essayer indique quil y a eu un effort pour passer rapidement."
+   }
+{
+      "classe": ["DomKldg", "MotOrient.SelfEff"],
+      "justification": "Le commentaire exprime les lacunes de connaissances et les points à revoir, ainsi que lintérêt des étudiants pour identifier et améliorer leur niveau dacquisition."
+   }
+{
+    "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+    "justification" : "Il sagit dune interprétation du résultat (MonCal.Interpret) et de lerreur dangereuse mentionnée (MonCal.Facts.DC)"
+   }
+{
+      "classe": [MotOrient.SelfEff, DomKldg],
+      "justification": "Le commentaire aborde sa confiance en elle-même (sûre de moi) ainsi que son manque de compréhension dans le thème mécanique (difficile et je suis trop sûre de moi en mécanique), ce qui correspond aux classes MotOrient.SelfEff et DomKldg."
+   }
+{
+      "classe": ["DomKldg", "MotOrient.SelfEff"],
+      "justification": ""
+   }
+{
+      "classe": ["MonCal.Facts.RF", "DomKldg"],
+      "justification": "Il y a mention de réponses correctes, incorrectes et ignorances."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Le commentaire indique les savoirs fragiles (savoir fragile) et les savoirs certains (savoir certain), ce qui correspond à la définition de MonCal.Facts.DC."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "DomKldg"],
+      "justification": "Les mots-clés je suis sûre de moi, plupart du temps je suis certaine et jai raison indiquent que létudiant a confiance en ses compétences, ce qui est le cas dans MotOrient.SelfEff. Il y a également des références au fait dapprendre ou daméliorer (jai raison), ce qui correspond à DomKldg."
+   }
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "The words réponses fausses and réponses correctes are present in the list of keywords for MonCal.Facts.RF."
+   }
+{
+       "classe": ["MotOrient.SelfEff", "DomKldg"],
+       "justification": "Le commentaire indique un manque de confiance dans les compétences en chimie et une lacune du domaine disciplinaire en question"
+   }
+{
+      "classe": ["DomKldg", "MonCal.Interpret"],
+      "justification": "Les 4 mauvaises réponses sont sur les formules (3) indique que le commentateur doit revoir ses connaissances mathématiques et scientifiques en particulier, ce qui correspond à la classe DomKldg. La phrase il faut que je révise les formules de Kepler, Newton, et de laccélération et pour la chimie : la nomenclature, la géométries des molécules et les acides/bases suggère quil y a une interprétation subjective de son manque de connaissances, ce qui correspond à la classe MonCal.Interpret. "
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Le commentaire contient les mots-clés correcte, incorrecte et nombre."
+   }
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": "Le commentaire mentionne erreurs dangereuses et savoir certain, qui sont les mots-clés de la classe MonCal.Facts.DC et StratKldg respectivement."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "StratKldg"],
+      "justification": "Le commentaire mentionne les erreurs dangereuses et les stratégies utilisées pendant le test, ce qui correspond à la catégorie MonCal.Facts.DC et StratKldg."
+   }
+{
+      "classe": [DomKldg, StratKldg],
+      "justification": "Le commentaire indique quil manque des connaissances (domaine de connaissance), et il y a mention de stratégies dapprentissage pour améliorer son résultat dans le prochain test."
+   }
+{
+      "classe": ["DomKldg", "MotOrient.SelfEff"],
+      "justification": "Le commentaire montre une lacune dans les connaissances de la discipline chimie (DomKldg) et une faible confiance en elles (MotOrient.SelfEff)."
+   }
+{
+      "classe": ["StratKldg", "CTRL"],
+      "justification": "The comment emphasizes the need to pay more attention and take time while responding, which indicates a potential problem with reading comprehension or understanding the questions (StratKldg). Additionally, it mentions the intention for future improvement in the test-taking process, referring to la prochaine fois (CTRL)."
+   }
+{
+    "classe": ["MotOrient.SelfEff", "DomKldg"],
+    "justification": "Le commentaire exprime de la confiance dans les connaissances (MotOrient.SelfEff) et lidentification dun domaine disciplinaire (DomKldg)."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Il y a mention derreurs dangereuses en chimie, ce qui correspond à la classe MonCal.Facts.DC"
+   }
+{
+      "classe": ["MonCal.Interpret"],
+      "justification": "le mot prudent est défini comme un mot clé pour la classe MonCal.Interpret"
+   }
+{
+       "classe": [StratKldg, MonCal.Facts.DC],
+       "justification": "Le commentaire discute de la réduction des erreurs dangereuses et des savoirs fragiles, il sagit donc de stratégies dapprentissage (StratKldg) et de type de connaissances considérées comme fragiles et dangereuses (MonCal.Facts.DC)."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Les mots-clés correcte, incorrecte, et nombres sont présents dans le commentaire."
+   }
+{
+      "classe": [MonCal.Facts.DC],
+      "justification": "Le commentaire comporte le mot erreurs dangereuses qui est pertinent pour la classe MonCal.Facts.DC."
+   }
+{
+      "classe": ["MonCal.Interpret", "StratKldg"],
+      "justification": "Le commentaire révèle une interprétation subjective sur la performance et analyse les stratégies dapprentissage utilisées pendant le test."
+   }
+{
+      "classe": [StratKldg, CTRL],
+      "justification": "Il sagit dun commentaire sur la stratégie dapprentissage utilisée pendant le test et un commentaire sur les comportements futurs des apprenants, avec une recommandation pour avoir du temps avant de répondre pour le prochain test."
+   }
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Il y a un manque dattention (StratKldg) lors de la lecture des énoncés, ce qui a induit à une erreur et pourrait être corrigé dans le futur (CTRL)"
+   }
+{
+      "classe": [MonCal.Facts.DC],
+      "justification": "Le commentaire est composé de nombres correspondant aux savoirs certains, fragiles et erreurs présumées."
+   }
+{
+    "classe": ["MotOrient.SelfEff", "DomKldg"],
+    "justification": "Les mots « confiance », « finir par dire merci » et le souhait de progression (« c’est un peu meilleur que le premier test ») indiquent une amélioration perçue en matière dauto-efficacité. Les mots « problème » et « voulais » indiquent une lacune dans les connaissances de létudiant."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "DomKldg"],
+      "justification": "The comment contains erreurs dangereuses which is a key word for MonCal.Facts.DC, and also mentions ignorance and savoirs fragiles, which are related to DomKldg."
+   }
+{
+      "classe": [DomKldg, StratKldg],
+      "justification": "Le commentaire mentionne des lacunes dans les connaissances de létudiant et évoque une stratégie dapprentissage qui pourrait être améliorée en revue régulière."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Il est mentionné le nombre de réponses correctes et incorrectes, ce qui correspond à la définition de cette classe."
+   }
+{
+       "classe": ["CTRL", "DomKldg"],
+       "justification": "Le commentaire suggère un besoin damélioration dans le contexte du prochain test, qui implique que létudiant aura besoin de travailler davantage sur ses compétences (CTRL). En outre, il y a une référence à des lacunes dans les connaissances de la part de létudiant, ce qui suggère également DomKldg"
+   }
+{
+      "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+      "justification": "Les mots clés jen ai mal jugé mes réponses, surestimé mes compétences semblent appartenir à MonCal.Interpret (interprétations subjectives) et le fait de parler derreurs dangereuses 1 résumée correspond au critère MonCal.Facts.DC (observations factuelles sur les erreurs dangereuses)"
+   }
+{
+       "classe": ["DomKldg"],
+       "justification" : "les mots-clés faire attention aux énoncés, comprendre sont présents dans la définition de DomKldg."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "MonCal.Facts.RF"],
+      "justification": "Les mots clés erreur dangereuse, erreurs présumées, ignorances déclarée sont pertinents pour la classe MonCal.Facts.DC qui traite des savoirs fragiles et des erreurs dangereuses. Les mots clés 3 erreurs présumées, 3 ignorances déclarée, savoir fragile correspondent à ce que lon trouve dans cette classe, mais le mot erreur dangereuse est uniquement présent dans la classe MonCal.Facts.DC mais pas dans la liste de mots clés pour cette classe. Les autres mots clés comme 3 erreurs présumées, ignorances déclarée sont également pertinents pour la classe MonCal.Facts.RF qui traite des observations factuelles sur les résultats du test, notamment sur les erreurs présumées et lignorance déclarée par les étudiants."
+   }
+{
+      "classe": [DomKldg],
+      "justification": "Il faudrait que j’aie plus de réponses en erreur présumée et savoir fragile pour éviter les erreurs dangereuses indique un étudiant qui identifie des concepts manquants dans son domaine (physique-chimie)."
+   }
+{
+    "classe": ["MonCal.Facts.DC", "DomKldg"],
+    "justification": "Le commentaire contient les mots clés pertinents pour la classe MonCal.Facts.DC (erreur dangereuse, erreurs présumées, ignorances déclarées, savoirs fragiles) et DomKldg (lacunes, disciplines manquants, apprendre, révoir)."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "MonCal.Facts.DC"],
+      "justification": "Le commentaire fait référence à la quantité de savoirs certains et derreurs dangereuses, qui est une caractéristique des classes MonCal.Facts.DC."
+   }
+{
+      "classe": ["CTRL", "StratKldg"],
+      "justification": "Le commentaire traite à la fois du prochain comportement de létudiant (futur avec le verbe devra) et de sa stratégie dapprentissage (alléger pour être plus réfléchi)."
+   }
+{
+      "classe": [DomKldg],
+      "justification": "Le commentaire porte sur lamélioration de son apprentissage, ce qui suggère que le locuteur identifie une lacune dans son savoir."
+   }
+{
+      "classe": ["StratKldg", "DomKldg"],
+      "justification": "Cela vient du fait que le commentaire mentionne loublie des formules et la mauvaise interprétation des documents, ce qui relève de stratégies dapprentissage (StratKldg) et manquants de connaissances (DomKldg)."
+   }
+{
+       "classe": ["MonCal.Facts.DC"],
+       "justification": "Les courbes en J sont plutôt écrasées semble être une observation factuelle sur les savoirs fragiles, donc la classe pertinente est MonCal.Facts.DC."
+   }
+{
+      "classe": ["MonCal.SelfEff"],
+      "justification": "jai tendance à être trop sûre de moi" est un commentaire sur la confiance et lauto-efficacité des étudiants, ce qui correspond à la classe MonCal.SelfEff.
+   }
+{
+      "classe": ["MonCal.Interpret", "DomKldg"],
+      "justification": "Le commentaire évoque une interprétation du test en utilisant le mot plutôt, ce qui semble correspondre à MonCal.Interpret. Il y a également un commentaire sur son propre résultat, ce qui pourrait relater aux lacunes dapprentissage (DomKldg)."
+   }
+{
+    "classe": [StratKldg, DomKldg],
+    "justification": "Le commentaire décrit lerreur dinattention, ce qui est lié à la stratégie dapprentissage utilisée pendant le test, et aussi au manque de connaissances. Il y a mention dun besoin de mieux comprendre les concepts."
+   }
+{
+      "classe": ["BDS.Emotions", "MonCal.Interpret"],
+      "justification": "Il y a mention démotions (anxiété dans le commentaire original) et il y a une interprétation de son résultat."
+   }
+{
+      "classe": [MotOrient.SelfEff],
+      "justification": "Le commentaire exprime un manque de confiance en soi, qui est défini comme étant pertinent pour la classe MotOrient.SelfEff."
+   }
+{
+      "classe": [StratKldg, CTRL],
+      "justification": "Le commentaire décrit un problème de concentration et un manque de réflexion, ce qui est spécifique aux stratégies dapprentissage. En plus, il montre une intention de changer de comportement dans les tests futurs, donc CTRL"
+   }
+{
+       "classe": ["MonCal.Facts.DC", "StratKldg"],
+       "justification" : "Les mots clés erreurs dangereuses et oublis, mauvaise lecture, loupé apparaissent, ce qui indique une erreur commise pendant le test. En outre, il est fait mention de stratégies utilisées lors du test pour expliquer la cause de ces erreurs."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "StratKldg"],
+      "justification": "Le commentaire évoque la confiance de létudiant en lui et ses réponses (je suis sûr de moi), mais il indique également un manquement stratégique dans le processus dapprentissage (je suis trop sûr de mes réponses)."
+   }
+{
+      "classe": [StratKldg, MotOrient.SelfEff],
+      "justification": "Je dois mieux lire les énoncés et être plus attentif sur les réponses renvoie aux stratégies dapprentissage utilisées pendant le test et à la confiance de lélève en lui."
+   }
+{
+      "classe": ["CTRL", "StratKldg"],
+      "justification": "Le commentaire fait mention de la prise de temps, ce qui est traité dans la classe CTRL pour les comportements futurs. Il existe également un élement stratégie dapprentissage exprimé par la phrase prendre son temps et vérifier même si on est sûr de la réponse, ce qui fait référence à la classe StratKldg."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "La phrase contient des mots-clés pertinents pour cette catégorie : correcte, incorrecte, nombre."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "les mots-clés connaissances certaines et domaine de la physique chimie semblent correspondre à cette classe."
+   }
+{
+       "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+       "justification": "Le commentaire contient les mots-clés erreurs dangereuses qui est une partie de la classe MonCal.Facts.DC et il y a une interprétation subjective sur le fait que ces erreurs sont issues dune certaine imprudence, ce qui correspond à MonCal.Interpret."
+   }
+{
+      "classe": ["DomKldg", "CTRL"],
+      "justification": "Le commentaire parle de lacquisition de connaissances (DomKldg) et du comportement futur des apprenants (CTRL)."
+   }
+{
+       "classe": ["MonCal.Facts.RF"],
+       "justification": "Les mots-clés pertinents sont correcte, incorrecte et nombres, qui sont présents dans le commentaire."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Le commentaire parle de courbes en J, derreurs dangereuses et de savoirs fragiles."
+   }
+{
+    "classe": ["MotOrient.SelfEff", "CTRL"],
+    "justification": "Le commentaire montre un sentiment de confiance dans son réalisme et un souhait de devenir plus réaliste dans le futur, ce qui correspond à la classe MotOrient.SelfEff. En outre, il y a également une mention du futur (devenir beaucoup plus réaliste), ce qui est spécifique de la classe CTRL."
+   }
+{
+      "classe": ["MotOrient.Value", "CTRL"],
+      "justification": "Le commentaire évoque lanticipation dun test futur et indique quil pourrait être plus facile si les connaissances déjà acquises ne furent pas sujettes à autant de doute."
+   }
+{
+    "classe": [StratKldg],
+    "justification": "Le commentaire indique quil y a un manquement dans lattention apportée aux questions, ce qui correspond au point oublis des StratKldg"
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Le mot-clé savoirs fragiles figure dans la définition de la classe MonCal.Facts.DC"
+   }
+{
+      "classe": ["DomKldg", "StratKldg"],
+      "justification": "Le commentaire indique que le locuteur devra revoir ses connaissances (je devrai plus réfléchir sur les questions et mes connaissances) et évoque des stratégies dapprentissage utilisées pendant le test (réfléchir, mes connaissances)."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "The commentary discusses the number of correct responses in the test."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "MonCal.Facts.RF"],
+      "justification": "Le commentaire contient des mots clés tels que erreur dangereuse et savoir fragile, qui correspondent aux classes MonCal.Facts.DC (observations factuelles sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées) et MonCal.Facts.RF (observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes)."
+   }
+{
+      "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+      "justification": "Les mots prudence, erreur dangereuse sont présents dans les définitions des deux classes proposées."
+   }
+{
+      "classe": ["StratKldg", "CTRL"],
+      "justification": "Les mots-clés répondre plus spontanément, hésiter et question indiquent que le commentaire sagit dun commentaire sur les stratégies dapprentissage utilisées pendant le test et le comportement des étudiants (StratKldg). En outre, le verbe au futur devenir indique un comportement futur des apprenants, ce qui correspond à la classe CTRL."
+   }
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Nombre de réponses correctes et incorrectes mentionnées"
+   }
+{
+      "classe": ["StratKldg", "MonCal.Facts.DC"],
+      "justification": "Les erreurs dangereuses sont attribuées à la distraction ou létourderie, ce qui correspond à une stratégie dapprentissage (StratKldg). La raison des erreurs est expliquée de manière à mettre en évidence les savoirs fragiles ou ceux que lon pourrait qualifier derreurs dangereuses (MonCal.Facts.DC)."
+   }
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "La courbe en J est bien remarquable avec les réponses correctes qui sont croissantes. peut être interprété comme un commentaire sur les erreurs dangereuses qui influencent la courbe de réponses incorrectes, qui ne forment pas une courbe à J."
+   }
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": "Les mots-clés erreurs dangereuses et oublis font penser à la classe MonCal.Facts.DC, qui traite des erreurs dangereuses du test. Le commentaire fait également allusion au comportement de létudiant (fait attention) pour la classe StratKldg."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Les mots clés dans le commentaire sont les suivants : incorrectes, correcte, ignorance. Cela correspond à la classe MonCal.Facts.RF où les observations factuelles sur les résultats du test sont incluses, notamment sur le nombre/quantité de réponses correctes et incorrectes."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Le commentaire parle dun graphique (courbe en J) en rapport avec les réponses correctes et incorrectes, mais il semble que le graphique soit différent pour les réponses incorrectes."
+   }
+{
+      "classe": ["StratKldg", "DomKldg"],
+      "justification": "Le commentaire mentionne une erreur d’inattention (erreurs dinattention), ce qui est plus pertinent pour StratKldg car il parle de stratégie d’apprentissage. Ensuite, manque de réalisme ne peut pas être directement associé à DomKldg mais peut être considéré comme une lacune dans les connaissances de létudiant (lacunes), ce qui rend cette classe pertinente."
+   }
+{
+      "classe": [MonCal.Facts.RF, DomKldg],
+      "justification": "Le commentaire présente une observation factuelle de ses performances sur le test (MonCal.Facts.RF), mais il y a aussi un indice quil manque des connaissances spécifiques pour la géométrie moléculaire (DomKldg)."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Il y a eu plus de réponses correctes quincorrectes mais il y a aussi pas mal dignorances est une observation factuelle sur les résultats du test."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Le commentaire parle des erreurs commises et de la forme de la courbe associée qui est une courbe en J pour les réponses correctes mais pas pour les erreurs."
+   }
+{
+       "classe": ["MonCal.Interpret", "DomKldg"],
+       "justification": "Le commentaire mentionne sa prudence (je suis plutôt prudente) et le fait quil y a pas mal de savoirs fragiles, ce qui est un indicateur de la classe MonCal.Interpret. Il fait aussi allusion à son niveau de connaissance, ce qui correspond à la classe DomKldg."
+   }
+{
+      "classe": ["CTRL"],
+      "justification": "Les mots-clés prochain test, devenir, et il faut que correspondent à la classe CTRL."
+   }
+{
+       "classe": ["MonCal.Facts.DC", "DomKldg"],
+       "justification": "Les mots-clés présents dans le commentaire sont difficulté et chimie, qui correspondent aux deux classes proposées."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": ""
+   }
+{
+       "classe": ["StratKldg", "MonCal.Facts.DC"],
+       "justification": "Le commentaire discute de lutilisation de bonnes stratégies dapprentissage (oublis, mauvaise lecture, dû à) et des savoirs fragiles et des erreurs dangereuses."
+   }
+{
+       "classe": [DomKldg, MonCal.Interpret],
+       "justification": "Il semble y avoir une lacune de connaissance en chimie et une interprétation subjective du résultat avec lexpression La chimie est vraiment dure. "
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "J’ai eu 28/44 correspond à la quantité de réponses correctes et incorrectes dans MonCal.Facts.RF"
+   }
+{
+       "classe": ["MonCal.Interpret"],
+       "justification": "révèle de l’imprudence est un terme subjectif qui semble refléter une interprétation sur le comportement de quelquun et non pas une observation factuelle."
+   }
+{
+      "classe": ["MonCal.Interpret"],
+      "justification": "Le mot prudente est associé à la catégorie MonCal.Interpret dans la définition fournie."
+   }
+{
+       "classe": MonCal.Facts.DC,
+       "justification": "Le commentaire fait référence aux courbes en J."
+   }
+{
+      "classe": ["MonCal.Interpret"],
+      "justification": "le commentaire indique une interprétation subjective de soi"
+   }
+{
+      "classe": ["StratKldg", "CTRL"],
+      "justification": "Le commentaire indique quil faut prendre plus de temps sur les questions pour réfléchir et que lon devrait passer plus de temps sur les questions où il pense être certaine. Cela signifie quil y a une stratégie dapprentissage utilisée pendant le test (StratKldg) et un comportement futur pour le prochain test (CTRL)."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "StratKldg"],
+      "justification": "Le commentaire mentionne les savoirs fragiles, erreurs présumées et erreurs dangereuses, ainsi que des stratégies utilisées pendant le test."
+   }
+{
+       "classe": ["MonCal.Interpret"],
+       "justification": "The comment expresses a subjective interpretation of ones own actions, which is characteristic of the MonCal.Interpret class."
+   }
+{
+      "classe": [CTRL],
+      "justification": "Le commentaire fait référence à un comportement futur, plus précisément à ce que létudiant devrait faire pour le prochain test."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "Le commentaire identifie un manque de connaissances du locuteur, ce qui correspond au concept de lacunes dans la classe DomKldg."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Il y a mention de savoirs certains et de savoirs fragiles."
+   }
+{
+       "classe": ["MonCal.Interpret", "DomKldg"],
+       "justification": "La phrase Mes résultats d’après les courbes en J révèle de l’imprudence tout de même semble interpréter le résultat comme allant au-delà des observations factuelles, ce qui correspond à la classe MonCal.Interpret. Il y a aussi une référence aux courbes en J, qui sont un indice de savoirs fragiles, donc la classe DomKldg est également pertinente car elle concerne les lacunes dans lapprentissage."
+   }
+{
+      "classe": ["DomKldg", "CTRL"],
+      "justification": "Le commentaire indique un besoin de connaissances supplémentaires (DomKldg), et il sagit dun point à améliorer pour le prochain test (CTRL)."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Le commentaire comporte les mots clés relatifs aux résultats factuels du test : Globalement, beaucoup de réponses correctes, score globale, et un nombre de questions (28)"
+   }
+{
+       "classe": ["MonCal.Facts.DC", "DomKldg"],
+       "justification": "Le commentaire mentionne le nombre de savoirs certains (15) et fragiles (8). Il sagit donc de commentaires factuels sur les savoirs certains et fragiles."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Le commentaire mentionne les savoirs certains et savoirs fragiles, ce qui correspond à la catégorie MonCal.Facts.DC."
+   }
+{
+      "classe": ["StratKldg", "CTRL"],
+      "justification": "le commentaire implique quil faudra réfléchir plus sur les questions pour éviter les erreurs dans le futur. Il mentionne également lattention à porter aux pièges, ce qui relève de la stratégie dapprentissage utilisée pendant le test."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "4 erreurs dangereuses, 3 erreurs présumées, 24 savoirs certains, 1 ignorance déclarée"
+   }
+{
+      "classe": [MonCal.Facts.DC, DomKldg],
+      "justification": "Le commentaire mentionne les erreurs dangereuses et le manque de connaissances en chimie, qui appartiennent à la classe MonCal.Facts.DC. Il y a également une référence explicite aux concepts manquants (formules sont dures à comprendre) et au besoin dapprendre (améliorer), ce qui correspond à la classe DomKldg."
+   }
+{
+      "classe": ["MonCal.Interpret", "StratKldg"],
+      "justification": "Les mots-clés peut-être dû à la précipitation dans le commentaire suggèrent que létudiant exprime une interprétation subjective de son performance (MonCal.Interpret), et erreurs indique un problème de compréhension ou dapprentissage (StratKldg)"
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Le commentaire fait mention des erreurs dangereuses et des savoirs fragiles, ce qui correspond à la classe MonCal.Facts.DC."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "MonCal.Interpret"],
+      "justification": "Le commentaire indique que létudiant a tendance à être trop confiant sur des réponses fausses, ce qui semble être une interprétation subjective de sa performance. Il y a aussi mention de manque dassurance pour des réponses exactes, ce qui peut être considéré comme un aspect important de la confiance en soi."
+   }
+{
+      "classe": [CTRL, StratKldg],
+      "justification": "je devrai plus réfléchir sur les questions et mes connaissances peut indiquer un besoin damélioration de la stratégie dapprentissage (StratKldg) lors du test, ainsi quune possibilité de changement dans les comportements futurs des apprenants (CTRL)"
+   }
+{
+       "classe": ["DomKldg"],
+       "justification": "Des manques de connaissances sont identifiés dans certains chapitres."
+   }
+{
+      "classe": ["MotOrient.SelfEff"],
+      "justification": "Le commentaire évoque la confiance dans les connaissances, ce qui correspond à MotOrient.SelfEff."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "le commentaire identifie les concepts/disciplines manquants et leur degré dacquisition"
+   }
+{
+       "classe": ["MonCal.Facts.DC", "DomKldg"],
+       "justification": "Les mots clés erreurs dangereuses, erreur présumée, et savoir fragile sont présents dans la définition de MonCal.Facts.DC. Les mots clés ignorances déclarées et savoirs certains correspondent aux définitions de DomKldg."
+   }
+{
+    "classe": ["MonCal.Interpret", "StratKldg"],
+    "justification": "Les erreurs dangereuses sont mentionnées comme étant due à un problème de vitesse de lecture et doubli dinformations, qui correspondent aux classes MonCal.Interpret (interprétation subjective) et StratKldg (stratégie dapprentissage utilisée pendant le test et lanalyse du comportement des étudiants)."
+   }
+{
+       "classe": ["MonCal.Facts.DC", "MonCal.Facts.RF"],
+       "justification": "Le commentaire contient les mots-clés erreurs dangereuses, erreurs présumées, savoir fragile et savoirs certains, ce qui correspond à la catégorie MonCal.Facts.DC car il sagit de faits factuels sur les savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées. Il contient également des informations quant au nombre derreurs (3 erreur dangereuse, 3 erreurs présumées) et le nombre de savoirs certains (18 savoir certain), ce qui correspond à la catégorie MonCal.Facts.RF car elle traite des observations factuelles sur les résultats du test, incluant des remarques sur le nombre/quantité de réponses correctes et incorrectes."
+   }
+{
+       "classe": StratKldg,
+       "justification": "Le commentaire mentionne une stratégie dapprentissage utilisée pendant le test et lanalyse du comportement des étudiants."
+   }
+{
+      "classe": ["MotOrient.SelfEff"],
+      "justification": "Le commentaire indique un manque de confiance des étudiants en eux, ce qui correspond à la catégorie MotOrient.SelfEff."
+   }
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire donne un nombre de réponses correctes et incorrectes, ce qui correspond à la catégorie MonCal.Facts.RF."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "StratKldg"],
+      "justification": "Le commentaire parle de la courbe en J (savoirs certains et fragiles, erreurs dangereuses) et il y a mention des écarts entre les résultats et cette courbe (stratégie dapprentissage)."
+   }
+{
+      "classe": "MonCal.Interpret",
+      "justification": "Le commentaire révèle une interprétation subjective sur la prudence du jugement."
+   }
+{
+      "classe": [CTRL, MotOrient.SelfEff],
+      "justification": "Le commentaire suggère un changement de comportement pour le prochain test, en abaissant la certitude sur les réponses lorsque celle-ci nest pas absolue à 100%. Il sagit donc dune stratégie future et il y a également une référence à sa compétence ou ses connaissances."
+   }
+{
+       "classe": ["MonCal.Interpret"],
+       "justification": "mon jugement est moyennement réaliste est un commentaire subjectif qui reflète une interprétation de sa propre performance."
+   }
+{
+      "classe": ["MonCal.Interpret"],
+      "justification": "Je suis donc trop prudent. contient le mot prudent, qui est un mot clé pour la classe MonCal.Interpret."
+   }
+{
+      "classe": MonCal.Interpret,
+      "justification": "C’est quand même intéressant de voir sur quelles questions on a fait une erreur dangereuse car je me suis rendu compte que je faisais quelques erreurs bêtes. - Cette phrase indique des observations subjectives du testataire sur sa performance."
+   }
+{
+       "classe": ["DomKldg", "StratKldg"],
+       "justification": "Mes fautes sont surtout en chimie, cest tout à fait normal car je ne comprends pas trop certaines méthodes à faire indique une lacune dans les connaissances de chimie et lutilisation de stratégies dapprentissage lors des activités du test."
+   }
+{
+       "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+       "justification": "beaucoup trop derreur dangereuses est une observation factuelle sur les savoirs fragiles et des erreurs dangereuses, tandis que une courbe de savoir certain plutôt bonne est une interprétation subjective des résultats du test"
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "Il sagit dun commentaire identifiant les concepts/disciplines manquants et leur degré dacquisition."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Le commentaire fait référence à un résultat factuel, en donnant le nombre de questions correctes et incorrectes."
+   }
+{
+       "classe": ["MonCal.Facts.DC"],
+       "justification": "Le commentaire indique une bonne certitude sur la réponse, qui peut être considérée comme un savoir certain dans le contexte de lévaluation."
+   }
+{
+      "classe": ["DomKldg", "MotOrient.Value"],
+      "justification": "Les mots connaissances, réussir, et comprendre sont présents dans le commentaire, montrant que létudiant est en manque de connaissances pour réussir dans un domaine spécifique. Les mots le cours et il faut que indiquent aussi quil est nécessaire daméliorer sa compréhension des concepts, ce qui peut être relatif à la valeur perçue du cours pour lapprentissage."
+   }
+{
+      "classe": ["MonCal.Facts.DC", "DomKldg"],
+      "justification": "The commentary mentions erreurs dangereuses and erreurs présumées, which falls under the MonCal.Facts.DC category, and it also talks about lack of understanding or knowledge in certain areas (e.g. courbe en J ne atteint son maximum dans les réponses correctes pour 80%), which corresponds to the DomKldg category."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "10 réponses correctes sur 20"
+   }
+{
+      "classe": ["MonCal.Facts.DC", "StratKldg"],
+      "justification": "Le commentaire aborde les erreurs dangereuses et présumées (MonCal.Facts.DC) et fait mention de létudiant ayant des difficultés dans la lecture de lénoncé (StratKldg)."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Il y a mention de savoirs certains et savoirs fragiles"
+   }
+{
+      "classe": ["MotOrient.SelfEff", "DomKldg"],
+      "justification": "Le commentaire témoigne d’une connaissance partielle dun domaine et de lacunes dans les connaissances acquises, ce qui relève du MotOrient.SelfEff ainsi que DomKldg."
+   }
+{
+      "classe": [StratKldg, CTRL],
+      "justification": "Il faut donc que je prenne plus de temps pour répondre correspond à StratKldg car il y a une mention du manque dattention ou de linattention lors du test. la prochaine fois. correspond à CTRL car il y est mentionné un changement dans le comportement futur des apprenants."
+   }
+{
+    "classe": ["StratKldg"],
+    "justification": "Le commentaire indique que létudiant a répondu trop vite. Cela peut être un signe de haste ou dinattention, qui sont des stratégies dapprentissage."
+   }
+{
+      "classe": [StratKldg],
+      "justification": "Le commentaire indique quil y a eu un manque de connaissance lors du cours et que cela devrait être amélioré pour le futur, ce qui est une observation sur les stratégies dapprentissage utilisées pendant le test."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Les mots-clés présents dans le commentaire (dangereuses, présumées et certains) correspondent à la classe MonCal.Facts.DC"
+   }
+{
+      "classe": [StratKldg, CTRL],
+      "justification": "Le commentaire indique quil pourrait améliorer sa stratégie dapprentissage pour la prochaine fois, en prenant plus de temps dans la lecture des questions et donc StratKldg. Il y a également un sentiment futur du comportement de létudiant en se disant que pour la prochaine fois il essaiera de prendre plus de temps, ce qui fait quil peut être classifié aussi dans CTRL."
+   }
+{
+      "classe": ["MonCal.Facts.RF", "DomKldg"],
+      "justification": "The comment contains the words arrivé, 20 and réponse. The term réponse is often associated with the MonCal.Facts.RF class, but in this context it could also indicate a lack of understanding or a mistake (DomKldg)."
+   }
+{
+       "classe": [StratKldg, MonCal.Interpret],
+       "justification": "Le commentaire parle de problèmes rencontrés lors du test et derreurs (dangereuses), ce qui relève de la stratégie dapprentissage utilisée pendant le test. Il y a également une interprétation subjective de limprudence affichée dans le choix des réponses, ce qui relève de linterprétation du résultat."
+   }
+{
+       "classe": ["StratKldg", "CTRL"],
+       "justification": "Le commentaire indique quil y a besoin de se concentrer davantage et prendre du temps lors de la lecture, ce qui est pertinent pour StratKldg (stratégies dapprentissage) et CTRL (commentaires sur les comportements futurs des apprenants)."
+   }
+{
+      "classe": "MonCal.Facts.DC",
+      "justification": "Le commentaire mentionne des erreurs dangereuses, des erreurs présumées ainsi que des savoirs fragiles."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "Le commentaire évoque un manquement de connaissances apprises, ce qui correspond à la définition de DomKldg."
+   }
+{
+       "classe": ["DomKldg", "StratKldg"],
+       "justification": "Le commentaire indique un manque de compréhension dun chapitre spécifique (physique-chimie), et il y a une mention de stratégies dapprentissage utilisées pendant le test (mauvaise lecture, oubli)."
+   }
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le mot erreurs est clé ici et est associé à la catégorie de commentaires concernant les faits observables sur les résultats du test, y compris le nombre derreurs commises."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "DomKldg"],
+      "justification": "Dans l’ensemble je suis très voire trop sûr de moi exprime une certaine confiance de soi, mais le commentaire jai échangé 2 valeurs dans une formule que je nai pas trop comprise montre quil y a également un manque dacquisition dans certains domaines"
+   }
+{
+    "classe": ["DomKldg"],
+    "justification": "Le commentaire mentionne explicitement le fait davoir manqué de lecture dun chapitre, ce qui correspond à la classe DomKldg."
+   }
+{
+      "classe": ["StratKldg", "DomKldg"],
+      "justification": "Les mots clés mauvaise lecture et consignes sont pertinents pour la classe StratKldg, car il sagit dun commentaire sur une stratégie dapprentissage utilisée pendant le test. Ensuite, les mots-clés manque de connaissances et consignes sont pertinents pour la classe DomKldg, car ils identifient un manque de compréhension des consignes comme étant dû à un manque de connaissances."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "The commentaire is discussing the number of correct (9), incorrect (7) and missing/unknown (4) responses in the test."
+   }
+{
+      "classe": [DomKldg, MonCal.Interpret],
+      "justification": "Les mots « revoir », « chapitres » et « chimie » font référence à une lacune dans les connaissances de la matière. Les mots « également » et « mécanique » indiquent que dautres domaines sont touchés, mais lexpression je comprends assez bien la physique semble suggérer un avis subjectif sur la performance du test."
+   }
+{
+       "classe": [MonCal.Facts.RF, StratKldg],
+       "justification": "Le commentaire aborde des observations factuelles sur les résultats du test (jai plutôt bien réussi à dire si jallais avoir juste ou non) et il évoque une stratégie dapprentissage utilisée pendant le test (poser les questions à lécrit, prendre mon temps en recontextualisant...)."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "ce sont les chapitres que je maitrisais moins. indique quil y a lacunes dans le cours de létudiant, correspondant à la classe DomKldg."
+   }
+{
+      "classe": ["StratKldg"],
+      "justification": "Le commentaire suggère que le manque de temps a entraîné un manque dattention lors de la compréhension des énoncés, ce qui est une stratégie dapprentissage."
+   }
+{
+    "classe": [MotOrient.SelfEff, CTRL],
+    "justification": "Les mots clés comme jai quand même pu corriger et confiance en moi sont présents dans MotOrient.SelfEff, indiquant une mention de l’auto-efficacité des étudiants. Ensuite le mot problème du premier test indique un futur comportement des apprenants qui seront plus confiant pour leur prochain test, correspondant à la classe CTRL."
+   }
+{
+      "classe": ["MotOrient.SelfEff", "StratKldg"],
+      "justification": "Le commentaire indique lauto-efficacité de létudiant (Je pense ne pas être assez sûr de moi) et un problème de concentration sur le sujet (dans certaines questions je n’étais pas concentré)."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Le commentaire contient les mots-clés réponses correctes et ignorances, correspondant à la classe MonCal.Facts.RF qui traite des observations factuelles sur les résultats du test, y compris des remarques sur le nombre/quantité de réponses correctes et incorrectes."
+   }
+{
+      "classe": "MonCal.Facts.RF",
+      "justification": "Il y a mention de nombre/quantité de réponses correctes et incorrectes."
+   }
+{
+      "classe": [StratKldg, CTRL],
+      "justification": "The comment suggests the student reflects on their study strategies and future actions, hence StratKldg. Also, it implies a desire to be more effective in the next test or similar situations, thus CTRL."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Il y a mention de savoirs certains et savoirs fragiles"
+   }
+{
+      "classe": ["MonCal.Interpret"],
+      "justification": "Le commentaire indique un manque de confiance dans les connaissances, ce qui correspond à linterprétation subjective des étudiants sur leur performance."
+   }
+{
+       "classe": [MonCal.Interpret],
+       "justification": "Le commentaire parle de son assurance à répondre aux questions, ce qui est souvent un point subjectif."
+   }
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Le commentaire indique un problème de tempst management (prendre plus mon temps) et une prévision futur (devenir réaliste)."
+   }
+{
+      "classe": ["MonCal.Facts.RF"],
+      "justification": "Le commentaire parle dun nombre de réponses correctes et incorrectes, ce qui correspond aux critères de la classe MonCal.Facts.RF."
+   }
+{
+      "classe": ["MonCal.Facts.DC"],
+      "justification": "Les mots-clés pertinents sont savoirs certains, erreurs dangereuses."
+   }
+{
+      "classe": [StratKldg, CTRL],
+      "justification": "Comme le commentaire parle de réfléchir sur les questions et sa propre compétence, cela correspond à la stratégie dapprentissage utilisée pendant le test. Il y a également une référence aux futurs comportements des apprenants."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "le commentaire mentionne chapitre"
+   }
+{
+      "classe": ["StratKldg", "DomKldg"],
+      "justification": "Le commentaire parle derreurs et dun manque de compréhension, ce qui suggère que le locuteur a du mal à se concentrer sur les éléments clés lorsquil lit trop rapidement. De plus, il y a mention de linattention, qui est un comportement associé aux concepts manquants ou non acquis."
+   }
+{
+       "classe": [DomKldg],
+       "justification": "Le commentaire fait mention de manque de connaissances sur certains points, qui est une caractéristique de la classe DomKldg."
+   }
+{
+       "classe": ["DomKldg"],
+       "justification": "Le commentaire met en évidence un manque de connaissances."
+   }
+{
+      "classe": ["MonCal.Interpret", "StratKldg"],
+      "justification": "on peut penser que je suis assez prudent est un commentaire subjectif de lutilisateur sur sa performance dans le test. Les mots prudent et penser indiquent une interprétation du résultat. En outre, des erreurs que je pouvais éviter souvent dû au manque de concentration est un commentaire sur un comportement de lutilisateur pendant le test qui peut être lié à la stratégie dapprentissage utilisée."
+   }
+{
+      "classe": [StratKldg, DomKldg],
+      "justification": "Le commentaire indique quil faudrait réviser (StratKldg) et que le sujet doit soccuper des formules de Kepler et des charges électriques (DomKldg), ce qui correspond à la stratégie dapprentissage utilisée pendant lépreuve et aux concepts manquants."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "Le commentaire indique un manque dacquisition de certains concepts ou chapitres, donc il sinscrit bien dans la classe DomKldg."
+   }
+{
+      "classe": MonCal.Facts.DC,
+      "justification": "le commentaire parle de savoirs fragiles, savoirs certains, erreurs présumées et erreurs dangereuses"
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "en apprenant mieux en cours peut être interprété comme une lacune dans les connaissances de l’étudiant, ce qui correspond à la classe DomKldg."
+   }
+{
+       "classe": ["MonCal.Facts.DC"],
+       "justification": "bcp derreurs dangereuses correspond au savoir dangereux"
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "Les mots clés utilisés dans le commentaire sont connaissances, réussir."
+   }
+{
+      "classe": ["DomKldg"],
+      "justification": "The comment expresses lack of knowledge about certain chapters. In this context, it refers to the missing understanding of Newtons Law."
+   }
+Programme terminé.
+Miss: 235
+Accuracy =  0.8085106382978723
+Kappa =  0.0
+Energy(kWh) =  0.0
+Time(min) =  5.724236178398132
+Enter the log name : Enter the version: Enter the model name: Enter the llm name: Début du programme...
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "MotOrient.Value"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "MotOrient.Value"],
+    "justification": "Le commentaire indique la nécessité daméliorer sa compréhension en mécanique et de revoir certains concepts, ce qui correspond aux mots-clés liés à DomKldg. De plus, il exprime lutilité perçue des tests pour identifier les domaines à améliorer, ce qui se rapporte à MotOrient.Value."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "BDS.Emotions"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire mentionne le nombre de réponses correctes (19/32) et labsence dune grande ignorance (peu dignorance), ce qui correspond directement aux mots-clés associés à la classe MonCal.Facts.RF, tels que correcte, incorrecte et ignorance."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "StratKldg"],
+    "justification": "Le commentaire mentionne un score attribué au fait que je nétais pas assez attentive et concentrée, ce qui implique des observations factuelles sur la performance (MonCal.Facts.RF) tout en soulignant une stratégie dapprentissage concernant lattention et la concentration pendant le test (StratKldg)."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [CTRL, MonCal.Facts.RF],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": "Le commentaire Beaucoup des sujets je navais pas révisé du tout encore indique que létudiant reconnaît un manque de préparation ou de couverture des concepts, ce qui est en corrélation avec les mots-clés associés à la classe DomKldg tels que lacunes, domaines disciplinaires, et apprendre."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["BDS.Emotions", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MonCal.Facts.DC, DomKldg],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [CTRL],
+    "justification": "Le commentaire exprime un engagement à adopter un comportement futur (tenter de plus travailler pour le prochain test), ce qui est caractéristique du type CTRL identifié par les mots-clés verbes au futur et expressions indiquant une planification future comme prochain test."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MotOrient.Value],
+    "justification": "Le commentaire fait référence à lutilité du test pour identifier les points faibles et sa valeur perçue, ce qui correspond aux mots-clés associés à la classe MotOrient.Value."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire se concentre sur les observations factuelles concernant le nombre de réponses correctes, qui correspondent aux mots-clés pertinents pour la classe MonCal.Facts.RF tels que correcte et nombres. Il ne présente pas d’interprétation subjective ni dautres éléments qui suggèrent une autre classification."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire 9 erreurs dangereuses est classé comme MonCal.Facts.DC car il mentionne spécifiquement le concept de erreurs dangereuses, qui est un mot-clé directement associé à cette classe. Le commentaire se concentre sur des observations factuelles concernant les erreurs présentes dans les résultats du test."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["BDS.Emotions"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["BDS.Emotions", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": "Le commentaire identifie les lacunes en chimie et exprime un comportement futur avec lutilisation de révise plus, qui est un verbe au futur, indiquant une action future pour améliorer ces lacunes."
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Le commentaire fait référence à lutilisation dune stratégie spécifique (bien vérifier même les questions jugées juste), ce qui correspond au classement StratKldg. De plus, il implique un changement de comportement futur par rapport aux performances précédentes, indiquant une amélioration continue, donc le classement CTRL est également approprié."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire fait référence à un savoir certain et à une erreur dangereuse, qui sont directement liés aux connaissances factuelles identifiées dans la classe MonCal.Facts.DC. Cette classification est renforcée par les mots-clés pertinents tels que savoirs certains et erreurs dangereuses."
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": "Le commentaire mentionne le manque de révision, ce qui indique un problème lié à la stratégie dapprentissage utilisée pendant le test. Le mot-clé réviser est pertinent pour lidentification de cette classe."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire mentionne explicitement les réponses correctes dans différentes matières, ce qui correspond aux observations factuelles sur les résultats du test. Les mots-clés pertinents comme correcte, nombres et la comparaison entre deux disciplines suggèrent une classification sous MonCal.Facts.RF."
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": "Le commentaire exprime la confiance dans les résultats, ce qui correspond aux mots-clés confiance et je suis sûr de moi, liés à la classe MotOrient.SelfEff."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "CTRL"],
+    "justification": "Le commentaire jai beaucoup derreurs dangereuses fait référence aux erreurs dangereuses, ce qui correspond à la classe MonCal.Facts.DC. De plus, le fait de mentionner beaucoup derreurs peut impliquer une introspection et potentiellement un comportement futur, comme améliorer ces aspects dans les prochains tests, ce qui justifie également la classe CTRL."
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire inclut des références directes aux concepts de erreurs dangereuses, ignorance déclarée, et compare le nombre de savoirs fragiles par rapport à savoirs certains. Ces éléments correspondent précisément aux mots-clés associés à la classe MonCal.Facts.DC, qui se concentre sur les observations factuelles concernant ces types spécifiques de savoirs et erreurs."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "CTRL"],
+    "justification": "Le commentaire jai fait plus de fautes que la dernière fois, inclut une observation factuelle sur les résultats du test, ce qui correspond à MonCal.Facts.RF en raison des termes fautes et le comparatif utilisé. De plus, il sous-entend un comportement futur potentiel damélioration ou de changement pour les prochains tests, ce qui sapparente à la classe CTRL."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MonCal.Facts.DC, MonCal.Interpret],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.Value", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MotOrient.SelfEff"],
+    "justification": "Le commentaire Jétais globalement moins sûre de moi que lors de la première fois fait référence au niveau de confiance de létudiant, ce qui correspond à MotOrient.SelfEff. De plus, il implique des observations sur le savoir certain et la sécurité dans les réponses, pertinent pour MonCal.Facts.DC."
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "BDS.Emotions"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MotOrient.SelfEff"],
+    "justification": "Le commentaire Ce test ma permis de réaliser que mes connaissances sont moins solides que ce que jespérais inclut des observations factuelles concernant la performance au test, impliquant une reconnaissance du nombre ou de létendue des réponses correctes/incorrectes (moins solides). Cela correspond à MonCal.Facts.RF en raison des termes mes connaissances et espérais, reflétant un écart entre les attentes et la performance. De plus, il concerne lauto-évaluation de la confiance ou de lefficacité personnelle (moins solides que ce que jespérais), ce qui correspond à MotOrient.SelfEff."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire mentionne réponses incorrectes et ignorances, qui correspondent directement aux mots-clés incorrecte et ignorance associés à la classe MonCal.Facts.RF, indiquant une observation factuelle sur les résultats du test."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire contient une déclaration sur le nombre de savoirs fragiles et savoirs certains, ce qui correspond directement aux observations factuelles spécifiées dans la classe MonCal.Facts.DC. La mention des nombres exacts (5 savoir fragile et 15 savoir certain) saligne avec les mots-clés tels que nombre, savoirs fragiles, et savoirs certains."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": "Le commentaire inclut linterprétation subjective de la confiance en soi (je suis certaine), indiquant une interprétation personnelle des résultats du test, ce qui correspond à MonCal.Interpret. De plus, il parle directement de la confiance et de l’auto-efficacité, avec un mot-clé sûr, ce qui le classe également sous MotOrient.SelfEff."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": "Le commentaire indique la nécessité de réviser certaines formules, équations et concepts chimiques spécifiques (formules / équations de Kepler, Newton, nomenclature, géométries des molécules, etc.), ce qui correspond à lidentification des lacunes dans les connaissances, un critère pour la classe DomKldg. De plus, il mentionne une action future (Il faut donc que je révise), indiquant un comportement futur planifié par rapport aux apprentissages, ce qui est caractéristique de la classe CTRL."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire fournit des observations factuelles sur les résultats du test, indiquant la répartition exacte entre les réponses correctes et incorrectes. Cela correspond aux mots-clés associés à MonCal.Facts.RF, tels que correcte et incorrecte."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL"],
+    "justification": "Le commentaire exprime un comportement futur en utilisant je pourrais et mentionne le prochain test, ce qui correspond au mot-clé pour la classe CTRL qui se concentre sur les comportements futurs des apprenants."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": "Le commentaire se concentre sur la confiance et lauto-efficacité de létudiant, qui sont les caractéristiques principales de la classe MotOrient.SelfEff. Les mots-clés pertinents tels que confiance et savoir correspondent directement aux définitions de cette classe."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "CTRL"],
+    "justification": "Le commentaire mentionne saisoirs certains, savoir fragile et erreurs dangereuses, ce qui correspond aux mots-clés de la classe MonCal.Facts.DC. De plus, lutilisation du verbe au futur réussi à être suggère une référence à un comportement futur ou amélioré, alignant cela avec les mots-clés de la classe CTRL."
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": "Le commentaire mentionne les chapitres vus en Terminale et en Première, se référant à des aspects factuels de la structure du test. Cela correspond aux observations factuelles sur les résultats du test."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MotOrient.SelfEff"],
+    "justification": "Le commentaire Jai mal jugé mes réponses et surestimé mes compétences indique une mauvaise évaluation personnelle des performances, ce qui relève de lauto-évaluation subjective (surestimé mes compétences), correspondant à la classe MotOrient.SelfEff. De plus, le fait de mal juger mes réponses suggère une observation sur les résultats du test concernant leur évaluation personnelle, alignée avec MonCal.Facts.RF."
+}
+```
+```json
+{
+    "classe": ["CTRL", "MotOrient.Value"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["BDS.Emotions", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire se concentre sur les observations factuelles concernant le nombre de réponses savoir certain et derreurs dangereuses, ce qui correspond aux mots-clés pertinents pour la classe MonCal.Facts.DC tels que savoirs certains et erreurs dangereuses."
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": "Le commentaire inclut une intention de changement comportemental futur (il me faudra être plus réfléchi), ce qui correspond à la classe CTRL. De plus, il mentionne des stratégies dapprentissage (des petites révisions ne me feraient pas de mal) en lien avec le comportement passé lors du test, se rattachant à la classe StratKldg."
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire se concentre sur lobservation factuelle de la forme des courbes en J, qui est un concept spécifique dans le contexte de lapprentissage et de la rétention des connaissances. Il discute des caractéristiques de ces courbes concernant les bonnes et mauvaises réponses, ce qui correspond au thème des faits sur les erreurs dangereuses et les savoirs certains dans la classification MonCal.Facts.DC."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [BDS.Emotions, MonCal.Interpret],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire mentionne explicitement les erreurs dangereuses, qui sont lun des mots-clés clés pour la classe MonCal.Facts.DC. De plus, le commentaire fait référence aux réponses certaines, indiquant une observation factuelle sur les savoirs certains et erronés."
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Le commentaire mentionne mieux lire les énoncés et être plus attentif, qui correspondent aux mots-clés mauvaise lecture et attention dans la classe StratKldg. De plus, lutilisation du verbe au futur dois et le contexte de changement comportemental indiquent des intentions futures, ce qui correspond à la classe CTRL avec les mots-clés verbes au futur."
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire fournit des observations factuelles sur les résultats du test, en mentionnant spécifiquement le nombre de réponses correctes et incorrectes, qui sont directement liés aux mots-clés tels que correcte, incorrecte et nombres."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire Beaucoup de réponses correctes indique directement les résultats du test en se concentrant sur le nombre de réponses correctes, ce qui correspond aux observations factuelles des résultats du test. Le mot-clé pertinent ici est correcte, qui est un indicateur fort pour la classe MonCal.Facts.RF."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire mentionne les courbes en J et un surplus de savoir fragile, ce qui correspond aux mots-clés pertinents pour la classe MonCal.Facts.DC, tels que courbe en J et savoirs fragiles."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.Value"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL"],
+    "justification": "Le commentaire Je devrais être plus attentif sur les questions exprime un comportement futur de lapprenant, impliquant une amélioration ou un changement dans la façon dont il abordera les questions à lavenir. Le mot-clé devrais est un indicateur clair du verbe au futur, qui suggère une intention daction future, correspondant ainsi bien à la classe CTRL."
+}
+```
+```json
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire mentionne à la fois erreur dangereuse et savoir fragile, qui sont tous deux identifiés comme des concepts clés dans la classe MonCal.Facts.DC. Cette classification se concentre sur les observations factuelles concernant le type de connaissances, y compris les savoirs fragiles et les erreurs dangereuses."
+}
+```
+```json
+{
+    "classe": ["CTRL", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire fournit des observations factuelles sur le nombre de savoirs certains, savoirs fragiles, erreurs dangereuses et erreurs présumées, ce qui correspond directement aux critères de la classe MonCal.Facts.DC. Les mots-clés pertinents tels que savoir certain, savoir fragile, erreur dangereuse et erreur présumée sont présents."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire se concentre sur lobservation factuelle des résultats du test, en mentionnant le nombre de réponses correctes, ignorances et incorrectes. Cela correspond directement aux mots-clés associés à la classe MonCal.Facts.RF tels que correcte, incorrecte et ignorance."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": "Le commentaire Ces erreurs dangereuses sont dues à un manque de connaissances. fait référence aux erreurs dangereuses, qui relève de MonCal.Facts.DC avec des mots-clés comme erreurs dangereuses. En outre, il mentionne un manque de connaissances, indiquant une stratégie dapprentissage ou un problème lié à lacquisition du savoir, ce qui correspond à StratKldg avec les mots-clés tels que lacunes ou domaines disciplinaires."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire fait référence aux courbes en J concernant les réponses incorrectes et correctes, ce qui est lié à lobservation des savoirs fragiles et erreurs dangereuses."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [CTRL, DomKldg],
+    "justification": "Le commentaire mentionne le comportement futur (il faudrait quau prochain test) et aborde les concepts de savoir fragile et erreurs dangereuses, ce qui correspond aux classes CTRL (comportements futurs) et DomKldg (concepts/disciplines manquants)."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "MotOrient.Value"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire mentionne spécifiquement la courbe en J dans les réponses correctes et aborde le nombre derreurs dangereuses par rapport aux erreurs présumées, ce qui correspond directement aux mots-clés courbe en J, erreurs dangereuses et erreurs présumées. Ces éléments sont caractéristiques de la classe MonCal.Facts.DC."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": "Le commentaire il faut revoir certaines choses de mon cours indique lidentification de lacunes dans la connaissance (revoir), ce qui correspond aux mots-clés associés à DomKldg tels que lacunes, améliorer, et apprendre. De plus, le verbe au futur faut revoir suggère un comportement ou une action future envisagée par létudiant pour améliorer sa compréhension, ce qui correspond aux mots-clés liés à la classe CTRL tels que il faut que et dautres expressions de futur."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire mentionne les savoirs certains et labsence derreurs présumées, qui sont tous deux des termes clés liés à la classe MonCal.Facts.DC. Cette catégorie se concentre sur les observations factuelles concernant les savoirs fragiles, les savoirs certains, ainsi que les erreurs dangereuses et présumées."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "DomKldg"],
+    "justification": "Le commentaire se concentre sur le comportement futur de létudiant en termes dacquisition de connaissances, ce qui correspond à la classe CTRL en raison du verbe au futur et de lorientation vers un prochain test. En outre, il mentionne une meilleure connaissance de son cours, indiquant des lacunes, donc DomKldg est également applicable."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": "Le commentaire mentionne explicitement des manques de connaissances pour certains chapitres, ce qui correspond directement aux mots-clés associés à la classe DomKldg tels que lacunes, domaines disciplinaires, et concepts. De plus, lévocation spécifique de domaines comme les ondes, le titrage, et les représentations des molécules indique une identification claire de concepts manquants ou insuffisamment maîtrisés."
+}
+```
+```json
+{
+    "classe": ["MotOrient.Value", "MonCal.Facts.RF"],
+    "justification": "Le commentaire Bon test permettant ainsi de connaitre la qualité des connaissances fait référence à lévaluation et à la valeur perçue du test pour mesurer les connaissances, ce qui correspond aux mots-clés de la classe MotOrient.Value (permet, évaluation). De plus, il y a une implication dune observation factuelle sur le résultat du test concernant lévaluation des connaissances, suggérant un lien avec MonCal.Facts.RF grâce au mot-clé connaitre."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire inclut des termes spécifiques comme erreurs dangereuses, erreurs présumées et savoir fragile/savoir certain. Ces éléments sont alignés avec la définition de MonCal.Facts.DC qui couvre les observations factuelles sur les savoirs fragiles, certains, erreurs dangereuses et présumées."
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": "Le commentaire je ne me suis pas fait assez confiance exprime un manque de confiance en soi, ce qui est directement lié à lauto-efficacité des étudiants. Le mot-clé pertinent ici est confiance, ce qui correspond bien à la classe MotOrient.SelfEff."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "CTRL"],
+    "justification": "Le commentaire inclut des observations factuelles sur le nombre de réponses correctes et incorrectes, ce qui correspond à la classe MonCal.Facts.RF. De plus, il compare les résultats actuels aux résultats précédents en disant moins bon que la dernière fois, indiquant une implication future ou un potentiel changement dans le comportement dapprentissage, donc la classe CTRL est également pertinente."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff"],
+    "justification": "Le commentaire mon jugement nest pas réaliste est lié à la confiance et à l’auto-efficacité, ce qui correspond à la classe MotOrient.SelfEff."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": "Le commentaire inclut à la fois un fait objectif sur erreurs dangereuses et une interprétation subjective avec lévaluation de la courbe de savoir certain. Cela correspond aux mots-clés pour MonCal.Facts.DC (erreurs dangereuses, savoirs certains) et MonCal.Interpret (interprétation des résultats du test)."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": "Le commentaire Il faut que je travaille mieux mes notions indique un plan damélioration pour une meilleure compréhension, ce qui se rapporte à la classe DomKldg pour les lacunes dans lapprentissage. De plus, le verbe doit est au futur et exprime un comportement futur souhaité, correspondant à la classe CTRL."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["STRATKLDG"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": "Le commentaire mentionne spécifiquement les courbes en J, ce qui est un indicateur direct pour la classe MonCal.Facts.DC. De plus, il fait référence à une incohérence dans le niveau de certitude des réponses incorrectes, suggérant une interprétation subjective des résultats du test, alignée avec la classe MonCal.Interpret."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire mentionne le nombre de savoir certain et savoir fragile, ce qui correspond directement aux mots-clés utilisés pour identifier les observations factuelles liées aux savoirs fragiles, savoirs certains, erreurs dangereuses et erreurs présumées."
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": "Le commentaire parle de bonne connaissance dune partie du programme et connaissance partielle dune autre partie, indiquant la reconnaissance des concepts ou domaines disciplinaires maîtrisés ou non, ce qui correspond au mot-clé domaines disciplinaires dans DomKldg."
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": "Le commentaire mentionne la fois prochaine, ce qui indique un comportement futur, correspondant à la classe CTRL. De plus, lidée douvrir le livre de SPC pour améliorer les résultats suggère une stratégie dapprentissage, faisant partie de la classe StratKldg."
+}
+```
+```json
+{
+    "classe": ["StratKldg", "MotOrient.SelfEff"],
+    "justification": "Le commentaire jai souvent répondu trop vite peut être classé dans StratKldg car il indique une stratégie dapprentissage ou de réponse, en particulier la précipitation. Il correspond également à MotOrient.SelfEff car cela suggère un niveau de confiance ou de surestimation des compétences, ce qui est lié à lauto-évaluation et à lefficacité personnelle."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": "Le commentaire mentionne labsence de connaissance spécifique sur un cours, ce qui correspond aux mots-clés associés à DomKldg, tels que lacunes et domaines disciplinaires. De plus, il reflète une intention ou comportement futur lié au développement des connaissances, en utilisant lidée de nécessité (indiquée par il faudrait), correspondant aux mots-clés de la classe CTRL, tels que verbes au futur et devenir."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": "Le commentaire inclut des termes tels que erreurs dangereuses, erreurs présumées et savoirs certains, qui sont directement alignés avec les mots-clés associés à la classe MonCal.Facts.DC. Ces éléments font référence aux observations factuelles concernant ces catégories spécifiques de réponses."
+}
+```
+```json
+{
+    "classe": ["CTRL"],
+    "justification": "Le commentaire exprime un plan pour le comportement futur lors de tests ultérieurs, ce qui correspond aux mots-clés tels que prochaine fois et essayer, indiquant une intention ou un comportement prévu à lavenir."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire mentionne un score spécifique (12/20), ce qui correspond directement aux observations factuelles sur les résultats du test, comme indiqué par la classe MonCal.Facts.RF. Aucun mot-clé ou contexte supplémentaire ne suggère dautres classes."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Facts.RF"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": "Le commentaire mentionne un manque de compréhension sur le chapitre de chimie, indiquant des lacunes dans les connaissances disciplinaires, ce qui correspond au mot-clé concepts et aux termes comprendre dans la classification DomKldg."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire se concentre sur les observations factuelles concernant le nombre de réponses correctes, incorrectes et ignorées dans le test, ce qui correspond aux mots-clés tels que correcte, incorrecte et ignorance."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Le commentaire discute de lutilisation dune stratégie alternative (poser les questions à lécrit et prendre son temps), ce qui correspond au domaine StratKldg. De plus, il mentionne un comportement futur potentiel en se remémorant des situations dapprentissage antérieures (recontextualisant), indiquant une orientation vers des changements futurs dans lapproche du test, ce qui correspond au domaine CTRL."
+}
+```
+```json
+{
+    "classe": ["DomKldg", "MotOrient.Value"],
+    "justification": "Le commentaire je pense que le cours est moins maitrisé indique un manque de compréhension ou de maîtrise du contenu, ce qui correspond aux mots-clés tels que lacunes, domaines disciplinaires, et concepts dans la classe DomKldg. De plus, cela reflète une perception sur lintérêt ou la valeur perçue des connaissances acquises dans le cours, se rattachant ainsi à la classe MotOrient.Value avec les mots-clés comme permet et évaluation."
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": "Le commentaire je nai pas pris le temps de bien comprendre les énoncés implique que létudiant a reconnu un problème avec sa stratégie dapprentissage pendant le test, ce qui est en lien avec la classe StratKldg. La phrase indique une action manquée liée à prendre du temps, un concept associé aux mots-clés de cette catégorie tels que attention et inattention."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": "Le commentaire implique linterprétation subjective de la performance (corriger le problème), et il concerne également les aspects liés à la confiance en soi, qui est un indicateur dauto-efficacité."
+}
+```
+```json
+{
+    "classe": ["StratKldg", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire mentionne les nombres de réponses correctes, incorrectes et ignorées, ce qui correspond aux observations factuelles sur les résultats du test, comme indiqué par les mots-clés pertinents tels que correcte, incorrecte et nombre."
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret"],
+    "justification": "Le commentaire jai été plus réaliste reflète une interprétation subjective de la performance personnelle, indiquant un niveau dautoréflexion et une évaluation de son approche."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Interpret", "MotOrient.SelfEff"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MotOrient.SelfEff", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["CTRL", "StratKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF"],
+    "justification": "Le commentaire Jai eu 9 réponses incorrectes fournit des informations quantitatives sur les performances dans le test, en se concentrant spécifiquement sur le nombre de réponses incorrectes. Cela correspond directement à la classe MonCal.Facts.RF qui inclut des observations factuelles telles que le nombre de réponses correctes et incorrectes."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "DomKldg"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["StratKldg", "CTRL"],
+    "justification": "Le commentaire mentionne manque de concentration et erreurs, ce qui suggère une stratégie dapprentissage ou un comportement (oubli, inattention) associé au test, classant dans StratKldg. En outre, lutilisation du terme pouvait éviter souvent implique des considérations sur les actions futures pour améliorer la performance, indiquant une classification pertinente sous CTRL."
+}
+```
+```json
+{
+    "classe": ["CTRL", "DomKldg"],
+    "justification": "Le commentaire inclut il faut que indiquant un comportement futur et se concentre sur la révision de sujets spécifiques (formules de Kepler et charges électriques), ce qui suggère lidentification des lacunes dans les concepts disciplinaires."
+}
+```
+```json
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.RF", "MonCal.Facts.DC"],
+    "justification": ""
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": "Le commentaire mauvais apprentissage du cours fait référence à un problème dapprentissage dans le domaine des connaissances, indiquant une lacune ou un manque de compréhension. Les mots-clés associés à DomKldg tels que lacunes, améliorer, et apprendre suggèrent des défis liés aux concepts disciplinaires manquants."
+}
+```
+```json
+{
+    "classe": ["MonCal.Facts.DC", "MonCal.Interpret"],
+    "justification": "Le commentaire bcp derreurs dangereuses mentionne spécifiquement les erreurs dangereuses, qui est un mot-clé directement associé à la classe MonCal.Facts.DC. De plus, lutilisation de bcp (beaucoup) reflète une interprétation subjective sur le nombre derreurs, ce qui suggère également la classe MonCal.Interpret."
+}
+```
+```json
+{
+    "classe": ["StratKldg"],
+    "justification": "Le commentaire bien relire les consignes indique une stratégie dapprentissage liée à lamélioration de la concentration ou de lattention pendant le test, ce qui correspond aux mots-clés associés à la classe StratKldg comme attention."
+}
+```
+```json
+{
+    "classe": ["DomKldg"],
+    "justification": ""
+}
+```
+Programme terminé.
+Miss: 235
+Accuracy =  0.9063829787234042
+Kappa =  0.0
+Energy(kWh) =  0.0
+Time(min) =  6.875615199406941
+Enter the log name : Enter the version: Enter the model name: Enter the llm name: Début du programme...
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [CTRL, MotOrient.SelfEff],
+    "justification": "Le commentaire mentionne un comportement futur (réviser pour le prochain test) et exprime également la recherche dassurance et de justesse dans les réponses, ce qui est lié à lauto-efficacité."
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire identifie les concepts/disciplines manquants et leur degré d’acquisition, notamment en mécanique et en chimie"
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": "le commentaire exprime une interprétation subjective sur la performance"
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "le commentaire mentionne erreurs dangereuses qui est un mot-clé pour la classe MonCal.Facts.DC"
+}
+{
+    "classe": [BDS.Emotions],
+    "justification": "Le commentaire exprime un état émotionnel ressenti par létudiant pendant le test."
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "le commentaire parle dun comportement futur avec lutilisation du verbe au futur vaiS et du mot prochain"
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.Value],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "le commentaire mentionne des erreurs dangereuses, ce qui est un mot-clé pour la classe MonCal.Facts.DC"
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [BDS.Emotions],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "Le commentaire mentionne explicitement les erreurs dinattention et la stratégie utilisée pour améliorer, ce qui correspond aux mots-clés de la classe StratKldg."
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "Le commentaire mentionne erreurs dinattention qui est un mot-clé pour la classe StratKldg."
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": "Le commentaire mentionne le nombre de réponses correctes et incorrectes."
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "le commentaire mentionne erreurs dangereuses qui est un mot-clé de la classe MonCal.Facts.DC"
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.Value],
+    "justification": "Le commentaire exprime lutilité du test, ce qui correspond à la classe MotOrient.Value"
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire mentionne avoir oublié de réviser ses leçons, ce qui correspond à lidentification de concepts ou disciplines manquants et leur degré d’acquisition"
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "..."
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.Value],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire identifie les concepts/disciplines manquants et leur degré d’acquisition, notamment les formules et équations en physique et la nomenclature en chimie"
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC, MonCal.Interpret],
+    "justification": "Le commentaire mentionne la courbe en J et les erreurs dangereuses, ce qui correspond à MonCal.Facts.DC, mais également exprime une interprétation subjective sur sa performance avec le terme imprudence, ce qui correspond à MonCal.Interpret"
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire identifie un concept/discipline manquant et son degré d’acquisition"
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": "Le commentaire mentionne des réponses correctes, ce qui correspond aux observations factuelles sur les résultats du test."
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire mentionne des lacunes dans les connaissances du cours et des interprétations fausses des documents"
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [StratKldg, CTRL],
+    "justification": ""
+}
+{
+    "classe": [BDS.Emotions],
+    "justification": "Le commentaire exprime des émotions ressenties par létudiant, notamment la satisfaction et lanxiété."
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "présence de mots-clés erreurs dangereuses"
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": "Le commentaire exprime la confiance de létudiant en ses réponses, ce qui correspond à la classe MotOrient.SelfEff."
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "Le commentaire mentionne un comportement futur avec lutilisation du verbe au futur devenir et prochain test."
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": "Le commentaire mentionne réponses correctes qui est un mot-clé associé à la classe MonCal.Facts.RF"
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.Value],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "verbes au futur et reflechir sur mes connaissances"
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire parle de la courbe en J et derreurs dangereuses, ce qui correspond aux mots-clés de la classe MonCal.Facts.DC"
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Courbe en J similaire pour les réponses correctes mais pas pour les incorrectes"
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire mentionne la courbe en J et les réponses incorrectes, ce qui correspond aux mots-clés de la classe MonCal.Facts.DC"
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "Le commentaire exprime un comportement futur avec lutilisation du verbe faudrait et la mention de prochain test."
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": "je suis mi prudente/ mi imprudente contient le mot imprudente qui est un mot-clé pour la classe MonCal.Interpret"
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "Le commentaire mentionne la nécessité de revoir certaines choses du cours, ce qui indique une prise de conscience des lacunes dans les connaissances."
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": "Le commentaire exprime une interprétation subjective sur les résultats, utilisant le mot imprudence pour décrire la performance."
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire mentionne la courbe en J et le pourcentage de savoir fragile, qui sont des mots-clés pertinents pour la classe MonCal.Facts.DC."
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "..."
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire identifie des concepts/disciplines manquants et leur degré d’acquisition"
+}
+{
+    "classe": [MotOrient.Value],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "le commentaire mentionne une stratégie dapprentissage utilisée pendant le test, à savoir la lecture trop rapide, et analyse son comportement"
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": "Le commentaire utilise le mot imprudence qui est un mot-clé pour la classe MonCal.Interpret."
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "Certaines de ces erreurs sont dues à un manque de réflexion par rapport aux questions"
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": "Le commentaire contient des informations factuelles sur le résultat du test, notamment le nombre de questions correctes et incorrectes."
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": "Le commentaire exprime un comportement futur avec le verbe faudrait et mentionne la fois prochaine."
+}
+{
+    "classe": [StratKldg],
+    "justification": "jai souvent répondu trop vite"
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": "Le commentaire mentionne des savoirs certains, savoirs fragiles, erreurs présumées et erreurs dangereuses, qui sont tous des termes clés pour la classe MonCal.Facts.DC."
+}
+{
+    "classe": [DomKldg],
+    "justification": "..."
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "jai échangé 2 valeurs dans une formule que je nai pas trop comprise"
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "mauvaise lecture"
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": "Le commentaire mentionne des nombres de réponses correctes et incorrectes, ainsi que des ignorances, ce qui correspond aux mots-clés de la classe MonCal.Facts.RF."
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire mentionne un concept/discipline manquant et son degré d’acquisition"
+}
+{
+    "classe": [StratKldg],
+    "justification": "je nai pas pris le temps de bien comprendre les énoncés"
+}
+{
+    "classe": [MotOrient.SelfEff],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [CTRL],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Interpret],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.RF],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": "Mots-clés tels que trop vite et mauvaise lecture sont associés à cette classe"
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": "le commentaire mentionne des chapitres pas assez bien travaillés, ce qui correspond aux lacunes dans les connaissances"
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+{
+    "classe": [MonCal.Facts.DC],
+    "justification": ""
+}
+{
+    "classe": [StratKldg],
+    "justification": ""
+}
+{
+    "classe": [DomKldg],
+    "justification": ""
+}
+Programme terminé.
+Miss: 235
+Accuracy =  0.8297872340425532
+Kappa =  0.0
+Energy(kWh) =  0.0
+Time(min) =  17.437887422243755

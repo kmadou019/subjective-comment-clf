@@ -70,13 +70,11 @@ def main():
         breakpoint_threshold_amount=8,)
     correct,miss = 1,1
     for comment,original in zip(global_comments, original_comment):
-        print(original)
         comment_split = graphSplit.invoke({"comment" : comment})["chunks"]
         #comment_split = text_splitter.create_documents([comment])
         #comment_split = [doc.page_content for doc in comment_split]
 
         classes = []
-        print(comment_split)
         for chunk in comment_split:
             #classify all the chunks
             response = graphRagClf.invoke({"comment": chunk, "llm" : "phi4"})

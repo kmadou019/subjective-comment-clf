@@ -14,9 +14,29 @@ from collections import defaultdict
 
 def extract_json(text):
     start = text.find("{")
-    end = text.find("}")
-    text = text[start:end+1].replace("true",'True').replace("false",'False').replace('"True"',"True").replace('"False"',"False")
-    print(text)
+    end = text.rfind("}")
+    text = text[start:end+1]
+
+    # Remplace true/false par True/False pour ast.literal_eval
+    text = text.replace("true", "True").replace("false", "False")
+
+    # Entoure de guillemets les valeurs non-quotées dans les listes
+    def quote_unquoted_tokens(match):
+        content = match.group(1)
+        tokens = content.split(",")
+        new_tokens = []
+        for token in tokens:
+            token = token.strip()
+            # Si ce n'est ni un nombre, ni déjà entre guillemets, on le quote
+            if not re.match(r'^-?\d+(\.\d+)?$', token) and not (token.startswith('"') and token.endswith('"')):
+                token = f'"{token}"'
+            new_tokens.append(token)
+        return "[" + ", ".join(new_tokens) + "]"
+
+    # Appliquer le traitement à chaque liste
+    text = re.sub(r'\[\s*([^\[\]]+?)\s*\]', quote_unquoted_tokens, text)
+
+    print("Texte transformé :", text)
     return ast.literal_eval(text)
 
 def get_cpu_power():
@@ -108,6 +128,7 @@ def main():
     tab_baseline = {"comment_to_clf": [], "comment_in_db" : [], "classe_in_db" : [], "rag_clf":[], "true_clf": []}
     #Init output
     output = defaultdict(list)
+    cls_cert = defaultdict(list)
     # Start the CPU power monitoring in a separate thread
     monitor_thread = threading.Thread(target=monitor_cpu_power, args=(energy_log,))
     monitor_thread.start()
@@ -116,7 +137,9 @@ def main():
     start = time.time()
     for comment, tag in zip(comments_test["content"], comments_test["tag"]):
         response = graph.invoke({"comment": comment, "llm" : llm})
-        predicted_class = extract_json(response["predictedClass"])["classe"]
+        response_json = extract_json(response["predictedClass"])
+        predicted_class = response_json["classe"]
+        certitude = response_json["certitude"]
         #Data for including the baseline in the excel tab
         if response["tag_db"] != predicted_class:
             tab_baseline["comment_to_clf"].append(comment)
@@ -126,13 +149,19 @@ def main():
             tab_baseline["true_clf"].append(tag)
         
         #Output file
-        output[predicted_class].append(comment)
-        if predicted_class == tag:
+        for class_ in predicted_class:
+            output[class_].append((comment, response_json["justification"]))
+        #Output for cls_cert
+        cls_cert["comment"].append(comment)
+        cls_cert["cls"].append(predicted_class)
+        cls_cert["certitude"].append(certitude)
+
+        if tag in predicted_class:
             true_prediction += 1
         else:
             logger.error(f"[{comment}] ; human({tag}) ; IA({predicted_class})")
-        if predicted_class in matrix.columns:
-            matrix.loc[tag,predicted_class] += 1
+        if predicted_class[0] in matrix.columns:
+            matrix.loc[tag,predicted_class[0]] += 1
         else:
             logger.warning(f"Error: {predicted_class} is not in the matrix")
             miss += 1
@@ -170,9 +199,24 @@ def main():
     #Baseline vs RAG (difference in classif)
     df_baseline = pd.DataFrame(data=tab_baseline)
     df_baseline.to_excel("../excel/baseline_vs_rag_diff.xlsx")
+
     #Output
-    df_output = pd.DataFrame( dict( [ (k, pd.Series(v)) for k,v in output.items()] ) )
+    prod = itertools.product(list(output.keys()), ["comment", "justification"])
+    cols = pd.MultiIndex.from_tuples(prod)
+
+    df_output = pd.DataFrame(columns=cols, index=[0])
+    for cls, com_just in output.items():
+        print(f"Class: {cls}, Comments: {com_just}")
+        df_output[cls,"comment"]       = com_just[0][0]
+        df_output[cls,"justification"] = com_just[0][1]
+
+        # Export in Excel
     df_output.to_excel("../excel/output.xlsx")
+    #Output for cls_cert
+    print(cls_cert)
+    df_cls_cert = pd.DataFrame.from_dict(cls_cert)
+    df_cls_cert.to_excel("../excel/cls_cert.xlsx", index=False)
+
     # Log the results
     print(f"Miss: {miss}")
     print("Accuracy = ", accuracy)

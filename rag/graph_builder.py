@@ -65,13 +65,20 @@ Classifie ce commentaire :
 
 {comment}
 
+Tu peux donner deux classes si tu estimes que le commentaire peut correspondre à deux ou plusieurs classes. Tu donnes dans ce cas les deux classes que tu penses les plus pertinantes.
+
+Faudra également que pour chaque classe tu donnes ton dégré de certitude par rapport à cette classe et cela en pourcentage.
+Et aussi la somme de tes certitudes doit faire 100.
+
 Format de sortie :
+N'OUBLIE PAS LES GUILLEMETS DANS LES LABELS DES CLASSES (e.i : ["classe1"]).
 {{
-    "classe": "...",
+    "classe": ['classe1', 'classe2'],
+    "certitude": [degré de certitude pour classe1, degré de certitude pour classe2],  
     "justification": "..."
 }}
 
-(sans explication : ne donner AUCUNE explication de ta reponse, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus .
+(sans explication : ne donner AUCUNE explication de ta reponse, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus
 """
 
 prompt = PromptTemplate(
