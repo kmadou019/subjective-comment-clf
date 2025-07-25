@@ -21,7 +21,7 @@
             <p>Documentation</p>
         </div>
         <nav>
-            <a href="./setup.html">Setu                     p</a>
+            <a href="./setup.html"> Setup</a>
             <a href="./structure.html">Structure</a>
         </nav>
     </header>
@@ -46,7 +46,8 @@
         <img src="./img/add.png" alt="Add a computer" />
         <p>
             Type <code>lig-potato.imag.fr</code> and then specify the directory on the remote machine that you want to mount
-            (e.g., <code>subjective-comment-clf</code> in our case). (You have to be connected on the VPN)
+            (e.g., <code>subjective-comment-clf</code> in our case). (You have to be connected on the VPN). <br>
+            You will be asked to specify the os of the GPU, it is Linux.
         </p>
         <p>
             Now open the VSCode terminal. In the next section, we will see how to connect to the GPU and run the code.
@@ -61,6 +62,9 @@
             <p>
             Once a GPU is available, run the following command in your terminal:
             </p>
+            <pre><code>ssh username@aker.imag.fr</code></pre>
+            <p>Aker is an entry point server used for scheduling GPU jobs. Then type :</p>
+
 
             <pre><code>oarsub -I -p "host='lig-gpu10.imag.fr'" -l /gpu=1,walltime=7:0:0</code></pre>
 
@@ -78,11 +82,39 @@
             <p>
             After submitting the command, wait until the job starts. Once connected, you’ll be on the GPU server and ready to run your code.
             </p>
+
+            <h2>Load the Code from GitHub</h2>
+
+                <p>
+                    Once connected to the GPU server, you can directly load the code from GitHub. 
+                    Since your GPU home directory is usually empty on first connection, it’s useful to create a folder structure that mirrors your local environment.
+                    For example, you can start by creating a <code>Documents</code> folder:
+                </p>
+
+                <pre><code>mkdir Documents</code></pre>
+
+                <p>
+                    Then, move into that folder:
+                </p>
+
+                <pre><code>cd Documents</code></pre>
+
+                <p>
+                    Now, clone the GitHub repository:
+                </p>
+
+                <pre><code>git clone https://github.com/kmadou019/subjective-comment-clf.git</code></pre>
+
             <h2>Install a Python Environment</h2>
-            <p>
+             Go to the <code>subjective-comment-clf</code> folder to create the environment. <br>
             Create a virtual environment by running the following command:
             </p>
             <pre><code>python3 -m venv mon_env/</code></pre>
+            <p>
+                After creating the environment, you need to activate it. From the folder that contains <code>mon_env/</code>, run the following command:
+            </p>
+
+            <pre><code>source mon_env/bin/activate</code></pre>
 
             <h2>Install Requirements</h2>
             <p>
@@ -141,6 +173,49 @@
                 <pre><code>ollama pull llama3.3</code></pre>
 
             </p>
+
+             <h2>Add a Hugging Face Token for ChromaDB</h2>
+
+                <p>
+                    First, go to <a href="https://huggingface.co/" target="_blank">https://huggingface.co/</a> and create an account if you don't already have one.
+                    Then, click on your profile picture at the top right of the page and select <strong>Access Tokens</strong> as shown below:
+                </p>
+
+                <figure>
+                    <img src="./img/access-token.png" alt="Menu to access Hugging Face tokens">
+                </figure>
+
+                <p>
+                    Click the <strong>Create new token</strong> button:
+                </p>
+
+                <figure>
+                    <img src="./img/create-token.png" alt="Create new token button">
+                </figure>
+
+                <p>
+                    Then, generate a new token and make sure the token type is set to <strong>write</strong>:
+                </p>
+
+                <figure>
+                    <img src="./img/write.png" alt="Selecting 'write' as token type">
+                </figure>
+
+                <p>
+                    Save the generated token. We will refer to it as <code>hf_token</code> in the following steps.
+                </p>
+
+                <p>
+                    Now, open your terminal and run the following command to store the token as an environment variable:
+                </p>
+
+                <pre><code>echo "export HUGGINGFACE_API_KEY='hf_token'" >> ~/.bashrc</code></pre>
+
+                <p>
+                    Then, reload your <code>~/.bashrc</code> to apply the changes:
+                </p>
+
+                <pre><code>source ~/.bashrc</code></pre>
          
             <p><a href="./structure.html" class="next-article"> Architecture ⟶</a></p>
         </article>
