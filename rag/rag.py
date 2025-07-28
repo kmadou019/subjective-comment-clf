@@ -254,8 +254,7 @@ def main():
 
     # Model and version input
     version = input("Enter the version: ") 
-    model = input("Enter the model name: ")
-    llm = input("Enter the llm name: ")
+    llm = model = input("Enter the model name: ")
 
     # Initialize metrics and structures
     true_prediction = 0
