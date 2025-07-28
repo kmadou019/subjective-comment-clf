@@ -9,13 +9,18 @@ import pandas as pd
 from langchain_ollama.llms import OllamaLLM
 import os
 
+# Initialize sentence-transformer embeddings
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+# Setup Chroma vector store path and instantiate vector store
 chroma_path = os.path.join(os.path.dirname(__file__), '', 'chroma_db')
-vector_store = Chroma(collection_name="Comment",persist_directory=chroma_path ,embedding_function=embeddings)
-#Load the dataset
+vector_store = Chroma(collection_name="Comment", persist_directory=chroma_path, embedding_function=embeddings)
+
+# Load comments dataset with class labels
 data_path = os.path.join(os.path.dirname(__file__), 'data', 'comments.csv')
 comments = pd.read_csv(data_path)
-# Define prompt for classification
+
+# Define classification prompt template for the LLM, including classes, keywords, and output format
 template = """
 Tu es un expert en classification de commentaires.
 
@@ -78,15 +83,16 @@ N'OUBLIE PAS LES GUILLEMETS DANS LES LABELS DES CLASSES (e.i : ["classe1"]).
     "justification": "..."
 }}
 
-(sans explication : ne donner AUCUNE explication de ta reponse, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus
+(je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus
 """
 
+# Create LangChain prompt template with inputs "commentaire" and "context"
 prompt = PromptTemplate(
     input_variables=["commentaire", "context"],
     template=template
 )
 
-# Define state for application
+# Define application state schema with TypedDict for type safety
 class State(TypedDict):
     comment       : str
     context       : List[Document]
@@ -96,34 +102,36 @@ class State(TypedDict):
     comment_db    : str
     tag_db        : str
 
-# Define application steps
+# Step 1: Retrieve relevant documents from vector store based on comment similarity
 def retrieve(state: State):
     retrieved_docs = vector_store.similarity_search(state["comment"], k=1)
     return {"context": retrieved_docs}
 
-
+# Step 2: Generate classification prediction using LLM with prompt and retrieved context
 def generate(state: State):
-    # Define the LLM
     model = state["llm"]
     llm = OllamaLLM(model=model)
-    #To have something like : 'je me sens nul ':BDS.Emotions 
+
+    # Format context as string with comment:class for prompt input
     context = "\n".join(f""" '{ctx.page_content}':{comments["tag"][int(ctx.id)]} """ for ctx in state["context"])
+
+    # Fill prompt template with comment and context
     formatted_prompt = prompt.invoke({"comment": state["comment"], "context": context})
+
+    # Get prediction from LLM and clean unwanted characters
     response = llm.invoke(formatted_prompt)
     response = ''.join(c for c in response.strip() if c not in "<>'")
-    #Data for including the baseline in the excel tab
+
+    # Retrieve original comment and tag from dataset for baseline comparison
     ctx = state["context"][0]
     comment_db = ctx.page_content
     tag_db     = comments["tag"][int(ctx.id)]
+
     return {"predictedClass": response,
             "comment_db"    : comment_db,
             "tag_db"        : tag_db}
 
-
-
-
-
-# Compile application
+# Build the LangGraph state machine pipeline: retrieve -> generate
 graph_builder = StateGraph(State).add_sequence([retrieve, generate])
 graph_builder.add_edge(START, "retrieve")
 graph = graph_builder.compile()

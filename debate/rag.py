@@ -1,4 +1,4 @@
-e#!/usr/bin/env python3
+#!/usr/bin/env python3
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.schema import Document
 from langchain_chroma import Chroma
