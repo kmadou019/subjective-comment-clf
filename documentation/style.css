@@ -201,3 +201,11 @@ article{
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
 }
+
+.once {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}

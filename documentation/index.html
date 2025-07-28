@@ -13,7 +13,7 @@
 <body>
     <header>
          <div id="logo">
-            <a href="./setup.html">
+            <a href="./index.html">
                 <img src="./img/logo-lig_0.svg" alt="LIG">
             </a>
         </div>
@@ -21,14 +21,14 @@
             <p>Documentation</p>
         </div>
         <nav>
-            <a href="./setup.html"> Setup</a>
+            <a href="./index.html"> Setup</a>
             <a href="./structure.html">Structure</a>
         </nav>
     </header>
     <main>
         <article>
-
-        <h1>Mount the Remote Directory Locally</h1>
+        <p class="once">* means should be done once</p>
+        <h1>Mount the Remote Directory Locally *</h1>
         <p>
             Since running the code requires a GPU, the code must already be on the GPU server.
             If you are comfortable with tools like <code>vim</code>, that’s fine. But if you prefer using Visual Studio Code (VSCode), 
@@ -45,7 +45,7 @@
         </p>
         <img src="./img/add.png" alt="Add a computer" />
         <p>
-            Type <code>lig-potato.imag.fr</code> and then specify the directory on the remote machine that you want to mount
+            Type <code>username@lig-potato.imag.fr</code> and then specify the directory on the remote machine that you want to mount
             (e.g., <code>subjective-comment-clf</code> in our case). (You have to be connected on the VPN). <br>
             You will be asked to specify the os of the GPU, it is Linux.
         </p>
@@ -57,6 +57,7 @@
             <p>
             First, check for an available GPU on the website: 
             <a href="http://aker.imag.fr/drawgantt/" target="_blank">http://aker.imag.fr/drawgantt/</a>.
+            You should be connected on the VPN
             </p>
 
             <p>
@@ -83,7 +84,7 @@
             After submitting the command, wait until the job starts. Once connected, you’ll be on the GPU server and ready to run your code.
             </p>
 
-            <h2>Load the Code from GitHub</h2>
+            <h2>Load the Code from GitHub *</h2>
 
                 <p>
                     Once connected to the GPU server, you can directly load the code from GitHub. 
@@ -105,7 +106,7 @@
 
                 <pre><code>git clone https://github.com/kmadou019/subjective-comment-clf.git</code></pre>
 
-            <h2>Install a Python Environment</h2>
+            <h2>Install a Python Environment *</h2>
              Go to the <code>subjective-comment-clf</code> folder to create the environment. <br>
             Create a virtual environment by running the following command:
             </p>
@@ -116,7 +117,7 @@
 
             <pre><code>source mon_env/bin/activate</code></pre>
 
-            <h2>Install Requirements</h2>
+            <h2>Install Requirements *</h2>
             <p>
             Running the code requires specific libraries and tools.
             First, navigate to the <code>subjective-comment-clf</code> folder. There you’ll find a file named <code>require.txt</code>,
@@ -127,7 +128,7 @@
             </p>
             <pre><code>pip install -r require.txt</code></pre>
 
-            <h2>Install Ollama (Linux - Without Root Access)</h2>
+            <h2>Install Ollama (Linux - Without Root Access) *</h2>
                 <p>
                 We need to install <strong>Ollama</strong>. The official installer can be found here:
                 <a href="https://ollama.com/download/linux" target="_blank">https://ollama.com/download/linux</a>.
@@ -167,6 +168,7 @@
                 <p>
                 Our implementation uses three models. Download them using the following commands:
                 </p>
+                <pre><code>ollama serve & (then Ctrl + C)</code></pre> 
 
                 <pre><code>ollama pull mistral</code></pre>
                 <pre><code>ollama pull phi4</code></pre>
@@ -174,7 +176,7 @@
 
             </p>
 
-             <h2>Add a Hugging Face Token for ChromaDB</h2>
+             <h2>Add a Hugging Face Token for ChromaDB *</h2>
 
                 <p>
                     First, go to <a href="https://huggingface.co/" target="_blank">https://huggingface.co/</a> and create an account if you don't already have one.
