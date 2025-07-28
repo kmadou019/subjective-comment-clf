@@ -312,11 +312,12 @@ def main():
             logger.error(f"[{comment}] ; human({tag}) ; IA({predicted_class})")
 
         # Update confusion matrix or log miss
-        if predicted_class[0] in matrix.columns:# or predicted_class[-1] in matrix.columns:
-            if predicted_class[-1] == tag:
-                matrix.loc[tag, predicted_class[-1]] += 1
-            else:
-                matrix.loc[tag, predicted_class[0]] += 1
+        if tag in (predicted_class[0],predicted_class[-1]):
+            matrix.loc[tag, tag] += 1
+        elif predicted_class[0] in matrix.columns:
+            matrix.loc[tag, predicted_class[0]] += 1
+        elif predicted_class[-1] in matrix.columns:
+            matrix.loc[tag, predicted_class[-1]] += 1
         else:
             logger.warning(f"Error: {predicted_class} is not in the matrix")
             miss += 1
