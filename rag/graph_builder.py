@@ -83,7 +83,7 @@ N'OUBLIE PAS LES GUILLEMETS DANS LES LABELS DES CLASSES (e.i : ["classe1"]).
     "justification": "..."
 }}
 
-(je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus
+(Il faut une justification courte et concise.Aussi, je veux QUE LA CLASSE ni caractères spéciaux comme "<,>,',..."), n'invente aucune classe prend bien une(pas deux ou plus) des classes ci-dessus
 """
 
 # Create LangChain prompt template with inputs "commentaire" and "context"
