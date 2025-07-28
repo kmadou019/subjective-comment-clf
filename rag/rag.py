@@ -313,7 +313,7 @@ def main():
             logger.error(f"[{comment}] ; human({tag}) ; IA({predicted_class})")
 
         # Update confusion matrix or log miss
-        if predicted_class[0] in matrix.columns or predicted_class[-1] in matrix.columns:
+        if predicted_class[0] in matrix.columns:# or predicted_class[-1] in matrix.columns:
             if predicted_class[-1] == tag:
                 matrix.loc[tag, predicted_class[-1]] += 1
             else:
