@@ -11,6 +11,8 @@ import re
 import threading
 import ast
 from collections import defaultdict
+import json
+
 
 def extract_json(text):
     """
@@ -219,6 +221,26 @@ def convert_seconds(time):
     minutes, seconds = divmod(time, 60)  # Split total seconds into minutes and remainder seconds
     return f"{int(minutes)}m{int(seconds)}s"
 
+def save_checkpoint(iteration, true_prediction, output, cls_cert):
+    """Save the current iteration and true_prediction count to a checkpoint file."""
+    data = {
+        "iteration": iteration,
+        "true_prediction": true_prediction,
+        "output": output,
+        "cls_cert": cls_cert
+    }
+    with open('./checkpoint.txt', "w") as checkpoint:
+        json.dump(data, checkpoint)
+
+def load_checkpoint():
+    """Load checkpoint data. If file does not exist or is corrupted, return (0, 0)."""
+    try:
+        with open('./checkpoint.txt', "r") as checkpoint:
+            data = json.load(checkpoint)
+            return int(data.get("iteration", 0)), int(data.get("true_prediction", 0)), dict(data.get("output", defaultdict(list))), dict(data.get("cls_cert", defaultdict(list)))
+    except (FileNotFoundError, json.JSONDecodeError, KeyError, ValueError):
+        return 0, 0, defaultdict(list), defaultdict(list)
+
 
 def main():
    # Load the test dataset
@@ -257,12 +279,11 @@ def main():
     llm = model = input("Enter the model name: ")
 
     # Initialize metrics and structures
-    true_prediction = 0
+    i, true_prediction, output, cls_cert = load_checkpoint()
     miss = 0
     energy_log = {"running": True, "samples": []}
     tab_baseline = {"comment_to_clf": [], "comment_in_db" : [], "classe_in_db" : [], "rag_clf":[], "true_clf": []}
-    output = defaultdict(list)
-    cls_cert = defaultdict(list)
+
 
     # Initialize confusion matrix
     matrix = pd.DataFrame(data=0,
@@ -281,7 +302,7 @@ def main():
     start = time.time()
 
     # Run inference loop (only first 10 examples)
-    for comment, tag in zip(comments_test["content"], comments_test["tag"]):
+    for comment, tag in zip(comments_test["content"][i:], comments_test["tag"][i:]):
         response = graph.invoke({"comment": comment, "llm" : llm})
         response_json = extract_json(response["predictedClass"])
         predicted_class = response_json["classe"]
@@ -321,6 +342,8 @@ def main():
         else:
             logger.warning(f"Error: {predicted_class} is not in the matrix")
             miss += 1
+        i += 1    
+        save_checkpoint(i,true_prediction, output, cls_cert)
 
     # Stop monitoring
     end = time.time()
