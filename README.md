@@ -87,12 +87,12 @@ source mon_env/bin/activate
 
 ### Install Requirements *
 
-Running the code requires specific libraries and tools. First, navigate to the `subjective-comment-clf` folder. There you’ll find a file named `require.txt`, which lists all the necessary libraries.
+Running the code requires specific libraries and tools. First, navigate to the `subjective-comment-clf` folder. There you’ll find a file named `requirements.txt`, which lists all the necessary libraries.
 
 To install them, run:
 
 ```bash
-pip install -r require.txt
+pip install -r requirements.txt
 ```
 
 ### Install Ollama (Linux - Without Root Access) *
