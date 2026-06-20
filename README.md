@@ -56,13 +56,13 @@ The pipeline has two stages, both implemented in [`rag/`](rag):
 
 The system classifies comments into **9 categories** (see the prompt in [`rag/graph_builder.py`](rag/graph_builder.py) for definitions and keywords), using 601 labeled comments as the retrieval corpus and 234 held-out comments for evaluation.
 
-`rag/rag.py` currently reports **Accuracy** and **Cohen's Kappa** per model (plus GPU energy and runtime) in [`excel/performance.xlsx`](excel/performance.xlsx); per-class confusion matrices are in [`excel/matrix_cohen.xlsx`](excel/matrix_cohen.xlsx), from which an F1-score can be derived.
+`rag/rag.py` reports **Accuracy**, **Cohen's Kappa**, GPU energy consumption, and runtime per model, exported to [`excel/performance.xlsx`](excel/performance.xlsx); per-class confusion matrices are in [`excel/matrix_cohen.xlsx`](excel/matrix_cohen.xlsx).
 
-| Model | Accuracy | F1-score | Cohen's Kappa |
-|-------|----------|----------|----------------|
-| Mistral | [TO BE COMPLETED] | [TO BE COMPLETED] | [TO BE COMPLETED] |
-| Phi-4 | [TO BE COMPLETED] | [TO BE COMPLETED] | [TO BE COMPLETED] |
-| Llama 3.3 | [TO BE COMPLETED] | [TO BE COMPLETED] | [TO BE COMPLETED] |
+| Model | Accuracy | Cohen's Kappa | Energy Consumption | Runtime |
+|-------|----------|----------------|---------------------|---------|
+| Mistral (7B) | 0.69 | 0.66 | 6.6 Wh | 1m31s |
+| Phi-4 (14B) | 0.80 | 0.77 | 14.7 Wh | 2m42s |
+| LLaMA 3.3 (70B) | 0.80 | 0.76 | 42.5 Wh | 8m34s |
 
 ## Quickstart
 
