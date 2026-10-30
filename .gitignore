@@ -6,3 +6,12 @@ __pycache__
 *.log
 *.std*
 log
+rag/chroma_db/
+rag/checkpoint.txt
+rag/log/
+excel/*.xlsx
+!excel/performance.xlsx
+!excel/matrix_cohen.xlsx
+.env
+.vscode/
+.DS_Store

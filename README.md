@@ -2,6 +2,10 @@
 
 Classifies students' free-text self-assessment comments into psycho-pedagogical categories using a Retrieval-Augmented Generation (RAG) pipeline built on locally-served open-weight LLMs.
 
+**Key result:** with Phi-4 (14B), RAG raises accuracy from **0.55 to 0.80**, with a Cohen's kappa of **0.77**, above the agreement between the two human annotators (0.67).
+
+This work was published at EC-TEL 2025: *Classifying Students' Meta-Cognitive Comments*, C. Hoffmann, M. Koné, N. Bouarour, S. Amer-Yahia ([PDF](docs/paper/Classifying_Students__Comments_ECTEL_2025-3.pdf)). It was carried out during my master's research internship at the Grenoble Informatics Laboratory (LIG, DAISY team).
+
 ## Context & Problem
 
 This project is part of a learning-analytics platform where students take QCM (multiple-choice) tests and add a meta-cognitive layer on top of their answers:
@@ -40,7 +44,7 @@ The pipeline has two stages, both implemented in [`rag/`](rag):
 | `rag/graph_builder.py` | Defines the LangGraph retrieval + classification pipeline and the classification prompt. |
 | `rag/rag.py` | Runs the pipeline on the test set and reports metrics. |
 | `rag/script/rag.sh` | Entry point used to launch an evaluation run on the GPU server. |
-| `excel/` | Evaluation outputs (confusion matrices, per-model performance, certainty/justification dumps). |
+| `excel/` | Aggregated evaluation outputs (confusion matrices, per-model performance). |
 
 ## Tech Stack
 
@@ -58,11 +62,20 @@ The system classifies comments into **9 categories** (see the prompt in [`rag/gr
 
 `rag/rag.py` reports **Accuracy**, **Cohen's Kappa**, GPU energy consumption, and runtime per model, exported to [`excel/performance.xlsx`](excel/performance.xlsx); per-class confusion matrices are in [`excel/matrix_cohen.xlsx`](excel/matrix_cohen.xlsx).
 
-| Model | Accuracy | Cohen's Kappa | Energy Consumption | Runtime |
-|-------|----------|----------------|---------------------|---------|
-| Mistral (7B) | 0.69 | 0.66 | 6.6 Wh | 1m31s |
-| Phi-4 (14B) | 0.80 | 0.77 | 14.7 Wh | 2m42s |
-| LLaMA 3.3 (70B) | 0.80 | 0.76 | 42.5 Wh | 8m34s |
+| Model | Accuracy without RAG | Accuracy with RAG | Cohen's Kappa | Energy Consumption | Runtime |
+|-------|----------|----------|----------------|---------------------|---------|
+| Mistral (7B) | 0.42 | 0.69 | 0.66 | 6.6 Wh | 1m31s |
+| Phi-4 (14B) | 0.55 | 0.80 | 0.77 | 14.7 Wh | 2m42s |
+| LLaMA 3.3 (70B) | 0.68 | 0.80 | 0.76 | 42.5 Wh | 8m34s |
+
+Phi-4 matches LLaMA 3.3 70B with about 3 times less energy, which makes it the best trade-off for a local deployment.
+
+## Data
+
+[`rag/data/`](rag/data) contains the anonymized corpus used in the paper: comments written by high-school students after physics tests, segmented into units of meaning and labeled by human annotators.
+
+- `comments.csv`: 601 labeled comments, used to build the retrieval base.
+- `test.csv`: 234 held-out comments, used for evaluation.
 
 ## Quickstart
 
@@ -85,6 +98,3 @@ cd script
 
 This project was developed and evaluated on a lab GPU cluster. For the full setup used in that environment (SSH/OAR job scheduling, a root-less Ollama install, Hugging Face token configuration, etc.), see [docs/DEV_SETUP.md](docs/DEV_SETUP.md).
 
-## Demo
-
-[TO BE COMPLETED]
